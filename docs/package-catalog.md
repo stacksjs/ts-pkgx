@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-31T19:11:49.408Z
+- **Last Updated**: 2025-10-31T20:10:58.665Z
 
 ## Table of Contents
 
@@ -55,7 +55,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.11.0 (+157) | `pkgx node` |
 | **[perl.org](./packages/perl.org/index.md)** () | Highly capable, feature-rich programming language | corelist, cpan, enc2xs, ... (+27) | 5.42.0 (+15) | `pkgx perl` |
 | **[php.net](./packages/php.net/index.md)** () | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.14 (+84) | `pkgx php` |
-| **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.14.0 (+159) | `pkgx py` |
+| **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.14.0 (+160) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.7 (+47) | `pkgx ruby` |
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.91.0 (+37) | `pkgx rust` |
 | **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.2.0 (+11) | `pkgx swift` |
@@ -142,7 +142,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.6.2 (+42) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.36.0 (+20) | `pkgx atlantis` |
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.13.4 (+79) | `pkgx terraform` |
-| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.92.1 (+396) | `pkgx terragrunt` |
+| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.93.0 (+397) | `pkgx terragrunt` |
 | **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.3 (+18) | `pkgx terratag` |
 | **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.3 (+59) | `pkgx vault` |
 

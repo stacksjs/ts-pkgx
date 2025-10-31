@@ -3,7 +3,7 @@
  *
  * @domain `python.org`
  * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
- * @version `3.14.0` (160 versions available)
+ * @version `3.14.0` (161 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python.org`
@@ -154,6 +154,7 @@ export const pythonPackage = {
     '3.10.2',
     '3.10.1',
     '3.10.0',
+    '3.9.25',
     '3.9.24',
     '3.9.23',
     '3.9.22',
