@@ -43,6 +43,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +rioterm.com@0.2.33 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `linux:freedesktop.org/fontconfig`
+
 ## Usage Examples
 
 ```typescript

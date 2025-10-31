@@ -9,7 +9,7 @@
  * @install `launchpad install apptainer.org`
  * @homepage https://apptainer.org/
  * @dependencies `github.com/seccomp/libseccomp@2`, `curl.se/ca-certs`
- * @buildDependencies `go.dev@~1.21`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@~1.21`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -74,6 +74,7 @@ export const apptainerorgPackage = {
   buildDependencies: [
     'go.dev@~1.21',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

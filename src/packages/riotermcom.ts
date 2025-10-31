@@ -8,6 +8,7 @@
  *
  * @install `launchpad install rioterm.com`
  * @homepage https://rioterm.com
+ * @dependencies `linux:freedesktop.org/fontconfig` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -54,7 +55,14 @@ export const riotermcomPackage = {
     'rio',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Runtime dependencies for this package.
+   * These are required when running the package.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'linux:freedesktop.org/fontconfig',
+  ] as const,
   buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.

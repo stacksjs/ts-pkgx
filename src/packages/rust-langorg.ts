@@ -82,7 +82,7 @@ export const rustlangorgPackage = {
     'python.org@>=3<3.12',
     'openssl.org',
     'crates.io/semverator@0',
-    'linux:llvm.org@20',
+    'linux:llvm.org@21',
   ] as const,
   /**
    * Available versions from newest to oldest.
