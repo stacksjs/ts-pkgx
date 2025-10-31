@@ -3,7 +3,7 @@
  *
  * @domain `depot.dev`
  * @programs `depot`
- * @version `2.101.0` (71 versions available)
+ * @version `2.101.0` (72 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install depot.dev`
@@ -70,6 +70,7 @@ export const depotdevPackage = {
    */
   versions: [
     '2.101.0',
+    '2.100.12',
     '2.100.10',
     '2.100.9',
     '2.100.8',
