@@ -26,20 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `1.24.0`, `1.23.0`, `1.22.0`, `1.21.0`, `1.20.0`
-- `1.19.0`
+- `1.25.0`, `1.24.0`, `1.23.0`, `1.22.0`, `1.21.0`
+- `1.20.0`, `1.19.0`
 
 </details>
 
-**Latest Version**: `1.24.0`
+**Latest Version**: `1.25.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate@1.24.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate@1.25.0 -- $SHELL -i
 ```
 
 ## Usage Examples

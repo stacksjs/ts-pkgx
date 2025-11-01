@@ -1,8 +1,7 @@
 /**
- * **snaplet** - pkgx package
+ * **cli** - pkgx package
  *
  * @domain `snaplet.dev/cli`
- * @programs `snaplet`
  * @version `0.92.1` (67 versions available)
  * @versions From newest version to oldest.
  *
@@ -15,8 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.snapletdevcli
- * console.log(pkg.name)        // "snaplet"
- * console.log(pkg.programs)    // ["snaplet"]
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.versions[0]) // "0.92.1" (latest)
  * ```
  *
@@ -27,7 +25,7 @@ export const snapletdevcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'snaplet' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,13 +44,7 @@ export const snapletdevcliPackage = {
   installCommand: 'launchpad install snaplet.dev/cli' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +snaplet.dev/cli -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install snaplet.dev/cli' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'snaplet',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ebiggers/libdeflate`
  * @programs `libdeflate-gzip`, `libdeflate-gunzip`
- * @version `1.24.0` (6 versions available)
+ * @version `1.25.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/ebiggers/libdeflate`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "libdeflate"
  * console.log(pkg.description) // "Heavily optimized library for DEFLATE/zlib/gzip..."
  * console.log(pkg.programs)    // ["libdeflate-gzip", "libdeflate-gunzip"]
- * console.log(pkg.versions[0]) // "1.24.0" (latest)
+ * console.log(pkg.versions[0]) // "1.25.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ebiggers/libdeflate.md
@@ -68,6 +68,7 @@ export const libdeflatePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.25.0',
     '1.24.0',
     '1.23.0',
     '1.22.0',

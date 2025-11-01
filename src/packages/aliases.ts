@@ -1211,7 +1211,6 @@ export const aliases: Record<string, string> = {
   'slirp': 'freedesktop.org/slirp',
   'smartmontools': 'smartmontools.org',
   'smi': 'ibr.cs.tu-bs.de/libsmi',
-  'snaplet': 'snaplet.dev/cli',
   'snappy': 'google.github.io/snappy',
   'sndfile': 'github.com/libsndfile/libsndfile',
   'sniffnet': 'sniffnet.net',
