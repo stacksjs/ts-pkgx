@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-10-31T02:35:59.082Z
+ * Generated on 2025-11-01T02:36:36.674Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1609 total)
+ * List of all known packages (1610 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -757,6 +757,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/peak/s5cmd',
   'github.com/peltoche/lsd',
   'github.com/peripheryapp/periphery',
+  'github.com/pete911/ipcalc',
   'github.com/platformdirs/platformdirs',
   'github.com/plougher/squashfs-tools',
   'github.com/postmodern/chruby',
