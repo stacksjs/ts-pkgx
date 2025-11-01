@@ -576,6 +576,7 @@ export const aliases: Record<string, string> = {
   'invoice': 'github.com/maaslalani/invoice',
   'invoke': 'pyinvoke.org',
   'ios-deploy': 'github.com/ios-control/ios-deploy',
+  'ipcalc': 'github.com/pete911/ipcalc',
   'ipfs': 'ipfs.tech',
   'iproute2mac': 'github.com/brona/iproute2mac',
   'ipython': 'ipython.org',

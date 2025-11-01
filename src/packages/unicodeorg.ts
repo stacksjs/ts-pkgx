@@ -8,7 +8,7 @@
  *
  * @install `launchpad install unicode.org`
  * @homepage https://icu.unicode.org/
- * @buildDependencies `curl.se` - required only when building from source
+ * @buildDependencies `curl.se`, `darwin:llvm.org@20` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -70,9 +70,11 @@ export const unicodeorgPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
     'curl.se',
+    'darwin:llvm.org@20',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -711,6 +711,7 @@ import { gopassboltcliPackage } from './github.com/passbolt/go-passbolt-cli'
 import { s5cmdPackage } from './github.com/peak/s5cmd'
 import { lsdPackage } from './github.com/peltoche/lsd'
 import { peripheryPackage } from './github.com/peripheryapp/periphery'
+import { ipcalcPackage } from './github.com/pete911/ipcalc'
 import { platformdirsPackage } from './github.com/platformdirs/platformdirs'
 import { squashfstoolsPackage } from './github.com/plougher/squashfs-tools'
 import { chrubyPackage } from './github.com/postmodern/chruby'
@@ -2893,6 +2894,8 @@ export interface Pantry {
   githubcompeltoche: typeof lsdPackage
 
   githubcomperipheryapp: typeof peripheryPackage
+
+  githubcompete911: typeof ipcalcPackage
 
   githubcomplatformdirs: typeof platformdirsPackage
   squashfs_tools: typeof squashfstoolsPackage
@@ -5639,6 +5642,7 @@ export interface Pantry {
   speexdsp: typeof speexdspPackage
   lux: typeof luxPackage
   'swift-sh': typeof swiftshPackage
+  ipcalc: typeof ipcalcPackage
   thefuck: typeof thefuckPackage
   'terminal-notifier': typeof terminalnotifierPackage
   rip2: typeof rip2Package
@@ -7141,6 +7145,8 @@ export const pantry: Pantry = {
   githubcompeltoche: lsdPackage,
 
   githubcomperipheryapp: peripheryPackage,
+
+  githubcompete911: ipcalcPackage,
 
   githubcomplatformdirs: platformdirsPackage,
   squashfs_tools: squashfstoolsPackage,
@@ -9887,6 +9893,7 @@ export const pantry: Pantry = {
   speexdsp: speexdspPackage,
   lux: luxPackage,
   'swift-sh': swiftshPackage,
+  ipcalc: ipcalcPackage,
   thefuck: thefuckPackage,
   'terminal-notifier': terminalnotifierPackage,
   rip2: rip2Package,
