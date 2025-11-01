@@ -2,7 +2,7 @@
  * **fna-xna.github** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
  *
  * @domain `fna-xna.github.io`
- * @version `25.10.0` (22 versions available)
+ * @version `25.11.0` (23 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fna-xna.github.io`
@@ -17,7 +17,7 @@
  * const pkg = pantry.fnaxnagithubio
  * console.log(pkg.name)        // "fna-xna.github"
  * console.log(pkg.description) // "FAudio - Accuracy-focused XAudio reimplementati..."
- * console.log(pkg.versions[0]) // "25.10.0" (latest)
+ * console.log(pkg.versions[0]) // "25.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
@@ -67,6 +67,7 @@ export const fnaxnagithubioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.11.0',
     '25.10.0',
     '25.9.0',
     '25.8.0',
