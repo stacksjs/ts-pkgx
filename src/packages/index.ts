@@ -4910,6 +4910,7 @@ export interface Pantry {
   geni: typeof priverdevgeniPackage
   hcloud: typeof hetznercomhcloudPackage
   HDF5: typeof hdfgrouporghdf5Package
+  snaplet: typeof snapletdevcliPackage
   'man-db': typeof mandbgitlabiomandbPackage
   tailwindcss: typeof tailwindcsscomPackage
   chezmoi: typeof chezmoiioPackage
@@ -9160,6 +9161,7 @@ export const pantry: Pantry = {
   geni: priverdevgeniPackage,
   hcloud: hetznercomhcloudPackage,
   HDF5: hdfgrouporghdf5Package,
+  snaplet: snapletdevcliPackage,
   'man-db': mandbgitlabiomandbPackage,
   tailwindcss: tailwindcsscomPackage,
   chezmoi: chezmoiioPackage,
