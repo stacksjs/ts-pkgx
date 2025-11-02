@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `3.2.4`, `3.2.3`, `3.2.2`, `3.2.1`, `3.2.0`
-- `3.1.0`, `3.0.0`, `2.2.0`, `2.1.1`, `2.1.0`
-- `2.0.1`, `2.0.0`, `1.12.0`, `1.11.0`
+- `3.3.0`, `3.2.4`, `3.2.3`, `3.2.2`, `3.2.1`
+- `3.2.0`, `3.1.0`, `3.0.0`, `2.2.0`, `2.1.1`
+- `2.1.0`, `2.0.1`, `2.0.0`, `1.12.0`, `1.11.0`
 
 </details>
 
-**Latest Version**: `3.2.4`
+**Latest Version**: `3.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/caarlos0/svu@3.2.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/caarlos0/svu@3.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
