@@ -3,7 +3,7 @@
  *
  * @domain `felixkratz.github.io/SketchyBar`
  * @programs `sketchybar`
- * @version `2.22.1` (5 versions available)
+ * @version `2.23.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install felixkratz.github.io/SketchyBar`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "sketchybar"
  * console.log(pkg.description) // "A highly customizable macOS status bar replacement"
  * console.log(pkg.programs)    // ["sketchybar"]
- * console.log(pkg.versions[0]) // "2.22.1" (latest)
+ * console.log(pkg.versions[0]) // "2.23.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/felixkratz-github-io/SketchyBar.md
@@ -68,6 +68,7 @@ export const felixkratzgithubiosketchybarPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.23.0',
     '2.22.1',
     '2.22.0',
     '2.21.0',

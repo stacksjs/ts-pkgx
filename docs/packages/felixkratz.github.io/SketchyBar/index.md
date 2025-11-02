@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `2.22.1`, `2.22.0`, `2.21.0`, `2.20.1`, `2.20.0`
+- `2.23.0`, `2.22.1`, `2.22.0`, `2.21.0`, `2.20.1`
+- `2.20.0`
 
 </details>
 
-**Latest Version**: `2.22.1`
+**Latest Version**: `2.23.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +felixkratz.github.io/SketchyBar@2.22.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +felixkratz.github.io/SketchyBar@2.23.0 -- $SHELL -i
 ```
 
 ## Dependencies
