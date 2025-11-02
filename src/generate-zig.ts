@@ -16,6 +16,65 @@ interface ZigPackageDefinition {
   dependencies: string[]
   buildDependencies: string[]
   aliases: string[]
+  versions: string[]
+}
+
+/**
+ * Recursively find all TypeScript package files
+ */
+function findPackageFiles(dir: string): string[] {
+  const files: string[] = []
+  const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name)
+    if (entry.isDirectory()) {
+      // Recursively scan subdirectories
+      files.push(...findPackageFiles(fullPath))
+    }
+    else if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'index.ts' && entry.name !== 'aliases.ts') {
+      files.push(fullPath)
+    }
+  }
+
+  return files
+}
+
+/**
+ * Compare versions for sorting (newest to oldest)
+ * Handles semantic versions like "1.2.3", "1.2.3-beta", etc.
+ */
+function compareVersions(a: string, b: string): number {
+  // Remove 'v' prefix if present
+  const cleanA = a.startsWith('v') ? a.slice(1) : a
+  const cleanB = b.startsWith('v') ? b.slice(1) : b
+
+  const partsA = cleanA.split(/[.-]/)
+  const partsB = cleanB.split(/[.-]/)
+
+  for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+    const partA = partsA[i] || '0'
+    const partB = partsB[i] || '0'
+
+    const numA = Number.parseInt(partA, 10)
+    const numB = Number.parseInt(partB, 10)
+
+    if (!Number.isNaN(numA) && !Number.isNaN(numB)) {
+      if (numA > numB)
+        return -1 // a is newer
+      if (numA < numB)
+        return 1 // b is newer
+    }
+    else {
+      // Lexical comparison for non-numeric parts
+      if (partA > partB)
+        return -1
+      if (partA < partB)
+        return 1
+    }
+  }
+
+  return 0
 }
 
 /**
@@ -38,6 +97,7 @@ function packageToZigStruct(pkg: ZigPackageDefinition): string {
   const deps = pkg.dependencies.map(d => `"${escapeZigString(d)}"`).join(', ')
   const buildDeps = pkg.buildDependencies.map(d => `"${escapeZigString(d)}"`).join(', ')
   const aliases = pkg.aliases.map(a => `"${escapeZigString(a)}"`).join(', ')
+  const versions = pkg.versions.map(v => `"${escapeZigString(v)}"`).join(', ')
 
   return `    .{
         .name = "${escapeZigString(pkg.name)}",
@@ -48,6 +108,7 @@ function packageToZigStruct(pkg: ZigPackageDefinition): string {
         .dependencies = &[_][]const u8{ ${deps} },
         .build_dependencies = &[_][]const u8{ ${buildDeps} },
         .aliases = &[_][]const u8{ ${aliases} },
+        .versions = &[_][]const u8{ ${versions} },
     }`
 }
 
@@ -57,9 +118,8 @@ function packageToZigStruct(pkg: ZigPackageDefinition): string {
 export async function generateZigDefinitions(packagesDir: string, outputFile: string): Promise<void> {
   console.log(`🔍 Scanning packages directory: ${packagesDir}`)
 
-  // Read all TypeScript package files
-  const packageFiles = fs.readdirSync(packagesDir)
-    .filter(f => f.endsWith('.ts') && f !== 'index.ts' && f !== 'aliases.ts')
+  // Recursively find all TypeScript package files
+  const packageFiles = findPackageFiles(packagesDir)
 
   console.log(`📦 Found ${packageFiles.length} package files`)
 
@@ -67,29 +127,33 @@ export async function generateZigDefinitions(packagesDir: string, outputFile: st
   let processed = 0
   let errors = 0
 
-  for (const file of packageFiles) {
+  for (const filePath of packageFiles) {
     try {
-      const filePath = path.join(packagesDir, file)
       const content = fs.readFileSync(filePath, 'utf-8')
 
       // Extract the package constant name - format: export const bunPackage = { ... }
       const constMatch = content.match(/export const (\w+) = {/)
       if (!constMatch) {
-        console.warn(`⚠️  Could not find export const in ${file}`)
+        console.warn(`⚠️  Could not find export const in ${filePath}`)
         errors++
         continue
       }
 
       // Dynamically import the TypeScript file
-      const fileUrl = `file://${path.resolve(packagesDir, file)}`
+      const fileUrl = `file://${path.resolve(filePath)}`
       const module = await import(fileUrl)
       const pkgData = module[constMatch[1]]
 
       if (!pkgData || !pkgData.domain) {
-        console.warn(`⚠️  Invalid package data in ${file}`)
+        console.warn(`⚠️  Invalid package data in ${filePath}`)
         errors++
         continue
       }
+
+      // Sort versions from newest to oldest
+      const sortedVersions = Array.isArray(pkgData.versions)
+        ? [...pkgData.versions].sort(compareVersions)
+        : []
 
       packages.push({
         name: pkgData.name || pkgData.domain,
@@ -100,6 +164,7 @@ export async function generateZigDefinitions(packagesDir: string, outputFile: st
         dependencies: Array.isArray(pkgData.dependencies) ? pkgData.dependencies : [],
         buildDependencies: Array.isArray(pkgData.buildDependencies) ? pkgData.buildDependencies : [],
         aliases: Array.isArray(pkgData.aliases) ? pkgData.aliases : [],
+        versions: sortedVersions,
       })
 
       processed++
@@ -108,7 +173,7 @@ export async function generateZigDefinitions(packagesDir: string, outputFile: st
       }
     }
     catch (error) {
-      console.error(`❌ Error processing ${file}:`, error)
+      console.error(`❌ Error processing ${filePath}:`, error)
       errors++
     }
   }
@@ -150,6 +215,7 @@ pub const PackageInfo = struct {
     dependencies: []const []const u8,
     build_dependencies: []const []const u8,
     aliases: []const []const u8,
+    versions: []const []const u8,
 };
 
 /// All known packages (${packages.length} total)
@@ -238,22 +304,20 @@ test "Can find package by alias" {
 export async function generateZigAliases(packagesDir: string, outputFile: string): Promise<void> {
   console.log(`🔍 Generating Zig aliases from: ${packagesDir}`)
 
-  // Read all TypeScript package files
-  const packageFiles = fs.readdirSync(packagesDir)
-    .filter(f => f.endsWith('.ts') && f !== 'index.ts' && f !== 'aliases.ts')
+  // Recursively find all TypeScript package files
+  const packageFiles = findPackageFiles(packagesDir)
 
   const aliases: Record<string, string> = {}
 
-  for (const file of packageFiles) {
+  for (const filePath of packageFiles) {
     try {
-      const filePath = path.join(packagesDir, file)
       const content = fs.readFileSync(filePath, 'utf-8')
 
       const constMatch = content.match(/export const (\w+) = {/)
       if (!constMatch)
         continue
 
-      const fileUrl = `file://${path.resolve(packagesDir, file)}`
+      const fileUrl = `file://${path.resolve(filePath)}`
       const module = await import(fileUrl)
       const pkgData = module[constMatch[1]]
 
