@@ -2,7 +2,7 @@
  * **otp-27** - pkgx package
  *
  * @domain `elixir-lang.org/otp-27`
- * @version `1.19.1` (3 versions available)
+ * @version `1.19.2` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install elixir-lang.org/otp-27`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.elixirlangorgotp27
  * console.log(pkg.name)        // "otp-27"
- * console.log(pkg.versions[0]) // "1.19.1" (latest)
+ * console.log(pkg.versions[0]) // "1.19.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/elixir-lang-org/otp-27.md
@@ -58,6 +58,7 @@ export const elixirlangorgotp27Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.19.2',
     '1.19.1',
     '1.19.0',
     '1.18.4',
