@@ -3,7 +3,7 @@
  *
  * @domain `github.com/kubecolor/kubecolor`
  * @programs `kubecolor`
- * @version `0.5.2` (9 versions available)
+ * @version `0.5.3` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/kubecolor/kubecolor`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "kubecolor"
  * console.log(pkg.description) // "Colorize your kubectl output"
  * console.log(pkg.programs)    // ["kubecolor"]
- * console.log(pkg.versions[0]) // "0.5.2" (latest)
+ * console.log(pkg.versions[0]) // "0.5.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kubecolor/kubecolor.md
@@ -68,6 +68,7 @@ export const kubecolorPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.3',
     '0.5.2',
     '0.5.1',
     '0.5.0',

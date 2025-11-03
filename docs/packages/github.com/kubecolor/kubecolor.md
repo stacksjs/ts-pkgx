@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `0.5.2`, `0.5.1`, `0.5.0`, `0.4.0`, `0.3.3`
-- `0.3.2`, `0.3.1`, `0.3.0`, `0.2.2`
+- `0.5.3`, `0.5.2`, `0.5.1`, `0.5.0`, `0.4.0`
+- `0.3.3`, `0.3.2`, `0.3.1`, `0.3.0`, `0.2.2`
 
 </details>
 
-**Latest Version**: `0.5.2`
+**Latest Version**: `0.5.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/kubecolor/kubecolor@0.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kubecolor/kubecolor@0.5.3 -- $SHELL -i
 ```
 
 ## Usage Examples
