@@ -1,13 +1,11 @@
 /**
- * **lefthook** - Fast and powerful Git hooks manager for any type of projects.
+ * **lefthook** - pkgx package
  *
  * @domain `github.com/evilmartians/lefthook`
- * @programs `lefthook`
  * @version `2.0.2` (132 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/evilmartians/lefthook`
- * @homepage http://lefthook.dev/
  * @buildDependencies `curl.se` - required only when building from source
  *
  * @example
@@ -16,8 +14,6 @@
  *
  * const pkg = pantry.githubcomevilmartianslefthook
  * console.log(pkg.name)        // "lefthook"
- * console.log(pkg.description) // "Fast and powerful Git hooks manager for any typ..."
- * console.log(pkg.programs)    // ["lefthook"]
  * console.log(pkg.versions[0]) // "2.0.2" (latest)
  * ```
  *
@@ -36,10 +32,10 @@ export const lefthookPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Fast and powerful Git hooks manager for any type of projects.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/evilmartians/lefthook/package.yml' as const,
-  homepageUrl: 'http://lefthook.dev/' as const,
-  githubUrl: 'https://github.com/evilmartians/lefthook' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +43,7 @@ export const lefthookPackage = {
   installCommand: 'launchpad install github.com/evilmartians/lefthook' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/evilmartians/lefthook -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/evilmartians/lefthook' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'lefthook',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
