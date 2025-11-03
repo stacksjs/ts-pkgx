@@ -3,7 +3,7 @@
  *
  * @domain `mupdf.com`
  * @programs `mupdf-gl`, `muraster`, `mutool`
- * @version `1.26.10` (36 versions available)
+ * @version `1.26.11` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mupdf.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "mupdf"
  * console.log(pkg.description) // "Lightweight PDF and XPS viewer"
  * console.log(pkg.programs)    // ["mupdf-gl", "muraster", ...]
- * console.log(pkg.versions[0]) // "1.26.10" (latest)
+ * console.log(pkg.versions[0]) // "1.26.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mupdf-com.md
@@ -90,6 +90,7 @@ export const mupdfcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.26.11',
     '1.26.10',
     '1.26.9',
     '1.26.8',
