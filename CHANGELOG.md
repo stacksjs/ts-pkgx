@@ -1,3 +1,54 @@
+[Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.116...v0.4.117)
+
+### 🧹 Chores
+
+- release v0.4.117 ([5a2f57a](https://github.com/stacksjs/ts-pkgx/commit/5a2f57a))
+- wip ([accc835](https://github.com/stacksjs/ts-pkgx/commit/accc835))
+- update LLaMA.cpp, kubecolor, rio ([c1d4697](https://github.com/stacksjs/ts-pkgx/commit/c1d4697))
+- **deps**: update all non-major dependencies (#415) ([a7aff81](https://github.com/stacksjs/ts-pkgx/commit/a7aff81)) ([#415](https://github.com/stacksjs/ts-pkgx/issues/415), [#415](https://github.com/stacksjs/ts-pkgx/issues/415))
+- **deps**: update actions/checkout action to v5 (#25) ([6209c64](https://github.com/stacksjs/ts-pkgx/commit/6209c64)) ([#25](https://github.com/stacksjs/ts-pkgx/issues/25), [#25](https://github.com/stacksjs/ts-pkgx/issues/25))
+- update LLaMA.cpp, glib, mupdf ([8a55613](https://github.com/stacksjs/ts-pkgx/commit/8a55613))
+- update encore ([849a84d](https://github.com/stacksjs/ts-pkgx/commit/849a84d))
+- update steampipe ([e9451fe](https://github.com/stacksjs/ts-pkgx/commit/e9451fe))
+- update LLaMA.cpp, copa ([7b89729](https://github.com/stacksjs/ts-pkgx/commit/7b89729))
+- update LLaMA.cpp, SeaweedFS ([9612a2f](https://github.com/stacksjs/ts-pkgx/commit/9612a2f))
+- update aux4 ([9780f0a](https://github.com/stacksjs/ts-pkgx/commit/9780f0a))
+- update LLaMA.cpp ([3eadb00](https://github.com/stacksjs/ts-pkgx/commit/3eadb00))
+- update registry data (1 file) ([8ac49dc](https://github.com/stacksjs/ts-pkgx/commit/8ac49dc))
+- update apko ([39be6f3](https://github.com/stacksjs/ts-pkgx/commit/39be6f3))
+- update LLaMA.cpp ([a494a90](https://github.com/stacksjs/ts-pkgx/commit/a494a90))
+
+### Contributors
+
+- chrisbbreuer <chrisbreuer93@gmail.com>
+- glennmichael123 <gtorregosa@gmail.com>
+- renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+[Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.116...HEAD)
+
+### 🧹 Chores
+
+- wip ([accc835](https://github.com/stacksjs/ts-pkgx/commit/accc835))
+- update LLaMA.cpp, kubecolor, rio ([c1d4697](https://github.com/stacksjs/ts-pkgx/commit/c1d4697))
+- **deps**: update all non-major dependencies (#415) ([a7aff81](https://github.com/stacksjs/ts-pkgx/commit/a7aff81)) ([#415](https://github.com/stacksjs/ts-pkgx/issues/415), [#415](https://github.com/stacksjs/ts-pkgx/issues/415))
+- **deps**: update actions/checkout action to v5 (#25) ([6209c64](https://github.com/stacksjs/ts-pkgx/commit/6209c64)) ([#25](https://github.com/stacksjs/ts-pkgx/issues/25), [#25](https://github.com/stacksjs/ts-pkgx/issues/25))
+- update LLaMA.cpp, glib, mupdf ([8a55613](https://github.com/stacksjs/ts-pkgx/commit/8a55613))
+- update encore ([849a84d](https://github.com/stacksjs/ts-pkgx/commit/849a84d))
+- update steampipe ([e9451fe](https://github.com/stacksjs/ts-pkgx/commit/e9451fe))
+- update LLaMA.cpp, copa ([7b89729](https://github.com/stacksjs/ts-pkgx/commit/7b89729))
+- update LLaMA.cpp, SeaweedFS ([9612a2f](https://github.com/stacksjs/ts-pkgx/commit/9612a2f))
+- update aux4 ([9780f0a](https://github.com/stacksjs/ts-pkgx/commit/9780f0a))
+- update LLaMA.cpp ([3eadb00](https://github.com/stacksjs/ts-pkgx/commit/3eadb00))
+- update registry data (1 file) ([8ac49dc](https://github.com/stacksjs/ts-pkgx/commit/8ac49dc))
+- update apko ([39be6f3](https://github.com/stacksjs/ts-pkgx/commit/39be6f3))
+- update LLaMA.cpp ([a494a90](https://github.com/stacksjs/ts-pkgx/commit/a494a90))
+
+### Contributors
+
+- chrisbbreuer <chrisbreuer93@gmail.com>
+- glennmichael123 <gtorregosa@gmail.com>
+- renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
 [Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.90...v0.4.91)
 
 ### 🧹 Chores
