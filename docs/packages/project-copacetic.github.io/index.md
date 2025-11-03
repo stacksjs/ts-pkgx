@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `0.11.1`, `0.11.0`, `0.10.0`, `0.9.0`, `0.8.0`
-- `0.7.0`, `0.6.2`
+- `0.12.0`, `0.11.1`, `0.11.0`, `0.10.0`, `0.9.0`
+- `0.8.0`, `0.7.0`, `0.6.2`
 
 </details>
 
-**Latest Version**: `0.11.1`
+**Latest Version**: `0.12.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +project-copacetic.github.io@0.11.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +project-copacetic.github.io@0.12.0 -- $SHELL -i
 ```
 
 ## Usage Examples
