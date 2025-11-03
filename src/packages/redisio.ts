@@ -3,7 +3,7 @@
  *
  * @domain `redis.io`
  * @programs `redis-server`, `redis-cli`, `redis-benchmark`
- * @version `8.2.3` (51 versions available)
+ * @version `8.2.3` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install redis.io`
@@ -80,6 +80,7 @@ export const redisioPackage = {
     '8.0.2',
     '8.0.1',
     '8.0.0',
+    '7.4.7',
     '7.4.6',
     '7.4.5',
     '7.4.4',
