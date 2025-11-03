@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 /**
  * Script to generate the index.ts file for packages directory and documentation
  * This will scan the packages directory and automatically create imports and exports

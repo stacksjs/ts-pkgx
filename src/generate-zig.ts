@@ -1,4 +1,3 @@
-import type { PkgxPackage } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -132,7 +131,7 @@ export async function generateZigDefinitions(packagesDir: string, outputFile: st
       const content = fs.readFileSync(filePath, 'utf-8')
 
       // Extract the package constant name - format: export const bunPackage = { ... }
-      const constMatch = content.match(/export const (\w+) = {/)
+      const constMatch = content.match(/export const (\w+) = \{/)
       if (!constMatch) {
         console.warn(`⚠️  Could not find export const in ${filePath}`)
         errors++
@@ -313,7 +312,7 @@ export async function generateZigAliases(packagesDir: string, outputFile: string
     try {
       const content = fs.readFileSync(filePath, 'utf-8')
 
-      const constMatch = content.match(/export const (\w+) = {/)
+      const constMatch = content.match(/export const (\w+) = \{/)
       if (!constMatch)
         continue
 
@@ -343,6 +342,7 @@ export async function generateZigAliases(packagesDir: string, outputFile: string
       }
     }
     catch (error) {
+      console.error(`Error processing ${filePath}:`, error)
       // Ignore errors
     }
   }

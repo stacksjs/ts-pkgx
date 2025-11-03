@@ -164,18 +164,15 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
       return []
     }
 
-    // eslint-disable-next-line no-console
     console.log(`Single package mode: only fetching '${singlePackage}'`)
     return [singlePackage]
   }
 
-  // eslint-disable-next-line no-console
   console.log('Fetching package list from GitHub API...')
 
   // Check cache first
   const cachedPackages = getGitHubPackageCache()
   if (cachedPackages) {
-    // eslint-disable-next-line no-console
     console.log('Using cached package list, no GitHub API calls needed')
     return limit > 0 ? cachedPackages.slice(0, limit) : cachedPackages
   }

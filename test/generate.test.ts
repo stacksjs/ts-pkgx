@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import type { PkgxPackage } from '../src/types'
 import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'

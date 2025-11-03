@@ -1,5 +1,4 @@
 #!/usr/bin/env bun
-/* eslint-disable no-console */
 
 import { isClientSideRendered, scrapeClientSide } from 'ts-web-scraper'
 import { scrapePkgxIndex, scrapePkgxPackage } from './src/pkgx-scraper'
