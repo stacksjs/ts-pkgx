@@ -3,7 +3,7 @@
  *
  * @domain `pkl-lang.org`
  * @programs `jpkl`, `pkl`
- * @version `0.29.1` (14 versions available)
+ * @version `0.30.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pkl-lang.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pkl-lang"
  * console.log(pkg.description) // "A configuration as code language with rich vali..."
  * console.log(pkg.programs)    // ["jpkl", "pkl"]
- * console.log(pkg.versions[0]) // "0.29.1" (latest)
+ * console.log(pkg.versions[0]) // "0.30.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pkl-lang-org.md
@@ -72,6 +72,7 @@ export const pkllangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.30.0',
     '0.29.1',
     '0.29.0',
     '0.28.2',
