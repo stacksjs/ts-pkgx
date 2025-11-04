@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `1.33.0`, `1.32.0`, `1.31.0`, `1.30.0`, `1.29.0`
-- `1.28.0`, `1.27.0`, `1.26.0`
+- `1.33.1`, `1.33.0`, `1.32.0`, `1.31.0`, `1.30.0`
+- `1.29.0`, `1.28.0`, `1.27.0`, `1.26.0`
 
 </details>
 
-**Latest Version**: `1.33.0`
+**Latest Version**: `1.33.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/stern/stern@1.33.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/stern/stern@1.33.1 -- $SHELL -i
 ```
 
 ## Usage Examples
