@@ -3,7 +3,7 @@
  *
  * @domain `ohmyposh.dev`
  * @programs `oh-my-posh`
- * @version `27.4.4` (347 versions available)
+ * @version `27.5.0` (348 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ohmyposh.dev`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "oh-my-posh"
  * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
  * console.log(pkg.programs)    // ["oh-my-posh"]
- * console.log(pkg.versions[0]) // "27.4.4" (latest)
+ * console.log(pkg.versions[0]) // "27.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
@@ -68,6 +68,7 @@ export const ohmyposhdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '27.5.0',
     '27.4.4',
     '27.4.3',
     '27.4.2',
