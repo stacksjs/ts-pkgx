@@ -9,7 +9,7 @@
  * @install `launchpad install ansible.com`
  * @homepage https://www.ansible.com/
  * @dependencies `pkgx.sh@1`
- * @buildDependencies `python.org@>=3.7<3.12` - required only when building from source
+ * @buildDependencies `python.org@>=3.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -78,7 +78,7 @@ export const ansiblecomPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'python.org@>=3.7<3.12',
+    'python.org@>=3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
