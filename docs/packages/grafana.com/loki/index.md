@@ -25,24 +25,24 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 28 versions</summary>
+<summary>Show all 29 versions</summary>
 
-- `3.5.7`, `3.5.6`, `3.5.5`, `3.5.4`, `3.5.3`
-- `3.5.2`, `3.5.1`, `3.5.0`, `3.4.6`, `3.4.5`
-- `3.4.4`, `3.4.3`, `3.4.2`, `3.4.1`, `3.4.0`
-- `3.3.4`, `3.3.3`, `3.3.2`, `3.3.1`, `3.3.0`
-- `3.2.2`, `3.2.1`, `3.2.0`, `2.9.15`, `2.9.14`
-- `2.9.13`, `2.9.12`, `2.9.11`
+- `3.5.8`, `3.5.7`, `3.5.6`, `3.5.5`, `3.5.4`
+- `3.5.3`, `3.5.2`, `3.5.1`, `3.5.0`, `3.4.6`
+- `3.4.5`, `3.4.4`, `3.4.3`, `3.4.2`, `3.4.1`
+- `3.4.0`, `3.3.4`, `3.3.3`, `3.3.2`, `3.3.1`
+- `3.3.0`, `3.2.2`, `3.2.1`, `3.2.0`, `2.9.15`
+- `2.9.14`, `2.9.13`, `2.9.12`, `2.9.11`
 
 </details>
 
-**Latest Version**: `3.5.7`
+**Latest Version**: `3.5.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +grafana.com/loki@3.5.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +grafana.com/loki@3.5.8 -- $SHELL -i
 ```
 
 ## Usage Examples
