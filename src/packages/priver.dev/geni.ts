@@ -3,7 +3,7 @@
  *
  * @domain `priver.dev/geni`
  * @programs `geni`
- * @version `2023.12.27` (33 versions available)
+ * @version `2023.12.27` (34 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install priver.dev/geni`
@@ -61,6 +61,7 @@ export const priverdevgeniPackage = {
    */
   versions: [
     '2023.12.27',
+    '1.1.7',
     '1.1.6',
     '1.1.5',
     '1.1.4',
