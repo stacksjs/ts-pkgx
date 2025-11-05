@@ -313,14 +313,20 @@ export type ExactDependency<K extends PackageName, V> =
       : never
 
 /**
- * Alternative approach using exact matching
+ * Clean dependencies type without the never constraint
+ * This version works better when re-exported from other packages
  */
-export type ValueErrorDependencies = {
+export type CleanDependencies = {
   readonly [K in PackageName]?: StrictVersionConstraint<K> | {
     version?: StrictVersionConstraint<K>
     global?: boolean
   }
-} & Record<string, never>
+}
+
+/**
+ * Alternative approach using exact matching
+ */
+export type ValueErrorDependencies = CleanDependencies & Record<string, never>
 
 /**
  * Advanced dependency object type that forces precise error locations
