@@ -83,13 +83,12 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "dependencies": {
-    "bun-plugin-dtsx": "^0.21.17",
     "ts-web-scraper": "^0.1.1"
   },
   "devDependencies": {
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
-    "better-dx": "^0.2.0"
+    "better-dx": "^0.2.2"
   },
   "git-hooks": {
     "pre-commit": {
