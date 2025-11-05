@@ -1,3 +1,68 @@
+[Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.119...v0.4.120)
+
+### 🧹 Chores
+
+- release v0.4.120 ([1cc7ed0](https://github.com/stacksjs/ts-pkgx/commit/1cc7ed0)) _(by Chris <chrisbreuer93@gmail.com>)_
+- update deps ([43f76fb](https://github.com/stacksjs/ts-pkgx/commit/43f76fb)) _(by Chris <chrisbreuer93@gmail.com>)_
+- update aws-sdk-cpp, opencode.ai ([8f84261](https://github.com/stacksjs/ts-pkgx/commit/8f84261)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update aws/cli, dagger, LLaMA.cpp, opencode.ai ([0cd503d](https://github.com/stacksjs/ts-pkgx/commit/0cd503d)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- add `CleanDependencies` type ([3522511](https://github.com/stacksjs/ts-pkgx/commit/3522511)) _(by Chris <chrisbreuer93@gmail.com>)_
+- update elizaOS, go, loki, oh-my-posh, pulumi and 1 other dep ([463cf1f](https://github.com/stacksjs/ts-pkgx/commit/463cf1f)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update stress-ng, opencode.ai, geni ([e3be182](https://github.com/stacksjs/ts-pkgx/commit/e3be182)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update istioctl ([39dd31b](https://github.com/stacksjs/ts-pkgx/commit/39dd31b)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update docker/cli, lavinmq, postgrest ([f014b65](https://github.com/stacksjs/ts-pkgx/commit/f014b65)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update databricks, daytona, LLaMA.cpp, glab and 2 other deps ([d031539](https://github.com/stacksjs/ts-pkgx/commit/d031539)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update ng, re2, projen, terragrunt, trufflehog ([53a9467](https://github.com/stacksjs/ts-pkgx/commit/53a9467)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp, buildkit, ipython ([a1c66ad](https://github.com/stacksjs/ts-pkgx/commit/a1c66ad)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update spider, libcython, cython, groonga and 1 other dep ([dd17ec5](https://github.com/stacksjs/ts-pkgx/commit/dd17ec5)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp ([7ab41c9](https://github.com/stacksjs/ts-pkgx/commit/7ab41c9)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp, opa, xkbcli ([aeb4a95](https://github.com/stacksjs/ts-pkgx/commit/aeb4a95)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update vite ([8340433](https://github.com/stacksjs/ts-pkgx/commit/8340433)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update cURL, opencode.ai ([7e73bd1](https://github.com/stacksjs/ts-pkgx/commit/7e73bd1)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update harfbuzz ([ed12721](https://github.com/stacksjs/ts-pkgx/commit/ed12721)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp ([d3ea2b1](https://github.com/stacksjs/ts-pkgx/commit/d3ea2b1)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update ansible, gitleaks, opencode.ai, exr ([595c0b3](https://github.com/stacksjs/ts-pkgx/commit/595c0b3)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update registry data (4 files) ([06ed7dd](https://github.com/stacksjs/ts-pkgx/commit/06ed7dd)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update odigos, exr ([43acace](https://github.com/stacksjs/ts-pkgx/commit/43acace)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update ansible, LLaMA.cpp, pike, opencode.ai and 1 other dep ([3423904](https://github.com/stacksjs/ts-pkgx/commit/3423904)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+
+### Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+- _chrisbbreuer <chrisbreuer93@gmail.com>_
+
+[Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.119...HEAD)
+
+### 🧹 Chores
+
+- update deps ([43f76fb](https://github.com/stacksjs/ts-pkgx/commit/43f76fb)) _(by Chris <chrisbreuer93@gmail.com>)_
+- update aws-sdk-cpp, opencode.ai ([8f84261](https://github.com/stacksjs/ts-pkgx/commit/8f84261)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update aws/cli, dagger, LLaMA.cpp, opencode.ai ([0cd503d](https://github.com/stacksjs/ts-pkgx/commit/0cd503d)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- add `CleanDependencies` type ([3522511](https://github.com/stacksjs/ts-pkgx/commit/3522511)) _(by Chris <chrisbreuer93@gmail.com>)_
+- update elizaOS, go, loki, oh-my-posh, pulumi and 1 other dep ([463cf1f](https://github.com/stacksjs/ts-pkgx/commit/463cf1f)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update stress-ng, opencode.ai, geni ([e3be182](https://github.com/stacksjs/ts-pkgx/commit/e3be182)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update istioctl ([39dd31b](https://github.com/stacksjs/ts-pkgx/commit/39dd31b)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update docker/cli, lavinmq, postgrest ([f014b65](https://github.com/stacksjs/ts-pkgx/commit/f014b65)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update databricks, daytona, LLaMA.cpp, glab and 2 other deps ([d031539](https://github.com/stacksjs/ts-pkgx/commit/d031539)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update ng, re2, projen, terragrunt, trufflehog ([53a9467](https://github.com/stacksjs/ts-pkgx/commit/53a9467)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp, buildkit, ipython ([a1c66ad](https://github.com/stacksjs/ts-pkgx/commit/a1c66ad)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update spider, libcython, cython, groonga and 1 other dep ([dd17ec5](https://github.com/stacksjs/ts-pkgx/commit/dd17ec5)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp ([7ab41c9](https://github.com/stacksjs/ts-pkgx/commit/7ab41c9)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp, opa, xkbcli ([aeb4a95](https://github.com/stacksjs/ts-pkgx/commit/aeb4a95)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update vite ([8340433](https://github.com/stacksjs/ts-pkgx/commit/8340433)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update cURL, opencode.ai ([7e73bd1](https://github.com/stacksjs/ts-pkgx/commit/7e73bd1)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update harfbuzz ([ed12721](https://github.com/stacksjs/ts-pkgx/commit/ed12721)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update LLaMA.cpp ([d3ea2b1](https://github.com/stacksjs/ts-pkgx/commit/d3ea2b1)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update ansible, gitleaks, opencode.ai, exr ([595c0b3](https://github.com/stacksjs/ts-pkgx/commit/595c0b3)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update registry data (4 files) ([06ed7dd](https://github.com/stacksjs/ts-pkgx/commit/06ed7dd)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update odigos, exr ([43acace](https://github.com/stacksjs/ts-pkgx/commit/43acace)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+- update ansible, LLaMA.cpp, pike, opencode.ai and 1 other dep ([3423904](https://github.com/stacksjs/ts-pkgx/commit/3423904)) _(by chrisbbreuer <chrisbreuer93@gmail.com>)_
+
+### Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+- _chrisbbreuer <chrisbreuer93@gmail.com>_
+
 [Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.116...v0.4.117)
 
 ### 🧹 Chores
