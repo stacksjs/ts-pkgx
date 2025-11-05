@@ -2,7 +2,7 @@
  * **re2** - RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
  *
  * @domain `github.com/google/re2`
- * @version `2025.8.12` (10 versions available)
+ * @version `2025.11.5` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/google/re2`
@@ -16,7 +16,7 @@
  * const pkg = pantry.githubcomgooglere2
  * console.log(pkg.name)        // "re2"
  * console.log(pkg.description) // "RE2 is a fast, safe, thread-friendly alternativ..."
- * console.log(pkg.versions[0]) // "2025.8.12" (latest)
+ * console.log(pkg.versions[0]) // "2025.11.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/re2.md
@@ -66,6 +66,7 @@ export const re2Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.11.5',
     '2025.8.12',
     '2025.8.5',
     '2025.7.22',
