@@ -3,7 +3,7 @@
  *
  * @domain `openexr.com`
  * @programs `exr2aces`, `exrenvmap`, `exrheader`, `exrmakepreview`, `exrmaketiled`, ... (+3 more)
- * @version `3.4.2` (24 versions available)
+ * @version `3.4.2` (26 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openexr.com`
@@ -90,6 +90,7 @@ export const openexrcomPackage = {
     '3.4.2',
     '3.4.1',
     '3.4.0',
+    '3.3.6',
     '3.3.5',
     '3.3.4',
     '3.3.3',
@@ -97,6 +98,7 @@ export const openexrcomPackage = {
     '3.3.1',
     '3.3.0',
     '3.2.126',
+    '3.2.5',
     '3.2.4',
     '3.2.3',
     '3.2.2',
