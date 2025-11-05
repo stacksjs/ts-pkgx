@@ -1,7 +1,7 @@
 {
   "name": "ts-pkgx",
   "type": "module",
-  "version": "0.4.117",
+  "version": "0.4.119",
   "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
@@ -89,7 +89,7 @@
   "devDependencies": {
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
-    "better-dx": "^0.2.0"
+    "better-dx": "^0.2.1"
   },
   "git-hooks": {
     "pre-commit": {
