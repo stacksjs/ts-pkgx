@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-04T23:10:34.238Z
+- **Last Updated**: 2025-11-05T00:25:33.671Z
 
 ## Table of Contents
 
@@ -98,7 +98,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[opensearch.org](./packages/opensearch.org/index.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+12) | `pkgx opensearch` |
 | **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.7 (+17) | `pkgx postgrest` |
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.2.3 (+51) | `pkgx redis` |
-| **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.4 (+28) | `pkgx sqlite3` |
+| **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.51.0 (+29) | `pkgx sqlite3` |
 | **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+56) | `pkgx surreal` |
 | **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.15 (+93) | `pkgx turso` |
 | **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 9.0.0 (+19) | `pkgx valkey` |
@@ -120,7 +120,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.19.3 (+78) | `pkgx ansible` |
+| **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.20.0 (+81) | `pkgx ansible` |
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.9.2 (+29) | `pkgx ansible-lint` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.22.0 (+15) | `pkgx consul` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.40.3 (+65) | `pkgx docker-compose` |

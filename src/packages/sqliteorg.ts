@@ -3,7 +3,7 @@
  *
  * @domain `sqlite.org`
  * @programs `sqlite3`
- * @version `3.50.4` (29 versions available)
+ * @version `3.51.0` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sqlite.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "sqlite3"
  * console.log(pkg.description) // "Official Git mirror of the SQLite source tree"
  * console.log(pkg.programs)    // ["sqlite3"]
- * console.log(pkg.versions[0]) // "3.50.4" (latest)
+ * console.log(pkg.versions[0]) // "3.51.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sqlite-org.md
@@ -69,6 +69,7 @@ export const sqliteorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.51.0',
     '3.50.4',
     '3.50.3',
     '3.50.2',
