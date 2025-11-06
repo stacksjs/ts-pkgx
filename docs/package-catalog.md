@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-05T23:11:02.621Z
+- **Last Updated**: 2025-11-06T11:10:13.503Z
 
 ## Table of Contents
 
@@ -112,7 +112,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.23.0 (+23) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.15.1 (+55) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.16 (+50) | `pkgx tailwindcss` |
-| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.0 (+128) | `pkgx vite` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.1 (+129) | `pkgx vite` |
 
 ## DevOps
 
@@ -370,7 +370,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.145.2 (+37) | `pkgx sam` |
-| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.207 (+458) | `pkgx fly` |
+| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.209 (+460) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.15.0 (+39) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.10.0 (+29) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.259.0 (+81) | `pkgx pscale` |

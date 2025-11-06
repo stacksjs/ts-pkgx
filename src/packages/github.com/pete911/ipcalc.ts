@@ -2,7 +2,7 @@
  * **ipcalc** - pkgx package
  *
  * @domain `github.com/pete911/ipcalc`
- * @version `1.0.3` (1 versions available)
+ * @version `1.0.4` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/pete911/ipcalc`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.githubcompete911ipcalc
  * console.log(pkg.name)        // "ipcalc"
- * console.log(pkg.versions[0]) // "1.0.3" (latest)
+ * console.log(pkg.versions[0]) // "1.0.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/pete911/ipcalc.md
@@ -58,6 +58,7 @@ export const ipcalcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.4',
     '1.0.3',
   ] as const,
   aliases: [] as const,
