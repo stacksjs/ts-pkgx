@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-06T15:13:00.167Z
+- **Last Updated**: 2025-11-06T16:11:15.683Z
 
 ## Table of Contents
 
@@ -111,7 +111,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.23.0 (+23) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.15.1 (+55) | `pkgx symfony` |
-| **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.16 (+50) | `pkgx tailwindcss` |
+| **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.17 (+51) | `pkgx tailwindcss` |
 | **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.1 (+129) | `pkgx vite` |
 
 ## DevOps
@@ -256,7 +256,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crates.io/bat](./packages/crates.io/bat/index.md)** () | Clone of cat(1) with syntax highlighting and Git integration | bat | 0.26.0 (+4) | `pkgx bat` |
-| **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.11.2 (+14) | `pkgx btm` |
+| **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.11.3 (+15) | `pkgx btm` |
 | **[crates.io/drill](./packages/crates.io/drill/index.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
 | **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.3 (+7) | `pkgx dust` |
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
