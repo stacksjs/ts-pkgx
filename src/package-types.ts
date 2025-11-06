@@ -5,15 +5,17 @@
 import type { Packages } from './packages'
 import process from 'node:process'
 import { aliases } from './packages/aliases'
+import type {
+  GeneratedPackageDomain,
+  GeneratedPackageAlias,
+  GeneratedPackageName,
+  GeneratedPackageVersions,
+} from './generated-package-names'
 
-// Extract all package alias names from ts-pkgx
-export type PackageAlias = keyof typeof aliases
-
-// Extract all package domain names from ts-pkgx packages
-export type PackageDomain = keyof Packages
-
-// Union type of all valid package identifiers (aliases + domains)
-export type PackageName = PackageAlias | PackageDomain
+// Use pre-generated types to avoid TypeScript limitations with large unions
+export type PackageAlias = GeneratedPackageAlias
+export type PackageDomain = GeneratedPackageDomain
+export type PackageName = GeneratedPackageName
 
 // Type for package with optional version specification
 export type PackageSpec = `${PackageName}` | `${PackageName}@${string}`
@@ -264,6 +266,7 @@ export function isPackageInCategory(packageName: string, category: keyof typeof 
 
 /**
  * Extract available versions for a specific package
+ * Uses pre-generated version mappings for domains to avoid TypeScript performance issues
  */
 export type PackageVersions<T extends PackageName> = T extends keyof Packages
   ? Packages[T] extends { versions: readonly (infer V)[] }
@@ -271,7 +274,9 @@ export type PackageVersions<T extends PackageName> = T extends keyof Packages
       ? V
       : never
     : never
-  : never
+  : T extends keyof GeneratedPackageVersions
+    ? GeneratedPackageVersions[T]
+    : never
 
 /**
  * Strict version constraint that only allows valid versions for a package
@@ -313,26 +318,40 @@ export type ExactDependency<K extends PackageName, V> =
       : never
 
 /**
- * Clean dependencies type without the never constraint
- * This version works better when re-exported from other packages
+ * Clean dependencies type with explicit version expansion for better IntelliSense
+ * This version shows actual valid versions when hovering over package names
  */
 export type CleanDependencies = {
-  readonly [K in PackageName]?: StrictVersionConstraint<K> | {
-    version?: StrictVersionConstraint<K>
-    global?: boolean
-  }
+  readonly [K in PackageName]?:
+    | PackageVersions<K>
+    | `^${PackageVersions<K>}`
+    | `~${PackageVersions<K>}`
+    | `>=${PackageVersions<K>}`
+    | `<=${PackageVersions<K>}`
+    | `>${PackageVersions<K>}`
+    | `<${PackageVersions<K>}`
+    | 'latest'
+    | '*'
+    | {
+        version?:
+          | PackageVersions<K>
+          | `^${PackageVersions<K>}`
+          | `~${PackageVersions<K>}`
+          | `>=${PackageVersions<K>}`
+          | `<=${PackageVersions<K>}`
+          | `>${PackageVersions<K>}`
+          | `<${PackageVersions<K>}`
+          | 'latest'
+          | '*'
+        global?: boolean
+      }
 }
 
 /**
- * Alternative approach using exact matching
- */
-export type ValueErrorDependencies = CleanDependencies & Record<string, never>
-
-/**
- * Advanced dependency object type that forces precise error locations
+ * Advanced dependency object type with version validation
  * Usage: const deps: Dependencies = { 'bun.com': '^1.2.19' }
  */
-export type Dependencies = ValueErrorDependencies
+export type Dependencies = CleanDependencies
 
 /**
  * Version validation function that forces TypeScript to check the version at the call site
