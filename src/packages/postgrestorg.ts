@@ -75,7 +75,7 @@ export const postgrestorgPackage = {
     'haskell.org@~9.8',
     'haskell.org/cabal@^3',
     'linux:gnu.org/gcc',
-    'linux:gnu.org/binutils',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.
