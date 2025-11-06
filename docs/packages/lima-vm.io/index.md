@@ -31,24 +31,24 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 29 versions</summary>
+<summary>Show all 30 versions</summary>
 
-- `2.0.0`, `1.2.2`, `1.2.1`, `1.2.0`, `1.1.1`
-- `1.1.0`, `1.0.7`, `1.0.6`, `1.0.5`, `1.0.4`
-- `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`, `0.23.2`
-- `0.23.1`, `0.23.0`, `0.22.0`, `0.21.0`, `0.20.2`
-- `0.20.1`, `0.20.0`, `0.19.1`, `0.19.0`, `0.18.0`
-- `0.17.2`, `0.17.1`, `0.17.0`, `0.16.0`
+- `2.0.1`, `2.0.0`, `1.2.2`, `1.2.1`, `1.2.0`
+- `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`, `1.0.5`
+- `1.0.4`, `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`
+- `0.23.2`, `0.23.1`, `0.23.0`, `0.22.0`, `0.21.0`
+- `0.20.2`, `0.20.1`, `0.20.0`, `0.19.1`, `0.19.0`
+- `0.18.0`, `0.17.2`, `0.17.1`, `0.17.0`, `0.16.0`
 
 </details>
 
-**Latest Version**: `2.0.0`
+**Latest Version**: `2.0.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lima-vm.io@2.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +lima-vm.io@2.0.1 -- $SHELL -i
 ```
 
 ## Dependencies
