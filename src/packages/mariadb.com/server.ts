@@ -3,7 +3,7 @@
  *
  * @domain `mariadb.com/server`
  * @programs `aria_chk`, `aria_dump_log`, `aria_ftdump`, `aria_pack`, `aria_read_log`, ... (+79 more)
- * @version `12.1.1` (32 versions available)
+ * @version `12.1.1` (36 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mariadb.com/server`
@@ -173,6 +173,7 @@ export const mariadbcomserverPackage = {
     '12.1.1',
     '12.0.2',
     '12.0.1',
+    '11.8.4',
     '11.8.3',
     '11.8.2',
     '11.8.1',
@@ -183,6 +184,7 @@ export const mariadbcomserverPackage = {
     '11.6.1',
     '11.5.2',
     '11.5.1',
+    '11.4.9',
     '11.4.8',
     '11.4.7',
     '11.4.6',
@@ -193,10 +195,12 @@ export const mariadbcomserverPackage = {
     '11.3.1',
     '11.2.2',
     '11.2.1',
+    '10.11.15',
     '10.11.14',
     '10.11.13',
     '10.11.12',
     '10.11.11',
+    '10.6.24',
     '10.6.23',
     '10.6.22',
     '10.6.21',
