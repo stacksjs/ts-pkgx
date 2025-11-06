@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `0.15.0`, `0.14.0`, `0.13.0`, `0.12.1`, `0.12.0`
-- `0.11.0`, `0.10.0`
+- `0.16.1`, `0.15.0`, `0.14.0`, `0.13.0`, `0.12.1`
+- `0.12.0`, `0.11.0`, `0.10.0`
 
 </details>
 
-**Latest Version**: `0.15.0`
+**Latest Version**: `0.16.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mergiraf.org@0.15.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +mergiraf.org@0.16.1 -- $SHELL -i
 ```
 
 ## Usage Examples
