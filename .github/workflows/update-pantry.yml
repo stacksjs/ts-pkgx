@@ -88,6 +88,11 @@ jobs:
           bun bin/cli.ts generate-consts --source pantry
         timeout-minutes: 5
 
+      - name: Generate package types
+        if: steps.update-pantry.outputs.success == 'true'
+        run: bun scripts/generate-package-types.ts
+        timeout-minutes: 5
+
       - name: Show git status after pantry update
         run: |
           echo "=== Git Status After Pantry Update ==="
@@ -143,11 +148,11 @@ jobs:
           echo "Git status:"
           git status --porcelain
 
-          # Check for changes in pantry or consts
-          CHANGES=$(git status --porcelain src/pantry/ src/consts.ts 2>/dev/null || echo "")
+          # Check for changes in pantry, consts, or generated types
+          CHANGES=$(git status --porcelain src/pantry/ src/consts.ts src/generated-package-names.ts 2>/dev/null || echo "")
 
           if [[ -z "$CHANGES" ]]; then
-            echo "No changes detected in src/pantry/ or src/consts.ts"
+            echo "No changes detected in src/pantry/, src/consts.ts, or src/generated-package-names.ts"
             echo "changes=false" >> $GITHUB_OUTPUT
           else
             echo "Changes detected:"
@@ -176,7 +181,7 @@ jobs:
           fi
 
           # Add and commit changes
-          git add src/pantry/ src/consts.ts
+          git add src/pantry/ src/consts.ts src/generated-package-names.ts
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated pantry update via GitHub Actions workflow"
 
           # Push changes

@@ -217,6 +217,10 @@ jobs:
         run: bun bin/cli.ts generate-docs
         timeout-minutes: 5
 
+      - name: Generate package types
+        run: bun scripts/generate-package-types.ts
+        timeout-minutes: 5
+
       - name: Show git status after all generation
         run: |
           echo "=== Git Status After All Generation ==="
@@ -400,11 +404,11 @@ jobs:
           echo "=== End full git status ==="
 
           # Check for changes in the specific directories we care about
-          CHANGES=$(git status --porcelain src/packages/ docs/ 2>/dev/null || echo "")
+          CHANGES=$(git status --porcelain src/packages/ docs/ src/generated-package-names.ts 2>/dev/null || echo "")
 
-          echo "=== Checking src/packages/ and docs/ for changes ==="
+          echo "=== Checking src/packages/, docs/, and src/generated-package-names.ts for changes ==="
           if [[ -z "$CHANGES" ]]; then
-            echo "❌ No changes detected in src/packages/ or docs/"
+            echo "❌ No changes detected in src/packages/, docs/, or src/generated-package-names.ts"
             echo "changes=false" >> $GITHUB_OUTPUT
           else
             echo "✅ Changes detected:"
@@ -422,7 +426,7 @@ jobs:
           echo "Total packages updated: ${{ steps.commit-message.outputs.total_updated }}"
 
           if [[ "${{ steps.git-check.outputs.changes }}" != "true" ]]; then
-            echo "⚠️  Commit will be SKIPPED: No git changes detected in src/packages/ or docs/"
+            echo "⚠️  Commit will be SKIPPED: No git changes detected in src/packages/, docs/, or src/generated-package-names.ts"
           elif [[ "${{ steps.commit-message.outputs.should_commit }}" != "true" ]]; then
             echo "⚠️  Commit will be SKIPPED: should_commit is false"
           else
@@ -437,7 +441,7 @@ jobs:
           echo "Checking for excessive line deletions..."
 
           # Get git diff stats for staged and unstaged changes
-          DELETIONS=$(git diff --numstat HEAD src/packages/ docs/ | awk '{deleted += $2} END {print deleted+0}')
+          DELETIONS=$(git diff --numstat HEAD src/packages/ docs/ src/generated-package-names.ts | awk '{deleted += $2} END {print deleted+0}')
 
           echo "Total lines to be deleted: $DELETIONS"
 
@@ -477,7 +481,7 @@ jobs:
           fi
 
           # Add and commit changes
-          git add src/packages/ docs/
+          git add src/packages/ docs/ src/generated-package-names.ts
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
 
           # Push changes
