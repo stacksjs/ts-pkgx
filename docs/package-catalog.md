@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-07T21:11:27.280Z
+- **Last Updated**: 2025-11-07T22:10:21.643Z
 
 ## Table of Contents
 
@@ -224,7 +224,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.12.2 (+6) | `pkgx luarocks` |
 | **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.11.2 (+387) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.41.0 (+34) | `pkgx nixpacks` |
-| **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.2 (+14) | `pkgx corepack` |
+| **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.3 (+15) | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.2 (+67) | `pkgx npm` |
 | **[pdm.fming.dev](./packages/pdm.fming.dev/index.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.26.1 (+75) | `pkgx pdm` |
 | **[pip.pypa.io](./packages/pip.pypa.io/index.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.3.0 (+28) | `pkgx pip` |
