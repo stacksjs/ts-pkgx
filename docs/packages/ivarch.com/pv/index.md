@@ -25,22 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 16 versions</summary>
+<summary>Show all 17 versions</summary>
 
-- `1.9.44`, `1.9.42`, `1.9.34`, `1.9.31`, `1.9.27`
-- `1.9.25`, `1.9.24`, `1.9.15`, `1.9.7`, `1.9.0`
-- `1.8.14`, `1.8.13`, `1.8.12`, `1.8.10`, `1.8.9`
-- `1.8.5`
+- `1.10.0`, `1.9.44`, `1.9.42`, `1.9.34`, `1.9.31`
+- `1.9.27`, `1.9.25`, `1.9.24`, `1.9.15`, `1.9.7`
+- `1.9.0`, `1.8.14`, `1.8.13`, `1.8.12`, `1.8.10`
+- `1.8.9`, `1.8.5`
 
 </details>
 
-**Latest Version**: `1.9.44`
+**Latest Version**: `1.10.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ivarch.com/pv@1.9.44 -- $SHELL -i
+sh <(curl https://pkgx.sh) +ivarch.com/pv@1.10.0 -- $SHELL -i
 ```
 
 ## Usage Examples
