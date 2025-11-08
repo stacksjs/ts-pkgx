@@ -3,7 +3,7 @@
  *
  * @domain `pre-commit.com`
  * @programs `pre-commit`
- * @version `4.3.0` (23 versions available)
+ * @version `4.4.0` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pre-commit.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pre-commit"
  * console.log(pkg.description) // "A framework for managing and maintaining multi-..."
  * console.log(pkg.programs)    // ["pre-commit"]
- * console.log(pkg.versions[0]) // "4.3.0" (latest)
+ * console.log(pkg.versions[0]) // "4.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pre-commit-com.md
@@ -68,6 +68,7 @@ export const precommitcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.4.0',
     '4.3.0',
     '4.2.0',
     '4.1.0',
