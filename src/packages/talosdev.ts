@@ -8,7 +8,7 @@
  *
  * @install `launchpad install talos.dev`
  * @homepage https://www.talos.dev/
- * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,6 +64,7 @@ export const talosdevPackage = {
   buildDependencies: [
     'go.dev@^1.21',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

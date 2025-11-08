@@ -3,7 +3,7 @@
  *
  * @domain `wails.io`
  * @programs `wails`
- * @version `2.10.2` (10 versions available)
+ * @version `2.11.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wails.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "wails"
  * console.log(pkg.description) // "Create beautiful applications using Go"
  * console.log(pkg.programs)    // ["wails"]
- * console.log(pkg.versions[0]) // "2.10.2" (latest)
+ * console.log(pkg.versions[0]) // "2.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wails-io.md
@@ -73,6 +73,7 @@ export const wailsioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.11.0',
     '2.10.2',
     '2.10.1',
     '2.10.0',
