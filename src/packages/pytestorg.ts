@@ -3,7 +3,7 @@
  *
  * @domain `pytest.org`
  * @programs `pytest`
- * @version `8.4.2` (28 versions available)
+ * @version `9.0.0` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pytest.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "pytest"
  * console.log(pkg.description) // "The pytest framework makes it easy to write sma..."
  * console.log(pkg.programs)    // ["pytest"]
- * console.log(pkg.versions[0]) // "8.4.2" (latest)
+ * console.log(pkg.versions[0]) // "9.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pytest-org.md
@@ -75,6 +75,7 @@ export const pytestorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.0.0',
     '8.4.2',
     '8.4.1',
     '8.4.0',
