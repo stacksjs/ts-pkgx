@@ -28,19 +28,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.10.9`, `0.10.8`, `0.10.7`, `0.10.6`
+- `0.10.10`, `0.10.9`, `0.10.8`, `0.10.7`, `0.10.6`
 
 </details>
 
-**Latest Version**: `0.10.9`
+**Latest Version**: `0.10.10`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/ripgrep-all@0.10.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/ripgrep-all@0.10.10 -- $SHELL -i
 ```
 
 ## Usage Examples
