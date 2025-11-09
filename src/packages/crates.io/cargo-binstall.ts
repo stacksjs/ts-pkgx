@@ -2,7 +2,7 @@
  * **cargo-binstall** - pkgx package
  *
  * @domain `crates.io/cargo-binstall`
- * @version `1.15.10` (3 versions available)
+ * @version `1.15.11` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/cargo-binstall`
@@ -13,7 +13,7 @@
  *
  * const pkg = pantry.cratesiocargobinstall
  * console.log(pkg.name)        // "cargo-binstall"
- * console.log(pkg.versions[0]) // "1.15.10" (latest)
+ * console.log(pkg.versions[0]) // "1.15.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/cargo-binstall.md
@@ -51,6 +51,7 @@ export const cratesiocargobinstallPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.15.11',
     '1.15.10',
     '1.15.9',
     '1.15.8',
