@@ -2,7 +2,7 @@
  * **pkcs11-helper** - Library that simplifies the interaction with PKCS#11 providers for end-user applications using a simple API and optional OpenSSL engine
  *
  * @domain `github.com/OpenSC/pkcs11-helper`
- * @version `1.30.0` (2 versions available)
+ * @version `1.31.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/OpenSC/pkcs11-helper`
@@ -16,7 +16,7 @@
  * const pkg = pantry.githubcomopenscpkcs11helper
  * console.log(pkg.name)        // "pkcs11-helper"
  * console.log(pkg.description) // "Library that simplifies the interaction with PK..."
- * console.log(pkg.versions[0]) // "1.30.0" (latest)
+ * console.log(pkg.versions[0]) // "1.31.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/OpenSC/pkcs11-helper.md
@@ -68,6 +68,7 @@ export const pkcs11helperPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.31.0',
     '1.30.0',
     '1.29.0',
   ] as const,
