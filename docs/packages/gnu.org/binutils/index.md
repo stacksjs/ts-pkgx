@@ -36,20 +36,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `2.45.0`, `2.44.0`, `2.43.1`, `2.43.0`, `2.42.0`
-- `2.41.0`, `2.40.0`, `2.39.0`
+- `2.45.1`, `2.45.0`, `2.44.0`, `2.43.1`, `2.43.0`
+- `2.42.0`, `2.41.0`, `2.40.0`, `2.39.0`
 
 </details>
 
-**Latest Version**: `2.45.0`
+**Latest Version**: `2.45.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/binutils@2.45.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/binutils@2.45.1 -- $SHELL -i
 ```
 
 ## Usage Examples
