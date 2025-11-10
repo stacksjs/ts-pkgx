@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-10T16:13:32.414Z
+- **Last Updated**: 2025-11-10T17:10:18.901Z
 
 ## Table of Contents
 
@@ -79,7 +79,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.10 (+126) | `pkgx ollama` |
-| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.7.1 (+297) | `pkgx openai` |
+| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.7.2 (+298) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** () | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx open-interpreter` |
 
 ## Databases

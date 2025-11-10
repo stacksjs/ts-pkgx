@@ -2,7 +2,7 @@
  * **mvfst** - An implementation of the QUIC transport protocol.
  *
  * @domain `facebook.com/mvfst`
- * @version `2025.9.8.0` (102 versions available)
+ * @version `2025.9.8.0` (103 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/mvfst`
@@ -114,6 +114,7 @@ export const facebookcommvfstPackage = {
     '2025.2.17.0',
     '2025.2.10.0',
     '2025.11.3.0',
+    '2025.11.10.0',
     '2025.10.6.0',
     '2025.10.27.0',
     '2025.10.20.0',
