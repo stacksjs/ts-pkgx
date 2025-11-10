@@ -3,7 +3,7 @@
  *
  * @domain `ollama.ai`
  * @programs `ollama`
- * @version `0.12.10` (126 versions available)
+ * @version `0.12.10` (127 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ollama.ai`
@@ -84,6 +84,7 @@ export const ollamaaiPackage = {
     '0.12.7',
     '0.12.6',
     '0.12.5',
+    '0.12.4',
     '0.12.3',
     '0.12.2',
     '0.12.1',
