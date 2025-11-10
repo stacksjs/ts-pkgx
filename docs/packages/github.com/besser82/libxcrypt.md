@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `4.5.1`, `4.5.0`, `4.4.38`, `4.4.37`, `4.4.36`
-- `4.4.35`, `4.4.34`, `4.4.33`
+- `4.5.2`, `4.5.1`, `4.5.0`, `4.4.38`, `4.4.37`
+- `4.4.36`, `4.4.35`, `4.4.34`, `4.4.33`
 
 </details>
 
-**Latest Version**: `4.5.1`
+**Latest Version**: `4.5.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt@4.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt@4.5.2 -- $SHELL -i
 ```
 
 ## Usage Examples
