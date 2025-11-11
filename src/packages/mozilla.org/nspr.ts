@@ -3,7 +3,7 @@
  *
  * @domain `mozilla.org/nspr`
  * @programs `nspr-config`
- * @version `4.38.1` (3 versions available)
+ * @version `4.38.1` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mozilla.org/nspr`
@@ -62,6 +62,7 @@ export const mozillaorgnsprPackage = {
    */
   versions: [
     '4.38.1',
+    '4.36.2',
     '4.36.1',
     '4.34.1',
   ] as const,
