@@ -2,7 +2,7 @@
  * **pycairo** - Python bindings for cairo
  *
  * @domain `cairographics.org/pycairo`
- * @version `1.28.0` (7 versions available)
+ * @version `1.29.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cairographics.org/pycairo`
@@ -17,7 +17,7 @@
  * const pkg = pantry.cairographicsorgpycairo
  * console.log(pkg.name)        // "pycairo"
  * console.log(pkg.description) // "Python bindings for cairo"
- * console.log(pkg.versions[0]) // "1.28.0" (latest)
+ * console.log(pkg.versions[0]) // "1.29.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cairographics-org/pycairo.md
@@ -68,6 +68,7 @@ export const cairographicsorgpycairoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.29.0',
     '1.28.0',
     '1.27.0',
     '1.26.1',

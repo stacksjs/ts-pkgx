@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `1.28.0`, `1.27.0`, `1.26.1`, `1.26.0`, `1.25.1`
-- `1.25.0`, `1.24.0`
+- `1.29.0`, `1.28.0`, `1.27.0`, `1.26.1`, `1.26.0`
+- `1.25.1`, `1.25.0`, `1.24.0`
 
 </details>
 
-**Latest Version**: `1.28.0`
+**Latest Version**: `1.29.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cairographics.org/pycairo@1.28.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cairographics.org/pycairo@1.29.0 -- $SHELL -i
 ```
 
 ## Dependencies
