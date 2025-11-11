@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kubernetes.io/kustomize`
  * @dependencies `kubernetes.io/kubectl`
- * @buildDependencies `go.dev@^1.18`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@^1.18`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -70,6 +70,7 @@ export const kubernetesiokustomizePackage = {
   buildDependencies: [
     'go.dev@^1.18',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

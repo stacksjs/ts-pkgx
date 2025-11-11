@@ -2,7 +2,7 @@
  * **liburcu** - liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
  *
  * @domain `liburcu.org`
- * @version `0.15.4` (5 versions available)
+ * @version `0.15.5` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install liburcu.org`
@@ -15,7 +15,7 @@
  * const pkg = pantry.liburcuorg
  * console.log(pkg.name)        // "liburcu"
  * console.log(pkg.description) // "liburcu is a LGPLv2.1 userspace RCU (read-copy-..."
- * console.log(pkg.versions[0]) // "0.15.4" (latest)
+ * console.log(pkg.versions[0]) // "0.15.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
@@ -53,6 +53,7 @@ export const liburcuorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.15.5',
     '0.15.4',
     '0.15.3',
     '0.15.2',
