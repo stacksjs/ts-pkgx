@@ -25,24 +25,24 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 28 versions</summary>
+<summary>Show all 29 versions</summary>
 
-- `1.105.1`, `1.105.0`, `1.104.3`, `1.104.2`, `1.104.1`
-- `1.104.0`, `1.103.2`, `1.103.1`, `1.103.0`, `1.102.3`
-- `1.102.2`, `1.102.1`, `1.102.0`, `1.101.2`, `1.101.1`
-- `1.101.0`, `1.100.3`, `1.100.2`, `1.100.1`, `1.100.0`
-- `1.99.3`, `1.99.2`, `1.99.1`, `1.99.0`, `1.98.2`
-- `1.98.1`, `1.98.0`, `1.97.2`
+- `1.106.0`, `1.105.1`, `1.105.0`, `1.104.3`, `1.104.2`
+- `1.104.1`, `1.104.0`, `1.103.2`, `1.103.1`, `1.103.0`
+- `1.102.3`, `1.102.2`, `1.102.1`, `1.102.0`, `1.101.2`
+- `1.101.1`, `1.101.0`, `1.100.3`, `1.100.2`, `1.100.1`
+- `1.100.0`, `1.99.3`, `1.99.2`, `1.99.1`, `1.99.0`
+- `1.98.2`, `1.98.1`, `1.98.0`, `1.97.2`
 
 </details>
 
-**Latest Version**: `1.105.1`
+**Latest Version**: `1.106.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +microsoft.com/code-cli@1.105.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/code-cli@1.106.0 -- $SHELL -i
 ```
 
 ## Dependencies
