@@ -27,20 +27,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `2.40.2`, `2.40.1`, `2.40.0`, `2.39.0`, `2.38.0`
-- `2.37.1`, `2.37.0`, `2.36.0`, `2.35.1`
+- `2.41.0`, `2.40.2`, `2.40.1`, `2.40.0`, `2.39.0`
+- `2.38.0`, `2.37.1`, `2.37.0`, `2.36.0`, `2.35.1`
 
 </details>
 
-**Latest Version**: `2.40.2`
+**Latest Version**: `2.41.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +spawn.link@2.40.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +spawn.link@2.41.0 -- $SHELL -i
 ```
 
 ## Usage Examples

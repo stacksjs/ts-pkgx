@@ -3,7 +3,7 @@
  *
  * @domain `spawn.link`
  * @programs `mergerfs`, `mergerfs-fusermount`, `mount.mergerfs`
- * @version `2.40.2` (9 versions available)
+ * @version `2.41.0` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spawn.link`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "spawn.link"
  * console.log(pkg.description) // "a featureful union filesystem"
  * console.log(pkg.programs)    // ["mergerfs", "mergerfs-fusermount", ...]
- * console.log(pkg.versions[0]) // "2.40.2" (latest)
+ * console.log(pkg.versions[0]) // "2.41.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/spawn-link.md
@@ -70,6 +70,7 @@ export const spawnlinkPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.41.0',
     '2.40.2',
     '2.40.1',
     '2.40.0',
