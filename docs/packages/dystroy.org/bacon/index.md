@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `3.19.0`, `3.18.0`, `3.17.0`, `3.16.0`, `3.15.0`
-- `3.14.0`, `3.13.0`, `3.12.0`, `3.11.0`, `3.10.0`
-- `3.9.1`, `3.9.0`, `3.8.0`
+- `3.20.1`, `3.19.0`, `3.18.0`, `3.17.0`, `3.16.0`
+- `3.15.0`, `3.14.0`, `3.13.0`, `3.12.0`, `3.11.0`
+- `3.10.0`, `3.9.1`, `3.9.0`, `3.8.0`
 
 </details>
 
-**Latest Version**: `3.19.0`
+**Latest Version**: `3.20.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dystroy.org/bacon@3.19.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +dystroy.org/bacon@3.20.1 -- $SHELL -i
 ```
 
 ## Dependencies
