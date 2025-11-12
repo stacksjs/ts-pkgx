@@ -3,7 +3,7 @@
  *
  * @domain `terragrunt.gruntwork.io`
  * @programs `terragrunt`
- * @version `0.93.7` (405 versions available)
+ * @version `0.93.8` (406 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terragrunt.gruntwork.io`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "terragrunt"
  * console.log(pkg.description) // "Terragrunt is a flexible orchestration tool tha..."
  * console.log(pkg.programs)    // ["terragrunt"]
- * console.log(pkg.versions[0]) // "0.93.7" (latest)
+ * console.log(pkg.versions[0]) // "0.93.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/terragrunt-gruntwork-io.md
@@ -75,6 +75,7 @@ export const terragruntgruntworkioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.93.8',
     '0.93.7',
     '0.93.6',
     '0.93.5',
