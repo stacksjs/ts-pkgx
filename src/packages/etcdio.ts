@@ -3,7 +3,7 @@
  *
  * @domain `etcd.io`
  * @programs `etcd`, `etcdctl`
- * @version `3.6.5` (21 versions available)
+ * @version `3.6.6` (23 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install etcd.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "etcd"
  * console.log(pkg.description) // "Distributed reliable key-value store for the mo..."
  * console.log(pkg.programs)    // ["etcd", "etcdctl"]
- * console.log(pkg.versions[0]) // "3.6.5" (latest)
+ * console.log(pkg.versions[0]) // "3.6.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/etcd-io.md
@@ -69,12 +69,14 @@ export const etcdioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6.6',
     '3.6.5',
     '3.6.4',
     '3.6.3',
     '3.6.2',
     '3.6.1',
     '3.6.0',
+    '3.5.25',
     '3.5.24',
     '3.5.23',
     '3.5.22',
