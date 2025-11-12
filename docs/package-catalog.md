@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-12T01:39:09.479Z
+- **Last Updated**: 2025-11-12T02:40:22.417Z
 
 ## Table of Contents
 
@@ -163,7 +163,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.16 (+61) | `pkgx k9s` |
 | **[krew.sigs.k8s.io](./packages/krew.sigs.k8s.io/index.md)** () | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
 | **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.9.0 (+21) | `pkgx kubebuilder` |
-| **[kubecm.cloud](./packages/kubecm.cloud/index.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.1 (+10) | `pkgx kubecm` |
+| **[kubecm.cloud](./packages/kubecm.cloud/index.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.2 (+11) | `pkgx kubecm` |
 | **[kubelinter.io](./packages/kubelinter.io/index.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.7.6 (+7) | `pkgx kube-linter` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.34.1 (+119) | `pkgx kubectl` |
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.8.0 (+16) | `pkgx kustomize` |
