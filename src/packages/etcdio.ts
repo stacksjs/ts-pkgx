@@ -3,7 +3,7 @@
  *
  * @domain `etcd.io`
  * @programs `etcd`, `etcdctl`
- * @version `3.6.5` (20 versions available)
+ * @version `3.6.5` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install etcd.io`
@@ -86,6 +86,7 @@ export const etcdioPackage = {
     '3.5.16',
     '3.5.15',
     '3.5.14',
+    '3.4.39',
     '3.4.38',
     '3.4.37',
     '3.4.36',
