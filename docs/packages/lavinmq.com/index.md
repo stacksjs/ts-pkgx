@@ -27,21 +27,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `2.5.1`, `2.5.0`, `2.4.5`, `2.4.4`, `2.4.3`
-- `2.4.2`, `2.4.1`, `2.4.0`, `2.3.0`, `2.2.0`
-- `2.1.0`, `2.0.2`, `2.0.1`, `2.0.0`, `1.3.1`
+- `2.5.2`, `2.5.1`, `2.5.0`, `2.4.5`, `2.4.4`
+- `2.4.3`, `2.4.2`, `2.4.1`, `2.4.0`, `2.3.0`
+- `2.2.0`, `2.1.0`, `2.0.2`, `2.0.1`, `2.0.0`
+- `1.3.1`
 
 </details>
 
-**Latest Version**: `2.5.1`
+**Latest Version**: `2.5.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lavinmq.com@2.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +lavinmq.com@2.5.2 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,13 +1,11 @@
 /**
- * **lego** - Let's Encrypt/ACME client and library written in Go
+ * **lego** - pkgx package
  *
  * @domain `github.com/go-acme/lego`
- * @programs `lego`
  * @version `4.28.1` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/go-acme/lego`
- * @homepage https://go-acme.github.io/lego/
  * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
@@ -16,8 +14,6 @@
  *
  * const pkg = pantry.githubcomgoacmelego
  * console.log(pkg.name)        // "lego"
- * console.log(pkg.description) // "Let's Encrypt/ACME client and library written i..."
- * console.log(pkg.programs)    // ["lego"]
  * console.log(pkg.versions[0]) // "4.28.1" (latest)
  * ```
  *
@@ -36,10 +32,10 @@ export const legoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Let\'s Encrypt/ACME client and library written in Go' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/go-acme/lego/package.yml' as const,
-  homepageUrl: 'https://go-acme.github.io/lego/' as const,
-  githubUrl: 'https://github.com/go-acme/lego' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +43,7 @@ export const legoPackage = {
   installCommand: 'launchpad install github.com/go-acme/lego' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/go-acme/lego -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/go-acme/lego' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'lego',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
