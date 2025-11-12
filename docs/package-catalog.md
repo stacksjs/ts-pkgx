@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-12T13:19:50.323Z
+- **Last Updated**: 2025-11-12T14:11:25.842Z
 
 ## Table of Contents
 
@@ -89,7 +89,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[dgraph.io](./packages/dgraph.io/index.md)** () | high-performance graph database for real-time use cases | dgraph | 25.0.0 (+12) | `pkgx dgraph` |
-| **[duckdb.org](./packages/duckdb.org/index.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.4.1 (+22) | `pkgx duckdb` |
+| **[duckdb.org](./packages/duckdb.org/index.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.4.2 (+23) | `pkgx duckdb` |
 | **[edgedb.com](./packages/edgedb.com/index.md)** () | The EdgeDB CLI | edgedb | 7.9.0 (+40) | `pkgx edgedb` |
 | **[etcd.io](./packages/etcd.io/index.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.6 (+22) | `pkgx etcd` |
 | **[litecli.com](./packages/litecli.com/index.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.17.0 (+16) | `pkgx litecli` |
@@ -395,7 +395,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[pytest.org](./packages/pytest.org/index.md)** () | The pytest framework makes it easy to write small tests, yet scales to support complex functional... | pytest | 9.0.0 (+28) | `pkgx pytest` |
+| **[pytest.org](./packages/pytest.org/index.md)** () | The pytest framework makes it easy to write small tests, yet scales to support complex functional... | pytest | 9.0.1 (+29) | `pkgx pytest` |
 
 ## Cryptocurrency
 
