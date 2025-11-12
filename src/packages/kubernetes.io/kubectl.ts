@@ -3,7 +3,7 @@
  *
  * @domain `kubernetes.io/kubectl`
  * @programs `kubectl`
- * @version `1.34.2` (122 versions available)
+ * @version `1.34.2` (124 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubernetes.io/kubectl`
@@ -82,6 +82,7 @@ export const kubernetesiokubectlPackage = {
     '1.33.2',
     '1.33.1',
     '1.33.0',
+    '1.32.10',
     '1.32.9',
     '1.32.8',
     '1.32.7',
@@ -92,6 +93,7 @@ export const kubernetesiokubectlPackage = {
     '1.32.2',
     '1.32.1',
     '1.32.0',
+    '1.31.14',
     '1.31.13',
     '1.31.12',
     '1.31.11',
