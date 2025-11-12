@@ -3,7 +3,7 @@
  *
  * @domain `kubernetes.io/kubectl`
  * @programs `kubectl`
- * @version `1.34.1` (120 versions available)
+ * @version `1.34.2` (122 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubernetes.io/kubectl`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "kubectl"
  * console.log(pkg.description) // "Production-Grade Container Scheduling and Manag..."
  * console.log(pkg.programs)    // ["kubectl"]
- * console.log(pkg.versions[0]) // "1.34.1" (latest)
+ * console.log(pkg.versions[0]) // "1.34.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubernetes-io/kubectl.md
@@ -72,8 +72,10 @@ export const kubernetesiokubectlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.34.2',
     '1.34.1',
     '1.34.0',
+    '1.33.6',
     '1.33.5',
     '1.33.4',
     '1.33.3',
