@@ -1,6 +1,6 @@
 # DevOps
 
-*24 packages in this category*
+*25 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -13,6 +13,16 @@ Ansible is a radically simple IT automation platform that makes your application
 **Programs**: ansible, ansible-config, ansible-connection, ansible-console, ansible-doc, ansible-galaxy, ansible-inventory, ansible-playbook, ansible-pull, ansible-test, ansible-vault
 
 **Install**: `launchpad install ansible.com`
+
+---
+
+### [ansible.com/ansible-lint](../packages/ansible.com/ansible-lint/index.md) (ansible-lint)
+
+ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you
+
+**Programs**: ansible-lint
+
+**Install**: `launchpad install ansible.com/ansible-lint`
 
 ---
 

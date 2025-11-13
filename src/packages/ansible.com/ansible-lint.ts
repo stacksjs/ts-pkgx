@@ -1,11 +1,13 @@
 /**
- * **ansible-lint** - pkgx package
+ * **ansible-lint** - ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you
  *
  * @domain `ansible.com/ansible-lint`
+ * @programs `ansible-lint`
  * @version `25.11.0` (31 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible.com/ansible-lint`
+ * @homepage https://ansible-lint.readthedocs.io/
  * @dependencies `pkgx.sh^1`
  * @buildDependencies `python.org@~3.11` - required only when building from source
  *
@@ -15,6 +17,8 @@
  *
  * const pkg = pantry.ansiblecomansiblelint
  * console.log(pkg.name)        // "ansible-lint"
+ * console.log(pkg.description) // "ansible-lint checks playbooks for practices and..."
+ * console.log(pkg.programs)    // ["ansible-lint"]
  * console.log(pkg.versions[0]) // "25.11.0" (latest)
  * ```
  *
@@ -33,10 +37,10 @@ export const ansiblecomansiblelintPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/ansible-lint/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  homepageUrl: 'https://ansible-lint.readthedocs.io/' as const,
+  githubUrl: 'https://github.com/ansible/ansible-lint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -44,7 +48,13 @@ export const ansiblecomansiblelintPackage = {
   installCommand: 'launchpad install ansible.com/ansible-lint' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com/ansible-lint -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install ansible.com/ansible-lint' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'ansible-lint',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
