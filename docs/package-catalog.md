@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1399
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-11-13T17:10:33.256Z
+- **Last Updated**: 2025-11-13T18:12:17.274Z
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Artificial Intelligence](#artificial-intelligence) (13 packages)
 - [Databases](#databases) (14 packages)
 - [Web Development](#web-development) (4 packages)
-- [DevOps](#devops) (25 packages)
+- [DevOps](#devops) (24 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (24 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
 - [Build Tools & Automation](#build-tools-automation) (16 packages)
@@ -116,12 +116,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## DevOps
 
-*25 packages in this category*
+*24 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.20.0 (+81) | `pkgx ansible` |
-| **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.11.0 (+30) | `pkgx ansible-lint` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.22.0 (+15) | `pkgx consul` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.40.3 (+65) | `pkgx docker-compose` |
 | **[fluxcd.io/flux2](./packages/fluxcd.io/flux2/index.md)** () | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | flux | 2.7.3 (+17) | `pkgx flux` |
@@ -466,7 +465,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[cli.github.com](./packages/cli.github.com/index.md)** () | GitHub’s official command line tool | gh | 2.83.0 (+90) | `pkgx gh` |
+| **[cli.github.com](./packages/cli.github.com/index.md)** () | GitHub’s official command line tool | gh | 2.83.1 (+91) | `pkgx gh` |
 
 ## Usage Examples
 

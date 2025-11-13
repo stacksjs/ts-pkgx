@@ -5161,7 +5161,6 @@ export interface Pantry {
   pkgx: typeof pkgxshPackage
   'taglib-config': typeof tagliborgPackage
   databricks: typeof databrickscomPackage
-  soldeer: typeof soldeerxyzPackage
   kaggle: typeof kagglecomPackage
   yuicompressor: typeof yuigithubioyuicompressorPackage
   flutter: typeof flutterdevPackage
@@ -9412,7 +9411,6 @@ export const pantry: Pantry = {
   pkgx: pkgxshPackage,
   'taglib-config': tagliborgPackage,
   databricks: databrickscomPackage,
-  soldeer: soldeerxyzPackage,
   kaggle: kagglecomPackage,
   yuicompressor: yuigithubioyuicompressorPackage,
   flutter: flutterdevPackage,

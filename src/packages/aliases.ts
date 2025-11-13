@@ -1218,7 +1218,6 @@ export const aliases: Record<string, string> = {
   'snyk': 'snyk.io',
   'socat': 'dest-unreach.org/socat',
   'solana': 'solana.com',
-  'soldeer': 'soldeer.xyz',
   'soliditylang': 'soliditylang.org',
   'sonar-scanner': 'sonarqube.org/sonarscanner',
   'sops': 'getsops.io',
