@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `4.4.0`, `4.3.4`, `4.3.3`, `4.3.2`, `4.3.1`
-- `4.3.0`, `4.2.2`, `4.2.1`, `4.2.0`
+- `4.4.1`, `4.4.0`, `4.3.4`, `4.3.3`, `4.3.2`
+- `4.3.1`, `4.3.0`, `4.2.2`, `4.2.1`, `4.2.0`
 
 </details>
 
-**Latest Version**: `4.4.0`
+**Latest Version**: `4.4.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pngquant.org/lib@4.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pngquant.org/lib@4.4.1 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -3,7 +3,7 @@
  *
  * @domain `matio.sourceforge.io`
  * @programs `matdump`
- * @version `1.5.28` (6 versions available)
+ * @version `1.5.29` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install matio.sourceforge.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "libmatio"
  * console.log(pkg.description) // "C library for reading and writing MATLAB MAT files"
  * console.log(pkg.programs)    // ["matdump"]
- * console.log(pkg.versions[0]) // "1.5.28" (latest)
+ * console.log(pkg.versions[0]) // "1.5.29" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
@@ -69,6 +69,7 @@ export const matiosourceforgeioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.29',
     '1.5.28',
     '1.5.27',
     '1.5.26',
