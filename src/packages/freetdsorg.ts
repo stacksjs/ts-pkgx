@@ -3,7 +3,7 @@
  *
  * @domain `freetds.org`
  * @programs `bsqldb`, `bsqlodbc`, `datacopy`, `defncopy`, `fisql`, ... (+4 more)
- * @version `1.5.6` (35 versions available)
+ * @version `1.5.8` (36 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freetds.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "freetds"
  * console.log(pkg.description) // "Libraries to talk to Microsoft SQL Server and S..."
  * console.log(pkg.programs)    // ["bsqldb", "bsqlodbc", ...]
- * console.log(pkg.versions[0]) // "1.5.6" (latest)
+ * console.log(pkg.versions[0]) // "1.5.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freetds-org.md
@@ -89,6 +89,7 @@ export const freetdsorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.8',
     '1.5.6',
     '1.5.5',
     '1.5.4',
