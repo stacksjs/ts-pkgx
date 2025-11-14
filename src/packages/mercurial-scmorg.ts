@@ -3,7 +3,7 @@
  *
  * @domain `mercurial-scm.org`
  * @programs `hg`, `chg`
- * @version `7.1.1` (27 versions available)
+ * @version `7.1.2` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mercurial-scm.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "mercurial-scm"
  * console.log(pkg.description) // "Scalable distributed version control system"
  * console.log(pkg.programs)    // ["hg", "chg"]
- * console.log(pkg.versions[0]) // "7.1.1" (latest)
+ * console.log(pkg.versions[0]) // "7.1.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mercurial-scm-org.md
@@ -76,6 +76,7 @@ export const mercurialscmorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.1.2',
     '7.1.1',
     '7.1.0',
     '7.0.3',
