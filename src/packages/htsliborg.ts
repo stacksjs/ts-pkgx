@@ -1,13 +1,11 @@
 /**
- * **htslib** - C library for high-throughput sequencing data formats
+ * **htslib** - pkgx package
  *
  * @domain `htslib.org`
- * @programs `bgzip`, `htsfile`, `tabix`
  * @version `1.22.1` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install htslib.org`
- * @homepage https://www.htslib.org/
  * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net^1`, ... (+1 more)
  * @buildDependencies `gnu.org/make`, `gnu.org/autoconf`, `gnu.org/automake@^1` - required only when building from source
  *
@@ -17,8 +15,6 @@
  *
  * const pkg = pantry.htsliborg
  * console.log(pkg.name)        // "htslib"
- * console.log(pkg.description) // "C library for high-throughput sequencing data f..."
- * console.log(pkg.programs)    // ["bgzip", "htsfile", ...]
  * console.log(pkg.versions[0]) // "1.22.1" (latest)
  * ```
  *
@@ -37,10 +33,10 @@ export const htsliborgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'C library for high-throughput sequencing data formats' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml' as const,
-  homepageUrl: 'https://www.htslib.org/' as const,
-  githubUrl: 'https://github.com/samtools/htslib' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -48,15 +44,7 @@ export const htsliborgPackage = {
   installCommand: 'launchpad install htslib.org' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install htslib.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'bgzip',
-    'htsfile',
-    'tabix',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
