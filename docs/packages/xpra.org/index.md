@@ -48,6 +48,7 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `python.org~3.11`
+- `cython.org`
 - `tukaani.org/xz`
 - `cairographics.org`
 - `cairographics.org/pycairo@1.26.1`

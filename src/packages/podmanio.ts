@@ -9,7 +9,7 @@
  * @install `launchpad install podman.io`
  * @homepage https://podman.io/
  * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `darwin:github.com/crc-org/vfkit` (includes OS-specific dependencies with `os:package` format)
- * @buildDependencies `go.dev@=1.23.3`, `gnu.org/coreutils` - required only when building from source
+ * @buildDependencies `go.dev@=1.24.2`, `gnu.org/coreutils` - required only when building from source
  *
  * @example
  * ```typescript
@@ -73,7 +73,7 @@ export const podmanioPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'go.dev@=1.23.3',
+    'go.dev@=1.24.2',
     'gnu.org/coreutils',
   ] as const,
   /**
