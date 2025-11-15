@@ -8,7 +8,7 @@
  *
  * @install `launchpad install hdfgroup.org/HDF5`
  * @dependencies `dkrz.de/libaec@1`, `linux:zlib.net@1` (includes OS-specific dependencies with `os:package` format)
- * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`, ... (+1 more) - required only when building from source
+ * @buildDependencies `cmake.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -86,12 +86,15 @@ export const hdfgrouporghdf5Package = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
+    'cmake.org',
     'gnu.org/autoconf',
     'gnu.org/automake',
     'gnu.org/libtool',
-    'gnu.org/gcc',
+    'linux:gnu.org/gcc',
+    'darwin:llvm.org@20',
   ] as const,
   /**
    * Available versions from newest to oldest.

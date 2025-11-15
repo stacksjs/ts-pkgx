@@ -9,6 +9,7 @@
  * @install `launchpad install matio.sourceforge.io`
  * @homepage https://matio.sourceforge.net/
  * @dependencies `hdfgroup.org/HDF5`, `zlib.net`
+ * @buildDependencies `cmake.org`, `darwin:llvm.org@20` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -63,7 +64,15 @@ export const matiosourceforgeioPackage = {
     'hdfgroup.org/HDF5',
     'zlib.net',
   ] as const,
-  buildDependencies: [] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'darwin:llvm.org@20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
