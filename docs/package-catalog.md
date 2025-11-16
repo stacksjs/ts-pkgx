@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-16T21:09:34.873Z
+- **Last Updated**: 2025-11-16T23:11:49.171Z
 
 ## Table of Contents
 
@@ -208,7 +208,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.9.1 (+32) | `pkgx meson` |
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.1 (+5) | `pkgx ninja` |
 | **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** () | Protects your Pants from the elements. | pants | 0.12.5 (+4) | `pkgx scie-pants` |
-| **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.10.0 (+7) | `pkgx scons` |
+| **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.10.1 (+8) | `pkgx scons` |
 | **[taskfile.dev](./packages/taskfile.dev/index.md)** () | A task runner / simpler Make alternative written in Go | task | 3.45.5 (+34) | `pkgx task` |
 
 ## Package Managers
@@ -256,7 +256,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crates.io/bat](./packages/crates.io/bat/index.md)** () | Clone of cat(1) with syntax highlighting and Git integration | bat | 0.26.0 (+4) | `pkgx bat` |
-| **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.11.3 (+15) | `pkgx btm` |
+| **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.11.4 (+16) | `pkgx btm` |
 | **[crates.io/drill](./packages/crates.io/drill/index.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
 | **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.3 (+7) | `pkgx dust` |
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
