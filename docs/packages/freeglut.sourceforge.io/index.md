@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `3.6.0`, `3.4.0`
+- `3.8.0`, `3.6.0`, `3.4.0`
 
 </details>
 
-**Latest Version**: `3.6.0`
+**Latest Version**: `3.8.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +freeglut.sourceforge.io@3.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +freeglut.sourceforge.io@3.8.0 -- $SHELL -i
 ```
 
 ## Dependencies

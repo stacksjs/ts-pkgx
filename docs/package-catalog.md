@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-16T19:09:18.523Z
+- **Last Updated**: 2025-11-16T20:10:27.470Z
 
 ## Table of Contents
 
@@ -162,7 +162,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[istio.io](./packages/istio.io/index.md)** () | Connect, secure, control, and observe services. | istioctl | 1.28.0 (+52) | `pkgx istioctl` |
 | **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.16 (+61) | `pkgx k9s` |
 | **[krew.sigs.k8s.io](./packages/krew.sigs.k8s.io/index.md)** () | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
-| **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.10.0 (+22) | `pkgx kubebuilder` |
+| **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.10.1 (+23) | `pkgx kubebuilder` |
 | **[kubecm.cloud](./packages/kubecm.cloud/index.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.3 (+12) | `pkgx kubecm` |
 | **[kubelinter.io](./packages/kubelinter.io/index.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.7.6 (+7) | `pkgx kube-linter` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.34.2 (+123) | `pkgx kubectl` |
