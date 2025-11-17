@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-17T14:11:29.338Z
+- **Last Updated**: 2025-11-17T15:12:25.849Z
 
 ## Table of Contents
 
@@ -202,7 +202,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** () | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.26.0 (+32) | `pkgx buildkit` |
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** () | Automatic configure script builder | autoconf, autoheader, autom4te, ... (+4) | 2.72.0 (+1) | `pkgx autoconf` |
 | **[gnu.org/automake](./packages/gnu.org/automake/index.md)** () | Tool for generating GNU Standards-compliant Makefiles | aclocal, automake | 1.18.1 (+3) | `pkgx automake` |
-| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.0 (+22) | `pkgx gradle` |
+| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.1 (+23) | `pkgx gradle` |
 | **[just.systems](./packages/just.systems/index.md)** () | Handy way to save and run project-specific commands | just | 1.43.1 (+47) | `pkgx just` |
 | **[maven.apache.org](./packages/maven.apache.org/index.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.11 (+11) | `pkgx mvn` |
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.9.1 (+32) | `pkgx meson` |
@@ -387,7 +387,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[appium.io](./packages/appium.io/index.md)** () | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 3.0.2 (+38) | `pkgx appium` |
 | **[fastlane.tools](./packages/fastlane.tools/index.md)** () | 🚀 The easiest way to automate building and releasing your iOS and Android apps | fastlane | 2.228.0 (+22) | `pkgx fastlane` |
 | **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.38.1 (+61) | `pkgx flutter` |
-| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.0 (+22) | `pkgx gradle` |
+| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.1 (+23) | `pkgx gradle` |
 
 ## Testing
 
