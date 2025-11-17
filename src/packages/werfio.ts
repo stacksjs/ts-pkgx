@@ -3,7 +3,7 @@
  *
  * @domain `werf.io`
  * @programs `werf`
- * @version `2.53.3` (193 versions available)
+ * @version `2.53.4` (195 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install werf.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "werf"
  * console.log(pkg.description) // "A solution for implementing efficient and consi..."
  * console.log(pkg.programs)    // ["werf"]
- * console.log(pkg.versions[0]) // "2.53.3" (latest)
+ * console.log(pkg.versions[0]) // "2.53.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/werf-io.md
@@ -71,11 +71,13 @@ export const werfioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.53.4',
     '2.53.3',
     '2.53.2',
     '2.53.1',
     '2.53.0',
     '2.52.0',
+    '2.51.6',
     '2.51.5',
     '2.51.4',
     '2.51.3',
