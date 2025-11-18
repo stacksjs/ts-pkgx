@@ -3,7 +3,7 @@
  *
  * @domain `openvpn.net`
  * @programs `openvpn`
- * @version `2.6.15` (13 versions available)
+ * @version `2.6.16` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openvpn.net`
@@ -16,7 +16,7 @@
  * const pkg = pantry.openvpnnet
  * console.log(pkg.name)        // "openvpn"
  * console.log(pkg.programs)    // ["openvpn"]
- * console.log(pkg.versions[0]) // "2.6.15" (latest)
+ * console.log(pkg.versions[0]) // "2.6.16" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openvpn-net.md
@@ -71,6 +71,7 @@ export const openvpnnetPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.6.16',
     '2.6.15',
     '2.6.14',
     '2.6.13',

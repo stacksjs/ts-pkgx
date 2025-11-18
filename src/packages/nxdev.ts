@@ -3,7 +3,7 @@
  *
  * @domain `nx.dev`
  * @programs `nx`
- * @version `22.0.4` (190 versions available)
+ * @version `22.0.4` (191 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nx.dev`
@@ -79,6 +79,7 @@ export const nxdevPackage = {
     '22.0.2',
     '22.0.1',
     '22.0.0',
+    '21.6.9',
     '21.6.8',
     '21.6.7',
     '21.6.6',
