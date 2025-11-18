@@ -3,7 +3,7 @@
  *
  * @domain `talos.dev`
  * @programs `talosctl`
- * @version `1.11.5` (37 versions available)
+ * @version `1.11.5` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install talos.dev`
@@ -77,6 +77,7 @@ export const talosdevPackage = {
     '1.11.2',
     '1.11.1',
     '1.11.0',
+    '1.10.8',
     '1.10.7',
     '1.10.6',
     '1.10.5',

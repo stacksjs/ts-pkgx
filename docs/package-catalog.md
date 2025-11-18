@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-18T10:12:50.102Z
+- **Last Updated**: 2025-11-18T15:13:51.435Z
 
 ## Table of Contents
 
@@ -74,7 +74,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
 | **[github.com/npiv/chatblade](./packages/github.com/npiv/chatblade.md)** () | A CLI Swiss Army Knife for ChatGPT | chatblade | 0.7.0 (+14) | `pkgx chatblade` |
-| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.10 (+56) | `pkgx jupyter` |
+| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.5.0 (+57) | `pkgx jupyter` |
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.5 (+22) | `pkgx f2py` |
@@ -319,7 +319,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[aquasecurity.github.io/tfsec](./packages/aquasecurity.github.io/tfsec/index.md)** () | Static analysis security scanner for your terraform code | tfsec | 1.28.14 (+8) | `pkgx tfsec` |
 | **[aquasecurity.github.io/trivy](./packages/aquasecurity.github.io/trivy/index.md)** () | Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositori... | trivy | 0.67.2 (+40) | `pkgx trivy` |
 | **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 5.1.0 (+21) | `pkgx certbot` |
-| **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.493 (+519) | `pkgx checkov` |
+| **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.494 (+520) | `pkgx checkov` |
 | **[filippo.io/age](./packages/filippo.io/age/index.md)** () | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config ... | age, age-keygen | 1.2.1 (+2) | `pkgx age` |
 | **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** () | Seamless ssh-agent for YubiKeys and other PIV tokens | yubikey-agent | 0.1.6 (+0) | `pkgx yubikey-agent` |
 | **[mkcert.dev](./packages/mkcert.dev/index.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you&#39... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
@@ -449,7 +449,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.10 (+56) | `pkgx jupyter` |
+| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.5.0 (+57) | `pkgx jupyter` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.5 (+22) | `pkgx f2py` |
 
 ## Embedded & IoT
