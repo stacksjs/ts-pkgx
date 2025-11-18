@@ -3,7 +3,7 @@
  *
  * @domain `github.com/create-dmg/create-dmg`
  * @programs `create-dmg`
- * @version `1.2.2` (4 versions available)
+ * @version `1.2.3` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/create-dmg/create-dmg`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "create-dmg"
  * console.log(pkg.description) // "A shell script to build fancy DMGs"
  * console.log(pkg.programs)    // ["create-dmg"]
- * console.log(pkg.versions[0]) // "1.2.2" (latest)
+ * console.log(pkg.versions[0]) // "1.2.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/create-dmg/create-dmg.md
@@ -60,6 +60,7 @@ export const createdmgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.3',
     '1.2.2',
     '1.2.1',
     '1.2.0',

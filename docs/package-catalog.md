@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-18T06:12:13.434Z
+- **Last Updated**: 2025-11-18T09:11:16.566Z
 
 ## Table of Contents
 
@@ -222,7 +222,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.9.1 (+34) | `pkgx composer` |
 | **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.12.2 (+6) | `pkgx luarocks` |
-| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.11.5 (+390) | `pkgx mise` |
+| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.11.6 (+391) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.41.0 (+34) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.4 (+16) | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.2 (+67) | `pkgx npm` |
@@ -262,7 +262,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
 | **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.23.4 (+85) | `pkgx eza` |
 | **[crates.io/git-delta](./packages/crates.io/git-delta/index.md)** () | A syntax-highlighting pager for git, diff, grep, and blame output | delta | 0.18.2 (+10) | `pkgx delta` |
-| **[crates.io/hyperfine](./packages/crates.io/hyperfine/index.md)** () | A command-line benchmarking tool | hyperfine | 1.19.0 (+6) | `pkgx hyperfine` |
+| **[crates.io/hyperfine](./packages/crates.io/hyperfine/index.md)** () | A command-line benchmarking tool | hyperfine | 1.20.0 (+7) | `pkgx hyperfine` |
 | **[crates.io/ripgrep](./packages/crates.io/ripgrep/index.md)** () | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | rg | 15.1.0 (+8) | `pkgx rg` |
 | **[crates.io/ripgrep-all](./packages/crates.io/ripgrep-all/index.md)** () | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. | rga, rga-fzf, rga-fzf-open, ... (+1) | 0.10.10 (+4) | `pkgx rga` |
 | **[crates.io/sd](./packages/crates.io/sd/index.md)** () | Intuitive find & replace CLI (sed alternative) | sd | 1.0.0 (+1) | `pkgx sd` |
