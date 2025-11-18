@@ -3,7 +3,7 @@
  *
  * @domain `cmake.org`
  * @programs `cmake`, `ccmake`, `cpack`, `ctest`
- * @version `4.1.2` (68 versions available)
+ * @version `4.1.3` (70 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cmake.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "cmake"
  * console.log(pkg.description) // "Mirror of CMake upstream repository"
  * console.log(pkg.programs)    // ["cmake", "ccmake", ...]
- * console.log(pkg.versions[0]) // "4.1.2" (latest)
+ * console.log(pkg.versions[0]) // "4.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cmake-org.md
@@ -73,9 +73,11 @@ export const cmakeorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.1.3',
     '4.1.2',
     '4.1.1',
     '4.1.0',
+    '4.0.5',
     '4.0.4',
     '4.0.3',
     '4.0.2',
