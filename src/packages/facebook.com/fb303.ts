@@ -57,7 +57,7 @@ export const facebookcomfb303Package = {
     'facebook.com/wangle',
     'facebook.com/folly',
     'facebook.com/fbthrift>=2023.12.18.0',
-    'fmt.dev^10',
+    'fmt.dev^12',
     'gflags.github.io^2.2.2',
     'google.com/glog^0.6',
     'libsodium.org^1.0.19',

@@ -81,7 +81,7 @@ This package depends on:
 - `google.github.io/snappy`
 - `google.com/double-conversion^3`
 - `google.com/googletest^1`
-- `fmt.dev^10`
+- `fmt.dev^12`
 - `zlib.net^1`
 - `github.com/fastfloat/fast_float@7`
 - `darwin:sourceware.org/bzip2`

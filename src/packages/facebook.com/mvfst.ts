@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/mvfst`
- * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^12`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `cmake.org`, `linux:gnu.org/gcc@13`, `linux:gnu.org/binutils`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -55,7 +55,7 @@ export const facebookcommvfstPackage = {
   dependencies: [
     'boost.org',
     'github.com/facebookincubator/fizz',
-    'fmt.dev^10',
+    'fmt.dev^12',
     'facebook.com/folly',
     'gflags.github.io',
     'google.com/glog',

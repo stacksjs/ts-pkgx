@@ -66,7 +66,7 @@ This package depends on:
 - `github.com/facebookincubator/fizz`
 - `facebook.com/folly`
 - `facebook.com/wangle`
-- `fmt.dev^10`
+- `fmt.dev^12`
 - `gflags.github.io^2.2.2`
 - `google.com/glog^0.6`
 - `openssl.org^1.1`

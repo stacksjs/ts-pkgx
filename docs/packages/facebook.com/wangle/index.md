@@ -69,7 +69,7 @@ This package depends on:
 - `boost.org`
 - `google.com/double-conversion^3`
 - `github.com/facebookincubator/fizz`
-- `fmt.dev^10`
+- `fmt.dev^12`
 - `facebook.com/folly`
 - `gflags.github.io`
 - `google.com/glog<0.7`
