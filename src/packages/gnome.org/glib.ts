@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/glib`
  * @programs `gdbus`, `gdbus-codegen`, `gio`, `gio-querymodules`, `glib-compile-resources`, ... (+9 more)
- * @version `2.87.0` (52 versions available)
+ * @version `2.87.0` (53 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/glib`
@@ -95,6 +95,7 @@ export const gnomeorgglibPackage = {
    */
   versions: [
     '2.87.0',
+    '2.86.2',
     '2.86.1',
     '2.86.0',
     '2.85.4',
