@@ -3,7 +3,7 @@
  *
  * @domain `github.com/mas-cli/mas`
  * @programs `mas`
- * @version `3.0.0` (10 versions available)
+ * @version `3.0.1` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/mas-cli/mas`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "mas"
  * console.log(pkg.description) // ":package: Mac App Store command line interface"
  * console.log(pkg.programs)    // ["mas"]
- * console.log(pkg.versions[0]) // "3.0.0" (latest)
+ * console.log(pkg.versions[0]) // "3.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mas-cli/mas.md
@@ -60,6 +60,7 @@ export const masPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.1',
     '3.0.0',
     '2.3.0',
     '2.2.2',
