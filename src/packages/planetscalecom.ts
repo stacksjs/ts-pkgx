@@ -3,7 +3,7 @@
  *
  * @domain `planetscale.com`
  * @programs `pscale`
- * @version `0.260.0` (83 versions available)
+ * @version `0.261.0` (84 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install planetscale.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pscale"
  * console.log(pkg.description) // "The CLI for PlanetScale Database"
  * console.log(pkg.programs)    // ["pscale"]
- * console.log(pkg.versions[0]) // "0.260.0" (latest)
+ * console.log(pkg.versions[0]) // "0.261.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/planetscale-com.md
@@ -68,6 +68,7 @@ export const planetscalecomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.261.0',
     '0.260.0',
     '0.259.0',
     '0.258.0',
