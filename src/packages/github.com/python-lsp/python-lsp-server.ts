@@ -3,7 +3,7 @@
  *
  * @domain `github.com/python-lsp/python-lsp-server`
  * @programs `pylsp`
- * @version `1.13.1` (15 versions available)
+ * @version `1.13.2` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/python-lsp/python-lsp-server`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pylsp"
  * console.log(pkg.description) // "Fork of the python-language-server project, mai..."
  * console.log(pkg.programs)    // ["pylsp"]
- * console.log(pkg.versions[0]) // "1.13.1" (latest)
+ * console.log(pkg.versions[0]) // "1.13.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/python-lsp/python-lsp-server.md
@@ -74,6 +74,7 @@ export const pythonlspserverPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.2',
     '1.13.1',
     '1.13.0',
     '1.12.2',
