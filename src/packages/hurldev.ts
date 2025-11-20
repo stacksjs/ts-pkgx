@@ -3,7 +3,7 @@
  *
  * @domain `hurl.dev`
  * @programs `hurl`, `hurlfmt`
- * @version `7.0.0` (10 versions available)
+ * @version `7.1.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hurl.dev`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "hurl"
  * console.log(pkg.description) // "Run and Test HTTP Requests with plain text and ..."
  * console.log(pkg.programs)    // ["hurl", "hurlfmt"]
- * console.log(pkg.versions[0]) // "7.0.0" (latest)
+ * console.log(pkg.versions[0]) // "7.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hurl-dev.md
@@ -70,6 +70,7 @@ export const hurldevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.1.0',
     '7.0.0',
     '6.1.1',
     '6.1.0',
