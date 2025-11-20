@@ -3,7 +3,7 @@
  *
  * @domain `ninja-build.org`
  * @programs `ninja`
- * @version `1.13.1` (6 versions available)
+ * @version `1.13.2` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ninja-build.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "ninja"
  * console.log(pkg.description) // "Small build system for use with gyp or CMake"
  * console.log(pkg.programs)    // ["ninja"]
- * console.log(pkg.versions[0]) // "1.13.1" (latest)
+ * console.log(pkg.versions[0]) // "1.13.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ninja-build-org.md
@@ -68,6 +68,7 @@ export const ninjabuildorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.2',
     '1.13.1',
     '1.13.0',
     '1.12.1',

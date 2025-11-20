@@ -29,9 +29,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `3.10.2`, `3.10.1`, `3.9.1`, `3.8.1`
+- `3.10.2`, `3.10.1`, `3.10.0`, `3.9.1`, `3.9.0`
+- `3.8.1`
 
 </details>
 
