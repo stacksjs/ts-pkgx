@@ -29,19 +29,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `3.8.1`
+- `3.10.2`, `3.10.1`, `3.9.1`, `3.8.1`
 
 </details>
 
-**Latest Version**: `3.8.1`
+**Latest Version**: `3.10.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/nettle@3.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/nettle@3.10.2 -- $SHELL -i
 ```
 
 ## Usage Examples
