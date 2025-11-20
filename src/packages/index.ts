@@ -467,6 +467,7 @@ import { heifconverterimagePackage } from './github.com/MaestroError/heif-conver
 import { mbedtlsPackage } from './github.com/Mbed-TLS/mbedtls'
 import { rip2Package } from './github.com/MilesCranmer/rip2'
 import { tomlcliPackage } from './github.com/MinseokOh/toml-cli'
+import { needsPackage } from './github.com/NQMVD/needs'
 import { libgeotiffPackage } from './github.com/OSGeo/libgeotiff'
 import { pkcs11helperPackage } from './github.com/OpenSC/pkcs11-helper'
 import { charset_normalizerPackage } from './github.com/Ousret/charset_normalizer'
@@ -2406,6 +2407,8 @@ export interface Pantry {
   githubcommilescranmer: typeof rip2Package
   toml_cli: typeof tomlcliPackage
   githubcomminseokoh: typeof tomlcliPackage
+
+  githubcomnqmvd: typeof needsPackage
 
   githubcomosgeo: typeof libgeotiffPackage
   pkcs11_helper: typeof pkcs11helperPackage
@@ -5564,6 +5567,7 @@ export interface Pantry {
   'git-credential-manager': typeof gitcredentialmanagerPackage
   pyparsing: typeof pyparsingPackage
   nnn: typeof nnnPackage
+  needs: typeof needsPackage
   neofetch: typeof neofetchPackage
   'gost3411-2012': typeof streebogPackage
   yamllint: typeof yamllintPackage
@@ -6657,6 +6661,8 @@ export const pantry: Pantry = {
   githubcommilescranmer: rip2Package,
   toml_cli: tomlcliPackage,
   githubcomminseokoh: tomlcliPackage,
+
+  githubcomnqmvd: needsPackage,
 
   githubcomosgeo: libgeotiffPackage,
   pkcs11_helper: pkcs11helperPackage,
@@ -9815,6 +9821,7 @@ export const pantry: Pantry = {
   'git-credential-manager': gitcredentialmanagerPackage,
   pyparsing: pyparsingPackage,
   nnn: nnnPackage,
+  needs: needsPackage,
   neofetch: neofetchPackage,
   'gost3411-2012': streebogPackage,
   yamllint: yamllintPackage,

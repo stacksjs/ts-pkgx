@@ -887,6 +887,7 @@ export const aliases: Record<string, string> = {
   'navi': 'github.com/denisidoro/navi',
   'ncdu': 'dev.yorhel.nl/ncdu',
   'ncurses': 'invisible-island.net/ncurses',
+  'needs': 'github.com/NQMVD/needs',
   'neofetch': 'github.com/dylanaraps/neofetch',
   'neon-config': 'notroj.github.io/neon',
   'neowofetch': 'github.com/hykilpikonna/hyfetch/neowofetch',
