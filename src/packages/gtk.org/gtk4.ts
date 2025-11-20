@@ -3,7 +3,7 @@
  *
  * @domain `gtk.org/gtk4`
  * @programs `gtk4-builder-tool`, `gtk4-demo`, `gtk4-demo-application`, `gtk4-encode-symbolic-svg`, `gtk4-launch`, ... (+6 more)
- * @version `4.21.1` (53 versions available)
+ * @version `4.21.1` (54 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gtk.org/gtk4`
@@ -114,6 +114,7 @@ export const gtkorggtk4Package = {
   versions: [
     '4.21.1',
     '4.21.0',
+    '4.20.3',
     '4.20.2',
     '4.20.1',
     '4.20.0',
