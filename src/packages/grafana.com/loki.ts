@@ -3,7 +3,7 @@
  *
  * @domain `grafana.com/loki`
  * @programs `loki`
- * @version `3.5.8` (29 versions available)
+ * @version `3.6.1` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install grafana.com/loki`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "loki"
  * console.log(pkg.description) // "Horizontally-scalable, highly-available log agg..."
  * console.log(pkg.programs)    // ["loki"]
- * console.log(pkg.versions[0]) // "3.5.8" (latest)
+ * console.log(pkg.versions[0]) // "3.6.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/grafana-com/loki.md
@@ -70,6 +70,8 @@ export const grafanacomlokiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6.1',
+    '3.6.0',
     '3.5.8',
     '3.5.7',
     '3.5.6',
@@ -94,6 +96,7 @@ export const grafanacomlokiPackage = {
     '3.2.2',
     '3.2.1',
     '3.2.0',
+    '2.9.17',
     '2.9.15',
     '2.9.14',
     '2.9.13',
