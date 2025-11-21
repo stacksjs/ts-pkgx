@@ -8,8 +8,8 @@
  *
  * @install `launchpad install projen.io`
  * @homepage https://projen.io
- * @dependencies `nodejs.org^22 || ^20 || ^18`
- * @buildDependencies `classic.yarnpkg.com@^1`, `maven.apache.org@>=3.0.0`, `python.org@~3.11`, ... (+1 more) - required only when building from source
+ * @dependencies `nodejs.org^20 || ^18`
+ * @buildDependencies `classic.yarnpkg.com@^1`, `npmjs.com@~11.4.2`, `maven.apache.org@>=3.0.0`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,7 +61,7 @@ export const projenioPackage = {
    * These are required when running the package.
    */
   dependencies: [
-    'nodejs.org^22 || ^20 || ^18',
+    'nodejs.org^20 || ^18',
   ] as const,
   /**
    * Build dependencies for this package.
@@ -69,6 +69,7 @@ export const projenioPackage = {
    */
   buildDependencies: [
     'classic.yarnpkg.com@^1',
+    'npmjs.com@~11.4.2',
     'maven.apache.org@>=3.0.0',
     'python.org@~3.11',
     'go.dev@>=1.21',

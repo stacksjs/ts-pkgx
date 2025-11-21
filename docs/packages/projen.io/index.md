@@ -59,7 +59,7 @@ sh <(curl https://pkgx.sh) +projen.io@0.98.17 -- $SHELL -i
 
 This package depends on:
 
-- `nodejs.org^22 || ^20 || ^18`
+- `nodejs.org^20 || ^18`
 
 ## Usage Examples
 
