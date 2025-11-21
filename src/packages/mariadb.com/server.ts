@@ -3,7 +3,7 @@
  *
  * @domain `mariadb.com/server`
  * @programs `aria_chk`, `aria_dump_log`, `aria_ftdump`, `aria_pack`, `aria_read_log`, ... (+79 more)
- * @version `12.1.2` (38 versions available)
+ * @version `12.2.1` (39 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mariadb.com/server`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "MariaDB"
  * console.log(pkg.description) // "MariaDB server is a community developed fork of..."
  * console.log(pkg.programs)    // ["aria_chk", "aria_dump_log", ...]
- * console.log(pkg.versions[0]) // "12.1.2" (latest)
+ * console.log(pkg.versions[0]) // "12.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mariadb-com/server.md
@@ -170,6 +170,7 @@ export const mariadbcomserverPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '12.2.1',
     '12.1.2',
     '12.1.1',
     '12.0.2',
