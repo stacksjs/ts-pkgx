@@ -3,7 +3,7 @@
  *
  * @domain `isc.org/bind9`
  * @programs `arpaname`, `delv`, `dig`, `dnssec-cds`, `dnssec-dsfromkey`, ... (+24 more)
- * @version `9.21.14` (27 versions available)
+ * @version `9.21.15` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install isc.org/bind9`
@@ -16,7 +16,7 @@
  * const pkg = pantry.iscorgbind9
  * console.log(pkg.name)        // "bind9"
  * console.log(pkg.programs)    // ["arpaname", "delv", ...]
- * console.log(pkg.versions[0]) // "9.21.14" (latest)
+ * console.log(pkg.versions[0]) // "9.21.15" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/isc-org/bind9.md
@@ -107,6 +107,7 @@ export const iscorgbind9Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.21.15',
     '9.21.14',
     '9.21.12',
     '9.21.11',
