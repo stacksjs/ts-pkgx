@@ -3,7 +3,7 @@
  *
  * @domain `symfony.com`
  * @programs `symfony`
- * @version `5.15.1` (56 versions available)
+ * @version `5.16.0` (57 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install symfony.com`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "symfony"
  * console.log(pkg.description) // "The Symfony CLI tool"
  * console.log(pkg.programs)    // ["symfony"]
- * console.log(pkg.versions[0]) // "5.15.1" (latest)
+ * console.log(pkg.versions[0]) // "5.16.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/symfony-com.md
@@ -75,6 +75,7 @@ export const symfonycomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.16.0',
     '5.15.1',
     '5.15.0',
     '5.14.2',
