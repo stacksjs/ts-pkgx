@@ -3,12 +3,12 @@
  *
  * @domain `xpra.org`
  * @programs `xpra`
- * @version `6.3.5` (14 versions available)
+ * @version `6.3.6` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xpra.org`
  * @homepage https://xpra.org/
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `tukaani.org/xz`, ... (+5 more)
+ * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "xpra"
  * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
  * console.log(pkg.programs)    // ["xpra"]
- * console.log(pkg.versions[0]) // "6.3.5" (latest)
+ * console.log(pkg.versions[0]) // "6.3.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xpra-org.md
@@ -62,6 +62,7 @@ export const xpraorgPackage = {
   dependencies: [
     'pkgx.sh^1',
     'python.org~3.11',
+    'cython.org',
     'tukaani.org/xz',
     'cairographics.org',
     'cairographics.org/pycairo@1.26.1',
@@ -75,6 +76,7 @@ export const xpraorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.3.6',
     '6.3.5',
     '6.3.4',
     '6.3.3',

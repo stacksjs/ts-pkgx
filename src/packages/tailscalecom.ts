@@ -2,7 +2,7 @@
  * **tailscale** - pkgx package
  *
  * @domain `tailscale.com`
- * @version `1.90.6` (6 versions available)
+ * @version `1.90.8` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tailscale.com`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.tailscalecom
  * console.log(pkg.name)        // "tailscale"
- * console.log(pkg.versions[0]) // "1.90.6" (latest)
+ * console.log(pkg.versions[0]) // "1.90.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tailscale-com.md
@@ -58,6 +58,7 @@ export const tailscalecomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.90.8',
     '1.90.6',
     '1.90.4',
     '1.90.3',

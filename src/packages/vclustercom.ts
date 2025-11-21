@@ -3,13 +3,13 @@
  *
  * @domain `vcluster.com`
  * @programs `vcluster`
- * @version `0.30.0` (47 versions available)
+ * @version `0.30.1` (48 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vcluster.com`
  * @homepage https://www.vcluster.com
  * @dependencies `kubernetes.io/kubectl^1`, `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
- * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "vcluster"
  * console.log(pkg.description) // "vCluster - Create fully functional virtual Kube..."
  * console.log(pkg.programs)    // ["vcluster"]
- * console.log(pkg.versions[0]) // "0.30.0" (latest)
+ * console.log(pkg.versions[0]) // "0.30.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vcluster-com.md
@@ -73,12 +73,14 @@ export const vclustercomPackage = {
   buildDependencies: [
     'go.dev@^1.21',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.30.1',
     '0.30.0',
     '0.29.1',
     '0.29.0',

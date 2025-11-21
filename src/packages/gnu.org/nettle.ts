@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/nettle`
  * @programs `nettle-hash`, `nettle-lfib-stream`, `nettle-pbkdf2`, `pkcs1-conv`, `sexp-conv`
- * @version `3.8.1` (1 versions available)
+ * @version `3.10.2` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/nettle`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "nettle"
  * console.log(pkg.description) // "A mirror of the nettle repository"
  * console.log(pkg.programs)    // ["nettle-hash", "nettle-lfib-stream", ...]
- * console.log(pkg.versions[0]) // "3.8.1" (latest)
+ * console.log(pkg.versions[0]) // "3.10.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/nettle.md
@@ -73,6 +73,11 @@ export const gnuorgnettlePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.10.2',
+    '3.10.1',
+    '3.10.0',
+    '3.9.1',
+    '3.9.0',
     '3.8.1',
   ] as const,
   aliases: [] as const,

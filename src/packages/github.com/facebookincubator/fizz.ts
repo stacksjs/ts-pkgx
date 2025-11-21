@@ -3,11 +3,11 @@
  *
  * @domain `github.com/facebookincubator/fizz`
  * @programs `fizz`
- * @version `2025.9.8.0` (123 versions available)
+ * @version `2025.9.8.0` (125 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/facebookincubator/fizz`
- * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^10`, ... (+12 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^12`, ... (+12 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `cmake.org@^3`, `linux:gnu.org/gcc@13` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -63,7 +63,7 @@ export const fizzPackage = {
   dependencies: [
     'boost.org',
     'google.com/double-conversion^3',
-    'fmt.dev^10',
+    'fmt.dev^12',
     'facebook.com/folly',
     'gflags.github.io',
     'google.com/glog<0.7',
@@ -126,6 +126,8 @@ export const fizzPackage = {
     '2025.2.17.0',
     '2025.2.10.0',
     '2025.11.3.0',
+    '2025.11.17.0',
+    '2025.11.10.0',
     '2025.10.6.0',
     '2025.10.27.0',
     '2025.10.20.0',

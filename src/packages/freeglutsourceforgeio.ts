@@ -2,7 +2,7 @@
  * **freeglut.sourceforge** - Free implementation of the OpenGL Utility Toolkit (GLUT)
  *
  * @domain `freeglut.sourceforge.io`
- * @version `3.6.0` (2 versions available)
+ * @version `3.8.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freeglut.sourceforge.io`
@@ -17,7 +17,7 @@
  * const pkg = pantry.freeglutsourceforgeio
  * console.log(pkg.name)        // "freeglut.sourceforge"
  * console.log(pkg.description) // "Free implementation of the OpenGL Utility Toolk..."
- * console.log(pkg.versions[0]) // "3.6.0" (latest)
+ * console.log(pkg.versions[0]) // "3.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freeglut-sourceforge-io.md
@@ -74,6 +74,7 @@ export const freeglutsourceforgeioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.8.0',
     '3.6.0',
     '3.4.0',
   ] as const,

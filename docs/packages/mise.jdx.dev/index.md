@@ -26,8 +26,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 388 versions</summary>
+<summary>Show all 393 versions</summary>
 
+- `2025.11.7`, `2025.11.6`, `2025.11.5`, `2025.11.4`, `2025.11.3`
 - `2025.11.2`, `2025.11.1`, `2025.11.0`, `2025.10.21`, `2025.10.20`
 - `2025.10.19`, `2025.10.18`, `2025.10.17`, `2025.10.16`, `2025.10.15`
 - `2025.10.14`, `2025.10.13`, `2025.10.12`, `2025.10.11`, `2025.10.10`
@@ -109,13 +110,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `2025.11.2`
+**Latest Version**: `2025.11.7`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mise.jdx.dev@2025.11.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +mise.jdx.dev@2025.11.7 -- $SHELL -i
 ```
 
 ## Dependencies

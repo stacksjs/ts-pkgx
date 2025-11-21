@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 82 versions</summary>
+<summary>Show all 87 versions</summary>
 
+- `0.30.25`, `0.30.24`, `0.30.23`, `0.30.22`, `0.30.21`
 - `0.30.20`, `0.30.18`, `0.30.17`, `0.30.16`, `0.30.15`
 - `0.30.14`, `0.30.13`, `0.30.12`, `0.30.11`, `0.30.10`
 - `0.30.9`, `0.30.8`, `0.30.7`, `0.30.6`, `0.30.5`
@@ -47,13 +48,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.30.20`
+**Latest Version**: `0.30.25`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/chainguard-dev/apko@0.30.20 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/chainguard-dev/apko@0.30.25 -- $SHELL -i
 ```
 
 ## Usage Examples

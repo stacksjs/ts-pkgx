@@ -3,13 +3,13 @@
  *
  * @domain `projen.io`
  * @programs `projen`
- * @version `0.98.7` (70 versions available)
+ * @version `0.98.17` (80 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install projen.io`
  * @homepage https://projen.io
- * @dependencies `nodejs.org^22 || ^20 || ^18`
- * @buildDependencies `classic.yarnpkg.com@^1`, `maven.apache.org@>=3.0.0`, `python.org@~3.11`, ... (+1 more) - required only when building from source
+ * @dependencies `nodejs.org^20 || ^18`
+ * @buildDependencies `classic.yarnpkg.com@^1`, `npmjs.com@~11.4.2`, `maven.apache.org@>=3.0.0`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "projen"
  * console.log(pkg.description) // "Rapidly build modern applications with advanced..."
  * console.log(pkg.programs)    // ["projen"]
- * console.log(pkg.versions[0]) // "0.98.7" (latest)
+ * console.log(pkg.versions[0]) // "0.98.17" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/projen-io.md
@@ -61,7 +61,7 @@ export const projenioPackage = {
    * These are required when running the package.
    */
   dependencies: [
-    'nodejs.org^22 || ^20 || ^18',
+    'nodejs.org^20 || ^18',
   ] as const,
   /**
    * Build dependencies for this package.
@@ -69,6 +69,7 @@ export const projenioPackage = {
    */
   buildDependencies: [
     'classic.yarnpkg.com@^1',
+    'npmjs.com@~11.4.2',
     'maven.apache.org@>=3.0.0',
     'python.org@~3.11',
     'go.dev@>=1.21',
@@ -78,6 +79,16 @@ export const projenioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.98.17',
+    '0.98.16',
+    '0.98.15',
+    '0.98.14',
+    '0.98.13',
+    '0.98.12',
+    '0.98.11',
+    '0.98.10',
+    '0.98.9',
+    '0.98.8',
     '0.98.7',
     '0.98.6',
     '0.98.5',

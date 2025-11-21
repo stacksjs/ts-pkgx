@@ -3,7 +3,7 @@
  *
  * @domain `cython.org`
  * @programs `cython`
- * @version `3.2.0` (25 versions available)
+ * @version `3.2.1` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cython.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "cython"
  * console.log(pkg.description) // "Compiler for writing C extensions for the Pytho..."
  * console.log(pkg.programs)    // ["cython"]
- * console.log(pkg.versions[0]) // "3.2.0" (latest)
+ * console.log(pkg.versions[0]) // "3.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cython-org.md
@@ -75,7 +75,9 @@ export const cythonorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.2.1',
     '3.2.0',
+    '3.1.7',
     '3.1.6',
     '3.1.5',
     '3.1.4',

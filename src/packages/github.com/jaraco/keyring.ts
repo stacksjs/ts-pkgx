@@ -3,7 +3,7 @@
  *
  * @domain `github.com/jaraco/keyring`
  * @programs `keyring`
- * @version `25.6.0` (12 versions available)
+ * @version `25.7.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/jaraco/keyring`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "keyring"
  * console.log(pkg.description) // "Easy way to access the system keyring service f..."
  * console.log(pkg.programs)    // ["keyring"]
- * console.log(pkg.versions[0]) // "25.6.0" (latest)
+ * console.log(pkg.versions[0]) // "25.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jaraco/keyring.md
@@ -77,6 +77,7 @@ export const keyringPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.7.0',
     '25.6.0',
     '25.5.0',
     '25.4.1',

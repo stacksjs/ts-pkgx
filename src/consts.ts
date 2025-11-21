@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-11-06T02:37:16.749Z
+ * Generated on 2025-11-21T02:35:57.801Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1610 total)
+ * List of all known packages (1611 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -513,6 +513,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/Mbed-TLS/mbedtls',
   'github.com/MilesCranmer/rip2',
   'github.com/MinseokOh/toml-cli',
+  'github.com/NQMVD/needs',
   'github.com/OSGeo/libgeotiff',
   'github.com/OpenSC/pkcs11-helper',
   'github.com/Ousret/charset_normalizer',

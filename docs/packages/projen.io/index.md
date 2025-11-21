@@ -25,8 +25,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 70 versions</summary>
+<summary>Show all 80 versions</summary>
 
+- `0.98.17`, `0.98.16`, `0.98.15`, `0.98.14`, `0.98.13`
+- `0.98.12`, `0.98.11`, `0.98.10`, `0.98.9`, `0.98.8`
 - `0.98.7`, `0.98.6`, `0.98.5`, `0.98.4`, `0.98.3`
 - `0.98.2`, `0.98.1`, `0.98.0`, `0.97.2`, `0.97.1`
 - `0.97.0`, `0.96.5`, `0.96.4`, `0.96.3`, `0.96.2`
@@ -44,20 +46,20 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.98.7`
+**Latest Version**: `0.98.17`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +projen.io@0.98.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +projen.io@0.98.17 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `nodejs.org^22 || ^20 || ^18`
+- `nodejs.org^20 || ^18`
 
 ## Usage Examples
 

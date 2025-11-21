@@ -3,7 +3,7 @@
  *
  * @domain `tcl.tk/tcl`
  * @programs `sqlite3_analyzer`, `tclsh{{version.major}}.{{version.minor}}`, `tclsh`
- * @version `9.0.2` (6 versions available)
+ * @version `9.0.3` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tcl.tk/tcl`
@@ -15,7 +15,7 @@
  * const pkg = pantry.tcltktcl
  * console.log(pkg.name)        // "tcl"
  * console.log(pkg.programs)    // ["sqlite3_analyzer", "tclsh{{version.major}}.{{version.minor}}", ...]
- * console.log(pkg.versions[0]) // "9.0.2" (latest)
+ * console.log(pkg.versions[0]) // "9.0.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tcl-tk/tcl.md
@@ -61,6 +61,7 @@ export const tcltktclPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.0.3',
     '9.0.2',
     '9.0.1',
     '8.6.17',

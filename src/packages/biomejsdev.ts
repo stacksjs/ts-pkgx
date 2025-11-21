@@ -3,7 +3,7 @@
  *
  * @domain `biomejs.dev`
  * @programs `biome`
- * @version `1.9.4` (28 versions available)
+ * @version `2.3.7` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install biomejs.dev`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "biome"
  * console.log(pkg.description) // "A toolchain for web projects, aimed to provide ..."
  * console.log(pkg.programs)    // ["biome"]
- * console.log(pkg.versions[0]) // "1.9.4" (latest)
+ * console.log(pkg.versions[0]) // "2.3.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/biomejs-dev.md
@@ -61,6 +61,10 @@ export const biomejsdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.3.7',
+    '2.3.6',
+    '2.3.5',
+    '2.3.4',
     '1.9.4',
     '1.9.3',
     '1.9.2',

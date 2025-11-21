@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 49 versions</summary>
+<summary>Show all 54 versions</summary>
 
+- `0.11.59`, `0.11.58`, `0.11.57`, `0.11.56`, `0.11.55`
 - `0.11.54`, `0.11.52`, `0.11.51`, `0.11.50`, `0.11.48`
 - `0.11.47`, `0.11.46`, `0.11.45`, `0.11.44`, `0.11.43`
 - `0.11.41`, `0.11.40`, `0.11.39`, `0.11.38`, `0.11.37`
@@ -40,13 +41,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.11.54`
+**Latest Version**: `0.11.59`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +arkade.dev@0.11.54 -- $SHELL -i
+sh <(curl https://pkgx.sh) +arkade.dev@0.11.59 -- $SHELL -i
 ```
 
 ## Usage Examples

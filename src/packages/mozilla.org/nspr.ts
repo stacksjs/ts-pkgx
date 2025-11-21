@@ -3,7 +3,7 @@
  *
  * @domain `mozilla.org/nspr`
  * @programs `nspr-config`
- * @version `4.34.1` (1 versions available)
+ * @version `4.38.1` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mozilla.org/nspr`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "nspr-config"
  * console.log(pkg.description) // "Platform-neutral API for system-level and libc-..."
  * console.log(pkg.programs)    // ["nspr-config"]
- * console.log(pkg.versions[0]) // "4.34.1" (latest)
+ * console.log(pkg.versions[0]) // "4.38.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mozilla-org/nspr.md
@@ -61,6 +61,9 @@ export const mozillaorgnsprPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.38.1',
+    '4.36.2',
+    '4.36.1',
     '4.34.1',
   ] as const,
   aliases: [] as const,

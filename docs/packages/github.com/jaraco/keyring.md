@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `25.6.0`, `25.5.0`, `25.4.1`, `25.4.0`, `25.3.0`
-- `25.2.1`, `25.2.0`, `25.1.0`, `25.0.1`, `25.0.0`
-- `24.3.1`, `24.3.0`
+- `25.7.0`, `25.6.0`, `25.5.0`, `25.4.1`, `25.4.0`
+- `25.3.0`, `25.2.1`, `25.2.0`, `25.1.0`, `25.0.1`
+- `25.0.0`, `24.3.1`, `24.3.0`
 
 </details>
 
-**Latest Version**: `25.6.0`
+**Latest Version**: `25.7.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/jaraco/keyring@25.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jaraco/keyring@25.7.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -26,20 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `0.10.6`, `0.10.5`, `0.10.4`, `0.10.3`, `0.10.2`
-- `0.10.1`
+- `0.10.7`, `0.10.6`, `0.10.5`, `0.10.4`, `0.10.3`
+- `0.10.2`, `0.10.1`
 
 </details>
 
-**Latest Version**: `0.10.6`
+**Latest Version**: `0.10.7`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli@0.10.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli@0.10.7 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -2,7 +2,7 @@
  * **Vanna** - 🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄.
  *
  * @domain `vanna.ai`
- * @version `0.7.9` (42 versions available)
+ * @version `2.0.1` (44 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vanna.ai`
@@ -16,7 +16,7 @@
  * const pkg = pantry.vannaai
  * console.log(pkg.name)        // "Vanna"
  * console.log(pkg.description) // "🤖 Chat with your SQL database 📊. Accurate Tex..."
- * console.log(pkg.versions[0]) // "0.7.9" (latest)
+ * console.log(pkg.versions[0]) // "2.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vanna-ai.md
@@ -62,6 +62,8 @@ export const vannaaiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.1',
+    '2.0.0',
     '0.7.9',
     '0.7.8',
     '0.7.7',

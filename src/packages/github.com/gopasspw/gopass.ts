@@ -3,7 +3,7 @@
  *
  * @domain `github.com/gopasspw/gopass`
  * @programs `gopass`
- * @version `1.15.18` (14 versions available)
+ * @version `1.16.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/gopasspw/gopass`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gopass"
  * console.log(pkg.description) // "The slightly more awesome standard unix passwor..."
  * console.log(pkg.programs)    // ["gopass"]
- * console.log(pkg.versions[0]) // "1.15.18" (latest)
+ * console.log(pkg.versions[0]) // "1.16.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/gopasspw/gopass.md
@@ -68,6 +68,7 @@ export const gopassPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.16.0',
     '1.15.18',
     '1.15.17',
     '1.15.16',

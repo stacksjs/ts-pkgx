@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 216 versions</summary>
+<summary>Show all 221 versions</summary>
 
+- `0.6.137`, `0.6.136`, `0.6.135`, `0.6.134`, `0.6.133`
 - `0.6.132`, `0.6.131`, `0.6.130`, `0.6.129`, `0.6.128`
 - `0.6.127`, `0.6.126`, `0.6.125`, `0.6.124`, `0.6.123`
 - `0.6.122`, `0.6.121`, `0.6.120`, `0.6.119`, `0.6.118`
@@ -74,13 +75,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.6.132`
+**Latest Version**: `0.6.137`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +digger.dev@0.6.132 -- $SHELL -i
+sh <(curl https://pkgx.sh) +digger.dev@0.6.137 -- $SHELL -i
 ```
 
 ## Usage Examples

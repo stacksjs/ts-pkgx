@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 122 versions</summary>
+<summary>Show all 127 versions</summary>
 
+- `14.26.0`, `14.25.1`, `14.25.0`, `14.24.2`, `14.24.1`
 - `14.24.0`, `14.23.0`, `14.22.0`, `14.21.0`, `14.20.0`
 - `14.19.1`, `14.19.0`, `14.18.0`, `14.17.0`, `14.16.0`
 - `14.15.2`, `14.15.1`, `14.15.0`, `14.14.0`, `14.13.0`
@@ -55,13 +56,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `14.24.0`
+**Latest Version**: `14.26.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/firebase-tools@14.24.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/firebase-tools@14.26.0 -- $SHELL -i
 ```
 
 ## Dependencies

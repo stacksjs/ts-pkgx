@@ -3,7 +3,7 @@
  *
  * @domain `facebook.com/fbthrift`
  * @programs `thrift1`
- * @version `2025.9.8.0` (97 versions available)
+ * @version `2025.9.8.0` (99 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/fbthrift`
@@ -64,7 +64,7 @@ export const facebookcomfbthriftPackage = {
     'github.com/facebookincubator/fizz',
     'facebook.com/folly',
     'facebook.com/wangle',
-    'fmt.dev^10',
+    'fmt.dev^12',
     'gflags.github.io^2.2.2',
     'google.com/glog^0.6',
     'openssl.org^1.1',
@@ -128,6 +128,8 @@ export const facebookcomfbthriftPackage = {
     '2025.2.17.0',
     '2025.2.10.0',
     '2025.11.3.0',
+    '2025.11.17.0',
+    '2025.11.10.0',
     '2025.10.6.0',
     '2025.10.27.0',
     '2025.10.20.0',

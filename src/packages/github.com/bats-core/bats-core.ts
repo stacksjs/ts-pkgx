@@ -3,7 +3,7 @@
  *
  * @domain `github.com/bats-core/bats-core`
  * @programs `bats`
- * @version `1.12.0` (4 versions available)
+ * @version `1.13.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/bats-core/bats-core`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "bats"
  * console.log(pkg.description) // "Bash Automated Testing System"
  * console.log(pkg.programs)    // ["bats"]
- * console.log(pkg.versions[0]) // "1.12.0" (latest)
+ * console.log(pkg.versions[0]) // "1.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/bats-core/bats-core.md
@@ -68,6 +68,7 @@ export const batscorePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.0',
     '1.12.0',
     '1.11.1',
     '1.11.0',

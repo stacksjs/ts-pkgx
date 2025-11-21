@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `2.10.2`, `2.10.1`, `2.10.0`, `2.9.3`, `2.9.2`
-- `2.9.1`, `2.9.0`, `2.8.2`, `2.8.1`, `2.8.0`
+- `2.11.0`, `2.10.2`, `2.10.1`, `2.10.0`, `2.9.3`
+- `2.9.2`, `2.9.1`, `2.9.0`, `2.8.2`, `2.8.1`
+- `2.8.0`
 
 </details>
 
-**Latest Version**: `2.10.2`
+**Latest Version**: `2.11.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wails.io@2.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +wails.io@2.11.0 -- $SHELL -i
 ```
 
 ## Dependencies

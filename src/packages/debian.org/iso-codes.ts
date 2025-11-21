@@ -2,7 +2,7 @@
  * **iso-codes** - pkgx package
  *
  * @domain `debian.org/iso-codes`
- * @version `4.18.0` (4 versions available)
+ * @version `4.19.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install debian.org/iso-codes`
@@ -15,7 +15,7 @@
  *
  * const pkg = pantry.debianorgisocodes
  * console.log(pkg.name)        // "iso-codes"
- * console.log(pkg.versions[0]) // "4.18.0" (latest)
+ * console.log(pkg.versions[0]) // "4.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/debian-org/iso-codes.md
@@ -65,6 +65,7 @@ export const debianorgisocodesPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.19.0',
     '4.18.0',
     '4.17.0',
     '4.16.0',

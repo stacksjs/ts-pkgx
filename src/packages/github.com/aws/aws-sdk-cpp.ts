@@ -2,7 +2,7 @@
  * **aws-sdk-cpp** - AWS SDK for C++
  *
  * @domain `github.com/aws/aws-sdk-cpp`
- * @version `1.11.684` (600 versions available)
+ * @version `1.11.695` (611 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/aws/aws-sdk-cpp`
@@ -16,7 +16,7 @@
  * const pkg = pantry.githubcomawsawssdkcpp
  * console.log(pkg.name)        // "aws-sdk-cpp"
  * console.log(pkg.description) // "AWS SDK for C++"
- * console.log(pkg.versions[0]) // "1.11.684" (latest)
+ * console.log(pkg.versions[0]) // "1.11.695" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/aws/aws-sdk-cpp.md
@@ -68,6 +68,17 @@ export const awssdkcppPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.695',
+    '1.11.694',
+    '1.11.693',
+    '1.11.692',
+    '1.11.691',
+    '1.11.690',
+    '1.11.689',
+    '1.11.688',
+    '1.11.687',
+    '1.11.686',
+    '1.11.685',
     '1.11.684',
     '1.11.683',
     '1.11.682',

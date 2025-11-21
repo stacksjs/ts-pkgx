@@ -3,7 +3,7 @@
  *
  * @domain `gqlgen.com`
  * @programs `gqlgen`
- * @version `0.17.81` (45 versions available)
+ * @version `0.17.83` (47 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gqlgen.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gqlgen"
  * console.log(pkg.description) // "go generate based graphql server library"
  * console.log(pkg.programs)    // ["gqlgen"]
- * console.log(pkg.versions[0]) // "0.17.81" (latest)
+ * console.log(pkg.versions[0]) // "0.17.83" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gqlgen-com.md
@@ -68,6 +68,8 @@ export const gqlgencomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.17.83',
+    '0.17.82',
     '0.17.81',
     '0.17.80',
     '0.17.79',

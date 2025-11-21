@@ -3,7 +3,7 @@
  *
  * @domain `heroku.com`
  * @programs `heroku`
- * @version `10.15.0` (40 versions available)
+ * @version `10.15.1` (41 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install heroku.com`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "heroku"
  * console.log(pkg.description) // "CLI for Heroku"
  * console.log(pkg.programs)    // ["heroku"]
- * console.log(pkg.versions[0]) // "10.15.0" (latest)
+ * console.log(pkg.versions[0]) // "10.15.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/heroku-com.md
@@ -75,6 +75,7 @@ export const herokucomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.15.1',
     '10.15.0',
     '10.14.0',
     '10.13.2',

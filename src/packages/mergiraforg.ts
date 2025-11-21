@@ -3,7 +3,7 @@
  *
  * @domain `mergiraf.org`
  * @programs `mergiraf`
- * @version `0.15.0` (7 versions available)
+ * @version `0.16.1` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mergiraf.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "mergiraf"
  * console.log(pkg.description) // "Syntax-aware git merge driver"
  * console.log(pkg.programs)    // ["mergiraf"]
- * console.log(pkg.versions[0]) // "0.15.0" (latest)
+ * console.log(pkg.versions[0]) // "0.16.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mergiraf-org.md
@@ -61,6 +61,7 @@ export const mergiraforgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.16.1',
     '0.15.0',
     '0.14.0',
     '0.13.0',

@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/ripgrep-all`
  * @programs `rga`, `rga-fzf`, `rga-fzf-open`, `rga-preproc`
- * @version `0.10.9` (4 versions available)
+ * @version `0.10.10` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/ripgrep-all`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "rga"
  * console.log(pkg.description) // "rga: ripgrep, but also search in PDFs, E-Books,..."
  * console.log(pkg.programs)    // ["rga", "rga-fzf", ...]
- * console.log(pkg.versions[0]) // "0.10.9" (latest)
+ * console.log(pkg.versions[0]) // "0.10.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/ripgrep-all.md
@@ -63,6 +63,7 @@ export const cratesioripgrepallPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.10.10',
     '0.10.9',
     '0.10.8',
     '0.10.7',

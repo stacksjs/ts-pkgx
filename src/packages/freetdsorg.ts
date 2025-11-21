@@ -3,13 +3,13 @@
  *
  * @domain `freetds.org`
  * @programs `bsqldb`, `bsqlodbc`, `datacopy`, `defncopy`, `fisql`, ... (+4 more)
- * @version `1.5.6` (35 versions available)
+ * @version `1.5.9` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freetds.org`
  * @homepage https://www.freetds.org/
  * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+1 more)
- * @buildDependencies `gnu.org/autoconf`, `gnu.org/gettext`, `gnu.org/libtool`, ... (+1 more) - required only when building from source
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/gettext`, `gnu.org/libtool`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "freetds"
  * console.log(pkg.description) // "Libraries to talk to Microsoft SQL Server and S..."
  * console.log(pkg.programs)    // ["bsqldb", "bsqlodbc", ...]
- * console.log(pkg.versions[0]) // "1.5.6" (latest)
+ * console.log(pkg.versions[0]) // "1.5.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freetds-org.md
@@ -83,12 +83,15 @@ export const freetdsorgPackage = {
     'gnu.org/gettext',
     'gnu.org/libtool',
     'gnu.org/automake',
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.9',
+    '1.5.8',
     '1.5.6',
     '1.5.5',
     '1.5.4',

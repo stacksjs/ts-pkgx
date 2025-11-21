@@ -28,19 +28,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `4.7.3`, `4.7.2`, `4.7.1`, `4.7.0`, `4.6.1`
+- `4.7.4`, `4.7.3`, `4.7.2`, `4.7.1`, `4.7.0`
+- `4.6.1`
 
 </details>
 
-**Latest Version**: `4.7.3`
+**Latest Version**: `4.7.4`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/plougher/squashfs-tools@4.7.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/plougher/squashfs-tools@4.7.4 -- $SHELL -i
 ```
 
 ## Dependencies

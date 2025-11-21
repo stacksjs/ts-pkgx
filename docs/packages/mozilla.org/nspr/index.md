@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `4.34.1`
+- `4.38.1`, `4.36.2`, `4.36.1`, `4.34.1`
 
 </details>
 
-**Latest Version**: `4.34.1`
+**Latest Version**: `4.38.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mozilla.org/nspr@4.34.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +mozilla.org/nspr@4.38.1 -- $SHELL -i
 ```
 
 ## Usage Examples

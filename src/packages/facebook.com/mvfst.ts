@@ -2,11 +2,11 @@
  * **mvfst** - An implementation of the QUIC transport protocol.
  *
  * @domain `facebook.com/mvfst`
- * @version `2025.9.8.0` (102 versions available)
+ * @version `2025.9.8.0` (104 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/mvfst`
- * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^12`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `cmake.org`, `linux:gnu.org/gcc@13`, `linux:gnu.org/binutils`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -55,7 +55,7 @@ export const facebookcommvfstPackage = {
   dependencies: [
     'boost.org',
     'github.com/facebookincubator/fizz',
-    'fmt.dev^10',
+    'fmt.dev^12',
     'facebook.com/folly',
     'gflags.github.io',
     'google.com/glog',
@@ -114,6 +114,8 @@ export const facebookcommvfstPackage = {
     '2025.2.17.0',
     '2025.2.10.0',
     '2025.11.3.0',
+    '2025.11.17.0',
+    '2025.11.10.0',
     '2025.10.6.0',
     '2025.10.27.0',
     '2025.10.20.0',

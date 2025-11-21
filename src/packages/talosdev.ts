@@ -3,12 +3,12 @@
  *
  * @domain `talos.dev`
  * @programs `talosctl`
- * @version `1.11.4` (36 versions available)
+ * @version `1.11.5` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install talos.dev`
  * @homepage https://www.talos.dev/
- * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "talosctl"
  * console.log(pkg.description) // "CLI for out-of-band management of Kubernetes no..."
  * console.log(pkg.programs)    // ["talosctl"]
- * console.log(pkg.versions[0]) // "1.11.4" (latest)
+ * console.log(pkg.versions[0]) // "1.11.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/talos-dev.md
@@ -64,17 +64,20 @@ export const talosdevPackage = {
   buildDependencies: [
     'go.dev@^1.21',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.5',
     '1.11.4',
     '1.11.3',
     '1.11.2',
     '1.11.1',
     '1.11.0',
+    '1.10.8',
     '1.10.7',
     '1.10.6',
     '1.10.5',

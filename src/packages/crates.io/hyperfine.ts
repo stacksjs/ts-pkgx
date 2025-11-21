@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/hyperfine`
  * @programs `hyperfine`
- * @version `1.19.0` (7 versions available)
+ * @version `1.20.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/hyperfine`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "hyperfine"
  * console.log(pkg.description) // "A command-line benchmarking tool"
  * console.log(pkg.programs)    // ["hyperfine"]
- * console.log(pkg.versions[0]) // "1.19.0" (latest)
+ * console.log(pkg.versions[0]) // "1.20.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/hyperfine.md
@@ -60,6 +60,7 @@ export const cratesiohyperfinePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.20.0',
     '1.19.0',
     '1.18.0',
     '1.17.0',

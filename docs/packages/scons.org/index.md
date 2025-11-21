@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `4.10.0`, `4.9.1`, `4.9.0`, `4.8.1`, `4.8.0`
-- `4.7.0`, `4.6.0`, `4.5.2`
+- `4.10.1`, `4.10.0`, `4.9.1`, `4.9.0`, `4.8.1`
+- `4.8.0`, `4.7.0`, `4.6.0`, `4.5.2`
 
 </details>
 
-**Latest Version**: `4.10.0`
+**Latest Version**: `4.10.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +scons.org@4.10.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +scons.org@4.10.1 -- $SHELL -i
 ```
 
 ## Dependencies

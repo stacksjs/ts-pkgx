@@ -3,7 +3,7 @@
  *
  * @domain `isc.org/bind9`
  * @programs `arpaname`, `delv`, `dig`, `dnssec-cds`, `dnssec-dsfromkey`, ... (+24 more)
- * @version `9.21.14` (25 versions available)
+ * @version `9.21.14` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install isc.org/bind9`
@@ -117,6 +117,7 @@ export const iscorgbind9Package = {
     '9.21.6',
     '9.21.5',
     '9.21.4',
+    '9.20.16',
     '9.20.15',
     '9.20.13',
     '9.20.12',
@@ -126,6 +127,7 @@ export const iscorgbind9Package = {
     '9.20.8',
     '9.20.7',
     '9.20.6',
+    '9.18.42',
     '9.18.41',
     '9.18.39',
     '9.18.38',

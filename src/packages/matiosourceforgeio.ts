@@ -3,12 +3,13 @@
  *
  * @domain `matio.sourceforge.io`
  * @programs `matdump`
- * @version `1.5.28` (6 versions available)
+ * @version `1.5.29` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install matio.sourceforge.io`
  * @homepage https://matio.sourceforge.net/
  * @dependencies `hdfgroup.org/HDF5`, `zlib.net`
+ * @buildDependencies `cmake.org`, `darwin:llvm.org@20` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * console.log(pkg.name)        // "libmatio"
  * console.log(pkg.description) // "C library for reading and writing MATLAB MAT files"
  * console.log(pkg.programs)    // ["matdump"]
- * console.log(pkg.versions[0]) // "1.5.28" (latest)
+ * console.log(pkg.versions[0]) // "1.5.29" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
@@ -63,12 +64,21 @@ export const matiosourceforgeioPackage = {
     'hdfgroup.org/HDF5',
     'zlib.net',
   ] as const,
-  buildDependencies: [] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'darwin:llvm.org@20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.29',
     '1.5.28',
     '1.5.27',
     '1.5.26',

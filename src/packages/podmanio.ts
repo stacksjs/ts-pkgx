@@ -3,13 +3,13 @@
  *
  * @domain `podman.io`
  * @programs `podman`, `podman-remote`, `podman-mac-helper`
- * @version `5.6.2` (43 versions available)
+ * @version `5.7.0` (44 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install podman.io`
  * @homepage https://podman.io/
  * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `darwin:github.com/crc-org/vfkit` (includes OS-specific dependencies with `os:package` format)
- * @buildDependencies `go.dev@=1.23.3`, `gnu.org/coreutils` - required only when building from source
+ * @buildDependencies `go.dev@=1.24.2`, `gnu.org/coreutils` - required only when building from source
  *
  * @example
  * ```typescript
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "podman"
  * console.log(pkg.description) // "Podman: A tool for managing OCI containers and ..."
  * console.log(pkg.programs)    // ["podman", "podman-remote", ...]
- * console.log(pkg.versions[0]) // "5.6.2" (latest)
+ * console.log(pkg.versions[0]) // "5.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/podman-io.md
@@ -73,7 +73,7 @@ export const podmanioPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'go.dev@=1.23.3',
+    'go.dev@=1.24.2',
     'gnu.org/coreutils',
   ] as const,
   /**
@@ -81,6 +81,7 @@ export const podmanioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.7.0',
     '5.6.2',
     '5.6.1',
     '5.6.0',

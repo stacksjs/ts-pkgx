@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `0.33.1`, `0.33.0`, `0.32.3`, `0.32.2`, `0.32.1`
-- `0.32.0`, `0.31.0`, `0.30.0`, `0.29.1`, `0.29.0`
-- `0.28.0`
+- `0.33.3`, `0.33.2`, `0.33.1`, `0.33.0`, `0.32.3`
+- `0.32.2`, `0.32.1`, `0.32.0`, `0.31.0`, `0.30.0`
+- `0.29.1`, `0.29.0`, `0.28.0`
 
 </details>
 
-**Latest Version**: `0.33.1`
+**Latest Version**: `0.33.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubecm.cloud@0.33.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubecm.cloud@0.33.3 -- $SHELL -i
 ```
 
 ## Usage Examples
