@@ -2,7 +2,7 @@
  * **modal** - Python client library for Modal
  *
  * @domain `modal.com`
- * @version `1.2.3` (802 versions available)
+ * @version `1.2.4` (803 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install modal.com`
@@ -17,7 +17,7 @@
  * const pkg = pantry.modalcom
  * console.log(pkg.name)        // "modal"
  * console.log(pkg.description) // "Python client library for Modal"
- * console.log(pkg.versions[0]) // "1.2.3" (latest)
+ * console.log(pkg.versions[0]) // "1.2.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/modal-com.md
@@ -68,6 +68,7 @@ export const modalcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.4',
     '1.2.3',
     '1.2.2',
     '1.2.1',

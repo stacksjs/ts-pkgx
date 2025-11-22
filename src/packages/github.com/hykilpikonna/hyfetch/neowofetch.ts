@@ -3,7 +3,7 @@
  *
  * @domain `github.com/hykilpikonna/hyfetch/neowofetch`
  * @programs `neowofetch`
- * @version `2.0.4` (4 versions available)
+ * @version `2.0.5` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/hykilpikonna/hyfetch/neowofetch`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "neowofetch"
  * console.log(pkg.description) // "Fast, highly customisable system info script wi..."
  * console.log(pkg.programs)    // ["neowofetch"]
- * console.log(pkg.versions[0]) // "2.0.4" (latest)
+ * console.log(pkg.versions[0]) // "2.0.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/hykilpikonna/hyfetch/neowofetch.md
@@ -67,6 +67,7 @@ export const neowofetchPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.5',
     '2.0.4',
     '2.0.2',
     '1.99.0',
