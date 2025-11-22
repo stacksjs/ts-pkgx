@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install isc.org/bind9`
- * @dependencies `gnome.org/libxml2@2.13`, `nghttp2.org@1.57`, `libuv.org@1.49`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `gnome.org/libxml2@2.13`, `nghttp2.org@1.57`, `libuv.org@1.49`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `mesonbuild.com@1`, `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -97,11 +98,16 @@ export const iscorgbind9Package = {
     'github.com/json-c/json-c@0.18',
     'gnu.org/libidn2@2.3',
     'jemalloc.net@5',
-    'mesonbuild.com@1',
-    'ninja-build.org',
     'linux:kernel.org/libcap',
   ] as const,
-  buildDependencies: [] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com@1',
+    'cmake.org@3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
