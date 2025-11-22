@@ -3,7 +3,7 @@
  *
  * @domain `github.com/dundee/gdu`
  * @programs `gdu`
- * @version `5.31.0` (4 versions available)
+ * @version `5.32.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/dundee/gdu`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gdu"
  * console.log(pkg.description) // "Fast disk usage analyzer with console interface..."
  * console.log(pkg.programs)    // ["gdu"]
- * console.log(pkg.versions[0]) // "5.31.0" (latest)
+ * console.log(pkg.versions[0]) // "5.32.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/dundee/gdu.md
@@ -68,6 +68,7 @@ export const gduPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.32.0',
     '5.31.0',
     '5.30.1',
     '5.30.0',
