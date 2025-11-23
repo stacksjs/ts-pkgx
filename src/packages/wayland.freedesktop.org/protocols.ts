@@ -2,7 +2,7 @@
  * **wayland-protocols** - pkgx package
  *
  * @domain `wayland.freedesktop.org/protocols`
- * @version `1.45.0` (14 versions available)
+ * @version `1.46.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wayland.freedesktop.org/protocols`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.waylandfreedesktoporgprotocols
  * console.log(pkg.name)        // "wayland-protocols"
- * console.log(pkg.versions[0]) // "1.45.0" (latest)
+ * console.log(pkg.versions[0]) // "1.46.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wayland-freedesktop-org/protocols.md
@@ -61,6 +61,7 @@ export const waylandfreedesktoporgprotocolsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.46.0',
     '1.45.0',
     '1.44.0',
     '1.43.0',
