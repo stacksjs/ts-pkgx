@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-22T23:12:24.920Z
+- **Last Updated**: 2025-11-23T04:20:05.863Z
 
 ## Table of Contents
 
@@ -335,7 +335,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[exiftool.org](./packages/exiftool.org/index.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.36.0 (+9) | `pkgx exiftool` |
-| **[ffmpeg.org](./packages/ffmpeg.org/index.md)** () | Play, record, convert, and stream audio and video | ffmpeg, ffplay, ffprobe | 8.0.0 (+29) | `pkgx ffmpeg` |
+| **[ffmpeg.org](./packages/ffmpeg.org/index.md)** () | Play, record, convert, and stream audio and video | ffmpeg, ffplay, ffprobe | 8.0.0 (+30) | `pkgx ffmpeg` |
 | **[imagemagick.org](./packages/imagemagick.org/index.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** () | Create, manipulate, and optimize GIF images and animations | gifsicle | 1.96.0 (+3) | `pkgx gifsicle` |
 | **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.3 (+11) | `pkgx vips` |
