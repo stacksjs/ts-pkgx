@@ -3,7 +3,7 @@
  *
  * @domain `docker.com/cli`
  * @programs `docker`
- * @version `29.0.3` (64 versions available)
+ * @version `29.0.4` (65 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install docker.com/cli`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "docker/cli"
  * console.log(pkg.description) // "Pack, ship and run any application as a lightwe..."
  * console.log(pkg.programs)    // ["docker"]
- * console.log(pkg.versions[0]) // "29.0.3" (latest)
+ * console.log(pkg.versions[0]) // "29.0.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/docker-com/cli.md
@@ -68,6 +68,7 @@ export const dockercomcliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '29.0.4',
     '29.0.3',
     '29.0.2',
     '29.0.1',
