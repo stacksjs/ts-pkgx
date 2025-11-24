@@ -2,7 +2,7 @@
  * **networkx** - Network Analysis in Python
  *
  * @domain `networkx.org`
- * @version `3.5.0` (6 versions available)
+ * @version `3.6.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install networkx.org`
@@ -16,7 +16,7 @@
  * const pkg = pantry.networkxorg
  * console.log(pkg.name)        // "networkx"
  * console.log(pkg.description) // "Network Analysis in Python"
- * console.log(pkg.versions[0]) // "3.5.0" (latest)
+ * console.log(pkg.versions[0]) // "3.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/networkx-org.md
@@ -60,6 +60,7 @@ export const networkxorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6.0',
     '3.5.0',
     '3.4.2',
     '3.4.1',
