@@ -3,7 +3,7 @@
  *
  * @domain `github.com/facebookincubator/fizz`
  * @programs `fizz`
- * @version `2025.9.8.0` (125 versions available)
+ * @version `2025.9.8.0` (126 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/facebookincubator/fizz`
@@ -126,6 +126,7 @@ export const fizzPackage = {
     '2025.2.17.0',
     '2025.2.10.0',
     '2025.11.3.0',
+    '2025.11.24.0',
     '2025.11.17.0',
     '2025.11.10.0',
     '2025.10.6.0',

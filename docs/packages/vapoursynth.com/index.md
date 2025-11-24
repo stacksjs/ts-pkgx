@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `72.0.0`, `71.0.0`, `70.0.0`, `69.0.0`, `68.0.0`
-- `67.0.0`, `66.0.0`, `65.0.0`, `64.0.0`
+- `73.0.0`, `72.0.0`, `71.0.0`, `70.0.0`, `69.0.0`
+- `68.0.0`, `67.0.0`, `66.0.0`, `65.0.0`, `64.0.0`
 
 </details>
 
-**Latest Version**: `72.0.0`
+**Latest Version**: `73.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vapoursynth.com@72.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +vapoursynth.com@73.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
