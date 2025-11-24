@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `0.10.1`, `0.10.0`, `0.9.1`, `0.9.0`, `0.8.1`
-- `0.8.0`, `0.7.0`, `0.6.0`, `0.5.1`
+- `0.11.0`, `0.10.1`, `0.10.0`, `0.9.1`, `0.9.0`
+- `0.8.1`, `0.8.0`, `0.7.0`, `0.6.0`, `0.5.1`
 
 </details>
 
-**Latest Version**: `0.10.1`
+**Latest Version**: `0.11.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/kiliankoe/swift-outdated@0.10.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kiliankoe/swift-outdated@0.11.0 -- $SHELL -i
 ```
 
 ## Usage Examples
