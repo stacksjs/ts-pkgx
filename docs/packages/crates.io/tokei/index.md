@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `12.1.2`
+- `13.0.0`, `12.1.2`
 
 </details>
 
-**Latest Version**: `12.1.2`
+**Latest Version**: `13.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/tokei@12.1.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/tokei@13.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

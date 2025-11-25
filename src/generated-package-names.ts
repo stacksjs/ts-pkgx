@@ -3430,7 +3430,7 @@ export interface GeneratedPackageVersions {
   'crates.io/tidy-viewer': '1.8.93' | '1.8.92' | '1.6.5' | '1.6.0' | '1.5.2'
   'crates.io/tiny': '0.13.0' | '0.12.0' | '0.11.0'
   'crates.io/toast': '0.47.7' | '0.47.6' | '0.47.5'
-  'crates.io/tokei': '12.1.2'
+  'crates.io/tokei': '13.0.0' | '12.1.2'
   'crates.io/topgrade': '16.4.2' | '16.3.0' | '16.2.1' | '16.2.0' | '16.1.2' | '16.1.1' | '16.1.0' | '16.0.4' | '16.0.3' | '16.0.2' | '16.0.1' | '16.0.0' | '15.0.0' | '14.0.1'
   'crates.io/trashy': '2.0.0' | '1.0.3'
   'crates.io/tv-cli': '0.7.0'
