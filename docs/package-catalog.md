@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-25T20:10:28.830Z
+- **Last Updated**: 2025-11-25T21:10:10.278Z
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.18.2 (+23) | `pkgx crystal` |
-| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.10.1 (+44) | `pkgx dart` |
+| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.10.2 (+45) | `pkgx dart` |
 | **[go.dev](./packages/go.dev/index.md)** () | The Go programming language | go, gofmt | 1.25.4 (+80) | `pkgx go` |
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.2 (+23) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
@@ -225,7 +225,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.11.7 (+392) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.41.0 (+34) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.5 (+17) | `pkgx corepack` |
-| **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.3 (+68) | `pkgx npm` |
+| **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.4 (+69) | `pkgx npm` |
 | **[pdm.fming.dev](./packages/pdm.fming.dev/index.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.26.2 (+76) | `pkgx pdm` |
 | **[pip.pypa.io](./packages/pip.pypa.io/index.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.3.0 (+28) | `pkgx pip` |
 | **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+48) | `pkgx pipenv` |
