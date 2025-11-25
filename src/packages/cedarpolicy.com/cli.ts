@@ -3,7 +3,7 @@
  *
  * @domain `cedarpolicy.com/cli`
  * @programs `cedar`
- * @version `4.8.1` (42 versions available)
+ * @version `4.8.1` (43 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cedarpolicy.com/cli`
@@ -93,6 +93,7 @@ export const cedarpolicycomcliPackage = {
     '3.1.0',
     '3.0.1',
     '3.0.0',
+    '2.5.1',
     '2.5.0',
     '2.4.7',
     '2.4.6',
