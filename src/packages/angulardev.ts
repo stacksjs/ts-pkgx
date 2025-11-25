@@ -3,7 +3,7 @@
  *
  * @domain `angular.dev`
  * @programs `ng`
- * @version `21.0.0` (140 versions available)
+ * @version `21.0.0` (141 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install angular.dev`
@@ -76,6 +76,7 @@ export const angulardevPackage = {
    */
   versions: [
     '21.0.0',
+    '20.3.12',
     '20.3.11',
     '20.3.10',
     '20.3.9',
