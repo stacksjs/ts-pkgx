@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `0.25.1`, `0.25.0`, `0.24.0`, `0.23.1`, `0.23.0`
+- `0.26.0`, `0.25.1`, `0.25.0`, `0.24.0`, `0.23.1`
+- `0.23.0`
 
 </details>
 
-**Latest Version**: `0.25.1`
+**Latest Version**: `0.26.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/docuum@0.25.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/docuum@0.26.0 -- $SHELL -i
 ```
 
 ## Usage Examples
