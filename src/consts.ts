@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-11-22T02:33:55.388Z
+ * Generated on 2025-11-25T02:37:16.470Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1611 total)
+ * List of all known packages (1612 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -1515,6 +1515,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'tectonic-typesetting.github.io',
   'templ.guide',
   'temporal.io',
+  'termshark.io',
   'terraform-docs.io',
   'terraform.io',
   'terraform.io/cdk',
