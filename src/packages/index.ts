@@ -1469,6 +1469,7 @@ import { teaxyzPackage } from './teaxyz'
 import { tectonictypesettinggithubioPackage } from './tectonic-typesettinggithubio'
 import { templguidePackage } from './templguide'
 import { temporalioPackage } from './temporalio'
+import { termsharkioPackage } from './termsharkio'
 import { terraformdocsioPackage } from './terraform-docsio'
 import { terraformiocdkPackage } from './terraform.io/cdk'
 import { terraformioPackage } from './terraformio'
@@ -4097,6 +4098,7 @@ export interface Pantry {
   tectonictypesettinggithubio: typeof tectonictypesettinggithubioPackage
   templguide: typeof templguidePackage
   temporalio: typeof temporalioPackage
+  termsharkio: typeof termsharkioPackage
   terraform_docsio: typeof terraformdocsioPackage
   terraformdocsio: typeof terraformdocsioPackage
   cdk1: typeof terraformiocdkPackage
@@ -4483,6 +4485,7 @@ export interface Pantry {
   jq: typeof stedolangithubiojqPackage
   'glm.g-truc': typeof glmgtrucnetPackage
   flit: typeof flitpypaioPackage
+  termshark: typeof termsharkioPackage
   imageflow_tool: typeof imageflowioimageflow_toolPackage
   doctave: typeof doctavecomPackage
   genact: typeof svenstarogithubiogenactPackage
@@ -8351,6 +8354,7 @@ export const pantry: Pantry = {
   tectonictypesettinggithubio: tectonictypesettinggithubioPackage,
   templguide: templguidePackage,
   temporalio: temporalioPackage,
+  termsharkio: termsharkioPackage,
   terraform_docsio: terraformdocsioPackage,
   terraformdocsio: terraformdocsioPackage,
   cdk1: terraformiocdkPackage,
@@ -8737,6 +8741,7 @@ export const pantry: Pantry = {
   jq: stedolangithubiojqPackage,
   'glm.g-truc': glmgtrucnetPackage,
   flit: flitpypaioPackage,
+  termshark: termsharkioPackage,
   imageflow_tool: imageflowioimageflow_toolPackage,
   doctave: doctavecomPackage,
   genact: svenstarogithubiogenactPackage,

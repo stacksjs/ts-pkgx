@@ -1318,6 +1318,7 @@ export const aliases: Record<string, string> = {
   'temporal': 'temporal.io',
   'term-size': 'github.com/sindresorhus/macos-term-size',
   'terminal-notifier': 'github.com/julienXX/terminal-notifier',
+  'termshark': 'termshark.io',
   'termusic': 'crates.io/termusic',
   'terraform': 'terraform.io',
   'terraform-cdk': 'terraform.io/cdk',
