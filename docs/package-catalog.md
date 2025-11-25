@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-24T23:10:40.361Z
+- **Last Updated**: 2025-11-25T01:38:02.823Z
 
 ## Table of Contents
 
@@ -174,7 +174,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.0 (+43) | `pkgx podman` |
 | **[skaffold.dev](./packages/skaffold.dev/index.md)** () | Easy and Repeatable Kubernetes Development | skaffold | 2.17.0 (+15) | `pkgx skaffold` |
 | **[tilt.dev](./packages/tilt.dev/index.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.36.0 (+26) | `pkgx tilt` |
-| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.2 (+51) | `pkgx vcluster` |
+| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.2 (+52) | `pkgx vcluster` |
 | **[velero.io](./packages/velero.io/index.md)** () | Backup and migrate Kubernetes applications and their persistent volumes | velero | 1.17.1 (+3) | `pkgx velero` |
 
 ## Monitoring & Observability
@@ -275,7 +275,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/aristocratos/btop](./packages/github.com/aristocratos/btop.md)** () | Resource monitor. C++ version and continuation of bashtop and bpytop | btop | 1.4.5 (+8) | `pkgx btop` |
 | **[github.com/dundee/gdu](./packages/github.com/dundee/gdu.md)** () | Fast disk usage analyzer with console interface written in Go | gdu | 5.32.0 (+4) | `pkgx gdu` |
 | **[github.com/junegunn/fzf](./packages/github.com/junegunn/fzf.md)** () | :cherry_blossom: A command-line fuzzy finder | fzf | 0.67.0 (+52) | `pkgx fzf` |
-| **[github.com/mikefarah/yq](./packages/github.com/mikefarah/yq.md)** () | yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor | yq | 4.49.1 (+38) | `pkgx yq` |
+| **[github.com/mikefarah/yq](./packages/github.com/mikefarah/yq.md)** () | yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor | yq | 4.49.2 (+39) | `pkgx yq` |
 | **[github.com/muesli/duf](./packages/github.com/muesli/duf.md)** () | Disk Usage/Free Utility - a better &#39;df&#39; alternative | duf | 0.9.1 (+2) | `pkgx duf` |
 | **[github.com/peltoche/lsd](./packages/github.com/peltoche/lsd.md)** () | Clone of ls with colorful output, file type icons, and more | lsd | 1.2.0 (+7) | `pkgx lsd` |
 | **[github.com/so-fancy/diff-so-fancy](./packages/github.com/so-fancy/diff-so-fancy.md)** () | Good-lookin&#39; diffs. Actually… nah… The best-lookin&#39; diffs. :tada: | diff-so-fancy | 1.4.4 (+0) | `pkgx diff-so-fancy` |
@@ -376,7 +376,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.261.0 (+83) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.11.1 (+62) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
-| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.58.5 (+196) | `pkgx supabase` |
+| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.61.2 (+197) | `pkgx supabase` |
 
 ## Mobile Development
 
