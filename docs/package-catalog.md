@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-11-26T12:14:17.025Z
+- **Last Updated**: 2025-11-26T13:21:17.187Z
 
 ## Table of Contents
 
@@ -243,7 +243,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[alacritty.org](./packages/alacritty.org/index.md)** () | A cross-platform, OpenGL terminal emulator. | alacritty | 0.16.1 (+5) | `pkgx alacritty` |
 | **[gnu.org/emacs](./packages/gnu.org/emacs/index.md)** () | GNU Emacs text editor | emacs | 30.2.0 (+6) | `pkgx emacs` |
 | **[micro-editor.github.io](./packages/micro-editor.github.io/index.md)** () | A modern and intuitive terminal-based text editor | micro | 2.0.14 (+3) | `pkgx micro` |
-| **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** () | Command-line interface built-in Visual Studio Code | code | 1.106.2 (+30) | `pkgx vscode cli` |
+| **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** () | Command-line interface built-in Visual Studio Code | code | 1.106.3 (+31) | `pkgx vscode cli` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.5 (+17) | `pkgx nvim` |
 | **[vim.org](./packages/vim.org/index.md)** (vi) | The official Vim repository | vim, vi | 9.1.1927 (+2476) | `pkgx vi` |
@@ -372,7 +372,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.148.0 (+40) | `pkgx sam` |
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.223 (+473) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.15.1 (+40) | `pkgx heroku` |
-| **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.11.0 (+30) | `pkgx localstack` |
+| **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.11.1 (+31) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.262.0 (+84) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.11.1 (+62) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
@@ -404,7 +404,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 30.0.0 (+20) | `pkgx bitcoin` |
-| **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject` |
+| **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.1 (+9) | `pkgx elementsproject` |
 | **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+21) | `pkgx getfoundry.sh` |
 | **[ghostscript.com](./packages/ghostscript.com/index.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.6.0 (+7) | `pkgx ghostscript` |
 | **[solana.com](./packages/solana.com/index.md)** () | Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces. | solana, solana-keygen, solana-bench-streamer, ... (+7) | 1.18.26 (+82) | `pkgx solana` |
