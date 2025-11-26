@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `0.2.3`, `0.2.2`, `0.2.1`, `0.2.0`, `0.1.9`
-- `0.1.8`, `0.1.7`
+- `0.2.4`, `0.2.3`, `0.2.2`, `0.2.1`, `0.2.0`
+- `0.1.9`, `0.1.8`, `0.1.7`
 
 </details>
 
-**Latest Version**: `0.2.3`
+**Latest Version**: `0.2.4`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/context-labs/mactop@0.2.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/context-labs/mactop@0.2.4 -- $SHELL -i
 ```
 
 ## Usage Examples
