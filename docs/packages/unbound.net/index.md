@@ -30,21 +30,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `1.24.1`, `1.24.0`, `1.23.1`, `1.23.0`, `1.22.0`
-- `1.21.1`, `1.21.0`, `1.20.0`, `1.19.3`, `1.19.2`
-- `1.19.1`, `1.19.0`, `1.18.0`, `1.17.1`
+- `1.24.2`, `1.24.1`, `1.24.0`, `1.23.1`, `1.23.0`
+- `1.22.0`, `1.21.1`, `1.21.0`, `1.20.0`, `1.19.3`
+- `1.19.2`, `1.19.1`, `1.19.0`, `1.18.0`, `1.17.1`
 
 </details>
 
-**Latest Version**: `1.24.1`
+**Latest Version**: `1.24.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +unbound.net@1.24.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +unbound.net@1.24.2 -- $SHELL -i
 ```
 
 ## Dependencies

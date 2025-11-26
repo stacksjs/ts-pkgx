@@ -3,7 +3,7 @@
  *
  * @domain `unbound.net`
  * @programs `unbound`, `unbound-anchor`, `unbound-checkconf`, `unbound-control`, `unbound-control-setup`, ... (+1 more)
- * @version `1.24.1` (14 versions available)
+ * @version `1.24.2` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install unbound.net`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "unbound"
  * console.log(pkg.description) // "Unbound is a validating, recursive, and caching..."
  * console.log(pkg.programs)    // ["unbound", "unbound-anchor", ...]
- * console.log(pkg.versions[0]) // "1.24.1" (latest)
+ * console.log(pkg.versions[0]) // "1.24.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/unbound-net.md
@@ -82,6 +82,7 @@ export const unboundnetPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.24.2',
     '1.24.1',
     '1.24.0',
     '1.23.1',
