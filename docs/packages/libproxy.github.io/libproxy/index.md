@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `0.5.11`, `0.5.10`, `0.5.9`, `0.5.8`, `0.5.7`
-- `0.5.6`, `0.5.5`, `0.5.4`, `0.5.3`
+- `0.5.12`, `0.5.11`, `0.5.10`, `0.5.9`, `0.5.8`
+- `0.5.7`, `0.5.6`, `0.5.5`, `0.5.4`, `0.5.3`
 
 </details>
 
-**Latest Version**: `0.5.11`
+**Latest Version**: `0.5.12`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libproxy.github.io/libproxy@0.5.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libproxy.github.io/libproxy@0.5.12 -- $SHELL -i
 ```
 
 ## Dependencies
