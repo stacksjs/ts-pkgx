@@ -598,6 +598,7 @@ import { gopassPackage } from './github.com/gopasspw/gopass'
 import { googlemapsscraperPackage } from './github.com/gosom/google-maps-scraper'
 import { gotestsumPackage } from './github.com/gotestyourself/gotestsum'
 import { goredfishapiidracPackage } from './github.com/greenpau/go-redfish-api-idrac'
+import { pupPackage } from './github.com/gromgit/pup'
 import { hadolintPackage } from './github.com/hadolint/hadolint'
 import { helmfilePackage } from './github.com/helmfile/helmfile'
 import { valsPackage } from './github.com/helmfile/vals'
@@ -2670,6 +2671,8 @@ export interface Pantry {
   githubcomgotestyourself: typeof gotestsumPackage
   go_redfish_api_idrac: typeof goredfishapiidracPackage
   githubcomgreenpau: typeof goredfishapiidracPackage
+
+  githubcomgromgit: typeof pupPackage
 
   githubcomhadolint: typeof hadolintPackage
 
@@ -5626,6 +5629,7 @@ export interface Pantry {
   lefthook: typeof lefthookPackage
   'vanitygen-plusplus': typeof vanitygenplusplusPackage
   'shaka-packager': typeof shakapackagerPackage
+  pup: typeof pupPackage
   xchtmlreport: typeof xctesthtmlreportPackage
   cowsay: typeof cowsayPackage
   allure: typeof allure2Package
@@ -6926,6 +6930,8 @@ export const pantry: Pantry = {
   githubcomgotestyourself: gotestsumPackage,
   go_redfish_api_idrac: goredfishapiidracPackage,
   githubcomgreenpau: goredfishapiidracPackage,
+
+  githubcomgromgit: pupPackage,
 
   githubcomhadolint: hadolintPackage,
 
@@ -9882,6 +9888,7 @@ export const pantry: Pantry = {
   lefthook: lefthookPackage,
   'vanitygen-plusplus': vanitygenplusplusPackage,
   'shaka-packager': shakapackagerPackage,
+  pup: pupPackage,
   xchtmlreport: xctesthtmlreportPackage,
   cowsay: cowsayPackage,
   allure: allure2Package,

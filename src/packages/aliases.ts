@@ -1063,6 +1063,7 @@ export const aliases: Record<string, string> = {
   'pueue': 'crates.io/pueue',
   'pugixml': 'pugixml.org',
   'pulumi': 'pulumi.io',
+  'pup': 'github.com/gromgit/pup',
   'pushenv': 'crates.io/pushenv',
   'putty': 'chiark.greenend.org.uk/putty',
   'puzzles': 'chiark.greenend.org.uk/puzzles',

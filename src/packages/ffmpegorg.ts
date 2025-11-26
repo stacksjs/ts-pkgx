@@ -3,7 +3,7 @@
  *
  * @domain `ffmpeg.org`
  * @programs `ffmpeg`, `ffplay`, `ffprobe`
- * @version `8.0.0` (31 versions available)
+ * @version `8.0.0` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ffmpeg.org`
@@ -94,6 +94,7 @@ export const ffmpegorgPackage = {
     '6.1.0',
     '6.0.1',
     '6.0.0',
+    '5.1.8',
     '5.1.7',
     '5.1.6',
     '5.1.5',

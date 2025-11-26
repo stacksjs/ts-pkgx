@@ -76,7 +76,7 @@ sh <(curl https://pkgx.sh) +nodejs.org@25.2.1 -- $SHELL -i
 
 This package depends on:
 
-- `unicode.org^71`
+- `unicode.org^73 # v25`
 - `openssl.org@1.1`
 - `zlib.net@1`
 - `linux:gnu.org/gcc/libstdcxx`
