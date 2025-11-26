@@ -3,7 +3,7 @@
  *
  * @domain `github.com/mono0926/LicensePlist`
  * @programs `license-plist`
- * @version `3.27.1` (4 versions available)
+ * @version `3.27.2` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/mono0926/LicensePlist`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "license-plist"
  * console.log(pkg.description) // "A license list generator of all your dependenci..."
  * console.log(pkg.programs)    // ["license-plist"]
- * console.log(pkg.versions[0]) // "3.27.1" (latest)
+ * console.log(pkg.versions[0]) // "3.27.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mono0926/LicensePlist.md
@@ -68,6 +68,7 @@ export const licenseplistPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.27.2',
     '3.27.1',
     '3.27.0',
     '3.26.0',
