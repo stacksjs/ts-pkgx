@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-11-25T02:37:16.470Z
+ * Generated on 2025-11-26T02:37:41.901Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1612 total)
+ * List of all known packages (1613 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -644,6 +644,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/gosom/google-maps-scraper',
   'github.com/gotestyourself/gotestsum',
   'github.com/greenpau/go-redfish-api-idrac',
+  'github.com/gromgit/pup',
   'github.com/hadolint/hadolint',
   'github.com/helmfile/helmfile',
   'github.com/helmfile/vals',
