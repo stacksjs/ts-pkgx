@@ -175,7 +175,7 @@ jobs:
 
       - name: Attach Release Assets
         id: create_release
-        uses: stacksjs/action-releaser@v1.2.7
+        uses: stacksjs/action-releaser@v1.2.6
         with:
           files: |
             ./bin/ts-pkgx-linux-x64.zip
