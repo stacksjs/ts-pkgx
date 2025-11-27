@@ -3,7 +3,7 @@
  *
  * @domain `digger.dev`
  * @programs `digger`
- * @version `0.6.137` (221 versions available)
+ * @version `0.6.137` (222 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install digger.dev`
@@ -69,6 +69,7 @@ export const diggerdevPackage = {
    */
   versions: [
     '0.6.137',
+    '0.6.136.1',
     '0.6.136',
     '0.6.135',
     '0.6.134',
