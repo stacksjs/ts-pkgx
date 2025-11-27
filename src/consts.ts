@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-11-26T02:37:41.901Z
+ * Generated on 2025-11-27T02:36:57.746Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1613 total)
+ * List of all known packages (1620 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -133,6 +133,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'capnproto.org',
   'capstone-engine.org',
   'carapace.sh',
+  'casdoor.org',
   'cask.readthedocs.io',
   'catb.org/wumpus',
   'ccache.dev',
@@ -408,6 +409,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'fastlane.tools',
   'felixkratz.github.io/SketchyBar',
   'fermyon.com/spin',
+  'ferzkopp.net/SDL2_gfx',
   'ffmpeg.org',
   'fftw.org',
   'filippo.io/age',
@@ -705,6 +707,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/loq9/go-sponge',
   'github.com/lra/mackup',
   'github.com/lrstanley/vault-unseal',
+  'github.com/lsof-org/lsof',
   'github.com/lu-zero/cargo-c',
   'github.com/lucianosrp/rye-uv',
   'github.com/luvit/luv',
@@ -712,6 +715,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/mac-cain13/R.swift',
   'github.com/mamba-org/mamba',
   'github.com/mamba-org/micro',
+  'github.com/markuskimius/SDL2_Pango',
   'github.com/mas-cli/mas',
   'github.com/mat2cc/redis_tui',
   'github.com/matoszz/blowfish',
@@ -1115,6 +1119,8 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'libraw.org',
   'libsdl.org',
   'libsdl.org/SDL_image',
+  'libsdl.org/SDL_mixer',
+  'libsdl.org/SDL_ttf',
   'libsodium.org',
   'libsoup.org',
   'libspng.org',
@@ -1543,6 +1549,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'tuist.io/xcbeautify',
   'tukaani.org/xz',
   'turso.tech',
+  'tuxpaint.org',
   'typescriptlang.org',
   'typst.app',
   'unbound.net',
