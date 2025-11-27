@@ -3,7 +3,7 @@
  *
  * @domain `encore.dev/go`
  * @programs `encore-go`
- * @version `1.23.0` (8 versions available)
+ * @version `1.25.4` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install encore.dev/go`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "encore-go"
  * console.log(pkg.description) // "Encore's rolling fork of Go with added automati..."
  * console.log(pkg.programs)    // ["encore-go"]
- * console.log(pkg.versions[0]) // "1.23.0" (latest)
+ * console.log(pkg.versions[0]) // "1.25.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/encore-dev/go.md
@@ -76,6 +76,7 @@ export const encoredevgoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.25.4',
     '1.23.0',
     '1.22.5',
     '1.22.0',

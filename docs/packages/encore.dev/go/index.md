@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `1.23.0`, `1.22.5`, `1.22.0`, `1.21.6`, `1.21.5`
-- `1.21.4`, `1.21.3`, `1.21.1`
+- `1.25.4`, `1.23.0`, `1.22.5`, `1.22.0`, `1.21.6`
+- `1.21.5`, `1.21.4`, `1.21.3`, `1.21.1`
 
 </details>
 
-**Latest Version**: `1.23.0`
+**Latest Version**: `1.25.4`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +encore.dev/go@1.23.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +encore.dev/go@1.25.4 -- $SHELL -i
 ```
 
 ## Dependencies
