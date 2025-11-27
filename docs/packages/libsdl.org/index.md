@@ -51,6 +51,7 @@ sh <(curl https://pkgx.sh) +libsdl.org@3.2.26 -- $SHELL -i
 
 This package depends on:
 
+- `linux:alsa-project.org/alsa-lib>=1.0.11`
 - `linux:x.org/x11`
 - `linux:x.org/xcursor`
 - `linux:x.org/xi`

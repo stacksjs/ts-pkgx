@@ -87,6 +87,7 @@ import { cairographicsorgPackage } from './cairographicsorg'
 import { capnprotoorgPackage } from './capnprotoorg'
 import { capstoneengineorgPackage } from './capstone-engineorg'
 import { carapaceshPackage } from './carapacesh'
+import { casdoororgPackage } from './casdoororg'
 import { caskreadthedocsioPackage } from './caskreadthedocsio'
 import { catborgwumpusPackage } from './catb.org/wumpus'
 import { ccachedevPackage } from './ccachedev'
@@ -362,6 +363,7 @@ import { fairwindscomplutoPackage } from './fairwinds.com/pluto'
 import { fastlanetoolsPackage } from './fastlanetools'
 import { felixkratzgithubiosketchybarPackage } from './felixkratz.github.io/SketchyBar'
 import { fermyoncomspinPackage } from './fermyon.com/spin'
+import { ferzkoppnetsdl2_gfxPackage } from './ferzkopp.net/SDL2_gfx'
 import { ffmpegorgPackage } from './ffmpegorg'
 import { fftworgPackage } from './fftworg'
 import { filippoioagePackage } from './filippo.io/age'
@@ -659,6 +661,7 @@ import { lmsensorsPackage } from './github.com/lm-sensors/lm-sensors'
 import { gospongePackage } from './github.com/loq9/go-sponge'
 import { mackupPackage } from './github.com/lra/mackup'
 import { vaultunsealPackage } from './github.com/lrstanley/vault-unseal'
+import { lsofPackage } from './github.com/lsof-org/lsof'
 import { cargocPackage } from './github.com/lu-zero/cargo-c'
 import { ryeuvPackage } from './github.com/lucianosrp/rye-uv'
 import { luvPackage } from './github.com/luvit/luv'
@@ -666,6 +669,7 @@ import { invoicePackage } from './github.com/maaslalani/invoice'
 import { rswiftPackage } from './github.com/mac-cain13/R.swift'
 import { mambaPackage } from './github.com/mamba-org/mamba'
 import { microPackage } from './github.com/mamba-org/micro'
+import { sdl2_pangoPackage } from './github.com/markuskimius/SDL2_Pango'
 import { masPackage } from './github.com/mas-cli/mas'
 import { redis_tuiPackage } from './github.com/mat2cc/redis_tui'
 import { blowfishPackage } from './github.com/matoszz/blowfish'
@@ -1068,6 +1072,8 @@ import { libpngorgPackage } from './libpngorg'
 import { libproxygithubiolibproxyPackage } from './libproxy.github.io/libproxy'
 import { libraworgPackage } from './libraworg'
 import { libsdlorgsdl_imagePackage } from './libsdl.org/SDL_image'
+import { libsdlorgsdl_mixerPackage } from './libsdl.org/SDL_mixer'
+import { libsdlorgsdl_ttfPackage } from './libsdl.org/SDL_ttf'
 import { libsdlorgPackage } from './libsdlorg'
 import { libsodiumorgPackage } from './libsodiumorg'
 import { libsouporgPackage } from './libsouporg'
@@ -1497,6 +1503,7 @@ import { tsl0922githubiottydPackage } from './tsl0922.github.io/ttyd'
 import { tuistioxcbeautifyPackage } from './tuist.io/xcbeautify'
 import { tukaaniorgxzPackage } from './tukaani.org/xz'
 import { tursotechPackage } from './tursotech'
+import { tuxpaintorgPackage } from './tuxpaintorg'
 import { typescriptlangorgPackage } from './typescriptlangorg'
 import { typstappPackage } from './typstapp'
 import { unboundnetPackage } from './unboundnet'
@@ -1749,6 +1756,7 @@ export interface Pantry {
   capstone_engineorg: typeof capstoneengineorgPackage
   capstoneengineorg: typeof capstoneengineorgPackage
   carapacesh: typeof carapaceshPackage
+  casdoororg: typeof casdoororgPackage
   caskreadthedocsio: typeof caskreadthedocsioPackage
 
   catborgwumpus: typeof catborgwumpusPackage
@@ -2227,6 +2235,8 @@ export interface Pantry {
   felixkratzgithubiosketchybar: typeof felixkratzgithubiosketchybarPackage
 
   fermyoncomspin: typeof fermyoncomspinPackage
+
+  ferzkoppnetsdl2_gfx: typeof ferzkoppnetsdl2_gfxPackage
   ffmpegorg: typeof ffmpegorgPackage
   fftworg: typeof fftworgPackage
 
@@ -2793,6 +2803,8 @@ export interface Pantry {
   githubcomlra: typeof mackupPackage
   vault_unseal: typeof vaultunsealPackage
   githubcomlrstanley: typeof vaultunsealPackage
+
+  githubcomlsoforg: typeof lsofPackage
   cargo_c: typeof cargocPackage
   githubcomluzero: typeof cargocPackage
   rye_uv: typeof ryeuvPackage
@@ -2807,6 +2819,8 @@ export interface Pantry {
   githubcommambaorg: typeof mambaPackage
 
   githubcommambaorg1: typeof microPackage
+
+  githubcommarkuskimius: typeof sdl2_pangoPackage
 
   githubcommascli: typeof masPackage
 
@@ -3516,6 +3530,10 @@ export interface Pantry {
   libraworg: typeof libraworgPackage
 
   libsdlorgsdl_image: typeof libsdlorgsdl_imagePackage
+
+  libsdlorgsdl_mixer: typeof libsdlorgsdl_mixerPackage
+
+  libsdlorgsdl_ttf: typeof libsdlorgsdl_ttfPackage
   libsdlorg: typeof libsdlorgPackage
   libsodiumorg: typeof libsodiumorgPackage
   libsouporg: typeof libsouporgPackage
@@ -4139,6 +4157,7 @@ export interface Pantry {
   xz: typeof tukaaniorgxzPackage
   tukaaniorgxz: typeof tukaaniorgxzPackage
   tursotech: typeof tursotechPackage
+  tuxpaintorg: typeof tuxpaintorgPackage
   typescriptlangorg: typeof typescriptlangorgPackage
   typstapp: typeof typstappPackage
   unboundnet: typeof unboundnetPackage
@@ -4521,6 +4540,7 @@ export interface Pantry {
   spacetime: typeof spacetimedbcomPackage
   starship: typeof starshiprsPackage
   'rhash.sourceforge': typeof rhashsourceforgenetPackage
+  casdoor: typeof casdoororgPackage
   attr: typeof savannahnongnuorgattrPackage
   acl: typeof savannahnongnuorgaclPackage
   'tea/cli': typeof teaxyzPackage
@@ -4577,6 +4597,7 @@ export interface Pantry {
   minisign: typeof jedisct1githubiominisignPackage
   nixpacks: typeof nixpackscomPackage
   'poppler-data': typeof popplerfreedesktoporgpopplerdataPackage
+  SDL2_gfx: typeof ferzkoppnetsdl2_gfxPackage
   difft: typeof wilfredmeukdifftasticPackage
   sqruff: typeof quarydevsqruffPackage
   tart: typeof tartrunPackage
@@ -4694,6 +4715,7 @@ export interface Pantry {
   reshape: typeof fabianlindforssereshapePackage
   capnproto: typeof capnprotoorgPackage
   atlas: typeof atlasgoioPackage
+  tuxpaint: typeof tuxpaintorgPackage
   mosh: typeof moshorgPackage
   fastlane: typeof fastlanetoolsPackage
   jetp: typeof jetporchcomPackage
@@ -5345,6 +5367,8 @@ export interface Pantry {
   'elixir-lang': typeof elixirlangorgPackage
   aux4: typeof aux4ioPackage
   gnupg: typeof gnupgorgPackage
+  SDL_ttf: typeof libsdlorgsdl_ttfPackage
+  SDL_mixer: typeof libsdlorgsdl_mixerPackage
   SDL_image: typeof libsdlorgsdl_imagePackage
   typst: typeof typstappPackage
   direnv: typeof direnvnetPackage
@@ -5581,6 +5605,7 @@ export interface Pantry {
   gron: typeof gronPackage
   cookiecutter: typeof cookiecutterPackage
   pio: typeof pioPackage
+  SDL2_Pango: typeof sdl2_pangoPackage
   checkmake: typeof checkmakePackage
   dasel: typeof daselPackage
   xsv: typeof xsvPackage
@@ -5699,6 +5724,7 @@ export interface Pantry {
   'cemetery-escape': typeof cemeteryescapePackage
   licensed: typeof licensedPackage
   'swift-outdated': typeof swiftoutdatedPackage
+  lsof: typeof lsofPackage
   'go-redfish-api-idrac': typeof goredfishapiidracPackage
   'diff-so-fancy': typeof diffsofancyPackage
   buildifier: typeof buildtoolsPackage
@@ -6008,6 +6034,7 @@ export const pantry: Pantry = {
   capstone_engineorg: capstoneengineorgPackage,
   capstoneengineorg: capstoneengineorgPackage,
   carapacesh: carapaceshPackage,
+  casdoororg: casdoororgPackage,
   caskreadthedocsio: caskreadthedocsioPackage,
 
   catborgwumpus: catborgwumpusPackage,
@@ -6486,6 +6513,8 @@ export const pantry: Pantry = {
   felixkratzgithubiosketchybar: felixkratzgithubiosketchybarPackage,
 
   fermyoncomspin: fermyoncomspinPackage,
+
+  ferzkoppnetsdl2_gfx: ferzkoppnetsdl2_gfxPackage,
   ffmpegorg: ffmpegorgPackage,
   fftworg: fftworgPackage,
 
@@ -7052,6 +7081,8 @@ export const pantry: Pantry = {
   githubcomlra: mackupPackage,
   vault_unseal: vaultunsealPackage,
   githubcomlrstanley: vaultunsealPackage,
+
+  githubcomlsoforg: lsofPackage,
   cargo_c: cargocPackage,
   githubcomluzero: cargocPackage,
   rye_uv: ryeuvPackage,
@@ -7066,6 +7097,8 @@ export const pantry: Pantry = {
   githubcommambaorg: mambaPackage,
 
   githubcommambaorg1: microPackage,
+
+  githubcommarkuskimius: sdl2_pangoPackage,
 
   githubcommascli: masPackage,
 
@@ -7775,6 +7808,10 @@ export const pantry: Pantry = {
   libraworg: libraworgPackage,
 
   libsdlorgsdl_image: libsdlorgsdl_imagePackage,
+
+  libsdlorgsdl_mixer: libsdlorgsdl_mixerPackage,
+
+  libsdlorgsdl_ttf: libsdlorgsdl_ttfPackage,
   libsdlorg: libsdlorgPackage,
   libsodiumorg: libsodiumorgPackage,
   libsouporg: libsouporgPackage,
@@ -8398,6 +8435,7 @@ export const pantry: Pantry = {
   xz: tukaaniorgxzPackage,
   tukaaniorgxz: tukaaniorgxzPackage,
   tursotech: tursotechPackage,
+  tuxpaintorg: tuxpaintorgPackage,
   typescriptlangorg: typescriptlangorgPackage,
   typstapp: typstappPackage,
   unboundnet: unboundnetPackage,
@@ -8780,6 +8818,7 @@ export const pantry: Pantry = {
   spacetime: spacetimedbcomPackage,
   starship: starshiprsPackage,
   'rhash.sourceforge': rhashsourceforgenetPackage,
+  casdoor: casdoororgPackage,
   attr: savannahnongnuorgattrPackage,
   acl: savannahnongnuorgaclPackage,
   'tea/cli': teaxyzPackage,
@@ -8836,6 +8875,7 @@ export const pantry: Pantry = {
   minisign: jedisct1githubiominisignPackage,
   nixpacks: nixpackscomPackage,
   'poppler-data': popplerfreedesktoporgpopplerdataPackage,
+  SDL2_gfx: ferzkoppnetsdl2_gfxPackage,
   difft: wilfredmeukdifftasticPackage,
   sqruff: quarydevsqruffPackage,
   tart: tartrunPackage,
@@ -8953,6 +8993,7 @@ export const pantry: Pantry = {
   reshape: fabianlindforssereshapePackage,
   capnproto: capnprotoorgPackage,
   atlas: atlasgoioPackage,
+  tuxpaint: tuxpaintorgPackage,
   mosh: moshorgPackage,
   fastlane: fastlanetoolsPackage,
   jetp: jetporchcomPackage,
@@ -9604,6 +9645,8 @@ export const pantry: Pantry = {
   'elixir-lang': elixirlangorgPackage,
   aux4: aux4ioPackage,
   gnupg: gnupgorgPackage,
+  SDL_ttf: libsdlorgsdl_ttfPackage,
+  SDL_mixer: libsdlorgsdl_mixerPackage,
   SDL_image: libsdlorgsdl_imagePackage,
   typst: typstappPackage,
   direnv: direnvnetPackage,
@@ -9840,6 +9883,7 @@ export const pantry: Pantry = {
   gron: gronPackage,
   cookiecutter: cookiecutterPackage,
   pio: pioPackage,
+  SDL2_Pango: sdl2_pangoPackage,
   checkmake: checkmakePackage,
   dasel: daselPackage,
   xsv: xsvPackage,
@@ -9958,6 +10002,7 @@ export const pantry: Pantry = {
   'cemetery-escape': cemeteryescapePackage,
   licensed: licensedPackage,
   'swift-outdated': swiftoutdatedPackage,
+  lsof: lsofPackage,
   'go-redfish-api-idrac': goredfishapiidracPackage,
   'diff-so-fancy': diffsofancyPackage,
   buildifier: buildtoolsPackage,
