@@ -27,20 +27,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `9.0.2`, `9.0.1`, `9.0.0`, `8.6.17`, `8.6.16`
-- `8.6.15`, `8.6.14`, `8.6.13`
+- `9.0.3`, `9.0.2`, `9.0.1`, `9.0.0`, `8.6.17`
+- `8.6.16`, `8.6.15`, `8.6.14`, `8.6.13`
 
 </details>
 
-**Latest Version**: `9.0.2`
+**Latest Version**: `9.0.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tcl-lang.org@9.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +tcl-lang.org@9.0.3 -- $SHELL -i
 ```
 
 ## Dependencies
