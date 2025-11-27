@@ -25,21 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `3.6.2`, `3.6.1`, `3.6.0`, `3.5.3`, `3.5.2`
-- `3.5.1`, `3.5.0`, `3.4.2`, `3.4.1`, `3.4.0`
-- `3.3.3`, `3.3.2`, `3.3.1`, `3.3.0`, `3.2.5`
+- `3.7.0`, `3.6.2`, `3.6.1`, `3.6.0`, `3.5.3`
+- `3.5.2`, `3.5.1`, `3.5.0`, `3.4.2`, `3.4.1`
+- `3.4.0`, `3.3.3`, `3.3.2`, `3.3.1`, `3.3.0`
+- `3.2.5`
 
 </details>
 
-**Latest Version**: `3.6.2`
+**Latest Version**: `3.7.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +prettier.io@3.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +prettier.io@3.7.0 -- $SHELL -i
 ```
 
 ## Dependencies
