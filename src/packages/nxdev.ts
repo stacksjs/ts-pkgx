@@ -3,7 +3,7 @@
  *
  * @domain `nx.dev`
  * @programs `nx`
- * @version `22.1.2` (195 versions available)
+ * @version `22.1.3` (197 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nx.dev`
@@ -17,7 +17,7 @@
  * const pkg = pantry.nxdev
  * console.log(pkg.name)        // "nx.dev"
  * console.log(pkg.programs)    // ["nx"]
- * console.log(pkg.versions[0]) // "22.1.2" (latest)
+ * console.log(pkg.versions[0]) // "22.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nx-dev.md
@@ -74,6 +74,7 @@ export const nxdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '22.1.3',
     '22.1.2',
     '22.1.1',
     '22.1.0',
@@ -82,6 +83,7 @@ export const nxdevPackage = {
     '22.0.2',
     '22.0.1',
     '22.0.0',
+    '21.6.10',
     '21.6.9',
     '21.6.8',
     '21.6.7',
