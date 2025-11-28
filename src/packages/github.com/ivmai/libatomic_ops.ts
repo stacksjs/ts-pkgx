@@ -2,7 +2,7 @@
  * **libatomic_ops** - The atomic_ops project (Atomic memory update operations portable implementation)
  *
  * @domain `github.com/ivmai/libatomic_ops`
- * @version `7.8.4` (5 versions available)
+ * @version `7.10.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/ivmai/libatomic_ops`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcomivmailibatomic_ops
  * console.log(pkg.name)        // "libatomic_ops"
  * console.log(pkg.description) // "The atomic_ops project (Atomic memory update op..."
- * console.log(pkg.versions[0]) // "7.8.4" (latest)
+ * console.log(pkg.versions[0]) // "7.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ivmai/libatomic_ops.md
@@ -53,6 +53,7 @@ export const libatomic_opsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.10.0',
     '7.8.4',
     '7.8.2',
     '7.8.0',
