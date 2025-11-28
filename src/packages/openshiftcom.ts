@@ -3,7 +3,7 @@
  *
  * @domain `openshift.com`
  * @programs `oc`
- * @version `4.20.6` (309 versions available)
+ * @version `4.20.6` (310 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openshift.com`
@@ -85,6 +85,7 @@ export const openshiftcomPackage = {
     '4.20.2',
     '4.20.1',
     '4.20.0',
+    '4.19.20',
     '4.19.19',
     '4.19.18',
     '4.19.17',
