@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/gitopolis`
  * @programs `gitopolis`
- * @version `1.12.4` (28 versions available)
+ * @version `1.13.0` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/gitopolis`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gitopolis"
  * console.log(pkg.description) // "Manage multiple git repositories"
  * console.log(pkg.programs)    // ["gitopolis"]
- * console.log(pkg.versions[0]) // "1.12.4" (latest)
+ * console.log(pkg.versions[0]) // "1.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/gitopolis.md
@@ -77,6 +77,7 @@ export const cratesiogitopolisPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.0',
     '1.12.4',
     '1.12.3',
     '1.12.0',
