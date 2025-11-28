@@ -3,7 +3,7 @@
  *
  * @domain `amber-lang.com`
  * @programs `amber`
- * @version `0.4.0` (6 versions available)
+ * @version `0.5.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install amber-lang.com`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "amber"
  * console.log(pkg.description) // "Crystal web framework. Bare metal performance, ..."
  * console.log(pkg.programs)    // ["amber"]
- * console.log(pkg.versions[0]) // "0.4.0" (latest)
+ * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/amber-lang-com.md
@@ -61,6 +61,7 @@ export const amberlangcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.0',
     '0.4.0',
     '0.3.5',
     '0.3.4',
