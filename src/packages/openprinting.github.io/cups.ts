@@ -3,7 +3,7 @@
  *
  * @domain `openprinting.github.io/cups`
  * @programs `cups-config`, `ippeveprinter`, `ipptool`
- * @version `2.4.14` (9 versions available)
+ * @version `2.4.15` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openprinting.github.io/cups`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "cups"
  * console.log(pkg.description) // "Common UNIX Printing System"
  * console.log(pkg.programs)    // ["cups-config", "ippeveprinter", ...]
- * console.log(pkg.versions[0]) // "2.4.14" (latest)
+ * console.log(pkg.versions[0]) // "2.4.15" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openprinting-github-io/cups.md
@@ -73,6 +73,7 @@ export const openprintinggithubiocupsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.4.15',
     '2.4.14',
     '2.4.13',
     '2.4.12',
