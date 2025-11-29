@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-11-27T02:36:57.746Z
+ * Generated on 2025-11-29T02:36:00.821Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1620 total)
+ * List of all known packages (1622 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -818,6 +818,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/strukturag/libheif',
   'github.com/stub42/pytz',
   'github.com/svenwiltink/sparsecat',
+  'github.com/swaggo/swag',
   'github.com/sxyazi/yazi',
   'github.com/synfinatic/aws-sso-cli',
   'github.com/terraform-linters/tflint',
@@ -952,6 +953,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'go.dev/testscript',
   'go.uber.org/mock/mockgen',
   'gohugo.io',
+  'golang.org/tools',
   'golangci-lint.run',
   'gomplate.ca',
   'google.com/double-conversion',
