@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `4.19.0`, `4.18.3`, `4.18.2`, `4.18.1`, `4.18.0`
-- `4.17.1`, `4.17.0`, `4.16.2`
+- `4.19.1`, `4.19.0`, `4.18.3`, `4.18.2`, `4.18.1`
+- `4.18.0`, `4.17.1`, `4.17.0`, `4.16.2`
 
 </details>
 
-**Latest Version**: `4.19.0`
+**Latest Version**: `4.19.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/golang-migrate/migrate@4.19.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/golang-migrate/migrate@4.19.1 -- $SHELL -i
 ```
 
 ## Usage Examples
