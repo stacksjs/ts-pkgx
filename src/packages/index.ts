@@ -772,6 +772,7 @@ import { libde265Package } from './github.com/strukturag/libde265'
 import { libheifPackage } from './github.com/strukturag/libheif'
 import { pytzPackage } from './github.com/stub42/pytz'
 import { sparsecatPackage } from './github.com/svenwiltink/sparsecat'
+import { swagPackage } from './github.com/swaggo/swag'
 import { yaziPackage } from './github.com/sxyazi/yazi'
 import { awsssocliPackage } from './github.com/synfinatic/aws-sso-cli'
 import { tflintPackage } from './github.com/terraform-linters/tflint'
@@ -906,6 +907,7 @@ import { godevtestscriptPackage } from './go.dev/testscript'
 import { gouberorgmockmockgenPackage } from './go.uber.org/mock/mockgen'
 import { goPackage } from './godev'
 import { gohugoioPackage } from './gohugoio'
+import { golangorgtoolsPackage } from './golang.org/tools'
 import { golangcilintrunPackage } from './golangci-lintrun'
 import { gomplatecaPackage } from './gomplateca'
 import { googlecomdoubleconversionPackage } from './google.com/double-conversion'
@@ -3026,6 +3028,8 @@ export interface Pantry {
 
   githubcomsvenwiltink: typeof sparsecatPackage
 
+  githubcomswaggo: typeof swagPackage
+
   githubcomsxyazi: typeof yaziPackage
   aws_sso_cli: typeof awsssocliPackage
   githubcomsynfinatic: typeof awsssocliPackage
@@ -3284,6 +3288,8 @@ export interface Pantry {
   gouberorgmock: typeof gouberorgmockmockgenPackage
   godev: typeof goPackage
   gohugoio: typeof gohugoioPackage
+
+  golangorgtools: typeof golangorgtoolsPackage
   golangci_lintrun: typeof golangcilintrunPackage
   golangcilintrun: typeof golangcilintrunPackage
   gomplateca: typeof gomplatecaPackage
@@ -4713,6 +4719,7 @@ export interface Pantry {
   'jenkins-lts': typeof jenkinsioPackage
   daemontools: typeof cryptodaemontoolsPackage
   reshape: typeof fabianlindforssereshapePackage
+  tools: typeof golangorgtoolsPackage
   capnproto: typeof capnprotoorgPackage
   atlas: typeof atlasgoioPackage
   tuxpaint: typeof tuxpaintorgPackage
@@ -5743,6 +5750,7 @@ export interface Pantry {
   libfyaml: typeof libfyamlPackage
   fusermount3: typeof libfusePackage
   'google-maps-scraper': typeof googlemapsscraperPackage
+  swag: typeof swagPackage
   carthage: typeof carthagePackage
   six: typeof sixPackage
   luv: typeof luvPackage
@@ -7304,6 +7312,8 @@ export const pantry: Pantry = {
 
   githubcomsvenwiltink: sparsecatPackage,
 
+  githubcomswaggo: swagPackage,
+
   githubcomsxyazi: yaziPackage,
   aws_sso_cli: awsssocliPackage,
   githubcomsynfinatic: awsssocliPackage,
@@ -7562,6 +7572,8 @@ export const pantry: Pantry = {
   gouberorgmock: gouberorgmockmockgenPackage,
   godev: goPackage,
   gohugoio: gohugoioPackage,
+
+  golangorgtools: golangorgtoolsPackage,
   golangci_lintrun: golangcilintrunPackage,
   golangcilintrun: golangcilintrunPackage,
   gomplateca: gomplatecaPackage,
@@ -8991,6 +9003,7 @@ export const pantry: Pantry = {
   'jenkins-lts': jenkinsioPackage,
   daemontools: cryptodaemontoolsPackage,
   reshape: fabianlindforssereshapePackage,
+  tools: golangorgtoolsPackage,
   capnproto: capnprotoorgPackage,
   atlas: atlasgoioPackage,
   tuxpaint: tuxpaintorgPackage,
@@ -10021,6 +10034,7 @@ export const pantry: Pantry = {
   libfyaml: libfyamlPackage,
   fusermount3: libfusePackage,
   'google-maps-scraper': googlemapsscraperPackage,
+  swag: swagPackage,
   carthage: carthagePackage,
   six: sixPackage,
   luv: luvPackage,

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install conftest.dev`
  * @homepage https://www.conftest.dev/
- * @buildDependencies `go.dev@^1.21` - required only when building from source
+ * @buildDependencies `go.dev@~1.25.3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,7 +61,7 @@ export const conftestdevPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'go.dev@^1.21',
+    'go.dev@~1.25.3',
   ] as const,
   /**
    * Available versions from newest to oldest.
