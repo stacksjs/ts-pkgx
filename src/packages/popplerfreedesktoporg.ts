@@ -3,7 +3,7 @@
  *
  * @domain `poppler.freedesktop.org`
  * @programs `pdfattach`, `pdfdetach`, `pdffonts`, `pdfimages`, `pdfinfo`, ... (+7 more)
- * @version `25.11.0` (23 versions available)
+ * @version `25.12.0` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install poppler.freedesktop.org`
@@ -17,7 +17,7 @@
  * const pkg = pantry.popplerfreedesktoporg
  * console.log(pkg.name)        // "poppler.freedesktop"
  * console.log(pkg.programs)    // ["pdfattach", "pdfdetach", ...]
- * console.log(pkg.versions[0]) // "25.11.0" (latest)
+ * console.log(pkg.versions[0]) // "25.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/poppler-freedesktop-org.md
@@ -105,6 +105,7 @@ export const popplerfreedesktoporgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.12.0',
     '25.11.0',
     '25.10.0',
     '25.9.1',
