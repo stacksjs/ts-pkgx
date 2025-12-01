@@ -26,20 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `1.1.43`, `1.1.42`, `1.1.41`, `1.1.40`, `1.1.39`
-- `1.1.38`, `1.1.37`
+- `1.1.45`, `1.1.43`, `1.1.42`, `1.1.41`, `1.1.40`
+- `1.1.39`, `1.1.38`, `1.1.37`
 
 </details>
 
-**Latest Version**: `1.1.43`
+**Latest Version**: `1.1.45`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/libxslt@1.1.43 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnome.org/libxslt@1.1.45 -- $SHELL -i
 ```
 
 ## Dependencies

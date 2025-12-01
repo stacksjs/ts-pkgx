@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/librsvg`
  * @programs `rsvg-convert`
- * @version `2.61.3` (37 versions available)
+ * @version `2.61.3` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/librsvg`
@@ -84,6 +84,7 @@ export const gnomeorglibrsvgPackage = {
     '2.61.2',
     '2.61.1',
     '2.61.0',
+    '2.60.1',
     '2.60.0',
     '2.59.2',
     '2.59.1',

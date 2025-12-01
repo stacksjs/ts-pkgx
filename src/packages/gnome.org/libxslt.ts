@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/libxslt`
  * @programs `xslt-config`, `xsltproc`
- * @version `1.1.43` (7 versions available)
+ * @version `1.1.45` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/libxslt`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "xslt"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["xslt-config", "xsltproc"]
- * console.log(pkg.versions[0]) // "1.1.43" (latest)
+ * console.log(pkg.versions[0]) // "1.1.45" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/libxslt.md
@@ -76,6 +76,7 @@ export const gnomeorglibxsltPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.45',
     '1.1.43',
     '1.1.42',
     '1.1.41',
