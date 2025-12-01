@@ -2,7 +2,7 @@
  * **plakar** - pkgx package
  *
  * @domain `plakar.io`
- * @version `1.0.5` (4 versions available)
+ * @version `1.0.6` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install plakar.io`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.plakario
  * console.log(pkg.name)        // "plakar"
- * console.log(pkg.versions[0]) // "1.0.5" (latest)
+ * console.log(pkg.versions[0]) // "1.0.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/plakar-io.md
@@ -58,6 +58,7 @@ export const plakarioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.6',
     '1.0.5',
     '1.0.4',
     '1.0.3',
