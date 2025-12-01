@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-01T05:18:00.735Z
+- **Last Updated**: 2025-12-01T07:12:03.315Z
 
 ## Table of Contents
 
@@ -112,7 +112,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.23.1 (+24) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.16.1 (+57) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.17 (+51) | `pkgx tailwindcss` |
-| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.4 (+132) | `pkgx vite` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.6 (+133) | `pkgx vite` |
 
 ## DevOps
 
