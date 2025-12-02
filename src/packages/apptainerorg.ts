@@ -3,7 +3,7 @@
  *
  * @domain `apptainer.org`
  * @programs `apptainer`, `run-singularity`, `singularity`
- * @version `1.4.4` (9 versions available)
+ * @version `1.4.5` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apptainer.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "apptainer"
  * console.log(pkg.description) // "Application container and unprivileged sandbox ..."
  * console.log(pkg.programs)    // ["apptainer", "run-singularity", ...]
- * console.log(pkg.versions[0]) // "1.4.4" (latest)
+ * console.log(pkg.versions[0]) // "1.4.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/apptainer-org.md
@@ -81,6 +81,7 @@ export const apptainerorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.5',
     '1.4.4',
     '1.4.3',
     '1.4.2',

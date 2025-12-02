@@ -27,20 +27,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `1.4.4`, `1.4.3`, `1.4.2`, `1.4.1`, `1.4.0`
-- `1.3.6`, `1.3.5`, `1.3.4`, `1.3.3`
+- `1.4.5`, `1.4.4`, `1.4.3`, `1.4.2`, `1.4.1`
+- `1.4.0`, `1.3.6`, `1.3.5`, `1.3.4`, `1.3.3`
 
 </details>
 
-**Latest Version**: `1.4.4`
+**Latest Version**: `1.4.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +apptainer.org@1.4.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +apptainer.org@1.4.5 -- $SHELL -i
 ```
 
 ## Dependencies

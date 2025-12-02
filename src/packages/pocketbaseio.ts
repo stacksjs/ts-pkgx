@@ -3,7 +3,7 @@
  *
  * @domain `pocketbase.io`
  * @programs `pocketbase`
- * @version `0.34.0` (96 versions available)
+ * @version `0.34.1` (98 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pocketbase.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pocketbase"
  * console.log(pkg.description) // "Open source backend for your next project in 1 ..."
  * console.log(pkg.programs)    // ["pocketbase"]
- * console.log(pkg.versions[0]) // "0.34.0" (latest)
+ * console.log(pkg.versions[0]) // "0.34.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pocketbase-io.md
@@ -68,6 +68,7 @@ export const pocketbaseioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.34.1',
     '0.34.0',
     '0.33.0',
     '0.32.0',
@@ -122,6 +123,7 @@ export const pocketbaseioPackage = {
     '0.23.2',
     '0.23.1',
     '0.23.0',
+    '0.22.37',
     '0.22.36',
     '0.22.35',
     '0.22.34',
