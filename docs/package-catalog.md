@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-02T10:11:05.463Z
+- **Last Updated**: 2025-12-02T11:12:20.391Z
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.18.2 (+23) | `pkgx crystal` |
-| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.10.2 (+45) | `pkgx dart` |
+| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.10.3 (+46) | `pkgx dart` |
 | **[go.dev](./packages/go.dev/index.md)** () | The Go programming language | go, gofmt | 1.25.4 (+80) | `pkgx go` |
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.2 (+23) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
