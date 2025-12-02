@@ -2,7 +2,7 @@
  * **spec-kit** - pkgx package
  *
  * @domain `github.com/github/spec-kit`
- * @version `0.0.88` (48 versions available)
+ * @version `0.0.89` (49 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/github/spec-kit`
@@ -15,7 +15,7 @@
  *
  * const pkg = pantry.githubcomgithubspeckit
  * console.log(pkg.name)        // "spec-kit"
- * console.log(pkg.versions[0]) // "0.0.88" (latest)
+ * console.log(pkg.versions[0]) // "0.0.89" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/github/spec-kit.md
@@ -65,6 +65,7 @@ export const speckitPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.0.89',
     '0.0.88',
     '0.0.87',
     '0.0.86',
