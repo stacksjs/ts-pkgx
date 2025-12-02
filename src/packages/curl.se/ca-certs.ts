@@ -2,7 +2,7 @@
  * **ca-certs** - pkgx package
  *
  * @domain `curl.se/ca-certs`
- * @version `2025.11.4` (24 versions available)
+ * @version `2025.12.2` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install curl.se/ca-certs`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.curlsecacerts
  * console.log(pkg.name)        // "ca-certs"
- * console.log(pkg.versions[0]) // "2025.11.4" (latest)
+ * console.log(pkg.versions[0]) // "2025.12.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/curl-se/ca-certs.md
@@ -58,6 +58,7 @@ export const curlsecacertsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.12.2',
     '2025.11.4',
     '2025.9.9',
     '2025.8.12',
