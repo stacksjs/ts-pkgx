@@ -26,19 +26,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `1.4.2`, `1.4.1`, `1.2.9`
+- `1.4.3`, `1.4.2`, `1.4.1`, `1.2.9`
 
 </details>
 
-**Latest Version**: `1.4.2`
+**Latest Version**: `1.4.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +borgbackup.org@1.4.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +borgbackup.org@1.4.3 -- $SHELL -i
 ```
 
 ## Dependencies
