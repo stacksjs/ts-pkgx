@@ -8,7 +8,7 @@
  *
  * @install `launchpad install freedesktop.org/poppler-qt5`
  * @homepage https://poppler.freedesktop.org/
- * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `cmake.org`, `linux:gnu.org/binutils@^2`, `linux:llvm.org@~21.1` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -80,6 +80,7 @@ export const freedesktoporgpopplerqt5Package = {
     'freetype.org^2',
     'gnu.org/gettext^0',
     'gnome.org/libxml2~2.13 # since 25.4.0, 2.14 changed the API version',
+    'gnome.org/libxslt~1.1.44 # 1.1.45 bumps the libxml2 version requirement',
     'gnome.org/glib^2',
     'gnupg.org/gpgme^1',
     'gnupg.org/libgpg-error^1',

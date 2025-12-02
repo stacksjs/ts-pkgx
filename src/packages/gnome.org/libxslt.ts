@@ -9,7 +9,7 @@
  * @install `launchpad install gnome.org/libxslt`
  * @homepage http://xmlsoft.org/XSLT/
  * @dependencies `gnome.org/libxml2`
- * @buildDependencies `gnu.org/patch` - required only when building from source
+ * @buildDependencies `gnu.org/patch`, `gnome.org/libxml2@~2.15.1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -70,6 +70,7 @@ export const gnomeorglibxsltPackage = {
    */
   buildDependencies: [
     'gnu.org/patch',
+    'gnome.org/libxml2@~2.15.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

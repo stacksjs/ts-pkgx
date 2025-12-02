@@ -9,7 +9,7 @@
  * @install `launchpad install pandoc.org`
  * @homepage https://pandoc.org/
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
- * @buildDependencies `haskell.org@~9.4`, `haskell.org/cabal@~3.10` - required only when building from source
+ * @buildDependencies `haskell.org@~9.4`, `haskell.org/cabal@~3.10`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -68,10 +68,12 @@ export const pandocorgPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
     'haskell.org@~9.4',
     'haskell.org/cabal@~3.10',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

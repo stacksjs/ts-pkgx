@@ -9,7 +9,7 @@
  * @install `launchpad install aws.amazon.com/sam`
  * @homepage https://aws.amazon.com/serverless/sam/
  * @dependencies `pkgx.sh^1`
- * @buildDependencies `python.org@^3.11` - required only when building from source
+ * @buildDependencies `python.org@~3.13` - required only when building from source
  *
  * @example
  * ```typescript
@@ -68,7 +68,7 @@ export const awsamazoncomsamPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'python.org@^3.11',
+    'python.org@~3.13',
   ] as const,
   /**
    * Available versions from newest to oldest.
