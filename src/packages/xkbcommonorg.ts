@@ -3,7 +3,7 @@
  *
  * @domain `xkbcommon.org`
  * @programs `xkbcli`
- * @version `1.13.0` (15 versions available)
+ * @version `1.13.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xkbcommon.org`
@@ -80,6 +80,7 @@ export const xkbcommonorgPackage = {
    */
   versions: [
     '1.13.0',
+    '1.12.4',
     '1.12.3',
     '1.12.2',
     '1.12.1',
