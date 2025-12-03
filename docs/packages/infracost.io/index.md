@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 12 versions</summary>
 
-- `0.10.42`, `0.10.41`, `0.10.40`, `0.10.39`, `0.10.38`
-- `0.10.37`, `0.10.36`, `0.10.35`, `0.10.34`, `0.10.33`
-- `0.10.32`
+- `0.10.43`, `0.10.42`, `0.10.41`, `0.10.40`, `0.10.39`
+- `0.10.38`, `0.10.37`, `0.10.36`, `0.10.35`, `0.10.34`
+- `0.10.33`, `0.10.32`
 
 </details>
 
-**Latest Version**: `0.10.42`
+**Latest Version**: `0.10.43`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +infracost.io@0.10.42 -- $SHELL -i
+sh <(curl https://pkgx.sh) +infracost.io@0.10.43 -- $SHELL -i
 ```
 
 ## Usage Examples
