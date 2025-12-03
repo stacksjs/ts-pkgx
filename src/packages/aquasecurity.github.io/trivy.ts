@@ -3,7 +3,7 @@
  *
  * @domain `aquasecurity.github.io/trivy`
  * @programs `trivy`
- * @version `0.67.2` (41 versions available)
+ * @version `0.68.1` (42 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aquasecurity.github.io/trivy`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "trivy"
  * console.log(pkg.description) // "Find vulnerabilities, misconfigurations, secret..."
  * console.log(pkg.programs)    // ["trivy"]
- * console.log(pkg.versions[0]) // "0.67.2" (latest)
+ * console.log(pkg.versions[0]) // "0.68.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/aquasecurity-github-io/trivy.md
@@ -77,6 +77,7 @@ export const aquasecuritygithubiotrivyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.68.1',
     '0.67.2',
     '0.66.0',
     '0.65.0',
