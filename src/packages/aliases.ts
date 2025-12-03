@@ -617,6 +617,7 @@ export const aliases: Record<string, string> = {
   'jumppad': 'jumppad.dev',
   'jupyter': 'jupyter.org',
   'just': 'just.systems',
+  'just-mcp': 'github.com/promptexecution/just-mcp',
   'justwatchcom/sql_exporter': 'github.com/justwatchcom/sql_exporter',
   'jwt': 'crates.io/jwt-cli',
   'k0sctl': 'github.com/k0sproject/k0sctl',

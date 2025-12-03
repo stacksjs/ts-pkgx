@@ -724,6 +724,7 @@ import { chrubyPackage } from './github.com/postmodern/chruby'
 import { rubyinstallPackage } from './github.com/postmodern/ruby-install'
 import { supPackage } from './github.com/pressly/sup'
 import { gomarkdocPackage } from './github.com/princjef/gomarkdoc'
+import { justmcpPackage } from './github.com/promptexecution/just-mcp'
 import { protobufcPackage } from './github.com/protobuf-c/protobuf-c'
 import { blackPackage } from './github.com/psf/black'
 import { requestsPackage } from './github.com/psf/requests'
@@ -2931,6 +2932,8 @@ export interface Pantry {
   githubcompressly: typeof supPackage
 
   githubcomprincjef: typeof gomarkdocPackage
+  just_mcp: typeof justmcpPackage
+  githubcompromptexecution: typeof justmcpPackage
   protobuf_c: typeof protobufcPackage
   githubcomprotobufc: typeof protobufcPackage
 
@@ -5748,6 +5751,7 @@ export interface Pantry {
   cffi: typeof cffiPackage
   terrarium: typeof terrariumtfPackage
   libfyaml: typeof libfyamlPackage
+  'just-mcp': typeof justmcpPackage
   fusermount3: typeof libfusePackage
   'google-maps-scraper': typeof googlemapsscraperPackage
   swag: typeof swagPackage
@@ -7215,6 +7219,8 @@ export const pantry: Pantry = {
   githubcompressly: supPackage,
 
   githubcomprincjef: gomarkdocPackage,
+  just_mcp: justmcpPackage,
+  githubcompromptexecution: justmcpPackage,
   protobuf_c: protobufcPackage,
   githubcomprotobufc: protobufcPackage,
 
@@ -10032,6 +10038,7 @@ export const pantry: Pantry = {
   cffi: cffiPackage,
   terrarium: terrariumtfPackage,
   libfyaml: libfyamlPackage,
+  'just-mcp': justmcpPackage,
   fusermount3: libfusePackage,
   'google-maps-scraper': googlemapsscraperPackage,
   swag: swagPackage,

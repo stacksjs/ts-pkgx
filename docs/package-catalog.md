@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-03T01:40:29.510Z
+- **Last Updated**: 2025-12-03T03:34:22.816Z
 
 ## Table of Contents
 
@@ -369,14 +369,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.149.0 (+41) | `pkgx sam` |
+| **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.150.0 (+42) | `pkgx sam` |
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.227 (+477) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.15.1 (+40) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.11.1 (+31) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.264.0 (+86) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.12.0 (+64) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
-| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.62.10 (+199) | `pkgx supabase` |
+| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.65.2 (+200) | `pkgx supabase` |
 
 ## Mobile Development
 
