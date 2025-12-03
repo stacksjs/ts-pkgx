@@ -3,7 +3,7 @@
  *
  * @domain `soliditylang.org`
  * @programs `solc`, `yul-phaser`
- * @version `0.8.30` (14 versions available)
+ * @version `0.8.31` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install soliditylang.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "soliditylang"
  * console.log(pkg.description) // "Solidity, the Smart Contract Programming Language"
  * console.log(pkg.programs)    // ["solc", "yul-phaser"]
- * console.log(pkg.versions[0]) // "0.8.30" (latest)
+ * console.log(pkg.versions[0]) // "0.8.31" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/soliditylang-org.md
@@ -81,6 +81,7 @@ export const soliditylangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.31',
     '0.8.30',
     '0.8.29',
     '0.8.28',

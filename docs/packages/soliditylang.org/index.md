@@ -26,21 +26,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `0.8.30`, `0.8.29`, `0.8.28`, `0.8.27`, `0.8.26`
-- `0.8.25`, `0.8.24`, `0.8.23`, `0.8.22`, `0.8.21`
-- `0.8.20`, `0.8.19`, `0.8.18`, `0.8.17`
+- `0.8.31`, `0.8.30`, `0.8.29`, `0.8.28`, `0.8.27`
+- `0.8.26`, `0.8.25`, `0.8.24`, `0.8.23`, `0.8.22`
+- `0.8.21`, `0.8.20`, `0.8.19`, `0.8.18`, `0.8.17`
 
 </details>
 
-**Latest Version**: `0.8.30`
+**Latest Version**: `0.8.31`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +soliditylang.org@0.8.30 -- $SHELL -i
+sh <(curl https://pkgx.sh) +soliditylang.org@0.8.31 -- $SHELL -i
 ```
 
 ## Dependencies
