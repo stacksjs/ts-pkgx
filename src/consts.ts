@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-12-02T02:38:23.377Z
+ * Generated on 2025-12-03T02:38:00.738Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1622 total)
+ * List of all known packages (1623 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -770,6 +770,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/postmodern/ruby-install',
   'github.com/pressly/sup',
   'github.com/princjef/gomarkdoc',
+  'github.com/promptexecution/just-mcp',
   'github.com/protobuf-c/protobuf-c',
   'github.com/psf/black',
   'github.com/psf/requests',
