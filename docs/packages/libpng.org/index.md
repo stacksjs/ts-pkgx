@@ -28,21 +28,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `1.6.51`, `1.6.50`, `1.6.49`, `1.6.48`, `1.6.47`
-- `1.6.46`, `1.6.45`, `1.6.44`, `1.6.43`, `1.6.42`
-- `1.6.41`, `1.6.40`, `1.6.39`, `1.6.35`
+- `1.6.52`, `1.6.51`, `1.6.50`, `1.6.49`, `1.6.48`
+- `1.6.47`, `1.6.46`, `1.6.45`, `1.6.44`, `1.6.43`
+- `1.6.42`, `1.6.41`, `1.6.40`, `1.6.39`, `1.6.35`
 
 </details>
 
-**Latest Version**: `1.6.51`
+**Latest Version**: `1.6.52`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libpng.org@1.6.51 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libpng.org@1.6.52 -- $SHELL -i
 ```
 
 ## Dependencies
