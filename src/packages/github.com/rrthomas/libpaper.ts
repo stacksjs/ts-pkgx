@@ -3,7 +3,7 @@
  *
  * @domain `github.com/rrthomas/libpaper`
  * @programs `paper`
- * @version `2.2.6` (7 versions available)
+ * @version `2.2.7` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/rrthomas/libpaper`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "paper"
  * console.log(pkg.description) // "Library and command-line tools for configuring ..."
  * console.log(pkg.programs)    // ["paper"]
- * console.log(pkg.versions[0]) // "2.2.6" (latest)
+ * console.log(pkg.versions[0]) // "2.2.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/rrthomas/libpaper.md
@@ -68,6 +68,7 @@ export const libpaperPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.2.7',
     '2.2.6',
     '2.2.5',
     '2.2.4',

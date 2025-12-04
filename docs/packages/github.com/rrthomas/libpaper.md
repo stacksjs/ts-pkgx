@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `2.2.6`, `2.2.5`, `2.2.4`, `2.2.3`, `2.1.3`
-- `2.1.2`, `2.1.1`
+- `2.2.7`, `2.2.6`, `2.2.5`, `2.2.4`, `2.2.3`
+- `2.1.3`, `2.1.2`, `2.1.1`
 
 </details>
 
-**Latest Version**: `2.2.6`
+**Latest Version**: `2.2.7`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/rrthomas/libpaper@2.2.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/rrthomas/libpaper@2.2.7 -- $SHELL -i
 ```
 
 ## Usage Examples
