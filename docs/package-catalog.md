@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-04T16:11:24.298Z
+- **Last Updated**: 2025-12-04T17:12:17.023Z
 
 ## Table of Contents
 
@@ -298,7 +298,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[apache.org/httpd](./packages/apache.org/httpd/index.md)** () | Apache HTTP server | ab, apachectl, checkgid, ... (+10) | 2.4.65 (+8) | `pkgx httpd` |
+| **[apache.org/httpd](./packages/apache.org/httpd/index.md)** () | Apache HTTP server | ab, apachectl, checkgid, ... (+10) | 2.4.66 (+9) | `pkgx httpd` |
 | **[caddyserver.com](./packages/caddyserver.com/index.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.2 (+11) | `pkgx caddy` |
 | **[cloudflare.com/cloudflared](./packages/cloudflare.com/cloudflared/index.md)** () | Cloudflare Tunnel client (formerly Argo Tunnel) | cloudflared | 2025.11.1 (+36) | `pkgx cloudflared` |
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.17.0 (+27) | `pkgx curl` |
@@ -373,7 +373,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.228 (+478) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.15.1 (+40) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.11.1 (+31) | `pkgx localstack` |
-| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.264.0 (+86) | `pkgx pscale` |
+| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.265.0 (+87) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.12.0 (+64) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.65.5 (+201) | `pkgx supabase` |

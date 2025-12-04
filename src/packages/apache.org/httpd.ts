@@ -3,7 +3,7 @@
  *
  * @domain `apache.org/httpd`
  * @programs `ab`, `apachectl`, `checkgid`, `fcgistarter`, `htcacheclean`, ... (+8 more)
- * @version `2.4.65` (9 versions available)
+ * @version `2.4.66` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apache.org/httpd`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "httpd"
  * console.log(pkg.description) // "Apache HTTP server"
  * console.log(pkg.programs)    // ["ab", "apachectl", ...]
- * console.log(pkg.versions[0]) // "2.4.65" (latest)
+ * console.log(pkg.versions[0]) // "2.4.66" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/apache-org/httpd.md
@@ -96,6 +96,7 @@ export const apacheorghttpdPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.4.66',
     '2.4.65',
     '2.4.64',
     '2.4.63',

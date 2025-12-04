@@ -3,7 +3,7 @@
  *
  * @domain `nlnetlabs.nl/ldns`
  * @programs `drill`, `ldns-config`
- * @version `1.8.4` (2 versions available)
+ * @version `1.9.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nlnetlabs.nl/ldns`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "ldns"
  * console.log(pkg.description) // "LDNS is a DNS library that facilitates DNS tool..."
  * console.log(pkg.programs)    // ["drill", "ldns-config"]
- * console.log(pkg.versions[0]) // "1.8.4" (latest)
+ * console.log(pkg.versions[0]) // "1.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nlnetlabs-nl/ldns.md
@@ -78,6 +78,7 @@ export const nlnetlabsnlldnsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.9.0',
     '1.8.4',
     '1.8.3',
   ] as const,
