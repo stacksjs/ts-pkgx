@@ -27,20 +27,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `2.4.15`, `2.4.14`, `2.4.13`, `2.4.12`, `2.4.11`
-- `2.4.10`, `2.4.9`, `2.4.8`, `2.4.7`, `2.4.6`
+- `2.4.16`, `2.4.15`, `2.4.14`, `2.4.13`, `2.4.12`
+- `2.4.11`, `2.4.10`, `2.4.9`, `2.4.8`, `2.4.7`
+- `2.4.6`
 
 </details>
 
-**Latest Version**: `2.4.15`
+**Latest Version**: `2.4.16`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openprinting.github.io/cups@2.4.15 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openprinting.github.io/cups@2.4.16 -- $SHELL -i
 ```
 
 ## Dependencies
