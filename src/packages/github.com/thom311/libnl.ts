@@ -2,7 +2,7 @@
  * **libnl** - Netlink Library Suite
  *
  * @domain `github.com/thom311/libnl`
- * @version `3.11.0` (5 versions available)
+ * @version `3.12.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/thom311/libnl`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcomthom311libnl
  * console.log(pkg.name)        // "libnl"
  * console.log(pkg.description) // "Netlink Library Suite"
- * console.log(pkg.versions[0]) // "3.11.0" (latest)
+ * console.log(pkg.versions[0]) // "3.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/thom311/libnl.md
@@ -60,6 +60,7 @@ export const libnlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.12.0',
     '3.11.0',
     '3.10.0',
     '3.9.0',
