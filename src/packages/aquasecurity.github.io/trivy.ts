@@ -9,7 +9,7 @@
  * @install `launchpad install aquasecurity.github.io/trivy`
  * @homepage https://aquasecurity.github.io/trivy/
  * @dependencies `curl.se/ca-certs`
- * @buildDependencies `go.dev@=1.25`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@=1.25`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -71,6 +71,7 @@ export const aquasecuritygithubiotrivyPackage = {
   buildDependencies: [
     'go.dev@=1.25',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.
