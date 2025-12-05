@@ -26,21 +26,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `8.0.0.6341`, `7.3.0.5189`, `7.2.0.5079`, `7.1.0.4889`, `7.0.2.4839`
-- `7.0.1.4817`, `7.0.0.4796`, `6.2.1.4610`, `6.2.0.4584`, `6.1.0.4477`
-- `6.0.0.4432`, `5.0.2.4997`, `5.0.1.3006`
+- `8.0.1.6346`, `8.0.0.6341`, `7.3.0.5189`, `7.2.0.5079`, `7.1.0.4889`
+- `7.0.2.4839`, `7.0.1.4817`, `7.0.0.4796`, `6.2.1.4610`, `6.2.0.4584`
+- `6.1.0.4477`, `6.0.0.4432`, `5.0.2.4997`, `5.0.1.3006`
 
 </details>
 
-**Latest Version**: `8.0.0.6341`
+**Latest Version**: `8.0.1.6346`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sonarqube.org/sonarscanner@8.0.0.6341 -- $SHELL -i
+sh <(curl https://pkgx.sh) +sonarqube.org/sonarscanner@8.0.1.6346 -- $SHELL -i
 ```
 
 ## Dependencies

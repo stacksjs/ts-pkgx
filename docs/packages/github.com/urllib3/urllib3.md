@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `2.5.0`, `2.4.0`, `2.3.0`, `2.2.3`, `2.2.2`
-- `2.2.1`, `2.2.0`, `1.26.20`, `1.26.19`
+- `2.6.0`, `2.5.0`, `2.4.0`, `2.3.0`, `2.2.3`
+- `2.2.2`, `2.2.1`, `2.2.0`, `1.26.20`, `1.26.19`
 
 </details>
 
-**Latest Version**: `2.5.0`
+**Latest Version**: `2.6.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/urllib3/urllib3@2.5.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/urllib3/urllib3@2.6.0 -- $SHELL -i
 ```
 
 ## Dependencies

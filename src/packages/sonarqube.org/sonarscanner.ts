@@ -3,7 +3,7 @@
  *
  * @domain `sonarqube.org/sonarscanner`
  * @programs `sonar-scanner`, `sonar-scanner-debug`
- * @version `8.0.0.6341` (13 versions available)
+ * @version `8.0.1.6346` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sonarqube.org/sonarscanner`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "sonar-scanner"
  * console.log(pkg.description) // "Scanner CLI for SonarQube (Server, Cloud)"
  * console.log(pkg.programs)    // ["sonar-scanner", "sonar-scanner-debug"]
- * console.log(pkg.versions[0]) // "8.0.0.6341" (latest)
+ * console.log(pkg.versions[0]) // "8.0.1.6346" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sonarqube-org/sonarscanner.md
@@ -69,6 +69,7 @@ export const sonarqubeorgsonarscannerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.0.1.6346',
     '8.0.0.6341',
     '7.3.0.5189',
     '7.2.0.5079',
