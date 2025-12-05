@@ -2,7 +2,7 @@
  * **platformdirs** - A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
  *
  * @domain `github.com/platformdirs/platformdirs`
- * @version `4.5.0` (15 versions available)
+ * @version `4.5.1` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/platformdirs/platformdirs`
@@ -16,7 +16,7 @@
  * const pkg = pantry.githubcomplatformdirsplatformdirs
  * console.log(pkg.name)        // "platformdirs"
  * console.log(pkg.description) // "A small Python module for determining appropria..."
- * console.log(pkg.versions[0]) // "4.5.0" (latest)
+ * console.log(pkg.versions[0]) // "4.5.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/platformdirs/platformdirs.md
@@ -60,6 +60,7 @@ export const platformdirsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.5.1',
     '4.5.0',
     '4.4.0',
     '4.3.8',
