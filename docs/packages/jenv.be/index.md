@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.5.9`, `0.5.8`, `0.5.7`, `0.5.6`
+- `0.6.0`, `0.5.9`, `0.5.8`, `0.5.7`, `0.5.6`
 
 </details>
 
-**Latest Version**: `0.5.9`
+**Latest Version**: `0.6.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jenv.be@0.5.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) +jenv.be@0.6.0 -- $SHELL -i
 ```
 
 ## Usage Examples

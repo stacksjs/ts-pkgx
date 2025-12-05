@@ -3,7 +3,7 @@
  *
  * @domain `jenv.be`
  * @programs `jenv`
- * @version `0.5.9` (4 versions available)
+ * @version `0.6.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jenv.be`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "jenv"
  * console.log(pkg.description) // "Manage your Java environment "
  * console.log(pkg.programs)    // ["jenv"]
- * console.log(pkg.versions[0]) // "0.5.9" (latest)
+ * console.log(pkg.versions[0]) // "0.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jenv-be.md
@@ -61,6 +61,7 @@ export const jenvbePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.6.0',
     '0.5.9',
     '0.5.8',
     '0.5.7',
