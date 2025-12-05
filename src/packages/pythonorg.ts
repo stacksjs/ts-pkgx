@@ -3,7 +3,7 @@
  *
  * @domain `python.org`
  * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
- * @version `3.14.1` (163 versions available)
+ * @version `3.14.2` (165 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python.org`
@@ -25,7 +25,7 @@
  * console.log(pkg.name)        // "python"
  * console.log(pkg.description) // "The Python programming language"
  * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
- * console.log(pkg.versions[0]) // "3.14.1" (latest)
+ * console.log(pkg.versions[0]) // "3.14.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/python-org.md
@@ -96,8 +96,10 @@ export const pythonPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.14.2',
     '3.14.1',
     '3.14.0',
+    '3.13.11',
     '3.13.10',
     '3.13.9',
     '3.13.8',
