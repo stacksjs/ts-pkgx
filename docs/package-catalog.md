@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-06T04:10:12.491Z
+- **Last Updated**: 2025-12-06T06:12:38.426Z
 
 ## Table of Contents
 
@@ -279,7 +279,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/muesli/duf](./packages/github.com/muesli/duf.md)** () | Disk Usage/Free Utility - a better &#39;df&#39; alternative | duf | 0.9.1 (+2) | `pkgx duf` |
 | **[github.com/peltoche/lsd](./packages/github.com/peltoche/lsd.md)** () | Clone of ls with colorful output, file type icons, and more | lsd | 1.2.0 (+7) | `pkgx lsd` |
 | **[github.com/so-fancy/diff-so-fancy](./packages/github.com/so-fancy/diff-so-fancy.md)** () | Good-lookin&#39; diffs. Actually… nah… The best-lookin&#39; diffs. :tada: | diff-so-fancy | 1.4.4 (+0) | `pkgx diff-so-fancy` |
-| **[github.com/tmux/tmux](./packages/github.com/tmux/tmux.md)** () | Terminal multiplexer | tmux | 3.6.0 (+5) | `pkgx tmux` |
+| **[github.com/tmux/tmux](./packages/github.com/tmux/tmux.md)** () | Terminal multiplexer | tmux | 3.6a (+6) | `pkgx tmux` |
 | **[gitlab.com/OldManProgrammer/unix-tree](./packages/gitlab.com/OldManProgrammer/unix-tree/index.md)** () | Display directories as trees (with optional color/HTML output) | tree | 2.2.1 (+5) | `pkgx tree` |
 | **[gnu.org/bash](./packages/gnu.org/bash/index.md)** () | Bourne-Again SHell, a UNIX command interpreter | bash, bashbug | 5.3.0 (+5) | `pkgx bash` |
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |

@@ -3,7 +3,7 @@
  *
  * @domain `github.com/tmux/tmux`
  * @programs `tmux`
- * @version `3.6.0` (6 versions available)
+ * @version `3.6a` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/tmux/tmux`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "tmux"
  * console.log(pkg.description) // "Terminal multiplexer"
  * console.log(pkg.programs)    // ["tmux"]
- * console.log(pkg.versions[0]) // "3.6.0" (latest)
+ * console.log(pkg.versions[0]) // "3.6a" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/tmux/tmux.md
@@ -76,6 +76,7 @@ export const tmuxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6a',
     '3.6.0',
     '3.5a',
     '3.5.0',
