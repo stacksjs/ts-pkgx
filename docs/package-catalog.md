@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-06T21:09:38.970Z
+- **Last Updated**: 2025-12-06T22:10:12.010Z
 
 ## Table of Contents
 
@@ -395,7 +395,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[pytest.org](./packages/pytest.org/index.md)** () | The pytest framework makes it easy to write small tests, yet scales to support complex functional... | pytest | 9.0.1 (+29) | `pkgx pytest` |
+| **[pytest.org](./packages/pytest.org/index.md)** () | The pytest framework makes it easy to write small tests, yet scales to support complex functional... | pytest | 9.0.2 (+30) | `pkgx pytest` |
 
 ## Cryptocurrency
 
