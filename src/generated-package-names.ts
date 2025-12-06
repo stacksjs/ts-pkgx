@@ -3627,7 +3627,7 @@ export interface GeneratedPackageVersions {
   'getsynth.com': '0.6.9'
   'getzola.org': '0.21.0' | '0.20.0' | '0.19.2' | '0.19.1' | '0.19.0' | '0.18.0' | '0.17.2'
   'geuz.org/gl2ps': '1.4.2'
-  'gflags.github.io': '2.2.2'
+  'gflags.github.io': '2.3.0' | '2.2.2'
   'ghostgum.com.au/epstool': '3.9.0'
   'ghostscript.com': '10.6.0' | '10.5.1' | '10.4.0' | '10.3.1' | '10.3.0' | '10.2.1' | '10.2.0' | '10.1.2'
   'giflib.sourceforge.io': '5.2.2' | '5.2.1'

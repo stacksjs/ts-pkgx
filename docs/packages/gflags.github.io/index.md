@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `2.2.2`
+- `2.3.0`, `2.2.2`
 
 </details>
 
-**Latest Version**: `2.2.2`
+**Latest Version**: `2.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gflags.github.io@2.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gflags.github.io@2.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
