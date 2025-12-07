@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-06T23:10:01.874Z
+- **Last Updated**: 2025-12-07T00:28:23.977Z
 
 ## Table of Contents
 
@@ -458,7 +458,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[qemu.org](./packages/qemu.org/index.md)** () | Generic machine emulator and virtualizer | qemu-img, qemu-edid, qemu-io, ... (+31) | 10.1.2 (+60) | `pkgx qemu` |
+| **[qemu.org](./packages/qemu.org/index.md)** () | Generic machine emulator and virtualizer | qemu-img, qemu-edid, qemu-io, ... (+31) | 10.1.3 (+63) | `pkgx qemu` |
 
 ## Version Control
 

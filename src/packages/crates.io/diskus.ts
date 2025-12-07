@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/diskus`
  * @programs `diskus`
- * @version `0.8.0` (2 versions available)
+ * @version `0.9.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/diskus`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "diskus"
  * console.log(pkg.description) // "A minimal, fast alternative to 'du -sh'"
  * console.log(pkg.programs)    // ["diskus"]
- * console.log(pkg.versions[0]) // "0.8.0" (latest)
+ * console.log(pkg.versions[0]) // "0.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/diskus.md
@@ -60,6 +60,7 @@ export const cratesiodiskusPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.0',
     '0.8.0',
     '0.7.0',
   ] as const,
