@@ -3,7 +3,7 @@
  *
  * @domain `github.com/context-labs/mactop`
  * @programs `mactop`
- * @version `0.2.5` (9 versions available)
+ * @version `0.2.6` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/context-labs/mactop`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "mactop"
  * console.log(pkg.description) // "Apple Silicon Monitor Top written in Golang"
  * console.log(pkg.programs)    // ["mactop"]
- * console.log(pkg.versions[0]) // "0.2.5" (latest)
+ * console.log(pkg.versions[0]) // "0.2.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/context-labs/mactop.md
@@ -67,6 +67,7 @@ export const mactopPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.2.6',
     '0.2.5',
     '0.2.4',
     '0.2.3',
