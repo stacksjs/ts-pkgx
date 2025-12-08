@@ -3,7 +3,7 @@
  *
  * @domain `yt-dlp.org`
  * @programs `yt-dlp`
- * @version `2025.11.12` (60 versions available)
+ * @version `2025.12.8` (61 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install yt-dlp.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "yt-dlp"
  * console.log(pkg.description) // "A feature-rich command-line audio/video downloader"
  * console.log(pkg.programs)    // ["yt-dlp"]
- * console.log(pkg.versions[0]) // "2025.11.12" (latest)
+ * console.log(pkg.versions[0]) // "2025.12.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
@@ -69,6 +69,7 @@ export const ytdlporgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.12.8',
     '2025.11.12',
     '2025.10.22',
     '2025.10.14',
