@@ -2,7 +2,7 @@
  * **double-conversion** - Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.
  *
  * @domain `google.com/double-conversion`
- * @version `3.3.1` (3 versions available)
+ * @version `3.4.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/double-conversion`
@@ -15,7 +15,7 @@
  * const pkg = pantry.googlecomdoubleconversion
  * console.log(pkg.name)        // "double-conversion"
  * console.log(pkg.description) // "Efficient binary-decimal and decimal-binary con..."
- * console.log(pkg.versions[0]) // "3.3.1" (latest)
+ * console.log(pkg.versions[0]) // "3.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/google-com/double-conversion.md
@@ -59,6 +59,7 @@ export const googlecomdoubleconversionPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.4.0',
     '3.3.1',
     '3.3.0',
     '3.2.1',

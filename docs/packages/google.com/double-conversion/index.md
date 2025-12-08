@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `3.3.1`, `3.3.0`, `3.2.1`
+- `3.4.0`, `3.3.1`, `3.3.0`, `3.2.1`
 
 </details>
 
-**Latest Version**: `3.3.1`
+**Latest Version**: `3.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/double-conversion@3.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/double-conversion@3.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples

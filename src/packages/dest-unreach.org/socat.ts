@@ -3,7 +3,7 @@
  *
  * @domain `dest-unreach.org/socat`
  * @programs `socat`
- * @version `1.8.0.3` (4 versions available)
+ * @version `1.8.1.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dest-unreach.org/socat`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "socat"
  * console.log(pkg.description) // "SOcket CAT: netcat on steroids"
  * console.log(pkg.programs)    // ["socat"]
- * console.log(pkg.versions[0]) // "1.8.0.3" (latest)
+ * console.log(pkg.versions[0]) // "1.8.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dest-unreach-org/socat.md
@@ -69,6 +69,7 @@ export const destunreachorgsocatPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.8.1.0',
     '1.8.0.3',
     '1.8.0.2',
     '1.8.0.1',
