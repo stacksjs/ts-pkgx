@@ -10,7 +10,7 @@
  * @name `python`
  * @aliases `py`
  * @homepage https://www.python.org
- * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+9 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `gnu.org/patch`, `curl.se` - required only when building from source
  *
  * @example
@@ -80,6 +80,7 @@ export const pythonPackage = {
     'sqlite.org@3',
     'gnu.org/readline@8',
     'invisible-island.net/ncurses@6',
+    'facebook.com/zstd>=1.5',
     'linux:tcl-lang.org',
     'darwin:tcl-lang.org=8.6.16 # 9.0.2 introduced a build issue on darwin',
   ] as const,

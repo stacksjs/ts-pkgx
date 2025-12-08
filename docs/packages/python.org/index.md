@@ -94,6 +94,7 @@ This package depends on:
 - `sqlite.org@3`
 - `gnu.org/readline@8`
 - `invisible-island.net/ncurses@6`
+- `facebook.com/zstd>=1.5`
 - `linux:tcl-lang.org`
 - `darwin:tcl-lang.org=8.6.16 # 9.0.2 introduced a build issue on darwin`
 
