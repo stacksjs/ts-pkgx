@@ -3,7 +3,7 @@
  *
  * @domain `swig.org`
  * @programs `swig`, `ccache-swig`
- * @version `4.4.0` (6 versions available)
+ * @version `4.4.1` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swig.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "swig"
  * console.log(pkg.description) // "SWIG is a software development tool that connec..."
  * console.log(pkg.programs)    // ["swig", "ccache-swig"]
- * console.log(pkg.versions[0]) // "4.4.0" (latest)
+ * console.log(pkg.versions[0]) // "4.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/swig-org.md
@@ -69,6 +69,7 @@ export const swigorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.4.1',
     '4.4.0',
     '4.3.1',
     '4.3.0',
