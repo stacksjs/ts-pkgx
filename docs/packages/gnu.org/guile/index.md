@@ -29,19 +29,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `3.0.10`, `3.0.9`
+- `3.0.11`, `3.0.10`, `3.0.9`
 
 </details>
 
-**Latest Version**: `3.0.10`
+**Latest Version**: `3.0.11`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/guile@3.0.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/guile@3.0.11 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -3,7 +3,7 @@
  *
  * @domain `opentofu.org`
  * @programs `tofu`
- * @version `1.10.7` (34 versions available)
+ * @version `1.10.8` (35 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opentofu.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "tofu"
  * console.log(pkg.description) // "OpenTofu lets you declaratively manage your clo..."
  * console.log(pkg.programs)    // ["tofu"]
- * console.log(pkg.versions[0]) // "1.10.7" (latest)
+ * console.log(pkg.versions[0]) // "1.10.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opentofu-org.md
@@ -76,6 +76,7 @@ export const opentofuorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.10.8',
     '1.10.7',
     '1.10.6',
     '1.10.5',

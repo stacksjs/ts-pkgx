@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/guile`
  * @programs `guild`, `guile`, `guile-config`, `guile-snarf`, `guile-tools`
- * @version `3.0.10` (2 versions available)
+ * @version `3.0.11` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/guile`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "guil"
  * console.log(pkg.description) // "GNU Ubiquitous Intelligent Language for Extensions"
  * console.log(pkg.programs)    // ["guild", "guile", ...]
- * console.log(pkg.versions[0]) // "3.0.10" (latest)
+ * console.log(pkg.versions[0]) // "3.0.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/guile.md
@@ -80,6 +80,7 @@ export const gnuorgguilePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.11',
     '3.0.10',
     '3.0.9',
   ] as const,
