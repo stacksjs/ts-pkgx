@@ -2,7 +2,7 @@
  * **c-ares** - pkgx package
  *
  * @domain `c-ares.org`
- * @version `1.34.5` (28 versions available)
+ * @version `1.34.6` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install c-ares.org`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.caresorg
  * console.log(pkg.name)        // "c-ares"
- * console.log(pkg.versions[0]) // "1.34.5" (latest)
+ * console.log(pkg.versions[0]) // "1.34.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/c-ares-org.md
@@ -59,6 +59,7 @@ export const caresorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.34.6',
     '1.34.5',
     '1.34.4',
     '1.34.3',

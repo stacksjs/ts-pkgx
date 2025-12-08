@@ -3,7 +3,7 @@
  *
  * @domain `xplr.dev`
  * @programs `xplr`
- * @version `1.0.1` (5 versions available)
+ * @version `1.1.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xplr.dev`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "xplr"
  * console.log(pkg.description) // "A hackable, minimal, fast TUI file explorer"
  * console.log(pkg.programs)    // ["xplr"]
- * console.log(pkg.versions[0]) // "1.0.1" (latest)
+ * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xplr-dev.md
@@ -61,6 +61,7 @@ export const xplrdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.0',
     '1.0.1',
     '1.0.0',
     '0.21.10',
