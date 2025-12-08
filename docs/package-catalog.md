@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-08T17:12:29.081Z
+- **Last Updated**: 2025-12-08T18:12:20.152Z
 
 ## Table of Contents
 
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.5 (+22) | `pkgx f2py` |
-| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.13.1 (+129) | `pkgx ollama` |
+| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.13.2 (+130) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.9.0 (+301) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** () | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx open-interpreter` |
 
@@ -205,7 +205,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.1 (+23) | `pkgx gradle` |
 | **[just.systems](./packages/just.systems/index.md)** () | Handy way to save and run project-specific commands | just | 1.44.0 (+48) | `pkgx just` |
 | **[maven.apache.org](./packages/maven.apache.org/index.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.11 (+11) | `pkgx mvn` |
-| **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.9.2 (+33) | `pkgx meson` |
+| **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.10.0 (+34) | `pkgx meson` |
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.2 (+6) | `pkgx ninja` |
 | **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** () | Protects your Pants from the elements. | pants | 0.12.5 (+4) | `pkgx scie-pants` |
 | **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.10.1 (+8) | `pkgx scons` |
