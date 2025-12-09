@@ -6,6 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/libunistring`
+ * @dependencies `darwin:gnu.org/libiconv` (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `gnu.org/gmp`, `gnu.org/m4` - required only when building from source
  *
  * @example
@@ -45,7 +46,14 @@ export const gnuorglibunistringPackage = {
   launchpadInstallCommand: 'launchpad install gnu.org/libunistring' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Runtime dependencies for this package.
+   * These are required when running the package.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'darwin:gnu.org/libiconv',
+  ] as const,
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
