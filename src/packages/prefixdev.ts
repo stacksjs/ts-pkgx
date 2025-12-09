@@ -3,7 +3,7 @@
  *
  * @domain `prefix.dev`
  * @programs `pixi`
- * @version `0.60.0` (99 versions available)
+ * @version `0.61.0` (100 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install prefix.dev`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pixi"
  * console.log(pkg.description) // "Package management made easy"
  * console.log(pkg.programs)    // ["pixi"]
- * console.log(pkg.versions[0]) // "0.60.0" (latest)
+ * console.log(pkg.versions[0]) // "0.61.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
@@ -69,6 +69,7 @@ export const prefixdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.61.0',
     '0.60.0',
     '0.59.0',
     '0.58.0',
