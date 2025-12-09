@@ -3,7 +3,7 @@
  *
  * @domain `ansible.com`
  * @programs `ansible`, `ansible-config`, `ansible-connection`, `ansible-console`, `ansible-doc`, ... (+6 more)
- * @version `2.20.0` (82 versions available)
+ * @version `2.20.0` (83 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible.com`
@@ -117,6 +117,7 @@ export const ansiblecomPackage = {
     '2.17.2',
     '2.17.1',
     '2.17.0',
+    '2.16.15',
     '2.16.14',
     '2.16.13',
     '2.16.12',
