@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1398+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1399
+- **Total Packages**: 1398
 - **Categories**: 27
-- **Last Updated**: 2025-12-09T18:12:42.038Z
+- **Last Updated**: 2025-12-09T19:09:22.099Z
 
 ## Table of Contents
 
@@ -101,7 +101,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.51.1 (+30) | `pkgx sqlite3` |
 | **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+57) | `pkgx surreal` |
 | **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.15 (+93) | `pkgx turso` |
-| **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 9.0.0 (+20) | `pkgx valkey` |
+| **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 9.0.1 (+21) | `pkgx valkey` |
 
 ## Web Development
 
@@ -137,7 +137,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.8.0 (+16) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.37.0 (+12) | `pkgx minikube` |
 | **[nomadproject.io](./packages/nomadproject.io/index.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.11.0 (+17) | `pkgx nomad` |
-| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.10.8 (+34) | `pkgx tofu` |
+| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.11.0 (+35) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.14.3 (+16) | `pkgx packer` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.0 (+43) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.37.1 (+22) | `pkgx atlantis` |
