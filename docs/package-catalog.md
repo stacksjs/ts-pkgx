@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-09T15:11:40.546Z
+- **Last Updated**: 2025-12-09T16:13:04.250Z
 
 ## Table of Contents
 
@@ -125,7 +125,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.22.1 (+16) | `pkgx consul` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 5.0.0 (+66) | `pkgx docker-compose` |
 | **[fluxcd.io/flux2](./packages/fluxcd.io/flux2/index.md)** () | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | flux | 2.7.5 (+19) | `pkgx flux` |
-| **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** () | Validate CloudFormation templates against the CloudFormation spec | cfn-lint | 1.42.0 (+163) | `pkgx cfn-lint` |
+| **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** () | Validate CloudFormation templates against the CloudFormation spec | cfn-lint | 1.42.1 (+164) | `pkgx cfn-lint` |
 | **[github.com/minamijoyo/tfupdate](./packages/github.com/minamijoyo/tfupdate.md)** () | Update version constraints in your Terraform configurations | tfupdate | 0.9.3 (+9) | `pkgx tfupdate` |
 | **[github.com/terraform-linters/tflint](./packages/github.com/terraform-linters/tflint.md)** () | A Pluggable Terraform Linter | tflint | 0.60.0 (+21) | `pkgx tflint` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 4.0.1 (+42) | `pkgx helm` |
@@ -154,7 +154,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[cilium.io/cilium](./packages/cilium.io/cilium/index.md)** () | CLI to install, manage & troubleshoot Kubernetes clusters running Cilium | cilium | 0.18.9 (+29) | `pkgx cilium` |
 | **[cilium.io/hubble](./packages/cilium.io/hubble/index.md)** () | Hubble - Network, Service & Security Observability for Kubernetes using eBPF | hubble | 1.18.3 (+17) | `pkgx hubble` |
-| **[cloudnative-pg.io](./packages/cloudnative-pg.io/index.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.27.1 (+11) | `pkgx kubectl-cnpg` |
+| **[cloudnative-pg.io](./packages/cloudnative-pg.io/index.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.27.1 (+12) | `pkgx kubectl-cnpg` |
 | **[github.com/helmfile/helmfile](./packages/github.com/helmfile/helmfile.md)** () | Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. G... | helmfile | 1.2.2 (+34) | `pkgx helmfile` |
 | **[github.com/stern/stern](./packages/github.com/stern/stern.md)** () | ⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/werck... | stern | 1.33.1 (+8) | `pkgx stern` |
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** () | A FAST Kubernetes manifests validator, with support for Custom Resources! | kubeconform | 0.7.0 (+4) | `pkgx kubeconform` |

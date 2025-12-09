@@ -3,7 +3,7 @@
  *
  * @domain `cloudnative-pg.io`
  * @programs `kubectl-cnpg`
- * @version `1.27.1` (12 versions available)
+ * @version `1.27.1` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cloudnative-pg.io`
@@ -70,6 +70,7 @@ export const cloudnativepgioPackage = {
   versions: [
     '1.27.1',
     '1.27.0',
+    '1.26.3',
     '1.26.2',
     '1.26.1',
     '1.26.0',
