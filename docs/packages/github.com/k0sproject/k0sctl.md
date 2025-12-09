@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 22 versions</summary>
+<summary>Show all 23 versions</summary>
 
-- `0.27.0`, `0.26.0`, `0.25.1`, `0.25.0`, `0.24.0`
-- `0.23.0`, `0.22.0`, `0.21.0`, `0.20.0`, `0.19.6`
-- `0.19.4`, `0.19.3`, `0.19.2`, `0.19.1`, `0.19.0`
-- `0.18.1`, `0.18.0`, `0.17.8`, `0.17.7`, `0.17.6`
-- `0.17.5`, `0.17.4`
+- `0.27.1`, `0.27.0`, `0.26.0`, `0.25.1`, `0.25.0`
+- `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`, `0.20.0`
+- `0.19.6`, `0.19.4`, `0.19.3`, `0.19.2`, `0.19.1`
+- `0.19.0`, `0.18.1`, `0.18.0`, `0.17.8`, `0.17.7`
+- `0.17.6`, `0.17.5`, `0.17.4`
 
 </details>
 
-**Latest Version**: `0.27.0`
+**Latest Version**: `0.27.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/k0sproject/k0sctl@0.27.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/k0sproject/k0sctl@0.27.1 -- $SHELL -i
 ```
 
 ## Usage Examples
