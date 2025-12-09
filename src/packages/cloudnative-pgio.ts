@@ -3,7 +3,7 @@
  *
  * @domain `cloudnative-pg.io`
  * @programs `kubectl-cnpg`
- * @version `1.27.2` (14 versions available)
+ * @version `1.28.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cloudnative-pg.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "kubectl-cnpg"
  * console.log(pkg.description) // "CloudNativePG is a comprehensive platform desig..."
  * console.log(pkg.programs)    // ["kubectl-cnpg"]
- * console.log(pkg.versions[0]) // "1.27.2" (latest)
+ * console.log(pkg.versions[0]) // "1.28.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cloudnative-pg-io.md
@@ -68,6 +68,7 @@ export const cloudnativepgioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.28.0',
     '1.27.2',
     '1.27.1',
     '1.27.0',
