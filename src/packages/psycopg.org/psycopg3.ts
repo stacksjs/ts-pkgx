@@ -1,11 +1,12 @@
 /**
- * **psycopg3** - pkgx package
+ * **psycopg3** - New generation PostgreSQL database adapter for the Python programming language
  *
  * @domain `psycopg.org/psycopg3`
  * @version `3.3.2` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install psycopg.org/psycopg3`
+ * @homepage https://www.psycopg.org/psycopg3/
  * @dependencies `python.org~3.11`, `postgresql.org`
  *
  * @example
@@ -14,6 +15,7 @@
  *
  * const pkg = pantry.psycopgorgpsycopg3
  * console.log(pkg.name)        // "psycopg3"
+ * console.log(pkg.description) // "New generation PostgreSQL database adapter for ..."
  * console.log(pkg.versions[0]) // "3.3.2" (latest)
  * ```
  *
@@ -32,9 +34,9 @@ export const psycopgorgpsycopg3Package = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'New generation PostgreSQL database adapter for the Python programming language ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg3/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://www.psycopg.org/psycopg3/' as const,
   githubUrl: 'https://github.com/psycopg/psycopg' as const,
   /**
    * Command to install this package using launchpad.

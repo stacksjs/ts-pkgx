@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1398+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1398
+- **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-09T19:09:22.099Z
+- **Last Updated**: 2025-12-09T20:11:08.238Z
 
 ## Table of Contents
 
@@ -58,7 +58,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.14.2 (+164) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.7 (+47) | `pkgx ruby` |
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.91.1 (+38) | `pkgx rust` |
-| **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.2.1 (+12) | `pkgx swift` |
+| **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.2.2 (+13) | `pkgx swift` |
 | **[tinygo.org](./packages/tinygo.org/index.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.39.0 (+8) | `pkgx tinygo` |
 | **[ziglang.org](./packages/ziglang.org/index.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.15.2 (+9) | `pkgx zig` |
 
@@ -305,7 +305,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |
 | **[httpie.io](./packages/httpie.io/index.md)** () | 🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, col... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie` |
 | **[mosh.org](./packages/mosh.org/index.md)** () | Remote terminal application | mosh-client, mosh-server | 1.4.0 (+0) | `pkgx mosh` |
-| **[nginx.org](./packages/nginx.org/index.md)** () | HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server | nginx | 1.29.3 (+21) | `pkgx nginx` |
+| **[nginx.org](./packages/nginx.org/index.md)** () | HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server | nginx | 1.29.4 (+22) | `pkgx nginx` |
 | **[rsync.samba.org](./packages/rsync.samba.org/index.md)** () | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync` |
 | **[traefik.io](./packages/traefik.io/index.md)** () | The Cloud Native Application Proxy | traefik | 3.6.4 (+78) | `pkgx traefik` |
 
@@ -370,7 +370,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.150.1 (+43) | `pkgx sam` |
-| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.230 (+480) | `pkgx fly` |
+| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.231 (+481) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.16.0 (+41) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.11.1 (+31) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.268.0 (+90) | `pkgx pscale` |
