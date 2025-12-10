@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-10T16:11:43.214Z
+- **Last Updated**: 2025-12-10T17:12:12.277Z
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.2 (+23) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
-| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 25.2.1 (+160) | `pkgx node` |
+| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 25.2.1 (+161) | `pkgx node` |
 | **[perl.org](./packages/perl.org/index.md)** () | Highly capable, feature-rich programming language | corelist, cpan, enc2xs, ... (+27) | 5.42.0 (+15) | `pkgx perl` |
 | **[php.net](./packages/php.net/index.md)** () | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.5.0 (+87) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.14.2 (+164) | `pkgx py` |
@@ -130,7 +130,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/terraform-linters/tflint](./packages/github.com/terraform-linters/tflint.md)** () | A Pluggable Terraform Linter | tflint | 0.60.0 (+21) | `pkgx tflint` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 4.0.1 (+42) | `pkgx helm` |
 | **[infracost.io](./packages/infracost.io/index.md)** () | Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left! | infracost | 0.10.43 (+11) | `pkgx infracost` |
-| **[jenkins.io](./packages/jenkins.io/index.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.528.2 (+24) | `pkgx jenkins-lts` |
+| **[jenkins.io](./packages/jenkins.io/index.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.528.3 (+25) | `pkgx jenkins-lts` |
 | **[k3d.io](./packages/k3d.io/index.md)** () | Little helper to run CNCF&#39;s k3s in Docker | k3d | 5.8.3 (+16) | `pkgx k3d` |
 | **[kind.sigs.k8s.io](./packages/kind.sigs.k8s.io/index.md)** () | Kubernetes IN Docker - local clusters for testing Kubernetes | kind | 0.30.0 (+11) | `pkgx kind` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.34.3 (+125) | `pkgx kubectl` |
@@ -139,7 +139,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nomadproject.io](./packages/nomadproject.io/index.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.11.1 (+18) | `pkgx nomad` |
 | **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.11.0 (+35) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.14.3 (+16) | `pkgx packer` |
-| **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.0 (+43) | `pkgx podman` |
+| **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.1 (+44) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.38.0 (+23) | `pkgx atlantis` |
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.14.1 (+82) | `pkgx terraform` |
 | **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.94.0 (+411) | `pkgx terragrunt` |
@@ -171,7 +171,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubeshark.co](./packages/kubeshark.co/index.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+61) | `pkgx kubeshark` |
 | **[linkerd.io/linkerd2](./packages/linkerd.io/linkerd2/index.md)** () | Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x. | linkerd | 2.14.10 (+8) | `pkgx linkerd` |
 | **[operatorframework.io/operator-sdk](./packages/operatorframework.io/operator-sdk/index.md)** () | SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and proj... | operator-sdk | 1.42.0 (+16) | `pkgx operator-sdk` |
-| **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.0 (+43) | `pkgx podman` |
+| **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.1 (+44) | `pkgx podman` |
 | **[skaffold.dev](./packages/skaffold.dev/index.md)** () | Easy and Repeatable Kubernetes Development | skaffold | 2.17.0 (+15) | `pkgx skaffold` |
 | **[tilt.dev](./packages/tilt.dev/index.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.36.0 (+26) | `pkgx tilt` |
 | **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.3 (+53) | `pkgx vcluster` |
@@ -228,7 +228,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.7.0 (+70) | `pkgx npm` |
 | **[pdm.fming.dev](./packages/pdm.fming.dev/index.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.26.2 (+76) | `pkgx pdm` |
 | **[pip.pypa.io](./packages/pip.pypa.io/index.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.3.0 (+28) | `pkgx pip` |
-| **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+51) | `pkgx pipenv` |
+| **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+52) | `pkgx pipenv` |
 | **[pkgx.sh](./packages/pkgx.sh/index.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
 | **[python-poetry.org](./packages/python-poetry.org/index.md)** () | Python packaging and dependency management made easy | poetry | 2.2.1 (+23) | `pkgx poetry` |
 | **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** () | The Rust package manager | cargo | 0.92.0 (+29) | `pkgx cargo` |
