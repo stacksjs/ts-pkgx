@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `1.89.0`, `1.88.0`, `1.87.0`, `1.86.0`, `1.85.0`
-- `1.84.0`, `1.83.0`, `1.82.0`, `1.81.0`
+- `1.90.0`, `1.89.0`, `1.88.0`, `1.87.0`, `1.86.0`
+- `1.85.0`, `1.84.0`, `1.83.0`, `1.82.0`, `1.81.0`
 
 </details>
 
-**Latest Version**: `1.89.0`
+**Latest Version**: `1.90.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +boost.org@1.89.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +boost.org@1.90.0 -- $SHELL -i
 ```
 
 ## Dependencies
