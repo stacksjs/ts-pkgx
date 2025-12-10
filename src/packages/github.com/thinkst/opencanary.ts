@@ -3,7 +3,7 @@
  *
  * @domain `github.com/thinkst/opencanary`
  * @programs `opencanaryd`
- * @version `0.9.6` (5 versions available)
+ * @version `0.9.7` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/thinkst/opencanary`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "opencanaryd"
  * console.log(pkg.description) // "Modular and decentralised honeypot"
  * console.log(pkg.programs)    // ["opencanaryd"]
- * console.log(pkg.versions[0]) // "0.9.6" (latest)
+ * console.log(pkg.versions[0]) // "0.9.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/thinkst/opencanary.md
@@ -77,6 +77,7 @@ export const opencanaryPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.7',
     '0.9.6',
     '0.9.5',
     '0.9.4',
