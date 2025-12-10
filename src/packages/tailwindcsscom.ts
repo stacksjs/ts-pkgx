@@ -3,7 +3,7 @@
  *
  * @domain `tailwindcss.com`
  * @programs `tailwindcss`
- * @version `4.1.17` (52 versions available)
+ * @version `4.1.17` (53 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tailwindcss.com`
@@ -104,6 +104,7 @@ export const tailwindcsscomPackage = {
     '4.0.2',
     '4.0.1',
     '4.0.0',
+    '3.4.19',
     '3.4.18',
     '3.4.17',
     '3.4.16',

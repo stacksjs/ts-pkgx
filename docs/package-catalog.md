@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-10T18:12:37.580Z
+- **Last Updated**: 2025-12-10T19:11:52.600Z
 
 ## Table of Contents
 
@@ -111,7 +111,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.23.2 (+25) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.16.1 (+57) | `pkgx symfony` |
-| **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.17 (+51) | `pkgx tailwindcss` |
+| **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.17 (+52) | `pkgx tailwindcss` |
 | **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.7 (+134) | `pkgx vite` |
 
 ## DevOps
@@ -243,7 +243,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[alacritty.org](./packages/alacritty.org/index.md)** () | A cross-platform, OpenGL terminal emulator. | alacritty | 0.16.1 (+5) | `pkgx alacritty` |
 | **[gnu.org/emacs](./packages/gnu.org/emacs/index.md)** () | GNU Emacs text editor | emacs | 30.2.0 (+6) | `pkgx emacs` |
 | **[micro-editor.github.io](./packages/micro-editor.github.io/index.md)** () | A modern and intuitive terminal-based text editor | micro | 2.0.14 (+3) | `pkgx micro` |
-| **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** () | Command-line interface built-in Visual Studio Code | code | 1.106.3 (+31) | `pkgx vscode cli` |
+| **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** () | Command-line interface built-in Visual Studio Code | code | 1.107.0 (+32) | `pkgx vscode cli` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.5 (+17) | `pkgx nvim` |
 | **[vim.org](./packages/vim.org/index.md)** (vi) | The official Vim repository | vim, vi | 9.1.1966 (+2513) | `pkgx vi` |
@@ -318,7 +318,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[agwa.name/git-crypt](./packages/agwa.name/git-crypt/index.md)** () | Enable transparent encryption/decryption of files in a git repo | git-crypt | 0.8.0 (+1) | `pkgx git-crypt` |
 | **[aquasecurity.github.io/tfsec](./packages/aquasecurity.github.io/tfsec/index.md)** () | Static analysis security scanner for your terraform code | tfsec | 1.28.14 (+8) | `pkgx tfsec` |
 | **[aquasecurity.github.io/trivy](./packages/aquasecurity.github.io/trivy/index.md)** () | Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositori... | trivy | 0.68.1 (+41) | `pkgx trivy` |
-| **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 5.2.1 (+22) | `pkgx certbot` |
+| **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 5.2.2 (+23) | `pkgx certbot` |
 | **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.495 (+521) | `pkgx checkov` |
 | **[filippo.io/age](./packages/filippo.io/age/index.md)** () | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config ... | age, age-keygen | 1.2.1 (+2) | `pkgx age` |
 | **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** () | Seamless ssh-agent for YubiKeys and other PIV tokens | yubikey-agent | 0.1.6 (+0) | `pkgx yubikey-agent` |
