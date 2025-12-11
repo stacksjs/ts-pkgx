@@ -3,7 +3,7 @@
  *
  * @domain `rust-lang.github.io/mdBook`
  * @programs `mdbook`
- * @version `0.5.1` (21 versions available)
+ * @version `0.5.2` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rust-lang.github.io/mdBook`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "mdbook"
  * console.log(pkg.description) // "Create book from markdown files. Like Gitbook b..."
  * console.log(pkg.programs)    // ["mdbook"]
- * console.log(pkg.versions[0]) // "0.5.1" (latest)
+ * console.log(pkg.versions[0]) // "0.5.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-github-io/mdBook.md
@@ -61,6 +61,7 @@ export const rustlanggithubiomdbookPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.2',
     '0.5.1',
     '0.5.0',
     '0.4.52',
