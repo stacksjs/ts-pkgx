@@ -2,6 +2,7 @@
  * **openssh** - pkgx package
  *
  * @domain `openssh.com`
+ * @programs `scp`, `sftp`, `slogin`, `ssh`, `ssh-add`, ... (+4 more)
  * @version `10.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
@@ -15,6 +16,7 @@
  *
  * const pkg = pantry.opensshcom
  * console.log(pkg.name)        // "openssh"
+ * console.log(pkg.programs)    // ["scp", "sftp", ...]
  * console.log(pkg.versions[0]) // "10.2.0" (latest)
  * ```
  *
@@ -44,7 +46,21 @@ export const opensshcomPackage = {
   installCommand: 'launchpad install openssh.com' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install openssh.com' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'scp',
+    'sftp',
+    'slogin',
+    'ssh',
+    'ssh-add',
+    'ssh-agent',
+    'ssh-keygen',
+    'ssh-keyscan',
+    'sshd',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
