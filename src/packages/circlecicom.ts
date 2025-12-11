@@ -3,7 +3,7 @@
  *
  * @domain `circleci.com`
  * @programs `circleci`
- * @version `0.1.33826` (65 versions available)
+ * @version `0.1.34038` (66 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install circleci.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "circleci"
  * console.log(pkg.description) // "Enables you to reproduce the CircleCI environme..."
  * console.log(pkg.programs)    // ["circleci"]
- * console.log(pkg.versions[0]) // "0.1.33826" (latest)
+ * console.log(pkg.versions[0]) // "0.1.34038" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/circleci-com.md
@@ -68,6 +68,7 @@ export const circlecicomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.1.34038',
     '0.1.33826',
     '0.1.33721',
     '0.1.33494',
