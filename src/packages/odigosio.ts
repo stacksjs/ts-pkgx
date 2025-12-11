@@ -3,7 +3,7 @@
  *
  * @domain `odigos.io`
  * @programs `odigos`
- * @version `1.11.6` (246 versions available)
+ * @version `1.11.7` (247 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install odigos.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "odigos"
  * console.log(pkg.description) // "Distributed tracing without code changes. 🚀 In..."
  * console.log(pkg.programs)    // ["odigos"]
- * console.log(pkg.versions[0]) // "1.11.6" (latest)
+ * console.log(pkg.versions[0]) // "1.11.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/odigos-io.md
@@ -68,6 +68,7 @@ export const odigosioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.7',
     '1.11.6',
     '1.11.5',
     '1.11.4',
