@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-12T20:10:33.952Z
+- **Last Updated**: 2025-12-12T21:10:00.056Z
 
 ## Table of Contents
 
@@ -76,7 +76,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/npiv/chatblade](./packages/github.com/npiv/chatblade.md)** () | A CLI Swiss Army Knife for ChatGPT | chatblade | 0.7.0 (+14) | `pkgx chatblade` |
 | **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.5.0 (+57) | `pkgx jupyter` |
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
-| **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
+| **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.28.0 (+32) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.5 (+22) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.13.3 (+131) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.11.0 (+303) | `pkgx openai` |
@@ -386,7 +386,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[appium.io](./packages/appium.io/index.md)** () | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 3.0.2 (+38) | `pkgx appium` |
 | **[fastlane.tools](./packages/fastlane.tools/index.md)** () | 🚀 The easiest way to automate building and releasing your iOS and Android apps | fastlane | 2.229.1 (+24) | `pkgx fastlane` |
-| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.38.4 (+64) | `pkgx flutter` |
+| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.38.5 (+65) | `pkgx flutter` |
 | **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.1 (+23) | `pkgx gradle` |
 
 ## Testing
