@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/igorshubovych/markdownlint-cli`
- * @dependencies `nodejs.org^18`
+ * @dependencies `nodejs.org>=18`
  * @buildDependencies `npmjs.com@^10` - required only when building from source
  *
  * @example
@@ -60,7 +60,7 @@ export const markdownlintcliPackage = {
    * These are required when running the package.
    */
   dependencies: [
-    'nodejs.org^18',
+    'nodejs.org>=18',
   ] as const,
   /**
    * Build dependencies for this package.

@@ -45,7 +45,7 @@ sh <(curl https://pkgx.sh) +github.com/igorshubovych/markdownlint-cli@0.47.0 -- 
 
 This package depends on:
 
-- `nodejs.org^18`
+- `nodejs.org>=18`
 
 ## Usage Examples
 

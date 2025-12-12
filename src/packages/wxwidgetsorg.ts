@@ -3,7 +3,7 @@
  *
  * @domain `wxwidgets.org`
  * @programs `wx-config`, `wxrc`
- * @version `3.3.1` (9 versions available)
+ * @version `3.3.1` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wxwidgets.org`
@@ -89,6 +89,7 @@ export const wxwidgetsorgPackage = {
   versions: [
     '3.3.1',
     '3.3.0',
+    '3.2.9',
     '3.2.8.1',
     '3.2.8',
     '3.2.7',

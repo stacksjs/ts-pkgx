@@ -8,8 +8,8 @@
  *
  * @install `launchpad install github.com/canonical/charmcraft`
  * @homepage https://charmhub.io
- * @dependencies `pkgx.sh^1`, `libgit2.org~1.7`
- * @buildDependencies `python.org@^3` - required only when building from source
+ * @dependencies `pkgx.sh^1`, `libgit2.org~1.9 # as of v4.1.0`
+ * @buildDependencies `python.org@~3.13` - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,14 +62,14 @@ export const charmcraftPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'libgit2.org~1.7',
+    'libgit2.org~1.9 # as of v4.1.0',
   ] as const,
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'python.org@^3',
+    'python.org@~3.13',
   ] as const,
   /**
    * Available versions from newest to oldest.
