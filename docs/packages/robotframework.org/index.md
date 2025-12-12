@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `7.3.2`, `7.3.1`, `7.3.0`, `7.2.2`
+- `7.4.0`, `7.3.2`, `7.3.1`, `7.3.0`, `7.2.2`
 
 </details>
 
-**Latest Version**: `7.3.2`
+**Latest Version**: `7.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +robotframework.org@7.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +robotframework.org@7.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
