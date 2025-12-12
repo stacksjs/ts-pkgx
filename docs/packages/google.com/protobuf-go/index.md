@@ -25,22 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 17 versions</summary>
+<summary>Show all 18 versions</summary>
 
-- `1.36.10`, `1.36.9`, `1.36.8`, `1.36.7`, `1.36.6`
-- `1.36.5`, `1.36.4`, `1.36.3`, `1.36.2`, `1.36.1`
-- `1.36.0`, `1.35.2`, `1.35.1`, `1.34.2`, `1.34.1`
-- `1.34.0`, `1.33.0`
+- `1.36.11`, `1.36.10`, `1.36.9`, `1.36.8`, `1.36.7`
+- `1.36.6`, `1.36.5`, `1.36.4`, `1.36.3`, `1.36.2`
+- `1.36.1`, `1.36.0`, `1.35.2`, `1.35.1`, `1.34.2`
+- `1.34.1`, `1.34.0`, `1.33.0`
 
 </details>
 
-**Latest Version**: `1.36.10`
+**Latest Version**: `1.36.11`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/protobuf-go@1.36.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/protobuf-go@1.36.11 -- $SHELL -i
 ```
 
 ## Usage Examples

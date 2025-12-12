@@ -3,7 +3,7 @@
  *
  * @domain `google.com/protobuf-go`
  * @programs `protoc-gen-go`
- * @version `1.36.10` (17 versions available)
+ * @version `1.36.11` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/protobuf-go`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "protoc-gen-go"
  * console.log(pkg.description) // "Go support for Google's protocol buffers"
  * console.log(pkg.programs)    // ["protoc-gen-go"]
- * console.log(pkg.versions[0]) // "1.36.10" (latest)
+ * console.log(pkg.versions[0]) // "1.36.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/google-com/protobuf-go.md
@@ -68,6 +68,7 @@ export const googlecomprotobufgoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.36.11',
     '1.36.10',
     '1.36.9',
     '1.36.8',
