@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-12T17:10:46.527Z
+- **Last Updated**: 2025-12-12T18:13:18.948Z
 
 ## Table of Contents
 
@@ -429,7 +429,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pandoc.org](./packages/pandoc.org/index.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.8.3 (+35) | `pkgx pandoc` |
 | **[sphinx-doc.org](./packages/sphinx-doc.org/index.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 9.0.4 (+46) | `pkgx sphinx` |
 | **[tectonic-typesetting.github.io](./packages/tectonic-typesetting.github.io/index.md)** () | A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. | tectonic | 0.15.0 (+5) | `pkgx tectonic` |
-| **[typst.app](./packages/typst.app/index.md)** () | A new markup-based typesetting system that is powerful and easy to learn. | typst | 0.14.1 (+15) | `pkgx typst` |
+| **[typst.app](./packages/typst.app/index.md)** () | A new markup-based typesetting system that is powerful and easy to learn. | typst | 0.14.2 (+16) | `pkgx typst` |
 
 ## System Administration
 
