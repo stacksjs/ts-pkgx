@@ -3,7 +3,7 @@
  *
  * @domain `terraform-docs.io`
  * @programs `terraform-docs`
- * @version `0.20.0` (5 versions available)
+ * @version `0.21.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terraform-docs.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "terraform-docs"
  * console.log(pkg.description) // "Generate documentation from Terraform modules i..."
  * console.log(pkg.programs)    // ["terraform-docs"]
- * console.log(pkg.versions[0]) // "0.20.0" (latest)
+ * console.log(pkg.versions[0]) // "0.21.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/terraform-docs-io.md
@@ -68,6 +68,7 @@ export const terraformdocsioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.21.0',
     '0.20.0',
     '0.19.0',
     '0.18.0',
