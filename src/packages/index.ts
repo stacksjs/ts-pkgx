@@ -982,6 +982,7 @@ import { intelcomlibvaPackage } from './intel.com/libva'
 import { invisibleislandnetdialogPackage } from './invisible-island.net/dialog'
 import { invisibleislandnetlynxPackage } from './invisible-island.net/lynx'
 import { invisibleislandnetncursesPackage } from './invisible-island.net/ncurses'
+import { ipfsclusterioPackage } from './ipfsclusterio'
 import { ipfstechPackage } from './ipfstech'
 import { ipythonorgPackage } from './ipythonorg'
 import { irohcomputerPackage } from './irohcomputer'
@@ -3411,6 +3412,7 @@ export interface Pantry {
   invisibleislandnetlynx: typeof invisibleislandnetlynxPackage
 
   invisibleislandnetncurses: typeof invisibleislandnetncursesPackage
+  ipfsclusterio: typeof ipfsclusterioPackage
   ipfstech: typeof ipfstechPackage
   ipythonorg: typeof ipythonorgPackage
   irohcomputer: typeof irohcomputerPackage
@@ -5174,6 +5176,7 @@ export interface Pantry {
   mash: typeof pkgxshmashPackage
   cargox: typeof pkgxshcargoxPackage
   brewkit: typeof pkgxshbrewkitPackage
+  ipfscluster: typeof ipfsclusterioPackage
   check_if_email_exists: typeof reacheremailcheckifemailexistscliPackage
   yadm: typeof yadmioPackage
   'kafka.apache': typeof kafkaapacheorgPackage
@@ -7698,6 +7701,7 @@ export const pantry: Pantry = {
   invisibleislandnetlynx: invisibleislandnetlynxPackage,
 
   invisibleislandnetncurses: invisibleislandnetncursesPackage,
+  ipfsclusterio: ipfsclusterioPackage,
   ipfstech: ipfstechPackage,
   ipythonorg: ipythonorgPackage,
   irohcomputer: irohcomputerPackage,
@@ -9461,6 +9465,7 @@ export const pantry: Pantry = {
   mash: pkgxshmashPackage,
   cargox: pkgxshcargoxPackage,
   brewkit: pkgxshbrewkitPackage,
+  ipfscluster: ipfsclusterioPackage,
   check_if_email_exists: reacheremailcheckifemailexistscliPackage,
   yadm: yadmioPackage,
   'kafka.apache': kafkaapacheorgPackage,

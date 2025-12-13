@@ -579,6 +579,7 @@ export const aliases: Record<string, string> = {
   'ios-deploy': 'github.com/ios-control/ios-deploy',
   'ipcalc': 'github.com/pete911/ipcalc',
   'ipfs': 'ipfs.tech',
+  'ipfscluster': 'ipfscluster.io',
   'iproute2mac': 'github.com/brona/iproute2mac',
   'ipython': 'ipython.org',
   'iroh': 'iroh.computer',
