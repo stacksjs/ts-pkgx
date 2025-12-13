@@ -3,7 +3,7 @@
  *
  * @domain `ko.build`
  * @programs `ko`
- * @version `0.18.0` (4 versions available)
+ * @version `0.18.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ko.build`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "ko"
  * console.log(pkg.description) // "Build and deploy Go applications on Kubernetes"
  * console.log(pkg.programs)    // ["ko"]
- * console.log(pkg.versions[0]) // "0.18.0" (latest)
+ * console.log(pkg.versions[0]) // "0.18.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ko-build.md
@@ -68,6 +68,7 @@ export const kobuildPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.18.1',
     '0.18.0',
     '0.17.1',
     '0.17.0',
