@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-12-12T02:40:33.218Z
+ * Generated on 2025-12-13T02:37:25.905Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1623 total)
+ * List of all known packages (1624 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -1029,6 +1029,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'invisible-island.net/lynx',
   'invisible-island.net/ncurses',
   'ipfs.tech',
+  'ipfscluster.io',
   'ipython.org',
   'iroh.computer',
   'isc.org/bind9',
