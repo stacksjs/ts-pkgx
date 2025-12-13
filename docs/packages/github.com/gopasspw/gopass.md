@@ -25,21 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `1.16.0`, `1.15.18`, `1.15.17`, `1.15.16`, `1.15.15`
-- `1.15.14`, `1.15.13`, `1.15.12`, `1.15.11`, `1.15.10`
-- `1.15.9`, `1.15.8`, `1.15.7`, `1.15.6`, `1.15.5`
+- `1.16.1`, `1.16.0`, `1.15.18`, `1.15.17`, `1.15.16`
+- `1.15.15`, `1.15.14`, `1.15.13`, `1.15.12`, `1.15.11`
+- `1.15.10`, `1.15.9`, `1.15.8`, `1.15.7`, `1.15.6`
+- `1.15.5`
 
 </details>
 
-**Latest Version**: `1.16.0`
+**Latest Version**: `1.16.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/gopasspw/gopass@1.16.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/gopasspw/gopass@1.16.1 -- $SHELL -i
 ```
 
 ## Usage Examples
