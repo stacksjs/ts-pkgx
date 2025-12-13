@@ -1,5 +1,5 @@
 /**
- * **fb303** - pkgx package
+ * **fb303** - fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.
  *
  * @domain `facebook.com/fb303`
  * @version `2025.9.8.0` (98 versions available)
@@ -15,6 +15,7 @@
  *
  * const pkg = pantry.facebookcomfb303
  * console.log(pkg.name)        // "fb303"
+ * console.log(pkg.description) // "fb303 is a core set of thrift functions that pr..."
  * console.log(pkg.versions[0]) // "2025.9.8.0" (latest)
  * ```
  *
@@ -33,10 +34,10 @@ export const facebookcomfb303Package = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/fb303/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: '' as const,
+  githubUrl: 'https://github.com/facebook/fb303' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
