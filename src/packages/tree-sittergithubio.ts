@@ -3,7 +3,7 @@
  *
  * @domain `tree-sitter.github.io`
  * @programs `tree-sitter`
- * @version `0.26.2` (34 versions available)
+ * @version `0.26.3` (35 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tree-sitter.github.io`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "tree-sitter"
  * console.log(pkg.description) // "Parser generator tool and incremental parsing l..."
  * console.log(pkg.programs)    // ["tree-sitter"]
- * console.log(pkg.versions[0]) // "0.26.2" (latest)
+ * console.log(pkg.versions[0]) // "0.26.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tree-sitter-github-io.md
@@ -61,6 +61,7 @@ export const treesittergithubioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.26.3',
     '0.26.2',
     '0.26.1',
     '0.25.10',
