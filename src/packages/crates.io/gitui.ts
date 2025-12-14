@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/gitui`
  * @programs `gitui`
- * @version `0.27.0` (14 versions available)
+ * @version `0.28.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/gitui`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gitui"
  * console.log(pkg.description) // "Blazing 💥 fast terminal-ui for git written in ..."
  * console.log(pkg.programs)    // ["gitui"]
- * console.log(pkg.versions[0]) // "0.27.0" (latest)
+ * console.log(pkg.versions[0]) // "0.28.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/gitui.md
@@ -77,6 +77,7 @@ export const cratesiogituiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.28.0',
     '0.27.0',
     '0.26.3',
     '0.26.2',

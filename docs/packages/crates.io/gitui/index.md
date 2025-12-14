@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `0.27.0`, `0.26.3`, `0.26.2`, `0.26.1`, `0.26.0`
-- `0.25.2`, `0.25.1`, `0.25.0`, `0.24.3`, `0.24.2`
-- `0.24.1`, `0.24.0`, `0.23.0`, `0.22.1`
+- `0.28.0`, `0.27.0`, `0.26.3`, `0.26.2`, `0.26.1`
+- `0.26.0`, `0.25.2`, `0.25.1`, `0.25.0`, `0.24.3`
+- `0.24.2`, `0.24.1`, `0.24.0`, `0.23.0`, `0.22.1`
 
 </details>
 
-**Latest Version**: `0.27.0`
+**Latest Version**: `0.28.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/gitui@0.27.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/gitui@0.28.0 -- $SHELL -i
 ```
 
 ## Dependencies
