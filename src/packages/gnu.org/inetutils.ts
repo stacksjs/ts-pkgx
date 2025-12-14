@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/inetutils`
  * @programs `dnsdomainname`, `ftp`, `hostname`, `ifconfig`, `logger`, ... (+21 more)
- * @version `2.6.0` (3 versions available)
+ * @version `2.7.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/inetutils`
@@ -17,7 +17,7 @@
  * const pkg = pantry.gnuorginetutils
  * console.log(pkg.name)        // "inetutils"
  * console.log(pkg.programs)    // ["dnsdomainname", "ftp", ...]
- * console.log(pkg.versions[0]) // "2.6.0" (latest)
+ * console.log(pkg.versions[0]) // "2.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/inetutils.md
@@ -99,6 +99,7 @@ export const gnuorginetutilsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.7.0',
     '2.6.0',
     '2.5.0',
     '2.4.0',

@@ -4071,7 +4071,7 @@ export interface GeneratedPackageVersions {
   'gnu.org/groff': '1.23.0'
   'gnu.org/guile': '3.0.11' | '3.0.10' | '3.0.9'
   'gnu.org/help2man': '1.49.3'
-  'gnu.org/inetutils': '2.6.0' | '2.5.0' | '2.4.0'
+  'gnu.org/inetutils': '2.7.0' | '2.6.0' | '2.5.0' | '2.4.0'
   'gnu.org/libiconv': '1.18.0' | '1.17.0'
   'gnu.org/libidn': '1.43.0' | '1.42.0' | '1.41.0'
   'gnu.org/libidn2': '2.3.8' | '2.3.7' | '2.3.6' | '2.3.5' | '2.3.4'
