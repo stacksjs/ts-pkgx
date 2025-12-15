@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opencode.ai`
- * @buildDependencies `bun.sh@=1.3.3`, `go.dev@^1.24`, `python.org@3`, ... (+1 more) - required only when building from source
+ * @buildDependencies `bun.sh@=1.3.4`, `go.dev@^1.24`, `python.org@3`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -51,7 +51,7 @@ export const opencodeaiPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'bun.sh@=1.3.3',
+    'bun.sh@=1.3.4',
     'go.dev@^1.24',
     'python.org@3',
     'npmjs.com',
