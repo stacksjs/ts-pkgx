@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `2.8.1`, `2.8.0`, `2.7.0`, `2.6.0`, `2.5.0`
-- `2.4.1`
+- `3.0.0`, `2.8.1`, `2.8.0`, `2.7.0`, `2.6.0`
+- `2.5.0`, `2.4.1`
 
 </details>
 
-**Latest Version**: `2.8.1`
+**Latest Version**: `3.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/TomWright/dasel@2.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/TomWright/dasel@3.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples
