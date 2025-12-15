@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-15T08:13:13.076Z
+- **Last Updated**: 2025-12-15T09:16:31.466Z
 
 ## Table of Contents
 
@@ -112,7 +112,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.23.2 (+25) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.16.1 (+57) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.18 (+53) | `pkgx tailwindcss` |
-| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.2.7 (+134) | `pkgx vite` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.3.0 (+135) | `pkgx vite` |
 
 ## DevOps
 
@@ -285,7 +285,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |
 | **[htop.dev](./packages/htop.dev/index.md)** () | Improved top (interactive process viewer) | htop | 3.4.1 (+4) | `pkgx htop` |
 | **[httpie.io](./packages/httpie.io/index.md)** () | 🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, col... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie` |
-| **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 28.2.2 (+356) | `pkgx oh-my-posh` |
+| **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 28.3.0 (+357) | `pkgx oh-my-posh` |
 | **[starship.rs](./packages/starship.rs/index.md)** () | ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.24.1 (+22) | `pkgx starship` |
 | **[stedolan.github.io/jq](./packages/stedolan.github.io/jq/index.md)** () | Lightweight and flexible command-line JSON processor | jq | 1.8.1 (+4) | `pkgx jq` |
 | **[tree-sitter.github.io](./packages/tree-sitter.github.io/index.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.26.3 (+34) | `pkgx tree-sitter` |
