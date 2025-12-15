@@ -3,7 +3,7 @@
  *
  * @domain `exiftool.org`
  * @programs `exiftool`
- * @version `13.36.0` (10 versions available)
+ * @version `13.44.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install exiftool.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "exiftool"
  * console.log(pkg.description) // "Perl lib for reading and writing EXIF metadata"
  * console.log(pkg.programs)    // ["exiftool"]
- * console.log(pkg.versions[0]) // "13.36.0" (latest)
+ * console.log(pkg.versions[0]) // "13.44.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/exiftool-org.md
@@ -75,6 +75,7 @@ export const exiftoolorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '13.44.0',
     '13.36.0',
     '13.35.0',
     '13.30.0',
