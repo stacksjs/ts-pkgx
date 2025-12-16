@@ -3,7 +3,7 @@
  *
  * @domain `prql-lang.org`
  * @programs `prql-compiler`, `prqlc`
- * @version `0.13.9` (38 versions available)
+ * @version `0.13.10` (39 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install prql-lang.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "prql"
  * console.log(pkg.description) // "PRQL is a modern language for transforming data..."
  * console.log(pkg.programs)    // ["prql-compiler", "prqlc"]
- * console.log(pkg.versions[0]) // "0.13.9" (latest)
+ * console.log(pkg.versions[0]) // "0.13.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
@@ -70,6 +70,7 @@ export const prqllangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.13.10',
     '0.13.9',
     '0.13.8',
     '0.13.7',
