@@ -3,7 +3,7 @@
  *
  * @domain `odigos.io`
  * @programs `odigos`
- * @version `1.12.1` (249 versions available)
+ * @version `1.12.1` (250 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install odigos.io`
@@ -86,6 +86,7 @@ export const odigosioPackage = {
     '1.10.2',
     '1.10.1',
     '1.10.0',
+    '1.9.8',
     '1.9.7',
     '1.9.6',
     '1.9.5',
