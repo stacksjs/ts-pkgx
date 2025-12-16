@@ -1,7 +1,8 @@
 /**
- * **awslogs** - pkgx package
+ * **awslogs** - Simple command-line tool to read AWS CloudWatch logs
  *
  * @domain `github.com/jorgebastida/awslogs`
+ * @programs `awslogs`
  * @version `0.15.0` (2 versions available)
  * @versions From newest version to oldest.
  *
@@ -15,6 +16,8 @@
  *
  * const pkg = pantry.githubcomjorgebastidaawslogs
  * console.log(pkg.name)        // "awslogs"
+ * console.log(pkg.description) // "Simple command-line tool to read AWS CloudWatch..."
+ * console.log(pkg.programs)    // ["awslogs"]
  * console.log(pkg.versions[0]) // "0.15.0" (latest)
  * ```
  *
@@ -33,10 +36,10 @@ export const awslogsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Simple command-line tool to read AWS CloudWatch logs' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jorgebastida/awslogs/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: '' as const,
+  githubUrl: 'https://github.com/jorgebastida/awslogs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -44,7 +47,13 @@ export const awslogsPackage = {
   installCommand: 'launchpad install github.com/jorgebastida/awslogs' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jorgebastida/awslogs -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/jorgebastida/awslogs' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'awslogs',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
