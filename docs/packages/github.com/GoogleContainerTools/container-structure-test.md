@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `1.22.0`, `1.21.1`, `1.21.0`, `1.20.0`, `1.19.3`
-- `1.19.2`, `1.19.1`
+- `1.22.1`, `1.22.0`, `1.21.1`, `1.21.0`, `1.20.0`
+- `1.19.3`, `1.19.2`, `1.19.1`
 
 </details>
 
-**Latest Version**: `1.22.0`
+**Latest Version**: `1.22.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/GoogleContainerTools/container-structure-test@1.22.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/GoogleContainerTools/container-structure-test@1.22.1 -- $SHELL -i
 ```
 
 ## Usage Examples
