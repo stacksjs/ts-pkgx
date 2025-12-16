@@ -71,7 +71,7 @@ sh <(curl https://pkgx.sh) +facebook.com/folly@2025.9.8.0 -- $SHELL -i
 This package depends on:
 
 - `boost.org<1.89 # doesn`
-- `gflags.github.io`
+- `gflags.github.io~2.2 # looking for glog`
 - `google.com/glog<0.7`
 - `libevent.org`
 - `lz4.org@1`

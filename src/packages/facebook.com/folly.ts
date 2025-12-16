@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/folly`
- * @dependencies `boost.org<1.89 # doesn`, `gflags.github.io`, `google.com/glog<0.7`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `boost.org<1.89 # doesn`, `gflags.github.io~2.2 # looking for glog`, `google.com/glog<0.7`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `cmake.org@^3.0.2`, `linux:gnu.org/gcc@13` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -54,7 +54,7 @@ export const facebookcomfollyPackage = {
    */
   dependencies: [
     'boost.org<1.89 # doesn',
-    'gflags.github.io',
+    'gflags.github.io~2.2 # looking for glog',
     'google.com/glog<0.7',
     'libevent.org',
     'lz4.org@1',

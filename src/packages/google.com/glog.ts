@@ -7,7 +7,7 @@
  *
  * @install `launchpad install google.com/glog`
  * @homepage http://google.github.io/glog/
- * @dependencies `gflags.github.io`
+ * @dependencies `gflags.github.io~2.2`
  * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
@@ -53,7 +53,7 @@ export const googlecomglogPackage = {
    * These are required when running the package.
    */
   dependencies: [
-    'gflags.github.io',
+    'gflags.github.io~2.2',
   ] as const,
   /**
    * Build dependencies for this package.

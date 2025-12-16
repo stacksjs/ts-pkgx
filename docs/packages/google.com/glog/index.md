@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) +google.com/glog@0.7.1 -- $SHELL -i
 
 This package depends on:
 
-- `gflags.github.io`
+- `gflags.github.io~2.2`
 
 ## Usage Examples
 

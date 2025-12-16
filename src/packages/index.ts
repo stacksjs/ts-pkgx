@@ -99,6 +99,7 @@ import { certifiiopythoncertifiPackage } from './certifi.io/python-certifi'
 import { cfsslorgPackage } from './cfsslorg'
 import { cgalorgPackage } from './cgalorg'
 import { changiedevPackage } from './changiedev'
+import { charmshcrushPackage } from './charm.sh/crush'
 import { charmshfreezePackage } from './charm.sh/freeze'
 import { charmshglowPackage } from './charm.sh/glow'
 import { charmshgumPackage } from './charm.sh/gum'
@@ -697,6 +698,7 @@ import { unibiliumPackage } from './github.com/neovim/unibilium'
 import { gitfilterrepoPackage } from './github.com/newren/git-filter-repo'
 import { swiftformatPackage } from './github.com/nicklockwood/SwiftFormat'
 import { licensePackage } from './github.com/nishanths/license'
+import { jqpPackage } from './github.com/noahgorstein/jqp'
 import { nodebuildPackage } from './github.com/nodenv/node-build'
 import { gpt4allPackage } from './github.com/nomic-ai/gpt4all'
 import { chatbladePackage } from './github.com/npiv/chatblade'
@@ -794,6 +796,7 @@ import { mscpPackage } from './github.com/upa/mscp'
 import { urllib3Package } from './github.com/urllib3/urllib3'
 import { utillinuxPackage } from './github.com/util-linux/util-linux'
 import { ifacemakerPackage } from './github.com/vburenin/ifacemaker'
+import { regextuiPackage } from './github.com/vitor-mariano/regex-tui'
 import { sqlboilerPackage } from './github.com/volatiletech/sqlboiler'
 import { divePackage } from './github.com/wagoodman/dive'
 import { flexPackage } from './github.com/westes/flex'
@@ -946,6 +949,7 @@ import { gtssourceforgenetPackage } from './gtssourceforgenet'
 import { hadronsorglibmdPackage } from './hadrons.org/libmd'
 import { hardingmotdcaautosshPackage } from './harding.motd.ca/autossh'
 import { harfbuzzorgPackage } from './harfbuzzorg'
+import { harlequinshPackage } from './harlequinsh'
 import { hashicorpcomconsultemplatePackage } from './hashicorp.com/consul-template'
 import { hashicorpcomenvconsulPackage } from './hashicorp.com/envconsul'
 import { haskellorgcabalPackage } from './haskell.org/cabal'
@@ -1777,6 +1781,8 @@ export interface Pantry {
   cfsslorg: typeof cfsslorgPackage
   cgalorg: typeof cgalorgPackage
   changiedev: typeof changiedevPackage
+
+  charmshcrush: typeof charmshcrushPackage
 
   charmshfreeze: typeof charmshfreezePackage
 
@@ -2879,6 +2885,8 @@ export interface Pantry {
   githubcomnicklockwood: typeof swiftformatPackage
 
   githubcomnishanths: typeof licensePackage
+
+  githubcomnoahgorstein: typeof jqpPackage
   node_build: typeof nodebuildPackage
   githubcomnodenv: typeof nodebuildPackage
 
@@ -3073,6 +3081,8 @@ export interface Pantry {
   githubcomutillinux: typeof utillinuxPackage
 
   githubcomvburenin: typeof ifacemakerPackage
+  regex_tui: typeof regextuiPackage
+  githubcomvitormariano: typeof regextuiPackage
 
   githubcomvolatiletech: typeof sqlboilerPackage
 
@@ -3355,6 +3365,7 @@ export interface Pantry {
 
   hardingmotdcaautossh: typeof hardingmotdcaautosshPackage
   harfbuzzorg: typeof harfbuzzorgPackage
+  harlequinsh: typeof harlequinshPackage
   consul_template: typeof hashicorpcomconsultemplatePackage
   hashicorpcomconsultemplate: typeof hashicorpcomconsultemplatePackage
 
@@ -5357,6 +5368,7 @@ export interface Pantry {
   pop: typeof charmshpopPackage
   mods: typeof charmshmodsPackage
   skate: typeof charmshskatePackage
+  crush: typeof charmshcrushPackage
   gum: typeof charmshgumPackage
   melt: typeof charmshmeltPackage
   cruft: typeof cruftgithubioPackage
@@ -5572,6 +5584,7 @@ export interface Pantry {
   black: typeof blackPackage
   'cargo-c': typeof cargocPackage
   gomarkdoc: typeof gomarkdocPackage
+  jqp: typeof jqpPackage
   protoc: typeof protobufcPackage
   landrun: typeof landrunPackage
   grype: typeof grypePackage
@@ -5657,6 +5670,7 @@ export interface Pantry {
   brotli: typeof brotliPackage
   re2: typeof re2Package
   tfenv: typeof tfenvPackage
+  'regex-tui': typeof regextuiPackage
   'go-mod-upgrade': typeof gomodupgradePackage
   jsonlint: typeof jsonlintPackage
   'Vulkan-Loader': typeof vulkanloaderPackage
@@ -6066,6 +6080,8 @@ export const pantry: Pantry = {
   cfsslorg: cfsslorgPackage,
   cgalorg: cgalorgPackage,
   changiedev: changiedevPackage,
+
+  charmshcrush: charmshcrushPackage,
 
   charmshfreeze: charmshfreezePackage,
 
@@ -7168,6 +7184,8 @@ export const pantry: Pantry = {
   githubcomnicklockwood: swiftformatPackage,
 
   githubcomnishanths: licensePackage,
+
+  githubcomnoahgorstein: jqpPackage,
   node_build: nodebuildPackage,
   githubcomnodenv: nodebuildPackage,
 
@@ -7362,6 +7380,8 @@ export const pantry: Pantry = {
   githubcomutillinux: utillinuxPackage,
 
   githubcomvburenin: ifacemakerPackage,
+  regex_tui: regextuiPackage,
+  githubcomvitormariano: regextuiPackage,
 
   githubcomvolatiletech: sqlboilerPackage,
 
@@ -7644,6 +7664,7 @@ export const pantry: Pantry = {
 
   hardingmotdcaautossh: hardingmotdcaautosshPackage,
   harfbuzzorg: harfbuzzorgPackage,
+  harlequinsh: harlequinshPackage,
   consul_template: hashicorpcomconsultemplatePackage,
   hashicorpcomconsultemplate: hashicorpcomconsultemplatePackage,
 
@@ -9646,6 +9667,7 @@ export const pantry: Pantry = {
   pop: charmshpopPackage,
   mods: charmshmodsPackage,
   skate: charmshskatePackage,
+  crush: charmshcrushPackage,
   gum: charmshgumPackage,
   melt: charmshmeltPackage,
   cruft: cruftgithubioPackage,
@@ -9861,6 +9883,7 @@ export const pantry: Pantry = {
   black: blackPackage,
   'cargo-c': cargocPackage,
   gomarkdoc: gomarkdocPackage,
+  jqp: jqpPackage,
   protoc: protobufcPackage,
   landrun: landrunPackage,
   grype: grypePackage,
@@ -9946,6 +9969,7 @@ export const pantry: Pantry = {
   brotli: brotliPackage,
   re2: re2Package,
   tfenv: tfenvPackage,
+  'regex-tui': regextuiPackage,
   'go-mod-upgrade': gomodupgradePackage,
   jsonlint: jsonlintPackage,
   'Vulkan-Loader': vulkanloaderPackage,
