@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-16T15:11:35.408Z
+- **Last Updated**: 2025-12-16T16:12:46.820Z
 
 ## Table of Contents
 
@@ -47,14 +47,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.18.2 (+23) | `pkgx crystal` |
-| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.10.5 (+48) | `pkgx dart` |
+| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.10.6 (+49) | `pkgx dart` |
 | **[go.dev](./packages/go.dev/index.md)** () | The Go programming language | go, gofmt | 1.25.5 (+82) | `pkgx go` |
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.3 (+25) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 25.2.1 (+161) | `pkgx node` |
 | **[perl.org](./packages/perl.org/index.md)** () | Highly capable, feature-rich programming language | corelist, cpan, enc2xs, ... (+27) | 5.42.0 (+15) | `pkgx perl` |
-| **[php.net](./packages/php.net/index.md)** () | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.5.0 (+87) | `pkgx php` |
+| **[php.net](./packages/php.net/index.md)** () | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.5.0 (+88) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.14.2 (+164) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.7 (+47) | `pkgx ruby` |
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.92.0 (+39) | `pkgx rust` |
