@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-12-15T02:44:14.534Z
+ * Generated on 2025-12-16T02:40:35.727Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1624 total)
+ * List of all known packages (1628 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -145,6 +145,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'cfssl.org',
   'cgal.org',
   'changie.dev',
+  'charm.sh/crush',
   'charm.sh/freeze',
   'charm.sh/glow',
   'charm.sh/gum',
@@ -743,6 +744,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/newren/git-filter-repo',
   'github.com/nicklockwood/SwiftFormat',
   'github.com/nishanths/license',
+  'github.com/noahgorstein/jqp',
   'github.com/nodenv/node-build',
   'github.com/nomic-ai/gpt4all',
   'github.com/npiv/chatblade',
@@ -840,6 +842,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/urllib3/urllib3',
   'github.com/util-linux/util-linux',
   'github.com/vburenin/ifacemaker',
+  'github.com/vitor-mariano/regex-tui',
   'github.com/volatiletech/sqlboiler',
   'github.com/wagoodman/dive',
   'github.com/westes/flex',
@@ -992,6 +995,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'hadrons.org/libmd',
   'harding.motd.ca/autossh',
   'harfbuzz.org',
+  'harlequin.sh',
   'hashicorp.com/consul-template',
   'hashicorp.com/envconsul',
   'haskell.org',
