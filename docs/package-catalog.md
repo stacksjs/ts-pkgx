@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-17T19:10:56.102Z
+- **Last Updated**: 2025-12-17T20:12:25.275Z
 
 ## Table of Contents
 
@@ -91,11 +91,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dgraph.io](./packages/dgraph.io/index.md)** () | high-performance graph database for real-time use cases | dgraph | 25.1.0 (+13) | `pkgx dgraph` |
 | **[duckdb.org](./packages/duckdb.org/index.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.4.3 (+24) | `pkgx duckdb` |
 | **[edgedb.com](./packages/edgedb.com/index.md)** () | The EdgeDB CLI | edgedb | 7.10.2 (+43) | `pkgx edgedb` |
-| **[etcd.io](./packages/etcd.io/index.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.6 (+22) | `pkgx etcd` |
+| **[etcd.io](./packages/etcd.io/index.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.7 (+25) | `pkgx etcd` |
 | **[litecli.com](./packages/litecli.com/index.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.17.0 (+16) | `pkgx litecli` |
 | **[mongodb.com/shell](./packages/mongodb.com/shell/index.md)** () | MongoDB Shell to connect, configure, query, and work with your MongoDB database | mongosh | 2.5.10 (+40) | `pkgx mongosh` |
 | **[mysql.com](./packages/mysql.com/index.md)** () | MySQL Server, the world&#39;s most popular open source database, and MySQL Cluster, a real-time, ... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.5.0 (+29) | `pkgx mysql` |
-| **[opensearch.org](./packages/opensearch.org/index.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+12) | `pkgx opensearch` |
+| **[opensearch.org](./packages/opensearch.org/index.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.4.0 (+15) | `pkgx opensearch` |
 | **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 14.1.0 (+20) | `pkgx postgrest` |
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.4.0 (+52) | `pkgx redis` |
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.51.1 (+30) | `pkgx sqlite3` |
@@ -370,7 +370,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.150.1 (+43) | `pkgx sam` |
-| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.232 (+482) | `pkgx fly` |
+| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.233 (+483) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.16.0 (+41) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.12.0 (+32) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.268.0 (+90) | `pkgx pscale` |

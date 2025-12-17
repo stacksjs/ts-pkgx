@@ -3,7 +3,7 @@
  *
  * @domain `github.com/Genymobile/scrcpy`
  * @programs `scrcpy`
- * @version `3.3.3` (18 versions available)
+ * @version `3.3.4` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/Genymobile/scrcpy`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "scrcpy"
  * console.log(pkg.description) // "Display and control your Android device"
  * console.log(pkg.programs)    // ["scrcpy"]
- * console.log(pkg.versions[0]) // "3.3.3" (latest)
+ * console.log(pkg.versions[0]) // "3.3.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/Genymobile/scrcpy.md
@@ -82,6 +82,7 @@ export const scrcpyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.3.4',
     '3.3.3',
     '3.3.2',
     '3.3.1',

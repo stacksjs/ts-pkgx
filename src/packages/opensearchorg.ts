@@ -3,7 +3,7 @@
  *
  * @domain `opensearch.org`
  * @programs `opensearch`, `opensearch-keystore`, `opensearch-plugin`, `opensearch-shard`
- * @version `3.0.0` (13 versions available)
+ * @version `3.4.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opensearch.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "opensearch"
  * console.log(pkg.description) // "🔎 Open source distributed and RESTful search e..."
  * console.log(pkg.programs)    // ["opensearch", "opensearch-keystore", ...]
- * console.log(pkg.versions[0]) // "3.0.0" (latest)
+ * console.log(pkg.versions[0]) // "3.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opensearch-org.md
@@ -83,6 +83,9 @@ export const opensearchorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.4.0',
+    '3.2.0',
+    '3.1.0',
     '3.0.0',
     '2.19.3',
     '2.19.2',
