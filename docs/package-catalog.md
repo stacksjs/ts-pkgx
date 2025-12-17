@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-17T12:15:38.907Z
+- **Last Updated**: 2025-12-17T13:21:24.498Z
 
 ## Table of Contents
 
@@ -338,7 +338,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ffmpeg.org](./packages/ffmpeg.org/index.md)** () | Play, record, convert, and stream audio and video | ffmpeg, ffplay, ffprobe | 8.0.0 (+31) | `pkgx ffmpeg` |
 | **[imagemagick.org](./packages/imagemagick.org/index.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** () | Create, manipulate, and optimize GIF images and animations | gifsicle | 1.96.0 (+3) | `pkgx gifsicle` |
-| **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.3 (+11) | `pkgx vips` |
+| **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.18.0 (+12) | `pkgx vips` |
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 8.1.0 (+23) | `pkgx streamlink` |
