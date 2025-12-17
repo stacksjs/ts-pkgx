@@ -3,7 +3,7 @@
  *
  * @domain `kubelinter.io`
  * @programs `kube-linter`
- * @version `0.7.6` (8 versions available)
+ * @version `0.8.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubelinter.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "kube-linter"
  * console.log(pkg.description) // "KubeLinter is a static analysis tool that check..."
  * console.log(pkg.programs)    // ["kube-linter"]
- * console.log(pkg.versions[0]) // "0.7.6" (latest)
+ * console.log(pkg.versions[0]) // "0.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubelinter-io.md
@@ -68,6 +68,7 @@ export const kubelinterioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.0',
     '0.7.6',
     '0.7.5',
     '0.7.4',

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-17T16:14:27.914Z
+- **Last Updated**: 2025-12-17T17:12:42.915Z
 
 ## Table of Contents
 
@@ -164,7 +164,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[krew.sigs.k8s.io](./packages/krew.sigs.k8s.io/index.md)** () | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
 | **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.10.1 (+23) | `pkgx kubebuilder` |
 | **[kubecm.cloud](./packages/kubecm.cloud/index.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.3 (+12) | `pkgx kubecm` |
-| **[kubelinter.io](./packages/kubelinter.io/index.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.7.6 (+7) | `pkgx kube-linter` |
+| **[kubelinter.io](./packages/kubelinter.io/index.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.8.0 (+8) | `pkgx kube-linter` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.34.3 (+126) | `pkgx kubectl` |
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.8.0 (+16) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.37.0 (+12) | `pkgx minikube` |
@@ -174,7 +174,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.1 (+44) | `pkgx podman` |
 | **[skaffold.dev](./packages/skaffold.dev/index.md)** () | Easy and Repeatable Kubernetes Development | skaffold | 2.17.0 (+15) | `pkgx skaffold` |
 | **[tilt.dev](./packages/tilt.dev/index.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.36.0 (+26) | `pkgx tilt` |
-| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.3 (+54) | `pkgx vcluster` |
+| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.4 (+55) | `pkgx vcluster` |
 | **[velero.io](./packages/velero.io/index.md)** () | Backup and migrate Kubernetes applications and their persistent volumes | velero | 1.17.1 (+3) | `pkgx velero` |
 
 ## Monitoring & Observability
@@ -217,7 +217,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[bun.sh](./packages/bun.sh/index.md)** (bun.com) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.3.4 (+131) | `pkgx bun.com` |
+| **[bun.sh](./packages/bun.sh/index.md)** (bun.com) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.3.5 (+132) | `pkgx bun.com` |
 | **[classic.yarnpkg.com](./packages/classic.yarnpkg.com/index.md)** (yarn) | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx yarn` |
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.9.2 (+35) | `pkgx composer` |
