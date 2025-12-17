@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-17T17:12:42.915Z
+- **Last Updated**: 2025-12-17T18:13:02.490Z
 
 ## Table of Contents
 
@@ -174,7 +174,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.1 (+44) | `pkgx podman` |
 | **[skaffold.dev](./packages/skaffold.dev/index.md)** () | Easy and Repeatable Kubernetes Development | skaffold | 2.17.0 (+15) | `pkgx skaffold` |
 | **[tilt.dev](./packages/tilt.dev/index.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.36.0 (+26) | `pkgx tilt` |
-| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.4 (+55) | `pkgx vcluster` |
+| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.30.4 (+56) | `pkgx vcluster` |
 | **[velero.io](./packages/velero.io/index.md)** () | Backup and migrate Kubernetes applications and their persistent volumes | velero | 1.17.1 (+3) | `pkgx velero` |
 
 ## Monitoring & Observability
@@ -374,7 +374,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.16.0 (+41) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.12.0 (+32) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.268.0 (+90) | `pkgx pscale` |
-| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.15.0 (+66) | `pkgx railway` |
+| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.15.1 (+67) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.67.1 (+202) | `pkgx supabase` |
 
