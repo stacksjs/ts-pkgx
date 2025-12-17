@@ -3,7 +3,7 @@
  *
  * @domain `ruby-lang.org`
  * @programs `erb`, `irb`, `rake`, `rdoc`, `ri`, ... (+1 more)
- * @version `3.4.7` (48 versions available)
+ * @version `3.4.8` (49 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ruby-lang.org`
@@ -24,7 +24,7 @@
  * console.log(pkg.name)        // "ruby-lang"
  * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."
  * console.log(pkg.programs)    // ["erb", "irb", ...]
- * console.log(pkg.versions[0]) // "3.4.7" (latest)
+ * console.log(pkg.versions[0]) // "3.4.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ruby-lang-org.md
@@ -90,6 +90,7 @@ export const rubyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.4.8',
     '3.4.7',
     '3.4.6',
     '3.4.5',
