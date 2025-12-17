@@ -47,22 +47,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 18 versions</summary>
+<summary>Show all 19 versions</summary>
 
-- `5.8.1`, `5.8.0`, `5.6.4`, `5.6.3`, `5.6.2`
-- `5.4.7`, `5.4.6`, `5.4.5`, `5.4.4`, `5.4.3`
-- `5.4.2`, `5.4.1`, `5.4.0`, `5.2.13`, `5.2.12`
-- `5.2.11`, `5.2.10`, `5.2.7`
+- `5.8.2`, `5.8.1`, `5.8.0`, `5.6.4`, `5.6.3`
+- `5.6.2`, `5.4.7`, `5.4.6`, `5.4.5`, `5.4.4`
+- `5.4.3`, `5.4.2`, `5.4.1`, `5.4.0`, `5.2.13`
+- `5.2.12`, `5.2.11`, `5.2.10`, `5.2.7`
 
 </details>
 
-**Latest Version**: `5.8.1`
+**Latest Version**: `5.8.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tukaani.org/xz@5.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +tukaani.org/xz@5.8.2 -- $SHELL -i
 ```
 
 ## Usage Examples

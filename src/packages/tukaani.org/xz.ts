@@ -3,7 +3,7 @@
  *
  * @domain `tukaani.org/xz`
  * @programs `lzcat`, `lzcmp`, `lzdiff`, `lzegrep`, `lzfgrep`, ... (+18 more)
- * @version `5.8.1` (18 versions available)
+ * @version `5.8.2` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tukaani.org/xz`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "xz"
  * console.log(pkg.description) // "General-purpose data compression with high comp..."
  * console.log(pkg.programs)    // ["lzcat", "lzcmp", ...]
- * console.log(pkg.versions[0]) // "5.8.1" (latest)
+ * console.log(pkg.versions[0]) // "5.8.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tukaani-org/xz.md
@@ -83,6 +83,7 @@ export const tukaaniorgxzPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.8.2',
     '5.8.1',
     '5.8.0',
     '5.6.4',
