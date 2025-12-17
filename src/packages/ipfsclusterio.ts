@@ -2,7 +2,7 @@
  * **ipfscluster** - pkgx package
  *
  * @domain `ipfscluster.io`
- * @version `1.1.4` (1 versions available)
+ * @version `1.1.5` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ipfscluster.io`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.ipfsclusterio
  * console.log(pkg.name)        // "ipfscluster"
- * console.log(pkg.versions[0]) // "1.1.4" (latest)
+ * console.log(pkg.versions[0]) // "1.1.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ipfscluster-io.md
@@ -58,6 +58,7 @@ export const ipfsclusterioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.5',
     '1.1.4',
   ] as const,
   aliases: [] as const,
