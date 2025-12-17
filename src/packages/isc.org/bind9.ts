@@ -2,6 +2,7 @@
  * **bind9** - pkgx package
  *
  * @domain `isc.org/bind9`
+ * @programs `arpaname`, `delv`, `dig`, `dnssec-cds`, `dnssec-dsfromkey`, ... (+24 more)
  * @version `9.21.15` (28 versions available)
  * @versions From newest version to oldest.
  *
@@ -15,6 +16,7 @@
  *
  * const pkg = pantry.iscorgbind9
  * console.log(pkg.name)        // "bind9"
+ * console.log(pkg.programs)    // ["arpaname", "delv", ...]
  * console.log(pkg.versions[0]) // "9.21.15" (latest)
  * ```
  *
@@ -44,7 +46,41 @@ export const iscorgbind9Package = {
   installCommand: 'launchpad install isc.org/bind9' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +isc.org/bind9 -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install isc.org/bind9' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'arpaname',
+    'delv',
+    'dig',
+    'dnssec-cds',
+    'dnssec-dsfromkey',
+    'dnssec-importkey',
+    'dnssec-keyfromlabel',
+    'dnssec-keygen',
+    'dnssec-ksr',
+    'dnssec-revoke',
+    'dnssec-settime',
+    'dnssec-signzone',
+    'dnssec-verify',
+    'host',
+    'mdig',
+    'named-checkconf',
+    'named-checkzone',
+    'named-compilezone',
+    'named-journalprint',
+    'named-nzd2nzf',
+    'named-rrchecker',
+    'nsec3hash',
+    'nslookup',
+    'nsupdate',
+    'ddns-confgen',
+    'named',
+    'rndc',
+    'rndc-confgen',
+    'tsig-keygen',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
