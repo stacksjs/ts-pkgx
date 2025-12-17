@@ -3,7 +3,7 @@
  *
  * @domain `microsoft.com/azure-cli`
  * @programs `az`
- * @version `2.81.0` (39 versions available)
+ * @version `2.81.0` (40 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install microsoft.com/azure-cli`
@@ -85,6 +85,7 @@ export const microsoftcomazurecliPackage = {
     '2.69.0',
     '2.68.0',
     '2.67.0',
+    '2.66.2',
     '2.66.1',
     '2.66.0',
     '2.65.0',
