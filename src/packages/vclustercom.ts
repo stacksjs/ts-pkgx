@@ -3,7 +3,7 @@
  *
  * @domain `vcluster.com`
  * @programs `vcluster`
- * @version `0.30.4` (57 versions available)
+ * @version `0.30.4` (59 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vcluster.com`
@@ -85,12 +85,14 @@ export const vclustercomPackage = {
     '0.30.2',
     '0.30.1',
     '0.30.0',
+    '0.29.3',
     '0.29.2',
     '0.29.1',
     '0.29.0',
     '0.28.2',
     '0.28.1',
     '0.28.0',
+    '0.27.3',
     '0.27.2',
     '0.27.1',
     '0.27.0',
