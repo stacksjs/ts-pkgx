@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 21 versions</summary>
+<summary>Show all 22 versions</summary>
 
-- `0.7.5`, `0.7.4`, `0.7.3`, `0.7.2`, `0.7.1`
-- `0.7.0`, `0.6.1`, `0.6.0`, `0.5.3`, `0.5.2`
-- `0.5.1`, `0.5.0`, `0.4.1`, `0.4.0`, `0.3.5`
-- `0.3.4`, `0.3.3`, `0.3.2`, `0.3.1`, `0.3.0`
-- `0.2.6`
+- `0.7.6`, `0.7.5`, `0.7.4`, `0.7.3`, `0.7.2`
+- `0.7.1`, `0.7.0`, `0.6.1`, `0.6.0`, `0.5.3`
+- `0.5.2`, `0.5.1`, `0.5.0`, `0.4.1`, `0.4.0`
+- `0.3.5`, `0.3.4`, `0.3.3`, `0.3.2`, `0.3.1`
+- `0.3.0`, `0.2.6`
 
 </details>
 
-**Latest Version**: `0.7.5`
+**Latest Version**: `0.7.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +terratag.io@0.7.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +terratag.io@0.7.6 -- $SHELL -i
 ```
 
 ## Dependencies
