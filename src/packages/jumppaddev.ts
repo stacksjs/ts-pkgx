@@ -3,7 +3,7 @@
  *
  * @domain `jumppad.dev`
  * @programs `jumppad`
- * @version `0.23.1` (24 versions available)
+ * @version `0.23.2` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jumppad.dev`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "jumppad"
  * console.log(pkg.description) // "Modern cloud native development environments"
  * console.log(pkg.programs)    // ["jumppad"]
- * console.log(pkg.versions[0]) // "0.23.1" (latest)
+ * console.log(pkg.versions[0]) // "0.23.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jumppad-dev.md
@@ -71,6 +71,7 @@ export const jumppaddevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.23.2',
     '0.23.1',
     '0.23.0',
     '0.22.0',
