@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) +opensearch.org@3.4.0 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org^21 # since v3`
-- `openmp.llvm.org^17`
+- `openmp.llvm.org^19`
 
 ## Usage Examples
 

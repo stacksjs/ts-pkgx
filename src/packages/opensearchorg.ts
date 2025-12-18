@@ -8,8 +8,8 @@
  *
  * @install `launchpad install opensearch.org`
  * @homepage https://opensearch.org/docs/latest/opensearch/index/
- * @dependencies `openjdk.org^21 # since v3`, `openmp.llvm.org^17`
- * @buildDependencies `cmake.org@3`, `gnu.org/wget`, `gnu.org/gcc@^12`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @dependencies `openjdk.org^21 # since v3`, `openmp.llvm.org^19`
+ * @buildDependencies `cmake.org@3`, `gnu.org/wget`, `gnu.org/gcc@^11`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -65,7 +65,7 @@ export const opensearchorgPackage = {
    */
   dependencies: [
     'openjdk.org^21 # since v3',
-    'openmp.llvm.org^17',
+    'openmp.llvm.org^19',
   ] as const,
   /**
    * Build dependencies for this package.
@@ -75,8 +75,8 @@ export const opensearchorgPackage = {
   buildDependencies: [
     'cmake.org@3',
     'gnu.org/wget',
-    'gnu.org/gcc@^12',
-    'linux:openblas.net',
+    'gnu.org/gcc@^11',
+    'linux:netlib.org/lapack',
   ] as const,
   /**
    * Available versions from newest to oldest.
