@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-19T14:12:55.624Z
+- **Last Updated**: 2025-12-19T15:10:49.080Z
 
 ## Table of Contents
 
@@ -96,7 +96,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mongodb.com/shell](./packages/mongodb.com/shell/index.md)** () | MongoDB Shell to connect, configure, query, and work with your MongoDB database | mongosh | 2.5.10 (+40) | `pkgx mongosh` |
 | **[mysql.com](./packages/mysql.com/index.md)** () | MySQL Server, the world&#39;s most popular open source database, and MySQL Cluster, a real-time, ... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.5.0 (+29) | `pkgx mysql` |
 | **[opensearch.org](./packages/opensearch.org/index.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.4.0 (+15) | `pkgx opensearch` |
-| **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 14.1.0 (+20) | `pkgx postgrest` |
+| **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 14.2.0 (+21) | `pkgx postgrest` |
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.4.0 (+52) | `pkgx redis` |
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.51.1 (+30) | `pkgx sqlite3` |
 | **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+57) | `pkgx surreal` |
@@ -405,7 +405,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 30.0.0 (+20) | `pkgx bitcoin` |
 | **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.1 (+9) | `pkgx elementsproject` |
-| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+21) | `pkgx getfoundry.sh` |
+| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+22) | `pkgx getfoundry.sh` |
 | **[ghostscript.com](./packages/ghostscript.com/index.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.6.0 (+7) | `pkgx ghostscript` |
 | **[solana.com](./packages/solana.com/index.md)** () | Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces. | solana, solana-keygen, solana-bench-streamer, ... (+7) | 1.18.26 (+82) | `pkgx solana` |
 
