@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gdal.org`
  * @homepage https://www.gdal.org/
- * @dependencies `apache.org/arrow@19`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+42 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `apache.org/arrow@19`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+40 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `boost.org`, `cmake.org`, `swig.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -96,7 +96,6 @@ export const gdalorgPackage = {
     'gaia-gis.it/fossil/freexl',
     'libgeos.org',
     'giflib.sourceforge.io',
-    'hdfgroup.org/HDF5',
     'libjpeg-turbo.org',
     'jpeg.org/jpegxl',
     'github.com/json-c/json-c',
@@ -110,7 +109,6 @@ export const gdalorgPackage = {
     'gaia-gis.it/libspatialite',
     'simplesystems.org/libtiff',
     'gnome.org/libxml2~2.13 # 2.14 changed the soname',
-    'unidata.ucar.edu/netcdf',
     'numpy.org',
     'openexr.com',
     'openjpeg.org',

@@ -82,7 +82,6 @@ This package depends on:
 - `gaia-gis.it/fossil/freexl`
 - `libgeos.org`
 - `giflib.sourceforge.io`
-- `hdfgroup.org/HDF5`
 - `libjpeg-turbo.org`
 - `jpeg.org/jpegxl`
 - `github.com/json-c/json-c`
@@ -96,7 +95,6 @@ This package depends on:
 - `gaia-gis.it/libspatialite`
 - `simplesystems.org/libtiff`
 - `gnome.org/libxml2~2.13 # 2.14 changed the soname`
-- `unidata.ucar.edu/netcdf`
 - `numpy.org`
 - `openexr.com`
 - `openjpeg.org`
