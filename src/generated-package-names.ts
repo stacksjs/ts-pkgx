@@ -3836,7 +3836,7 @@ export interface GeneratedPackageVersions {
   'github.com/kubernetes-sigs/aws-iam-authenticator': '0.7.9' | '0.7.8' | '0.7.7' | '0.7.6' | '0.7.5' | '0.7.4' | '0.7.3' | '0.7.2' | '0.7.1' | '0.6.31' | '0.6.30' | '0.6.29' | '0.6.28' | '0.6.27' | '0.6.26' | '0.6.25' | '0.6.24' | '0.6.23' | '0.6.22' | '0.6.21' | '0.6.14' | '0.6.13' | '0.6.12' | '0.6.11' | '0.5.27' | '0.5.21' | '0.5.20'
   'github.com/kylef/swiftenv': '1.4.0'
   'github.com/libass/libass': '0.17.4' | '0.17.3' | '0.17.2' | '0.17.1'
-  'github.com/libfuse/libfuse': '3.18.0' | '3.17.4' | '3.17.3' | '3.17.2' | '3.17.1'
+  'github.com/libfuse/libfuse': '3.18.1' | '3.18.0' | '3.17.4' | '3.17.3' | '3.17.2' | '3.17.1'
   'github.com/libkml/libkml': '1.3.0'
   'github.com/libsixel/libsixel': '1.10.3'
   'github.com/libsndfile/libsamplerate': '0.2.2'
