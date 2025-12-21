@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-21T18:31:13.751Z
+- **Last Updated**: 2025-12-21T20:24:47.919Z
 
 ## Table of Contents
 
@@ -246,7 +246,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** () | Command-line interface built-in Visual Studio Code | code | 1.107.1 (+33) | `pkgx vscode cli` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.5 (+17) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vi) | The official Vim repository | vim, vi | 9.1.2001 (+2546) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vi) | The official Vim repository | vim, vi | 9.1.2006 (+2550) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
@@ -339,7 +339,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[imagemagick.org](./packages/imagemagick.org/index.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** () | Create, manipulate, and optimize GIF images and animations | gifsicle | 1.96.0 (+3) | `pkgx gifsicle` |
 | **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.18.0 (+12) | `pkgx vips` |
-| **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
+| **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.41.0 (+3) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 8.1.0 (+23) | `pkgx streamlink` |
 | **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.12.8 (+60) | `pkgx yt-dlp` |
