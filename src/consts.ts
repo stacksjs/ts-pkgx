@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-12-23T03:37:23.541Z
+ * Generated on 2025-12-25T03:37:37.538Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1628 total)
+ * List of all known packages (1629 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -1066,6 +1066,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'k9scli.io',
   'kafka.apache.org',
   'kaggle.com',
+  'kamal-deploy.org',
   'keephq.dev',
   'kerberos.org',
   'kernel.org/libcap',
