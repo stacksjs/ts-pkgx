@@ -3,7 +3,7 @@
  *
  * @domain `lima-vm.io`
  * @programs `apptainer.lima`, `docker.lima`, `kubectl.lima`, `lima`, `limactl`, ... (+2 more)
- * @version `2.0.2` (31 versions available)
+ * @version `2.0.2` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lima-vm.io`
@@ -86,6 +86,7 @@ export const limavmioPackage = {
     '2.0.2',
     '2.0.1',
     '2.0.0',
+    '1.2.3',
     '1.2.2',
     '1.2.1',
     '1.2.0',
