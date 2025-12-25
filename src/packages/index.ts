@@ -1020,6 +1020,7 @@ import { k6ioPackage } from './k6io'
 import { k9scliioPackage } from './k9scliio'
 import { kafkaapacheorgPackage } from './kafkaapacheorg'
 import { kagglecomPackage } from './kagglecom'
+import { kamaldeployorgPackage } from './kamal-deployorg'
 import { keephqdevPackage } from './keephqdev'
 import { kerberosorgPackage } from './kerberosorg'
 import { kernelorglibcapPackage } from './kernel.org/libcap'
@@ -3467,6 +3468,8 @@ export interface Pantry {
   k9scliio: typeof k9scliioPackage
   kafkaapacheorg: typeof kafkaapacheorgPackage
   kagglecom: typeof kagglecomPackage
+  kamal_deployorg: typeof kamaldeployorgPackage
+  kamaldeployorg: typeof kamaldeployorgPackage
   keephqdev: typeof keephqdevPackage
   kerberosorg: typeof kerberosorgPackage
 
@@ -4561,6 +4564,7 @@ export interface Pantry {
   task: typeof taskfiledevPackage
   spacetime: typeof spacetimedbcomPackage
   starship: typeof starshiprsPackage
+  'kamal-deploy': typeof kamaldeployorgPackage
   'rhash.sourceforge': typeof rhashsourceforgenetPackage
   casdoor: typeof casdoororgPackage
   attr: typeof savannahnongnuorgattrPackage
@@ -7766,6 +7770,8 @@ export const pantry: Pantry = {
   k9scliio: k9scliioPackage,
   kafkaapacheorg: kafkaapacheorgPackage,
   kagglecom: kagglecomPackage,
+  kamal_deployorg: kamaldeployorgPackage,
+  kamaldeployorg: kamaldeployorgPackage,
   keephqdev: keephqdevPackage,
   kerberosorg: kerberosorgPackage,
 
@@ -8860,6 +8866,7 @@ export const pantry: Pantry = {
   task: taskfiledevPackage,
   spacetime: spacetimedbcomPackage,
   starship: starshiprsPackage,
+  'kamal-deploy': kamaldeployorgPackage,
   'rhash.sourceforge': rhashsourceforgenetPackage,
   casdoor: casdoororgPackage,
   attr: savannahnongnuorgattrPackage,

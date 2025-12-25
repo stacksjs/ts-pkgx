@@ -629,6 +629,7 @@ export const aliases: Record<string, string> = {
   'k9s': 'k9scli.io',
   'kafka.apache': 'kafka.apache.org',
   'kaggle': 'kaggle.com',
+  'kamal-deploy': 'kamal-deploy.org',
   'kargo': 'akuity.io/kargo',
   'kaspa': 'github.com/kaspanet/rusty-kaspa',
   'kaspa-miner': 'crates.io/kaspa-miner',
