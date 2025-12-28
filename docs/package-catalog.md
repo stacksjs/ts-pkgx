@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-28T22:24:10.179Z
+- **Last Updated**: 2025-12-28T23:23:00.940Z
 
 ## Table of Contents
 
@@ -221,7 +221,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[classic.yarnpkg.com](./packages/classic.yarnpkg.com/index.md)** (yarn) | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx yarn` |
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.9.2 (+35) | `pkgx composer` |
-| **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.12.2 (+6) | `pkgx luarocks` |
+| **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.13.0 (+7) | `pkgx luarocks` |
 | **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.12.12 (+408) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.41.0 (+34) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.5 (+17) | `pkgx corepack` |
