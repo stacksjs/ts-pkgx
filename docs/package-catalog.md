@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-28T15:23:20.384Z
+- **Last Updated**: 2025-12-28T17:22:30.697Z
 
 ## Table of Contents
 
@@ -271,7 +271,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.17.0 (+27) | `pkgx curl` |
 | **[dev.yorhel.nl/ncdu](./packages/dev.yorhel.nl/ncdu/index.md)** () | NCurses Disk Usage | ncdu | 1.22.0 (+4) | `pkgx ncdu` |
 | **[dns.lookup.dog](./packages/dns.lookup.dog/index.md)** () | A command-line DNS client. | dog | 0.1.0 (+0) | `pkgx dog` |
-| **[fishshell.com](./packages/fishshell.com/index.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.3.0 (+19) | `pkgx fish` |
+| **[fishshell.com](./packages/fishshell.com/index.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.3.1 (+20) | `pkgx fish` |
 | **[github.com/aristocratos/btop](./packages/github.com/aristocratos/btop.md)** () | Resource monitor. C++ version and continuation of bashtop and bpytop | btop | 1.4.6 (+9) | `pkgx btop` |
 | **[github.com/dundee/gdu](./packages/github.com/dundee/gdu.md)** () | Fast disk usage analyzer with console interface written in Go | gdu | 5.32.0 (+4) | `pkgx gdu` |
 | **[github.com/junegunn/fzf](./packages/github.com/junegunn/fzf.md)** () | :cherry_blossom: A command-line fuzzy finder | fzf | 0.67.0 (+52) | `pkgx fzf` |
@@ -319,7 +319,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[aquasecurity.github.io/tfsec](./packages/aquasecurity.github.io/tfsec/index.md)** () | Static analysis security scanner for your terraform code | tfsec | 1.28.14 (+8) | `pkgx tfsec` |
 | **[aquasecurity.github.io/trivy](./packages/aquasecurity.github.io/trivy/index.md)** () | Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositori... | trivy | 0.68.2 (+42) | `pkgx trivy` |
 | **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 5.2.2 (+23) | `pkgx certbot` |
-| **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.495 (+521) | `pkgx checkov` |
+| **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.496 (+522) | `pkgx checkov` |
 | **[filippo.io/age](./packages/filippo.io/age/index.md)** () | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config ... | age, age-keygen | 1.3.1 (+4) | `pkgx age` |
 | **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** () | Seamless ssh-agent for YubiKeys and other PIV tokens | yubikey-agent | 0.1.6 (+0) | `pkgx yubikey-agent` |
 | **[mkcert.dev](./packages/mkcert.dev/index.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you&#39... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
