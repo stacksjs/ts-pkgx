@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `1.1.4`, `1.1.3`, `1.1.2`, `1.1.1`, `1.0.3`
-- `1.0.2`, `1.0.1`, `1.0.0`, `0.9.41`, `0.9.40`
-- `0.9.39`, `0.9.38`
+- `1.2.0`, `1.1.4`, `1.1.3`, `1.1.2`, `1.1.1`
+- `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`, `0.9.41`
+- `0.9.40`, `0.9.39`, `0.9.38`
 
 </details>
 
-**Latest Version**: `1.1.4`
+**Latest Version**: `1.2.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +hugo.wang/cicada@1.1.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +hugo.wang/cicada@1.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples
