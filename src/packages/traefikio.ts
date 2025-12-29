@@ -3,7 +3,7 @@
  *
  * @domain `traefik.io`
  * @programs `traefik`
- * @version `3.6.5` (81 versions available)
+ * @version `3.6.5` (82 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install traefik.io`
@@ -112,6 +112,7 @@ export const traefikioPackage = {
     '3.0.2',
     '3.0.1',
     '3.0.0',
+    '2.11.34',
     '2.11.33',
     '2.11.32',
     '2.11.31',
