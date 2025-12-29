@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `8.2.0`, `8.1.0`, `8.0.2`, `8.0.1`, `8.0.0`
-- `7.0.0`, `6.1.6`, `6.1.5`, `6.1.4`
+- `8.2.1`, `8.2.0`, `8.1.0`, `8.0.2`, `8.0.1`
+- `8.0.0`, `7.0.0`, `6.1.6`, `6.1.5`, `6.1.4`
 
 </details>
 
-**Latest Version**: `8.2.0`
+**Latest Version**: `8.2.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float@8.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float@8.2.1 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -3,7 +3,7 @@
  *
  * @domain `facebook.com/watchman`
  * @programs `watchman`, `watchman-diag`, `watchman-make`, `watchman-wait`, `watchman-replicate-subscription`, ... (+1 more)
- * @version `2025.4.7.0` (68 versions available)
+ * @version `2025.4.7.0` (69 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/watchman`
@@ -110,6 +110,7 @@ export const facebookcomwatchmanPackage = {
     '2025.2.24.0',
     '2025.2.17.0',
     '2025.2.10.0',
+    '2025.12.29.0',
     '2025.12.22.0',
     '2025.11.24.0',
     '2025.11.17.0',
