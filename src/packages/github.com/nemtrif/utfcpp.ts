@@ -2,7 +2,7 @@
  * **utf8cpp** - UTF-8 with C++ in a Portable Way
  *
  * @domain `github.com/nemtrif/utfcpp`
- * @version `4.9.0` (13 versions available)
+ * @version `4.9.0` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/nemtrif/utfcpp`
@@ -62,6 +62,7 @@ export const utfcppPackage = {
    */
   versions: [
     '4.9.0',
+    '4.0.9',
     '4.0.8',
     '4.0.7',
     '4.0.6',
