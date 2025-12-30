@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-30T11:22:55.244Z
+- **Last Updated**: 2025-12-30T12:45:30.615Z
 
 ## Table of Contents
 
@@ -266,7 +266,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/ripgrep](./packages/crates.io/ripgrep/index.md)** () | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | rg | 15.1.0 (+8) | `pkgx rg` |
 | **[crates.io/ripgrep-all](./packages/crates.io/ripgrep-all/index.md)** () | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. | rga, rga-fzf, rga-fzf-open, ... (+1) | 0.10.10 (+4) | `pkgx rga` |
 | **[crates.io/sd](./packages/crates.io/sd/index.md)** () | Intuitive find & replace CLI (sed alternative) | sd | 1.0.0 (+1) | `pkgx sd` |
-| **[crates.io/tokei](./packages/crates.io/tokei/index.md)** () | Program that allows you to count code, quickly | tokei | 13.0.0 (+1) | `pkgx tokei` |
+| **[crates.io/tokei](./packages/crates.io/tokei/index.md)** () | Program that allows you to count code, quickly | tokei | 14.0.0 (+2) | `pkgx tokei` |
 | **[crates.io/xh](./packages/crates.io/xh/index.md)** () | Friendly and fast tool for sending HTTP requests | xh | 0.25.3 (+6) | `pkgx xh` |
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.17.0 (+27) | `pkgx curl` |
 | **[dev.yorhel.nl/ncdu](./packages/dev.yorhel.nl/ncdu/index.md)** () | NCurses Disk Usage | ncdu | 1.22.0 (+4) | `pkgx ncdu` |
