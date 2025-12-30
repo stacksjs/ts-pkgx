@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-30T16:30:13.621Z
+- **Last Updated**: 2025-12-30T17:24:17.246Z
 
 ## Table of Contents
 
@@ -271,7 +271,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.17.0 (+27) | `pkgx curl` |
 | **[dev.yorhel.nl/ncdu](./packages/dev.yorhel.nl/ncdu/index.md)** () | NCurses Disk Usage | ncdu | 1.22.0 (+4) | `pkgx ncdu` |
 | **[dns.lookup.dog](./packages/dns.lookup.dog/index.md)** () | A command-line DNS client. | dog | 0.1.0 (+0) | `pkgx dog` |
-| **[fishshell.com](./packages/fishshell.com/index.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.3.1 (+20) | `pkgx fish` |
+| **[fishshell.com](./packages/fishshell.com/index.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.3.2 (+21) | `pkgx fish` |
 | **[github.com/aristocratos/btop](./packages/github.com/aristocratos/btop.md)** () | Resource monitor. C++ version and continuation of bashtop and bpytop | btop | 1.4.6 (+9) | `pkgx btop` |
 | **[github.com/dundee/gdu](./packages/github.com/dundee/gdu.md)** () | Fast disk usage analyzer with console interface written in Go | gdu | 5.32.0 (+4) | `pkgx gdu` |
 | **[github.com/junegunn/fzf](./packages/github.com/junegunn/fzf.md)** () | :cherry_blossom: A command-line fuzzy finder | fzf | 0.67.0 (+52) | `pkgx fzf` |
@@ -285,7 +285,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |
 | **[htop.dev](./packages/htop.dev/index.md)** () | Improved top (interactive process viewer) | htop | 3.4.1 (+4) | `pkgx htop` |
 | **[httpie.io](./packages/httpie.io/index.md)** () | 🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, col... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie` |
-| **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 28.8.0 (+364) | `pkgx oh-my-posh` |
+| **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 28.8.1 (+365) | `pkgx oh-my-posh` |
 | **[starship.rs](./packages/starship.rs/index.md)** () | ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.24.1 (+22) | `pkgx starship` |
 | **[stedolan.github.io/jq](./packages/stedolan.github.io/jq/index.md)** () | Lightweight and flexible command-line JSON processor | jq | 1.8.1 (+4) | `pkgx jq` |
 | **[tree-sitter.github.io](./packages/tree-sitter.github.io/index.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.26.3 (+34) | `pkgx tree-sitter` |
