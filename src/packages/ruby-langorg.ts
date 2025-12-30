@@ -10,7 +10,7 @@
  * @aliases `ruby`
  * @homepage https://www.ruby-lang.org/
  * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
- * @buildDependencies `gnu.org/gettext@^0.21`, `gnu.org/patch`, `gnu.org/bison@^3`, ... (+1 more) - required only when building from source
+ * @buildDependencies `gnu.org/gettext@^0.21`, `gnu.org/patch`, `gnu.org/bison@^3`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -78,12 +78,15 @@ export const rubyPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
     'gnu.org/gettext@^0.21',
     'gnu.org/patch',
     'gnu.org/bison@^3',
     'gnu.org/autoconf',
+    'rsync.samba.org',
+    'linux:rubygems.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
