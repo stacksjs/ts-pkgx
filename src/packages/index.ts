@@ -59,6 +59,7 @@ import { cdkPackage } from './aws.amazon.com/cdk'
 import { awsamazoncomcliPackage } from './aws.amazon.com/cli'
 import { awsamazoncomqPackage } from './aws.amazon.com/q'
 import { awsamazoncomsamPackage } from './aws.amazon.com/sam'
+import { babashkaorgPackage } from './babashkaorg'
 import { bashlydannybcoPackage } from './bashlydannybco'
 import { bcryptsourceforgenetPackage } from './bcryptsourceforgenet'
 import { beyondgrepcomPackage } from './beyondgrepcom'
@@ -1727,6 +1728,7 @@ export interface Pantry {
   awsamazoncomq: typeof awsamazoncomqPackage
 
   awsamazoncom: typeof awsamazoncomsamPackage
+  babashkaorg: typeof babashkaorgPackage
   bashlydannybco: typeof bashlydannybcoPackage
   bcryptsourceforgenet: typeof bcryptsourceforgenetPackage
   beyondgrepcom: typeof beyondgrepcomPackage
@@ -4587,6 +4589,7 @@ export interface Pantry {
   cstool: typeof capstoneengineorgPackage
   ginkgo: typeof onsigithubioginkgoPackage
   'huggingface/cli': typeof huggingfacecoPackage
+  babashka: typeof babashkaorgPackage
   pocketbase: typeof pocketbaseioPackage
   rbw: typeof gittoztnetrbwPackage
   libva: typeof intelcomlibvaPackage
@@ -6029,6 +6032,7 @@ export const pantry: Pantry = {
   awsamazoncomq: awsamazoncomqPackage,
 
   awsamazoncom: awsamazoncomsamPackage,
+  babashkaorg: babashkaorgPackage,
   bashlydannybco: bashlydannybcoPackage,
   bcryptsourceforgenet: bcryptsourceforgenetPackage,
   beyondgrepcom: beyondgrepcomPackage,
@@ -8889,6 +8893,7 @@ export const pantry: Pantry = {
   cstool: capstoneengineorgPackage,
   ginkgo: onsigithubioginkgoPackage,
   'huggingface/cli': huggingfacecoPackage,
+  babashka: babashkaorgPackage,
   pocketbase: pocketbaseioPackage,
   rbw: gittoztnetrbwPackage,
   libva: intelcomlibvaPackage,

@@ -83,6 +83,7 @@ export const aliases: Record<string, string> = {
   'awslocal': 'localstack.cloud/awscli-local',
   'awslogs': 'github.com/jorgebastida/awslogs',
   'azcopy': 'microsoft.com/azure-storage-azcopy',
+  'babashka': 'babashka.org',
   'bacon': 'dystroy.org/bacon',
   'bake': 'crates.io/bake-rs',
   'bartib': 'crates.io/bartib',
