@@ -3,7 +3,7 @@
  *
  * @domain `github.com/hadolint/hadolint`
  * @programs `hadolint`
- * @version `2.12.0` (1 versions available)
+ * @version `2.14.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/hadolint/hadolint`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "hadolint"
  * console.log(pkg.description) // "Dockerfile linter, validate inline bash, writte..."
  * console.log(pkg.programs)    // ["hadolint"]
- * console.log(pkg.versions[0]) // "2.12.0" (latest)
+ * console.log(pkg.versions[0]) // "2.14.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/hadolint/hadolint.md
@@ -68,6 +68,7 @@ export const hadolintPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.14.0',
     '2.12.0',
   ] as const,
   aliases: [] as const,
