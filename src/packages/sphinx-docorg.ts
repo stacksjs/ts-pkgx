@@ -3,7 +3,7 @@
  *
  * @domain `sphinx-doc.org`
  * @programs `sphinx-apidoc`, `sphinx-autogen`, `sphinx-build`, `sphinx-quickstart`
- * @version `9.0.4` (47 versions available)
+ * @version `9.1.0` (48 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sphinx-doc.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "sphinx"
  * console.log(pkg.description) // "Tool to create intelligent and beautiful docume..."
  * console.log(pkg.programs)    // ["sphinx-apidoc", "sphinx-autogen", ...]
- * console.log(pkg.versions[0]) // "9.0.4" (latest)
+ * console.log(pkg.versions[0]) // "9.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
@@ -71,6 +71,7 @@ export const sphinxdocorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.1.0',
     '9.0.4',
     '9.0.3',
     '9.0.2',
