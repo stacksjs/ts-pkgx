@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-31T15:25:32.770Z
+- **Last Updated**: 2025-12-31T16:30:31.110Z
 
 ## Table of Contents
 
@@ -246,7 +246,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** () | Command-line interface built-in Visual Studio Code | code | 1.107.1 (+33) | `pkgx vscode cli` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.5 (+17) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vi) | The official Vim repository | vim, vi | 9.1.2035 (+2576) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vi) | The official Vim repository | vim, vi | 9.1.2035 (+2577) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
@@ -351,7 +351,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[cairographics.org](./packages/cairographics.org/index.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
-| **[glm.g-truc.net](./packages/glm.g-truc.net/index.md)** () | OpenGL Mathematics (GLM) | - | 1.0.2 (+3) | `pkgx glm.g-truc` |
+| **[glm.g-truc.net](./packages/glm.g-truc.net/index.md)** () | OpenGL Mathematics (GLM) | - | 1.0.3 (+4) | `pkgx glm.g-truc` |
 | **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.28 (+40) | `pkgx libsdl` |
 | **[libsdl.org/SDL_image](./packages/libsdl.org/SDL_image/index.md)** () | Image decoding for many popular formats for Simple Directmedia Layer. | - | 3.2.4 (+12) | `pkgx SDL_image` |
 
