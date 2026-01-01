@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sphinx-doc.org`
  * @homepage https://www.sphinx-doc.org/
- * @dependencies `python.org>=3.8<3.12`
+ * @dependencies `python.org>=3.12`
  *
  * @example
  * ```typescript
@@ -63,7 +63,7 @@ export const sphinxdocorgPackage = {
    * These are required when running the package.
    */
   dependencies: [
-    'python.org>=3.8<3.12',
+    'python.org>=3.12',
   ] as const,
   buildDependencies: [] as const,
   /**

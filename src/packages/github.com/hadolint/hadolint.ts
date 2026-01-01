@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/hadolint/hadolint`
- * @buildDependencies `haskell.org@~9.2`, `haskell.org/cabal@^3` - required only when building from source
+ * @buildDependencies `haskell.org@~9.10`, `haskell.org/cabal@^3`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,10 +58,12 @@ export const hadolintPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
-    'haskell.org@~9.2',
+    'haskell.org@~9.10',
     'haskell.org/cabal@^3',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

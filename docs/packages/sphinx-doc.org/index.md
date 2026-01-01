@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) +sphinx-doc.org@9.1.0 -- $SHELL -i
 
 This package depends on:
 
-- `python.org>=3.8<3.12`
+- `python.org>=3.12`
 
 ## Usage Examples
 
