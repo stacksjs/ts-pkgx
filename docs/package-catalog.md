@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-12-31T23:23:56.364Z
+- **Last Updated**: 2026-01-01T01:52:40.547Z
 
 ## Table of Contents
 
@@ -256,7 +256,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crates.io/bat](./packages/crates.io/bat/index.md)** () | Clone of cat(1) with syntax highlighting and Git integration | bat | 0.26.1 (+5) | `pkgx bat` |
-| **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.12.2 (+19) | `pkgx btm` |
+| **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.12.3 (+20) | `pkgx btm` |
 | **[crates.io/drill](./packages/crates.io/drill/index.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.9.0 (+1) | `pkgx drill` |
 | **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.3 (+7) | `pkgx dust` |
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
