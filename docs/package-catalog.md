@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-02T05:28:28.104Z
+- **Last Updated**: 2026-01-02T07:27:00.455Z
 
 ## Table of Contents
 
@@ -203,7 +203,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** () | Automatic configure script builder | autoconf, autoheader, autom4te, ... (+4) | 2.72.0 (+1) | `pkgx autoconf` |
 | **[gnu.org/automake](./packages/gnu.org/automake/index.md)** () | Tool for generating GNU Standards-compliant Makefiles | aclocal, automake | 1.18.1 (+3) | `pkgx automake` |
 | **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.1 (+23) | `pkgx gradle` |
-| **[just.systems](./packages/just.systems/index.md)** () | Handy way to save and run project-specific commands | just | 1.45.0 (+50) | `pkgx just` |
+| **[just.systems](./packages/just.systems/index.md)** () | Handy way to save and run project-specific commands | just | 1.46.0 (+51) | `pkgx just` |
 | **[maven.apache.org](./packages/maven.apache.org/index.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.12 (+12) | `pkgx mvn` |
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.10.0 (+34) | `pkgx meson` |
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.2 (+6) | `pkgx ninja` |
