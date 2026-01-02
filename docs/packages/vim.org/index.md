@@ -32,8 +32,9 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 2580 versions</summary>
+<summary>Show all 2585 versions</summary>
 
+- `9.1.2042`, `9.1.2041`, `9.1.2040`, `9.1.2039`, `9.1.2038`
 - `9.1.2037`, `9.1.2036`, `9.1.2035`, `9.1.2034`, `9.1.2033`
 - `9.1.2032`, `9.1.2031`, `9.1.2030`, `9.1.2028`, `9.1.2026`
 - `9.1.2025`, `9.1.2024`, `9.1.2023`, `9.1.2022`, `9.1.2021`
@@ -553,13 +554,13 @@ This package can also be accessed using these aliases:
 
 </details>
 
-**Latest Version**: `9.1.2037`
+**Latest Version**: `9.1.2042`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vim.org@9.1.2037 -- $SHELL -i
+sh <(curl https://pkgx.sh) +vim.org@9.1.2042 -- $SHELL -i
 ```
 
 ## Dependencies
