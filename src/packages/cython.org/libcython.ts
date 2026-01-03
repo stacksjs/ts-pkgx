@@ -2,7 +2,7 @@
  * **libcython** - The most widely used Python to C compiler
  *
  * @domain `cython.org/libcython`
- * @version `3.2.3` (25 versions available)
+ * @version `3.2.3` (26 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cython.org/libcython`
@@ -71,6 +71,7 @@ export const cythonorglibcythonPackage = {
     '3.2.2',
     '3.2.1',
     '3.2.0',
+    '3.1.8',
     '3.1.7',
     '3.1.6',
     '3.1.5',

@@ -3,7 +3,7 @@
  *
  * @domain `cython.org`
  * @programs `cython`
- * @version `3.2.3` (29 versions available)
+ * @version `3.2.3` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cython.org`
@@ -79,6 +79,7 @@ export const cythonorgPackage = {
     '3.2.2',
     '3.2.1',
     '3.2.0',
+    '3.1.8',
     '3.1.7',
     '3.1.6',
     '3.1.5',
