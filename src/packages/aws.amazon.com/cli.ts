@@ -3,7 +3,7 @@
  *
  * @domain `aws.amazon.com/cli`
  * @programs `aws`
- * @version `2.32.28` (1185 versions available)
+ * @version `2.32.32` (1193 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws.amazon.com/cli`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "aws/cli"
  * console.log(pkg.description) // "Universal Command Line Interface for Amazon Web..."
  * console.log(pkg.programs)    // ["aws"]
- * console.log(pkg.versions[0]) // "2.32.28" (latest)
+ * console.log(pkg.versions[0]) // "2.32.32" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/aws-amazon-com/cli.md
@@ -76,6 +76,10 @@ export const awsamazoncomcliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.32.32',
+    '2.32.31',
+    '2.32.30',
+    '2.32.29',
     '2.32.28',
     '2.32.27',
     '2.32.26',
@@ -596,6 +600,10 @@ export const awsamazoncomcliPackage = {
     '2.11.7',
     '2.10.4',
     '2.10.3',
+    '1.44.15',
+    '1.44.14',
+    '1.44.13',
+    '1.44.12',
     '1.44.11',
     '1.44.10',
     '1.44.9',

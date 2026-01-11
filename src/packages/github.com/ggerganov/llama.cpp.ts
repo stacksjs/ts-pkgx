@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ggerganov/llama.cpp`
  * @programs `llama-cli`, `llama.cpp`, `convert.py`
- * @version `7621.0.0` (4081 versions available)
+ * @version `7708.0.0` (4147 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/ggerganov/llama.cpp`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "LLaMA.cpp"
  * console.log(pkg.description) // "LLM inference in C/C++"
  * console.log(pkg.programs)    // ["llama-cli", "llama.cpp", ...]
- * console.log(pkg.versions[0]) // "7621.0.0" (latest)
+ * console.log(pkg.versions[0]) // "7708.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/llama-cpp.md
@@ -83,6 +83,72 @@ export const llamacppPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7708.0.0',
+    '7707.0.0',
+    '7705.0.0',
+    '7704.0.0',
+    '7703.0.0',
+    '7700.0.0',
+    '7699.0.0',
+    '7698.0.0',
+    '7697.0.0',
+    '7694.0.0',
+    '7692.0.0',
+    '7691.0.0',
+    '7690.0.0',
+    '7689.0.0',
+    '7688.0.0',
+    '7687.0.0',
+    '7685.0.0',
+    '7684.0.0',
+    '7682.0.0',
+    '7681.0.0',
+    '7680.0.0',
+    '7679.0.0',
+    '7678.0.0',
+    '7677.0.0',
+    '7676.0.0',
+    '7675.0.0',
+    '7673.0.0',
+    '7672.0.0',
+    '7668.0.0',
+    '7667.0.0',
+    '7666.0.0',
+    '7664.0.0',
+    '7662.0.0',
+    '7658.0.0',
+    '7657.0.0',
+    '7656.0.0',
+    '7655.0.0',
+    '7654.0.0',
+    '7653.0.0',
+    '7652.0.0',
+    '7651.0.0',
+    '7650.0.0',
+    '7649.0.0',
+    '7648.0.0',
+    '7647.0.0',
+    '7646.0.0',
+    '7645.0.0',
+    '7644.0.0',
+    '7642.0.0',
+    '7641.0.0',
+    '7640.0.0',
+    '7639.0.0',
+    '7638.0.0',
+    '7636.0.0',
+    '7635.0.0',
+    '7634.0.0',
+    '7633.0.0',
+    '7632.0.0',
+    '7631.0.0',
+    '7630.0.0',
+    '7628.0.0',
+    '7626.0.0',
+    '7625.0.0',
+    '7624.0.0',
+    '7623.0.0',
+    '7622.0.0',
     '7621.0.0',
     '7620.0.0',
     '7619.0.0',

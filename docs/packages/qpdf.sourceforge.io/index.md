@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `12.2.0`, `12.1.0`, `12.0.0`, `11.10.1`, `11.10.0`
-- `11.9.1`, `11.9.0`, `11.8.0`, `11.7.0`, `11.6.4`
+- `12.3.0`, `12.2.0`, `12.1.0`, `12.0.0`, `11.10.1`
+- `11.10.0`, `11.9.1`, `11.9.0`, `11.8.0`, `11.7.0`
+- `11.6.4`
 
 </details>
 
-**Latest Version**: `12.2.0`
+**Latest Version**: `12.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +qpdf.sourceforge.io@12.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +qpdf.sourceforge.io@12.3.0 -- $SHELL -i
 ```
 
 ## Dependencies

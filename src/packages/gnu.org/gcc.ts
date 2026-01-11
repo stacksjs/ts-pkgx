@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/gcc`
  * @programs `ar`, `cc`, `c++`, `gc++`, `cpp`, ... (+12 more)
- * @version `15.1.0` (13 versions available)
+ * @version `15.2.0` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gcc`
@@ -17,7 +17,7 @@
  * const pkg = pantry.gnuorggcc
  * console.log(pkg.name)        // "gcc"
  * console.log(pkg.programs)    // ["ar", "cc", ...]
- * console.log(pkg.versions[0]) // "15.1.0" (latest)
+ * console.log(pkg.versions[0]) // "15.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gcc.md
@@ -99,6 +99,7 @@ export const gnuorggccPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '15.2.0',
     '15.1.0',
     '14.3.0',
     '14.2.0',

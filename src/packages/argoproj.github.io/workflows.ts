@@ -3,7 +3,7 @@
  *
  * @domain `argoproj.github.io/workflows`
  * @programs `argo`
- * @version `3.7.6` (46 versions available)
+ * @version `3.7.7` (48 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argoproj.github.io/workflows`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "argo-workflows"
  * console.log(pkg.description) // "Get stuff done with container-native workflows ..."
  * console.log(pkg.programs)    // ["argo"]
- * console.log(pkg.versions[0]) // "3.7.6" (latest)
+ * console.log(pkg.versions[0]) // "3.7.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/argoproj-github-io/workflows.md
@@ -68,6 +68,7 @@ export const argoprojgithubioworkflowsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.7.7',
     '3.7.6',
     '3.7.5',
     '3.7.4',
@@ -75,6 +76,7 @@ export const argoprojgithubioworkflowsPackage = {
     '3.7.2',
     '3.7.1',
     '3.7.0',
+    '3.6.16',
     '3.6.15',
     '3.6.13',
     '3.6.12',

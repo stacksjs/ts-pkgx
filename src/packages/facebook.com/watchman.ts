@@ -3,7 +3,7 @@
  *
  * @domain `facebook.com/watchman`
  * @programs `watchman`, `watchman-diag`, `watchman-make`, `watchman-wait`, `watchman-replicate-subscription`, ... (+1 more)
- * @version `2025.4.7.0` (69 versions available)
+ * @version `2026.1.5.0` (70 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/watchman`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "watchman"
  * console.log(pkg.description) // "Watches files and records, or triggers actions,..."
  * console.log(pkg.programs)    // ["watchman", "watchman-diag", ...]
- * console.log(pkg.versions[0]) // "2025.4.7.0" (latest)
+ * console.log(pkg.versions[0]) // "2026.1.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/watchman.md
@@ -99,6 +99,7 @@ export const facebookcomwatchmanPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2026.1.5.0',
     '2025.4.7.0',
     '2025.4.14.0',
     '2025.3.31.0',
