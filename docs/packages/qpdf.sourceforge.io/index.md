@@ -50,6 +50,7 @@ This package depends on:
 - `libjpeg-turbo.org^2`
 - `openssl.org^1.1`
 - `gnutls.org^3`
+- `linux:gnu.org/gcc/libstdcxx^13 # needs newer libstdc++ for C++20 support`
 
 ## Usage Examples
 

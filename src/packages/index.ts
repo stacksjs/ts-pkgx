@@ -278,6 +278,7 @@ import { ctagsioPackage } from './ctagsio'
 import { ctopshPackage } from './ctopsh'
 import { cuelangorgPackage } from './cuelangorg'
 import { curlsecacertsPackage } from './curl.se/ca-certs'
+import { curlsessl3Package } from './curl.se/ssl3'
 import { curlsetrurlPackage } from './curl.se/trurl'
 import { curlieioPackage } from './curlieio'
 import { curlPackage } from './curlse'
@@ -2113,6 +2114,8 @@ export interface Pantry {
   cuelangorg: typeof cuelangorgPackage
   ca_certs: typeof curlsecacertsPackage
   curlsecacerts: typeof curlsecacertsPackage
+
+  curlsessl3: typeof curlsessl3Package
 
   curlsetrurl: typeof curlsetrurlPackage
   curlieio: typeof curlieioPackage
@@ -5059,6 +5062,7 @@ export interface Pantry {
   minizip: typeof zlibnetminizipPackage
   go: typeof goPackage
   trurl: typeof curlsetrurlPackage
+  ssl3: typeof curlsessl3Package
   'ca-certs': typeof curlsecacertsPackage
   imath: typeof openexrcomimathPackage
   perl: typeof perlorgPackage
@@ -6417,6 +6421,8 @@ export const pantry: Pantry = {
   cuelangorg: cuelangorgPackage,
   ca_certs: curlsecacertsPackage,
   curlsecacerts: curlsecacertsPackage,
+
+  curlsessl3: curlsessl3Package,
 
   curlsetrurl: curlsetrurlPackage,
   curlieio: curlieioPackage,
@@ -9363,6 +9369,7 @@ export const pantry: Pantry = {
   minizip: zlibnetminizipPackage,
   go: goPackage,
   trurl: curlsetrurlPackage,
+  ssl3: curlsessl3Package,
   'ca-certs': curlsecacertsPackage,
   imath: openexrcomimathPackage,
   perl: perlorgPackage,

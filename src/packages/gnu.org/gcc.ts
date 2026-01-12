@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gcc`
- * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+2 more)
+ * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+3 more)
  * @buildDependencies `linux:gnu.org/gcc`, `gnu.org/make`, `perl.org@^5.6.1`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -80,6 +80,7 @@ export const gnuorggccPackage = {
     'gnu.org/mpfr>=2.4.0',
     'gnu.org/mpc>=0.8.0',
     'zlib.net^1.3',
+    'darwin/x86-64^# since 15.1.0',
   ] as const,
   /**
    * Build dependencies for this package.

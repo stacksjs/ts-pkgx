@@ -8,8 +8,8 @@
  *
  * @install `launchpad install qpdf.sourceforge.io`
  * @homepage https://qpdf.sourceforge.io/
- * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
- * @buildDependencies `cmake.org@^3`, `pyyaml.org/libyaml`, `python.org@^3`, ... (+1 more) - required only when building from source
+ * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@^3`, `pyyaml.org/libyaml`, `python.org@^3`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,22 +59,26 @@ export const qpdfsourceforgeioPackage = {
   /**
    * Runtime dependencies for this package.
    * These are required when running the package.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net^1',
     'libjpeg-turbo.org^2',
     'openssl.org^1.1',
     'gnutls.org^3',
+    'linux:gnu.org/gcc/libstdcxx^13 # needs newer libstdc++ for C++20 support',
   ] as const,
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
     'cmake.org@^3',
     'pyyaml.org/libyaml',
     'python.org@^3',
     'pip.pypa.io',
+    'linux:gnu.org/gcc@^13',
   ] as const,
   /**
    * Available versions from newest to oldest.

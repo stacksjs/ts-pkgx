@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sentry.io`
  * @homepage https://docs.sentry.io/cli/
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `curl.se^8 # links to libcurl`
  *
  * @example
  * ```typescript
@@ -61,6 +61,7 @@ export const sentryioPackage = {
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'curl.se^8 # links to libcurl',
   ] as const,
   buildDependencies: [] as const,
   /**

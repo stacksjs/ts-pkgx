@@ -58,6 +58,7 @@ sh <(curl https://pkgx.sh) +sentry.io@3.0.3 -- $SHELL -i
 This package depends on:
 
 - `libgit2.org~1.7 # links to libgit2.so.1.7`
+- `curl.se^8 # links to libcurl`
 
 ## Usage Examples
 

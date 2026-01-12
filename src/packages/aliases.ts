@@ -1270,6 +1270,7 @@ export const aliases: Record<string, string> = {
   'srgn': 'crates.io/srgn',
   'srt': 'srtalliance.org',
   'sshx': 'sshx.io',
+  'ssl3': 'curl.se/ssl3',
   'Stable Diffusion web UI': 'github.com/AUTOMATIC1111/stable-diffusion-webui',
   'stargazers': 'github.com/spencerkimball/stargazers',
   'starpls': 'github.com/withered-magic/starpls',
