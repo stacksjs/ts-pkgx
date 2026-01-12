@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2026-01-02T03:42:11.880Z
+ * Generated on 2026-01-12T03:51:13.860Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1630 total)
+ * List of all known packages (1631 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -325,6 +325,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'cuelang.org',
   'curl.se',
   'curl.se/ca-certs',
+  'curl.se/ssl3',
   'curl.se/trurl',
   'curlie.io',
   'cyrusimap.org/cyrus-sasl',
