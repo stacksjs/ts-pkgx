@@ -3,7 +3,7 @@
  *
  * @domain `github.com/cosmtrek/air`
  * @programs `air`
- * @version `1.63.9` (26 versions available)
+ * @version `1.64.0` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/cosmtrek/air`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "air"
  * console.log(pkg.description) // "☁️ Live reload for Go apps"
  * console.log(pkg.programs)    // ["air"]
- * console.log(pkg.versions[0]) // "1.63.9" (latest)
+ * console.log(pkg.versions[0]) // "1.64.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/cosmtrek/air.md
@@ -67,6 +67,7 @@ export const airPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.64.0',
     '1.63.9',
     '1.63.8',
     '1.63.7',
