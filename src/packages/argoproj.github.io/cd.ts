@@ -3,7 +3,7 @@
  *
  * @domain `argoproj.github.io/cd`
  * @programs `argocd`
- * @version `3.2.4` (161 versions available)
+ * @version `3.2.4` (162 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argoproj.github.io/cd`
@@ -75,6 +75,7 @@ export const argoprojgithubiocdPackage = {
     '3.2.2',
     '3.2.1',
     '3.2.0',
+    '3.1.11',
     '3.1.10',
     '3.1.9',
     '3.1.8',
