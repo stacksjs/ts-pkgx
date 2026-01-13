@@ -3,7 +3,7 @@
  *
  * @domain `nodejs.org`
  * @programs `node`
- * @version `25.3.0` (165 versions available)
+ * @version `25.3.0` (166 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nodejs.org`
@@ -88,6 +88,7 @@ export const nodePackage = {
   versions: [
     '25.3.0',
     '25.2.1',
+    '24.13.0',
     '24.12.0',
     '24.11.1',
     '24.11.0',
