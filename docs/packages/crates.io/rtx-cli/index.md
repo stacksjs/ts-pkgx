@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 501 versions</summary>
+<summary>Show all 506 versions</summary>
 
+- `2026.1.2`, `2026.1.1`, `2026.1.0`, `2025.12.13`, `2025.12.12`
 - `2025.12.10`, `2025.12.9`, `2025.12.8`, `2025.12.7`, `2025.12.6`
 - `2025.12.5`, `2025.12.4`, `2025.12.3`, `2025.12.2`, `2025.12.1`
 - `2025.12.0`, `2025.11.11`, `2025.11.10`, `2025.11.9`, `2025.11.8`
@@ -131,13 +132,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `2025.12.10`
+**Latest Version**: `2026.1.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/rtx-cli@2025.12.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/rtx-cli@2026.1.2 -- $SHELL -i
 ```
 
 ## Dependencies

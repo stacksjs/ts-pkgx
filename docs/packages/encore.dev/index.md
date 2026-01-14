@@ -26,8 +26,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 89 versions</summary>
+<summary>Show all 94 versions</summary>
 
+- `1.53.5`, `1.53.4`, `1.53.3`, `1.53.2`, `1.53.1`
 - `1.53.0`, `1.52.5`, `1.52.4`, `1.52.3`, `1.52.2`
 - `1.52.1`, `1.51.11`, `1.51.10`, `1.51.9`, `1.51.8`
 - `1.51.7`, `1.51.5`, `1.51.4`, `1.51.3`, `1.51.2`
@@ -49,13 +50,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `1.53.0`
+**Latest Version**: `1.53.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +encore.dev@1.53.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +encore.dev@1.53.5 -- $SHELL -i
 ```
 
 ## Dependencies

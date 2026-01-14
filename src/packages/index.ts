@@ -59,6 +59,7 @@ import { cdkPackage } from './aws.amazon.com/cdk'
 import { awsamazoncomcliPackage } from './aws.amazon.com/cli'
 import { awsamazoncomqPackage } from './aws.amazon.com/q'
 import { awsamazoncomsamPackage } from './aws.amazon.com/sam'
+import { babashkaorgPackage } from './babashkaorg'
 import { bashlydannybcoPackage } from './bashlydannybco'
 import { bcryptsourceforgenetPackage } from './bcryptsourceforgenet'
 import { beyondgrepcomPackage } from './beyondgrepcom'
@@ -277,6 +278,7 @@ import { ctagsioPackage } from './ctagsio'
 import { ctopshPackage } from './ctopsh'
 import { cuelangorgPackage } from './cuelangorg'
 import { curlsecacertsPackage } from './curl.se/ca-certs'
+import { curlsessl3Package } from './curl.se/ssl3'
 import { curlsetrurlPackage } from './curl.se/trurl'
 import { curlieioPackage } from './curlieio'
 import { curlPackage } from './curlse'
@@ -1020,6 +1022,7 @@ import { k6ioPackage } from './k6io'
 import { k9scliioPackage } from './k9scliio'
 import { kafkaapacheorgPackage } from './kafkaapacheorg'
 import { kagglecomPackage } from './kagglecom'
+import { kamaldeployorgPackage } from './kamal-deployorg'
 import { keephqdevPackage } from './keephqdev'
 import { kerberosorgPackage } from './kerberosorg'
 import { kernelorglibcapPackage } from './kernel.org/libcap'
@@ -1726,6 +1729,7 @@ export interface Pantry {
   awsamazoncomq: typeof awsamazoncomqPackage
 
   awsamazoncom: typeof awsamazoncomsamPackage
+  babashkaorg: typeof babashkaorgPackage
   bashlydannybco: typeof bashlydannybcoPackage
   bcryptsourceforgenet: typeof bcryptsourceforgenetPackage
   beyondgrepcom: typeof beyondgrepcomPackage
@@ -2110,6 +2114,8 @@ export interface Pantry {
   cuelangorg: typeof cuelangorgPackage
   ca_certs: typeof curlsecacertsPackage
   curlsecacerts: typeof curlsecacertsPackage
+
+  curlsessl3: typeof curlsessl3Package
 
   curlsetrurl: typeof curlsetrurlPackage
   curlieio: typeof curlieioPackage
@@ -3467,6 +3473,8 @@ export interface Pantry {
   k9scliio: typeof k9scliioPackage
   kafkaapacheorg: typeof kafkaapacheorgPackage
   kagglecom: typeof kagglecomPackage
+  kamal_deployorg: typeof kamaldeployorgPackage
+  kamaldeployorg: typeof kamaldeployorgPackage
   keephqdev: typeof keephqdevPackage
   kerberosorg: typeof kerberosorgPackage
 
@@ -4561,6 +4569,7 @@ export interface Pantry {
   task: typeof taskfiledevPackage
   spacetime: typeof spacetimedbcomPackage
   starship: typeof starshiprsPackage
+  'kamal-deploy': typeof kamaldeployorgPackage
   'rhash.sourceforge': typeof rhashsourceforgenetPackage
   casdoor: typeof casdoororgPackage
   attr: typeof savannahnongnuorgattrPackage
@@ -4583,6 +4592,7 @@ export interface Pantry {
   cstool: typeof capstoneengineorgPackage
   ginkgo: typeof onsigithubioginkgoPackage
   'huggingface/cli': typeof huggingfacecoPackage
+  babashka: typeof babashkaorgPackage
   pocketbase: typeof pocketbaseioPackage
   rbw: typeof gittoztnetrbwPackage
   libva: typeof intelcomlibvaPackage
@@ -5052,6 +5062,7 @@ export interface Pantry {
   minizip: typeof zlibnetminizipPackage
   go: typeof goPackage
   trurl: typeof curlsetrurlPackage
+  ssl3: typeof curlsessl3Package
   'ca-certs': typeof curlsecacertsPackage
   imath: typeof openexrcomimathPackage
   perl: typeof perlorgPackage
@@ -6025,6 +6036,7 @@ export const pantry: Pantry = {
   awsamazoncomq: awsamazoncomqPackage,
 
   awsamazoncom: awsamazoncomsamPackage,
+  babashkaorg: babashkaorgPackage,
   bashlydannybco: bashlydannybcoPackage,
   bcryptsourceforgenet: bcryptsourceforgenetPackage,
   beyondgrepcom: beyondgrepcomPackage,
@@ -6409,6 +6421,8 @@ export const pantry: Pantry = {
   cuelangorg: cuelangorgPackage,
   ca_certs: curlsecacertsPackage,
   curlsecacerts: curlsecacertsPackage,
+
+  curlsessl3: curlsessl3Package,
 
   curlsetrurl: curlsetrurlPackage,
   curlieio: curlieioPackage,
@@ -7766,6 +7780,8 @@ export const pantry: Pantry = {
   k9scliio: k9scliioPackage,
   kafkaapacheorg: kafkaapacheorgPackage,
   kagglecom: kagglecomPackage,
+  kamal_deployorg: kamaldeployorgPackage,
+  kamaldeployorg: kamaldeployorgPackage,
   keephqdev: keephqdevPackage,
   kerberosorg: kerberosorgPackage,
 
@@ -8860,6 +8876,7 @@ export const pantry: Pantry = {
   task: taskfiledevPackage,
   spacetime: spacetimedbcomPackage,
   starship: starshiprsPackage,
+  'kamal-deploy': kamaldeployorgPackage,
   'rhash.sourceforge': rhashsourceforgenetPackage,
   casdoor: casdoororgPackage,
   attr: savannahnongnuorgattrPackage,
@@ -8882,6 +8899,7 @@ export const pantry: Pantry = {
   cstool: capstoneengineorgPackage,
   ginkgo: onsigithubioginkgoPackage,
   'huggingface/cli': huggingfacecoPackage,
+  babashka: babashkaorgPackage,
   pocketbase: pocketbaseioPackage,
   rbw: gittoztnetrbwPackage,
   libva: intelcomlibvaPackage,
@@ -9351,6 +9369,7 @@ export const pantry: Pantry = {
   minizip: zlibnetminizipPackage,
   go: goPackage,
   trurl: curlsetrurlPackage,
+  ssl3: curlsessl3Package,
   'ca-certs': curlsecacertsPackage,
   imath: openexrcomimathPackage,
   perl: perlorgPackage,

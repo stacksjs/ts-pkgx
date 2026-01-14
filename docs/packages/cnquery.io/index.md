@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 185 versions</summary>
+<summary>Show all 190 versions</summary>
 
+- `12.18.0`, `12.17.0`, `12.16.0`, `12.15.0`, `12.14.2`
 - `12.14.1`, `12.14.0`, `12.13.2`, `12.13.1`, `12.13.0`
 - `12.12.1`, `12.12.0`, `12.11.0`, `12.10.0`, `12.9.0`
 - `12.8.0`, `12.7.1`, `12.7.0`, `12.6.0`, `12.5.1`
@@ -67,13 +68,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `12.14.1`
+**Latest Version**: `12.18.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cnquery.io@12.14.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cnquery.io@12.18.0 -- $SHELL -i
 ```
 
 ## Usage Examples

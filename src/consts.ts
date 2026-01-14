@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-12-18T02:38:52.568Z
+ * Generated on 2026-01-13T02:43:01.434Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1628 total)
+ * List of all known packages (1631 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -105,6 +105,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'aws.amazon.com/cli',
   'aws.amazon.com/q',
   'aws.amazon.com/sam',
+  'babashka.org',
   'bashly.dannyb.co',
   'bcrypt.sourceforge.net',
   'beyondgrep.com',
@@ -324,6 +325,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'cuelang.org',
   'curl.se',
   'curl.se/ca-certs',
+  'curl.se/ssl3',
   'curl.se/trurl',
   'curlie.io',
   'cyrusimap.org/cyrus-sasl',
@@ -1066,6 +1068,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'k9scli.io',
   'kafka.apache.org',
   'kaggle.com',
+  'kamal-deploy.org',
   'keephq.dev',
   'kerberos.org',
   'kernel.org/libcap',

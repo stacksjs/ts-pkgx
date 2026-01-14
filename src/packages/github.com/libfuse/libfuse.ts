@@ -3,7 +3,7 @@
  *
  * @domain `github.com/libfuse/libfuse`
  * @programs `fusermount3`
- * @version `3.17.4` (4 versions available)
+ * @version `3.18.1` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/libfuse/libfuse`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "fusermount3"
  * console.log(pkg.description) // "The reference implementation of the Linux FUSE ..."
  * console.log(pkg.programs)    // ["fusermount3"]
- * console.log(pkg.versions[0]) // "3.17.4" (latest)
+ * console.log(pkg.versions[0]) // "3.18.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/libfuse/libfuse.md
@@ -69,6 +69,8 @@ export const libfusePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.18.1',
+    '3.18.0',
     '3.17.4',
     '3.17.3',
     '3.17.2',

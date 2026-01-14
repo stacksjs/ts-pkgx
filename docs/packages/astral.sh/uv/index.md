@@ -26,8 +26,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 234 versions</summary>
+<summary>Show all 239 versions</summary>
 
+- `0.9.24`, `0.9.23`, `0.9.22`, `0.9.21`, `0.9.20`
 - `0.9.18`, `0.9.17`, `0.9.16`, `0.9.15`, `0.9.14`
 - `0.9.13`, `0.9.12`, `0.9.11`, `0.9.10`, `0.9.9`
 - `0.9.8`, `0.9.7`, `0.9.6`, `0.9.5`, `0.9.4`
@@ -78,13 +79,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.9.18`
+**Latest Version**: `0.9.24`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +astral.sh/uv@0.9.18 -- $SHELL -i
+sh <(curl https://pkgx.sh) +astral.sh/uv@0.9.24 -- $SHELL -i
 ```
 
 ## Dependencies
