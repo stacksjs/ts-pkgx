@@ -3,7 +3,7 @@
  *
  * @domain `ruby-lang.org`
  * @programs `erb`, `irb`, `rake`, `rdoc`, `ri`, ... (+1 more)
- * @version `4.0.1` (51 versions available)
+ * @version `4.0.1` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ruby-lang.org`
@@ -114,6 +114,7 @@ export const rubyPackage = {
     '3.3.2',
     '3.3.1',
     '3.3.0',
+    '3.2.10',
     '3.2.9',
     '3.2.8',
     '3.2.7',
