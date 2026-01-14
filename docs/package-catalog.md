@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-14T18:13:54.687Z
+- **Last Updated**: 2026-01-14T19:11:26.684Z
 
 ## Table of Contents
 
@@ -374,7 +374,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.16.0 (+41) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.12.0 (+32) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.270.0 (+92) | `pkgx pscale` |
-| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.23.2 (+81) | `pkgx railway` |
+| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.24.0 (+82) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.67.1 (+202) | `pkgx supabase` |
 
@@ -386,7 +386,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[appium.io](./packages/appium.io/index.md)** () | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 3.0.2 (+38) | `pkgx appium` |
 | **[fastlane.tools](./packages/fastlane.tools/index.md)** () | 🚀 The easiest way to automate building and releasing your iOS and Android apps | fastlane | 2.230.0 (+25) | `pkgx fastlane` |
-| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.38.6 (+66) | `pkgx flutter` |
+| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.38.7 (+67) | `pkgx flutter` |
 | **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 9.2.1 (+23) | `pkgx gradle` |
 
 ## Testing
@@ -466,7 +466,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[cli.github.com](./packages/cli.github.com/index.md)** () | GitHub’s official command line tool | gh | 2.83.2 (+92) | `pkgx gh` |
+| **[cli.github.com](./packages/cli.github.com/index.md)** () | GitHub’s official command line tool | gh | 2.85.0 (+93) | `pkgx gh` |
 
 ## Usage Examples
 
