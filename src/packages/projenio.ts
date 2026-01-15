@@ -3,7 +3,7 @@
  *
  * @domain `projen.io`
  * @programs `projen`
- * @version `0.99.2` (100 versions available)
+ * @version `0.99.3` (101 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install projen.io`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "projen"
  * console.log(pkg.description) // "Rapidly build modern applications with advanced..."
  * console.log(pkg.programs)    // ["projen"]
- * console.log(pkg.versions[0]) // "0.99.2" (latest)
+ * console.log(pkg.versions[0]) // "0.99.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/projen-io.md
@@ -79,6 +79,7 @@ export const projenioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.99.3',
     '0.99.2',
     '0.99.1',
     '0.99.0',
