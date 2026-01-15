@@ -3,7 +3,7 @@
  *
  * @domain `helm.sh`
  * @programs `helm`
- * @version `4.0.5` (49 versions available)
+ * @version `4.0.5` (50 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install helm.sh`
@@ -74,6 +74,7 @@ export const helmshPackage = {
     '4.0.2',
     '4.0.1',
     '4.0.0',
+    '3.19.5',
     '3.19.4',
     '3.19.3',
     '3.19.2',
