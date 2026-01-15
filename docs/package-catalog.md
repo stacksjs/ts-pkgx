@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-15T21:13:12.438Z
+- **Last Updated**: 2026-01-15T22:11:14.220Z
 
 ## Table of Contents
 
@@ -168,7 +168,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.35.0 (+127) | `pkgx kubectl` |
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.8.0 (+16) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.37.0 (+12) | `pkgx minikube` |
-| **[kubeshark.co](./packages/kubeshark.co/index.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+62) | `pkgx kubeshark` |
+| **[kubeshark.co](./packages/kubeshark.co/index.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+63) | `pkgx kubeshark` |
 | **[linkerd.io/linkerd2](./packages/linkerd.io/linkerd2/index.md)** () | Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x. | linkerd | 2.14.10 (+8) | `pkgx linkerd` |
 | **[operatorframework.io/operator-sdk](./packages/operatorframework.io/operator-sdk/index.md)** () | SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and proj... | operator-sdk | 1.42.0 (+16) | `pkgx operator-sdk` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.7.1 (+44) | `pkgx podman` |
