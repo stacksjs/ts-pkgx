@@ -2,7 +2,7 @@
  * **linux-headers** - pkgx package
  *
  * @domain `kernel.org/linux-headers`
- * @version `6.18.5` (231 versions available)
+ * @version `6.18.6` (235 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kernel.org/linux-headers`
@@ -13,7 +13,7 @@
  *
  * const pkg = pantry.kernelorglinuxheaders
  * console.log(pkg.name)        // "linux-headers"
- * console.log(pkg.versions[0]) // "6.18.5" (latest)
+ * console.log(pkg.versions[0]) // "6.18.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kernel-org/linux-headers.md
@@ -51,6 +51,7 @@ export const kernelorglinuxheadersPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.18.6',
     '6.18.5',
     '6.18.4',
     '6.18.3',
@@ -61,13 +62,16 @@ export const kernelorglinuxheadersPackage = {
     '6.17.11',
     '6.17.10',
     '6.17.9',
+    '6.12.66',
     '6.12.65',
     '6.12.64',
     '6.12.63',
     '6.12.62',
     '6.12.61',
     '6.12.60',
+    '6.6.121',
     '6.6.118',
+    '6.1.161',
     '6.1.160',
     '6.1.159',
     '5.19.17',
