@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1398+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1399
+- **Total Packages**: 1398
 - **Categories**: 27
-- **Last Updated**: 2026-01-17T20:22:17.937Z
+- **Last Updated**: 2026-01-17T22:25:13.560Z
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [DevOps](#devops) (25 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (24 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
-- [Build Tools & Automation](#build-tools-automation) (16 packages)
+- [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (16 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
 - [CLI Tools & Utilities](#cli-tools-utilities) (36 packages)
@@ -190,13 +190,12 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Build Tools & Automation
 
-*16 packages in this category*
+*15 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[cmake.org](./packages/cmake.org/index.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.2.1 (+72) | `pkgx cmake` |
 | **[earthly.dev/earthly](./packages/earthly.dev/earthly/index.md)** () | Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like... | earthly | 0.8.16 (+1) | `pkgx earthly` |
-| **[freedesktop.org/pkg-config](./packages/freedesktop.org/pkg-config/index.md)** () | package compiler and linker metadata toolkit | pkg-config | 0.29.2 (+0) | `pkgx pkg-config` |
 | **[github.com/bazelbuild/bazelisk](./packages/github.com/bazelbuild/bazelisk.md)** () | A user-friendly launcher for Bazel. | bazel, bazelisk | 1.28.0 (+11) | `pkgx bazel` |
 | **[github.com/bazelbuild/buildtools](./packages/github.com/bazelbuild/buildtools.md)** () | Format bazel BUILD files with a standard convention | buildifier | 8.2.1 (+10) | `pkgx buildifier` |
 | **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** () | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.26.3 (+35) | `pkgx buildkit` |
@@ -341,7 +340,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.18.0 (+12) | `pkgx vips` |
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.41.0 (+3) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
-| **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 8.1.0 (+23) | `pkgx streamlink` |
+| **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 8.1.1 (+24) | `pkgx streamlink` |
 | **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.12.8 (+60) | `pkgx yt-dlp` |
 
 ## Graphics Libraries

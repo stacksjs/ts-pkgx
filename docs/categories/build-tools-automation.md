@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*16 packages in this category*
+*15 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -23,16 +23,6 @@ Super simple build framework with fast, repeatable builds and an instantly famil
 **Programs**: earthly
 
 **Install**: `launchpad install earthly.dev/earthly`
-
----
-
-### [freedesktop.org/pkg-config](../packages/freedesktop.org/pkg-config/index.md) (pkg-config)
-
-package compiler and linker metadata toolkit
-
-**Programs**: pkg-config
-
-**Install**: `launchpad install freedesktop.org/pkg-config`
 
 ---
 
