@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2026-01-16T02:45:08.322Z
+ * Generated on 2026-01-17T02:38:52.787Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1631 total)
+ * List of all known packages (1632 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -1169,6 +1169,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'lz4.org',
   'maaslalani.com/slides',
   'macfuse.github.io',
+  'macfuse.github.io/v2',
   'macvim.org',
   'mailpit.axllent.org',
   'makotemplates.org',
