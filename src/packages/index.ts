@@ -1122,6 +1122,7 @@ import { lxmldePackage } from './lxmlde'
 import { lycheeclirsPackage } from './lycheeclirs'
 import { lz4orgPackage } from './lz4org'
 import { maaslalanicomslidesPackage } from './maaslalani.com/slides'
+import { macfusegithubiov2Package } from './macfuse.github.io/v2'
 import { macfusegithubioPackage } from './macfusegithubio'
 import { macvimorgPackage } from './macvimorg'
 import { mailpitaxllentorgPackage } from './mailpitaxllentorg'
@@ -3613,6 +3614,8 @@ export interface Pantry {
   lz4org: typeof lz4orgPackage
 
   maaslalanicomslides: typeof maaslalanicomslidesPackage
+  v2: typeof macfusegithubiov2Package
+  macfusegithubiov2: typeof macfusegithubiov2Package
   macfusegithubio: typeof macfusegithubioPackage
   macvimorg: typeof macvimorgPackage
   mailpitaxllentorg: typeof mailpitaxllentorgPackage
@@ -3830,7 +3833,7 @@ export interface Pantry {
   pantsbuildorgsciepants: typeof pantsbuildorgsciepantsPackage
 
   paulfitzgithubiodaff: typeof paulfitzgithubiodaffPackage
-  v2: typeof pcreorgv2Package
+  v21: typeof pcreorgv2Package
   pcreorgv2: typeof pcreorgv2Package
   pcreorg: typeof pcreorgPackage
   pcscliteapdufr: typeof pcscliteapdufrPackage
@@ -7920,6 +7923,8 @@ export const pantry: Pantry = {
   lz4org: lz4orgPackage,
 
   maaslalanicomslides: maaslalanicomslidesPackage,
+  v2: macfusegithubiov2Package,
+  macfusegithubiov2: macfusegithubiov2Package,
   macfusegithubio: macfusegithubioPackage,
   macvimorg: macvimorgPackage,
   mailpitaxllentorg: mailpitaxllentorgPackage,
@@ -8137,7 +8142,7 @@ export const pantry: Pantry = {
   pantsbuildorgsciepants: pantsbuildorgsciepantsPackage,
 
   paulfitzgithubiodaff: paulfitzgithubiodaffPackage,
-  v2: pcreorgv2Package,
+  v21: pcreorgv2Package,
   pcreorgv2: pcreorgv2Package,
   pcreorg: pcreorgPackage,
   pcscliteapdufr: pcscliteapdufrPackage,

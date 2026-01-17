@@ -8,7 +8,7 @@
  *
  * @install `launchpad install coredns.io`
  * @homepage https://coredns.io/
- * @buildDependencies `go.dev@^1.18` - required only when building from source
+ * @buildDependencies `go.dev@~1.24.0` - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,7 +61,7 @@ export const corednsioPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'go.dev@^1.18',
+    'go.dev@~1.24.0',
   ] as const,
   /**
    * Available versions from newest to oldest.
