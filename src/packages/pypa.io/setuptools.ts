@@ -2,7 +2,7 @@
  * **setuptools** - Official project repository for the Setuptools build system
  *
  * @domain `pypa.io/setuptools`
- * @version `80.9.0` (64 versions available)
+ * @version `80.9.0` (65 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pypa.io/setuptools`
@@ -91,6 +91,7 @@ export const pypaiosetuptoolsPackage = {
     '75.6.0',
     '75.5.0',
     '75.4.0',
+    '75.3.3',
     '75.3.1',
     '75.3.0',
     '75.2.0',

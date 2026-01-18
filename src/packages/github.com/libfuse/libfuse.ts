@@ -3,7 +3,7 @@
  *
  * @domain `github.com/libfuse/libfuse`
  * @programs `fusermount3`
- * @version `3.18.1` (6 versions available)
+ * @version `3.18.1` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/libfuse/libfuse`
@@ -75,6 +75,7 @@ export const libfusePackage = {
     '3.17.3',
     '3.17.2',
     '3.17.1',
+    '2.9.9',
   ] as const,
   aliases: [] as const,
 }

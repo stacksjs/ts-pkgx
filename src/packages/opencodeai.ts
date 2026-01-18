@@ -2,11 +2,11 @@
  * **opencode.ai** - pkgx package
  *
  * @domain `opencode.ai`
- * @version `1.1.18` (435 versions available)
+ * @version `1.1.25` (441 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opencode.ai`
- * @buildDependencies `bun.sh@=1.3.5`, `go.dev@^1.24`, `python.org@3`, ... (+1 more) - required only when building from source
+ * @buildDependencies `stedolan.github.io/jq`, `pkgx.sh`, `go.dev@^1.24`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.opencodeai
  * console.log(pkg.name)        // "opencode.ai"
- * console.log(pkg.versions[0]) // "1.1.18" (latest)
+ * console.log(pkg.versions[0]) // "1.1.25" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opencode-ai.md
@@ -51,7 +51,8 @@ export const opencodeaiPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'bun.sh@=1.3.5',
+    'stedolan.github.io/jq',
+    'pkgx.sh',
     'go.dev@^1.24',
     'python.org@3',
     'npmjs.com',
@@ -61,6 +62,12 @@ export const opencodeaiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.25',
+    '1.1.24',
+    '1.1.23',
+    '1.1.21',
+    '1.1.20',
+    '1.1.19',
     '1.1.18',
     '1.1.17',
     '1.1.16',
