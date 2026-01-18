@@ -3,7 +3,7 @@
  *
  * @domain `github.com/fiatjaf/nak`
  * @programs `nak`
- * @version `0.17.9` (32 versions available)
+ * @version `0.18.0` (33 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/fiatjaf/nak`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "nak"
  * console.log(pkg.description) // "a command line tool for doing all things nostr"
  * console.log(pkg.programs)    // ["nak"]
- * console.log(pkg.versions[0]) // "0.17.9" (latest)
+ * console.log(pkg.versions[0]) // "0.18.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/fiatjaf/nak.md
@@ -71,6 +71,7 @@ export const nakPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.18.0',
     '0.17.9',
     '0.17.6',
     '0.17.4',
