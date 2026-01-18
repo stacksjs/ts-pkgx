@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/fiatjaf/nak`
- * @buildDependencies `go.dev@~1.24.1` - required only when building from source
+ * @buildDependencies `go.dev@~1.25`, `linux:gnu.org/gcc`, `linux:github.com/libfuse/libfuse@2`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,9 +58,13 @@ export const nakPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
-    'go.dev@~1.24.1',
+    'go.dev@~1.25',
+    'linux:gnu.org/gcc',
+    'linux:github.com/libfuse/libfuse@2',
+    'darwin:macfuse.github.io/v2',
   ] as const,
   /**
    * Available versions from newest to oldest.
