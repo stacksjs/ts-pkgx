@@ -1,13 +1,11 @@
 /**
- * **forc** - 🌴 Empowering everyone to build reliable and efficient smart contracts.
+ * **sway** - pkgx package
  *
  * @domain `fuellabs.github.io/sway`
- * @programs `forc`
  * @version `0.70.3` (85 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fuellabs.github.io/sway`
- * @homepage https://docs.fuel.network/docs/sway/
  * @dependencies `zlib.net^1`, `openssl.org^1.1`
  * @buildDependencies `perl.org`, `gnu.org/make` - required only when building from source
  *
@@ -16,9 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.fuellabsgithubiosway
- * console.log(pkg.name)        // "forc"
- * console.log(pkg.description) // "🌴 Empowering everyone to build reliable and ef..."
- * console.log(pkg.programs)    // ["forc"]
+ * console.log(pkg.name)        // "sway"
  * console.log(pkg.versions[0]) // "0.70.3" (latest)
  * ```
  *
@@ -29,7 +25,7 @@ export const fuellabsgithubioswayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'forc' as const,
+  name: 'sway' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,10 +33,10 @@ export const fuellabsgithubioswayPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '🌴 Empowering everyone to build reliable and efficient smart contracts.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fuellabs.github.io/sway/package.yml' as const,
-  homepageUrl: 'https://docs.fuel.network/docs/sway/' as const,
-  githubUrl: 'https://github.com/FuelLabs/sway' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -48,13 +44,7 @@ export const fuellabsgithubioswayPackage = {
   installCommand: 'launchpad install fuellabs.github.io/sway' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fuellabs.github.io/sway -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install fuellabs.github.io/sway' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'forc',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

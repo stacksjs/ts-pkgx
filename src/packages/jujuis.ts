@@ -3,7 +3,7 @@
  *
  * @domain `juju.is`
  * @programs `juju`
- * @version `4.0.0` (25 versions available)
+ * @version `4.0.0` (26 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install juju.is`
@@ -69,6 +69,7 @@ export const jujuisPackage = {
    */
   versions: [
     '4.0.0',
+    '3.6.13',
     '3.6.12',
     '3.6.11',
     '3.6.10',
