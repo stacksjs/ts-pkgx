@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-19T20:15:31.983Z
+- **Last Updated**: 2026-01-19T21:20:19.527Z
 
 ## Table of Contents
 
@@ -70,7 +70,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[crates.io/aichat](./packages/crates.io/aichat/index.md)** () | All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access... | aichat | 0.30.0 (+2) | `pkgx aichat` |
 | **[deepwisdom.ai](./packages/deepwisdom.ai/index.md)** () | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
-| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** () | Autonomous agents for everyone | eliza | 1.7.1 (+74) | `pkgx elizaOS` |
+| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** () | Autonomous agents for everyone | eliza | 1.7.2 (+75) | `pkgx elizaOS` |
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
 | **[github.com/npiv/chatblade](./packages/github.com/npiv/chatblade.md)** () | A CLI Swiss Army Knife for ChatGPT | chatblade | 0.7.0 (+14) | `pkgx chatblade` |
