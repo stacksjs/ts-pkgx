@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-19T17:12:17.916Z
+- **Last Updated**: 2026-01-19T18:13:36.362Z
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.4 (+26) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.5.0 (+4) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
-| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 25.3.0 (+165) | `pkgx node` |
+| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 25.4.0 (+166) | `pkgx node` |
 | **[perl.org](./packages/perl.org/index.md)** () | Highly capable, feature-rich programming language | corelist, cpan, enc2xs, ... (+27) | 5.42.0 (+15) | `pkgx perl` |
 | **[php.net](./packages/php.net/index.md)** () | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.5.2 (+94) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.14.2 (+164) | `pkgx py` |
@@ -197,7 +197,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cmake.org](./packages/cmake.org/index.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.2.1 (+72) | `pkgx cmake` |
 | **[earthly.dev/earthly](./packages/earthly.dev/earthly/index.md)** () | Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like... | earthly | 0.8.16 (+1) | `pkgx earthly` |
 | **[freedesktop.org/pkg-config](./packages/freedesktop.org/pkg-config/index.md)** () | package compiler and linker metadata toolkit | pkg-config | 0.29.2 (+0) | `pkgx pkg-config` |
-| **[github.com/bazelbuild/bazelisk](./packages/github.com/bazelbuild/bazelisk.md)** () | A user-friendly launcher for Bazel. | bazel, bazelisk | 1.28.0 (+11) | `pkgx bazel` |
+| **[github.com/bazelbuild/bazelisk](./packages/github.com/bazelbuild/bazelisk.md)** () | A user-friendly launcher for Bazel. | bazel, bazelisk | 1.28.1 (+12) | `pkgx bazel` |
 | **[github.com/bazelbuild/buildtools](./packages/github.com/bazelbuild/buildtools.md)** () | Format bazel BUILD files with a standard convention | buildifier | 8.2.1 (+10) | `pkgx buildifier` |
 | **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** () | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.26.3 (+35) | `pkgx buildkit` |
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** () | Automatic configure script builder | autoconf, autoheader, autom4te, ... (+4) | 2.72.0 (+1) | `pkgx autoconf` |
