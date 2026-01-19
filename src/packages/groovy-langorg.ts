@@ -3,7 +3,7 @@
  *
  * @domain `groovy-lang.org`
  * @programs `grape`, `grape_completion`, `groovy`, `groovyc`, `groovyc_completion`, ... (+9 more)
- * @version `5.0.3` (28 versions available)
+ * @version `5.0.3` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install groovy-lang.org`
@@ -90,6 +90,7 @@ export const groovylangorgPackage = {
     '5.0.2',
     '5.0.1',
     '5.0.0',
+    '4.0.30',
     '4.0.29',
     '4.0.28',
     '4.0.27',
