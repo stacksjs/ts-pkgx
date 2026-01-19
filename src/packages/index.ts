@@ -2327,7 +2327,7 @@ export interface Pantry {
   freetdsorg: typeof freetdsorgPackage
   freetypeorg: typeof freetypeorgPackage
   frei0rdyneorg: typeof frei0rdyneorgPackage
-
+  sway: typeof fuellabsgithubioswayPackage
   fuellabsgithubiosway: typeof fuellabsgithubioswayPackage
 
   fukuchiorgqrencode: typeof fukuchiorgqrencodePackage
@@ -4413,7 +4413,7 @@ export interface Pantry {
   oci: typeof oraclecomocicliPackage
   'berkeley-db': typeof oraclecomberkeleydbPackage
   assimp: typeof assimporgPackage
-  sway: typeof fuellabsgithubioswayPackage
+  forc: typeof fuellabsgithubioswayPackage
   opa: typeof openpolicyagentorgPackage
   gphoto2: typeof gphotoorglibgphoto2Package
   pcre: typeof pcreorgPackage
@@ -6636,7 +6636,7 @@ export const pantry: Pantry = {
   freetdsorg: freetdsorgPackage,
   freetypeorg: freetypeorgPackage,
   frei0rdyneorg: frei0rdyneorgPackage,
-
+  sway: fuellabsgithubioswayPackage,
   fuellabsgithubiosway: fuellabsgithubioswayPackage,
 
   fukuchiorgqrencode: fukuchiorgqrencodePackage,
@@ -8722,7 +8722,7 @@ export const pantry: Pantry = {
   oci: oraclecomocicliPackage,
   'berkeley-db': oraclecomberkeleydbPackage,
   assimp: assimporgPackage,
-  sway: fuellabsgithubioswayPackage,
+  forc: fuellabsgithubioswayPackage,
   opa: openpolicyagentorgPackage,
   gphoto2: gphotoorglibgphoto2Package,
   pcre: pcreorgPackage,
