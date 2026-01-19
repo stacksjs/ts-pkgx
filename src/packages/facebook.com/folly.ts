@@ -2,7 +2,7 @@
  * **folly** - An open-source C++ library developed and used at Facebook.
  *
  * @domain `facebook.com/folly`
- * @version `2026.1.5.0` (136 versions available)
+ * @version `2026.1.5.0` (137 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/folly`
@@ -89,6 +89,7 @@ export const facebookcomfollyPackage = {
    */
   versions: [
     '2026.1.5.0',
+    '2026.1.19.0',
     '2026.1.12.0',
     '2025.9.8.0',
     '2025.9.29.0',
