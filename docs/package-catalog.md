@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-20T11:14:19.932Z
+- **Last Updated**: 2026-01-20T12:15:20.047Z
 
 ## Table of Contents
 
@@ -109,7 +109,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.24.1 (+27) | `pkgx laravel` |
+| **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.24.2 (+28) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.16.1 (+57) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.18 (+53) | `pkgx tailwindcss` |
 | **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.3.1 (+136) | `pkgx vite` |
@@ -300,7 +300,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[apache.org/httpd](./packages/apache.org/httpd/index.md)** () | Apache HTTP server | ab, apachectl, checkgid, ... (+10) | 2.4.66 (+9) | `pkgx httpd` |
 | **[caddyserver.com](./packages/caddyserver.com/index.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.2 (+11) | `pkgx caddy` |
-| **[cloudflare.com/cloudflared](./packages/cloudflare.com/cloudflared/index.md)** () | Cloudflare Tunnel client (formerly Argo Tunnel) | cloudflared | 2025.11.1 (+36) | `pkgx cloudflared` |
+| **[cloudflare.com/cloudflared](./packages/cloudflare.com/cloudflared/index.md)** () | Cloudflare Tunnel client (formerly Argo Tunnel) | cloudflared | 2026.1.1 (+37) | `pkgx cloudflared` |
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.17.0 (+27) | `pkgx curl` |
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |
 | **[httpie.io](./packages/httpie.io/index.md)** () | 🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, col... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie` |
