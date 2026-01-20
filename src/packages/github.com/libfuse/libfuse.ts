@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/libfuse/libfuse`
- * @buildDependencies `mesonbuild.com`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `mesonbuild.com`, `linux:gnu.org/gcc@14`, `linux:gnu.org/gettext` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,7 +62,8 @@ export const libfusePackage = {
    */
   buildDependencies: [
     'mesonbuild.com',
-    'linux:gnu.org/gcc',
+    'linux:gnu.org/gcc@14',
+    'linux:gnu.org/gettext',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -27,8 +27,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4192 versions</summary>
+<summary>Show all 4202 versions</summary>
 
+- `7777.0.0`, `7775.0.0`, `7774.0.0`, `7772.0.0`, `7770.0.0`
+- `7769.0.0`, `7768.0.0`, `7767.0.0`, `7766.0.0`, `7765.0.0`
 - `7762.0.0`, `7761.0.0`, `7760.0.0`, `7758.0.0`, `7757.0.0`
 - `7756.0.0`, `7755.0.0`, `7753.0.0`, `7752.0.0`, `7751.0.0`
 - `7750.0.0`, `7749.0.0`, `7748.0.0`, `7747.0.0`, `7746.0.0`
@@ -871,13 +873,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `7762.0.0`
+**Latest Version**: `7777.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp@7762.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp@7777.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
