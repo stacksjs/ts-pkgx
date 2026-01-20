@@ -3,7 +3,7 @@
  *
  * @domain `aws.amazon.com/cli`
  * @programs `aws`
- * @version `2.33.3` (1204 versions available)
+ * @version `2.33.3` (1205 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws.amazon.com/cli`
@@ -606,6 +606,7 @@ export const awsamazoncomcliPackage = {
     '2.11.7',
     '2.10.4',
     '2.10.3',
+    '1.44.21',
     '1.44.20',
     '1.44.19',
     '1.44.18',
