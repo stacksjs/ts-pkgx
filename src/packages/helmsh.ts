@@ -3,7 +3,7 @@
  *
  * @domain `helm.sh`
  * @programs `helm`
- * @version `4.0.5` (50 versions available)
+ * @version `4.1.0` (51 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install helm.sh`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "helm"
  * console.log(pkg.description) // "The Kubernetes Package Manager"
  * console.log(pkg.programs)    // ["helm"]
- * console.log(pkg.versions[0]) // "4.0.5" (latest)
+ * console.log(pkg.versions[0]) // "4.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/helm-sh.md
@@ -68,6 +68,7 @@ export const helmshPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.1.0',
     '4.0.5',
     '4.0.4',
     '4.0.3',
