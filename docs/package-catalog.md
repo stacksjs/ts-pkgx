@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-21T05:16:38.859Z
+- **Last Updated**: 2026-01-21T08:15:09.392Z
 
 ## Table of Contents
 
@@ -100,7 +100,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.4.0 (+52) | `pkgx redis` |
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.51.2 (+31) | `pkgx sqlite3` |
 | **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+58) | `pkgx surreal` |
-| **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.15 (+93) | `pkgx turso` |
+| **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.16 (+94) | `pkgx turso` |
 | **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 9.0.1 (+21) | `pkgx valkey` |
 
 ## Web Development
@@ -123,7 +123,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.20.1 (+85) | `pkgx ansible` |
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 26.1.1 (+36) | `pkgx ansible-lint` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.22.2 (+17) | `pkgx consul` |
-| **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 5.0.1 (+67) | `pkgx docker-compose` |
+| **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 5.0.2 (+68) | `pkgx docker-compose` |
 | **[fluxcd.io/flux2](./packages/fluxcd.io/flux2/index.md)** () | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | flux | 2.7.5 (+19) | `pkgx flux` |
 | **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** () | Validate CloudFormation templates against the CloudFormation spec | cfn-lint | 1.43.3 (+168) | `pkgx cfn-lint` |
 | **[github.com/minamijoyo/tfupdate](./packages/github.com/minamijoyo/tfupdate.md)** () | Update version constraints in your Terraform configurations | tfupdate | 0.9.3 (+9) | `pkgx tfupdate` |
