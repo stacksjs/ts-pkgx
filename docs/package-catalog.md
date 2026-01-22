@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2026-01-22T13:24:54.587Z
+- **Last Updated**: 2026-01-22T14:18:03.730Z
 
 ## Table of Contents
 
@@ -220,7 +220,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[bun.sh](./packages/bun.sh/index.md)** (bun.com) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.3.6 (+133) | `pkgx bun.com` |
 | **[classic.yarnpkg.com](./packages/classic.yarnpkg.com/index.md)** (yarn) | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx yarn` |
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
-| **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.9.3 (+37) | `pkgx composer` |
+| **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.9.4 (+38) | `pkgx composer` |
 | **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.13.0 (+7) | `pkgx luarocks` |
 | **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2026.1.6 (+416) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.41.0 (+34) | `pkgx nixpacks` |
@@ -231,7 +231,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+54) | `pkgx pipenv` |
 | **[pkgx.sh](./packages/pkgx.sh/index.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
 | **[python-poetry.org](./packages/python-poetry.org/index.md)** () | Python packaging and dependency management made easy | poetry | 2.3.1 (+25) | `pkgx poetry` |
-| **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** () | The Rust package manager | cargo | 0.93.0 (+30) | `pkgx cargo` |
+| **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** () | The Rust package manager | cargo | 0.94.0 (+31) | `pkgx cargo` |
 | **[rye.astral.sh](./packages/rye.astral.sh/index.md)** () | Experimental Package Management Solution for Python | rye | 0.44.0 (+8) | `pkgx rye` |
 
 ## Editors & IDEs
