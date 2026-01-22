@@ -1,5 +1,5 @@
 /**
- * **mvfst** - An implementation of the QUIC transport protocol.
+ * **mvfst** - pkgx package
  *
  * @domain `facebook.com/mvfst`
  * @version `2026.1.5.0` (108 versions available)
@@ -15,7 +15,6 @@
  *
  * const pkg = pantry.facebookcommvfst
  * console.log(pkg.name)        // "mvfst"
- * console.log(pkg.description) // "An implementation of the QUIC transport protocol."
  * console.log(pkg.versions[0]) // "2026.1.5.0" (latest)
  * ```
  *
@@ -34,10 +33,10 @@ export const facebookcommvfstPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'An implementation of the QUIC transport protocol.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/mvfst/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/facebook/mvfst' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
