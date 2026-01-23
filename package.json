@@ -35,7 +35,8 @@
   "module": "./dist/src/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "ts-pkgx": "./dist/bin/cli.js"
+    "ts-pantry": "./dist/bin/cli.js",
+    "pantry": "./scripts/pantry-cli.ts"
   },
   "files": [
     "README.md",
@@ -77,10 +78,14 @@
     "build:docs": "NODE_OPTIONS=\"--max-old-space-size=8192\" bun vitepress build docs",
     "preview:docs": "bun vitepress preview docs",
     "typecheck": "bun tsc --noEmit",
-    "pkgx:fetch": "bun bin/cli.ts fetch",
-    "pkgx:fetch-all": "bun bin/cli.ts fetch --all",
-    "pkgx:update": "bun run update:packages",
-    "pkgx:docs": "bun bin/cli.ts generate-docs"
+    "pantry:fetch": "bun bin/cli.ts fetch",
+    "pantry:fetch-all": "bun bin/cli.ts fetch --all",
+    "pantry:update": "bun run update:packages",
+    "pantry:docs": "bun bin/cli.ts generate-docs",
+    "pantry:install": "bun scripts/download-from-s3.ts",
+    "pantry:shell": "bun scripts/pantry-cli.ts shell",
+    "pantry:build": "bun scripts/build-package.ts",
+    "pantry:upload": "bun scripts/upload-to-s3.ts"
   },
   "dependencies": {
     "ts-cloud": "link:ts-cloud",
