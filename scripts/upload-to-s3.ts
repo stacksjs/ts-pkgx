@@ -39,12 +39,12 @@ async function uploadToS3(options: UploadOptions): Promise<void> {
   const { package: pkgName, version, artifactsDir, bucket, region } = options
 
   console.log(`\n${'='.repeat(60)}`)
-  console.log(`☁️  Uploading ${pkgName} ${version} to S3`)
+  console.log(`Uploading ${pkgName} ${version} to S3`)
   console.log(`${'='.repeat(60)}`)
   console.log(`   Bucket: ${bucket}`)
   console.log(`   Region: ${region}`)
 
-  // Initialize S3 client from ts-cloud
+  // Initialize S3 client
   const s3 = new S3Client(region)
 
   // Find all artifact directories

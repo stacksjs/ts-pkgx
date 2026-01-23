@@ -1,16 +1,15 @@
 #!/usr/bin/env bun
 
-/**
- * Build Package from Source
- *
- * Parses package.yml from the pantry and builds the package from source.
- * Supports template interpolation and platform-specific configurations.
- */
+// Build Package from Source
+// Reads package metadata from src/packages and build instructions from src/pantry
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { execSync, spawn } from 'node:child_process'
 import { join, dirname } from 'node:path'
 import { parseArgs } from 'node:util'
+// Import package metadata
+const packagesPath = new URL('../src/packages/index.ts', import.meta.url).pathname
+const { pantry } = await import(packagesPath)
 
 // Simple YAML parser for package.yml files
 function parseYaml(content: string): Record<string, any> {
@@ -178,7 +177,10 @@ interface PackageRecipe {
 }
 
 // Template variable interpolation
-function interpolate(template: string, vars: Record<string, string>): string {
+function interpolate(template: string | any, vars: Record<string, string>): string {
+  if (typeof template !== 'string') {
+    return String(template)
+  }
   return template
     // Handle ${{key}} first (before {{key}} to avoid partial matches)
     .replace(/\$\{\{([^}]+)\}\}/g, (_, key) => {
@@ -263,26 +265,61 @@ function shouldRunStep(condition: string | undefined, platform: string, version:
   return true
 }
 
+// Convert domain to pantry key (php.net -> phpnet)
+function domainToKey(domain: string): string {
+  return domain.replace(/[.\-/]/g, '').toLowerCase()
+}
+
 async function buildPackage(options: BuildOptions): Promise<void> {
   const { package: pkgName, version, platform, buildDir, prefix } = options
   const [os, arch] = platform.split('-')
   const osName = os === 'darwin' ? 'darwin' : 'linux'
 
   console.log(`\n${'='.repeat(60)}`)
-  console.log(`🏗️  Building ${pkgName} ${version} for ${platform}`)
+  console.log(`Building ${pkgName} ${version} for ${platform}`)
   console.log(`${'='.repeat(60)}`)
 
-  // Find package.yml
-  const pantryPath = join(process.cwd(), 'src', 'pantry', pkgName, 'package.yml')
-  if (!existsSync(pantryPath)) {
-    throw new Error(`Package.yml not found at ${pantryPath}`)
+  // Get package metadata from src/packages/*.ts
+  const pkgKey = domainToKey(pkgName)
+  const pkg = (pantry as Record<string, any>)[pkgKey]
+
+  if (!pkg) {
+    throw new Error(`Package not found in src/packages: ${pkgName} (key: ${pkgKey})`)
   }
 
-  // Parse package.yml
+  console.log(`\nPackage: ${pkg.name} (${pkg.domain})`)
+  console.log(`Description: ${pkg.description}`)
+  console.log(`Available versions: ${pkg.versions.length}`)
+
+  // Validate version is available
+  if (!pkg.versions.includes(version)) {
+    console.log(`\nAvailable versions: ${pkg.versions.slice(0, 10).join(', ')}...`)
+    throw new Error(`Version ${version} not found. Latest: ${pkg.versions[0]}`)
+  }
+
+  // Show dependencies
+  if (pkg.dependencies?.length > 0) {
+    console.log(`\nRuntime dependencies: ${pkg.dependencies.length}`)
+    pkg.dependencies.slice(0, 5).forEach((d: string) => console.log(`  - ${d}`))
+    if (pkg.dependencies.length > 5) console.log(`  ... and ${pkg.dependencies.length - 5} more`)
+  }
+
+  if (pkg.buildDependencies?.length > 0) {
+    console.log(`\nBuild dependencies: ${pkg.buildDependencies.length}`)
+    pkg.buildDependencies.forEach((d: string) => console.log(`  - ${d}`))
+  }
+
+  // Find package.yml for build instructions
+  const pantryPath = join(process.cwd(), 'src', 'pantry', pkgName, 'package.yml')
+  if (!existsSync(pantryPath)) {
+    throw new Error(`Build recipe not found at ${pantryPath}`)
+  }
+
+  // Parse package.yml for build instructions only
   const yamlContent = readFileSync(pantryPath, 'utf-8')
   const recipe = parseYaml(yamlContent) as PackageRecipe
 
-  console.log(`📋 Loaded recipe from ${pantryPath}`)
+  console.log(`\nBuild recipe: ${pantryPath}`)
 
   // Create directories
   mkdirSync(buildDir, { recursive: true })
@@ -375,50 +412,20 @@ async function buildPackage(options: BuildOptions): Promise<void> {
     }
   }
 
-  // Execute build script
-  if (recipe.build?.script) {
-    console.log('\n🔨 Executing build script...')
+  // Execute build - simplified for common autotools packages
+  console.log('\n🔨 Executing build...')
 
-    // Handle script as string or array
-    const scriptSteps = typeof recipe.build.script === 'string'
-      ? [recipe.build.script]
-      : recipe.build.script
+  // Standard autotools build: ./configure && make && make install
+  const configureArgs = buildEnv.ARGS || `--prefix=${prefix}`
 
-    for (const step of scriptSteps) {
-      if (typeof step === 'string') {
-        // Simple command (might be multi-line)
-        const commands = step.split('\n').filter(c => c.trim())
-        for (const cmdLine of commands) {
-          const cmd = interpolate(cmdLine.trim(), { ...templateVars, ...buildEnv })
-          runCommand(cmd, buildDir, buildEnv)
-        }
-      } else if (step.run) {
-        // Complex step with conditions
-        if (!shouldRunStep(step.if, platform, version)) {
-          console.log(`⏭️  Skipping step (condition: ${step.if})`)
-          continue
-        }
+  console.log(`\n🔧 Running: ./configure ...`)
+  runCommand(`./configure ${configureArgs}`, buildDir, buildEnv)
 
-        const workDir = step['working-directory']
-          ? interpolate(step['working-directory'], { ...templateVars, ...buildEnv })
-          : buildDir
+  console.log(`\n🔧 Running: make -j${templateVars['hw.concurrency']}`)
+  runCommand(`make -j${templateVars['hw.concurrency']}`, buildDir, buildEnv)
 
-        // Handle prop (inline file)
-        if (step.prop) {
-          const propContent = interpolate(step.prop, { ...templateVars, ...buildEnv })
-          const propPath = join(buildDir, '.prop-file')
-          writeFileSync(propPath, propContent)
-          buildEnv.PROP = propPath
-        }
-
-        const commands = typeof step.run === 'string' ? [step.run] : step.run
-        for (const cmd of commands) {
-          const interpolatedCmd = interpolate(cmd, { ...templateVars, ...buildEnv })
-          runCommand(interpolatedCmd, workDir, buildEnv)
-        }
-      }
-    }
-  }
+  console.log(`\n🔧 Running: make install`)
+  runCommand('make install', buildDir, buildEnv)
 
   console.log(`\n✅ Build completed successfully!`)
   console.log(`📁 Installed to: ${prefix}`)

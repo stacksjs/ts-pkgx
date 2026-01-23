@@ -203,7 +203,7 @@ async function downloadPackage(options: DownloadOptions): Promise<boolean> {
   const { package: pkgName, version, bucket, region, installDir, skipFallback } = options
   const currentPlatform = detectPlatform()
 
-  console.log(`\n📦 Installing ${pkgName}${version ? `@${version}` : ''}`)
+  console.log(`\nInstalling ${pkgName}${version ? `@${version}` : ''}`)
   console.log(`   Platform: ${currentPlatform}`)
 
   // Initialize S3 client
