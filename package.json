@@ -83,6 +83,7 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "dependencies": {
+    "ts-cloud": "link:ts-cloud",
     "ts-web-scraper": "^0.1.1"
   },
   "devDependencies": {
