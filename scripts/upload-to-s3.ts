@@ -104,8 +104,8 @@ async function uploadToS3(options: UploadOptions): Promise<void> {
     }
 
     // S3 keys
-    const tarballKey = `packages/pantry/${pkgName}/${version}/${platform}/${tarball}`
-    const sha256Key = `packages/pantry/${pkgName}/${version}/${platform}/${tarball}.sha256`
+    const tarballKey = `binaries/${pkgName}/${version}/${platform}/${tarball}`
+    const sha256Key = `binaries/${pkgName}/${version}/${platform}/${tarball}.sha256`
 
     // Upload tarball using ts-cloud
     console.log(`   📁 Uploading ${tarball} (${(tarballSize / 1024 / 1024).toFixed(2)} MB)`)
@@ -136,7 +136,7 @@ async function uploadToS3(options: UploadOptions): Promise<void> {
   // Update metadata
   console.log(`\n📊 Updating package metadata...`)
 
-  const metadataKey = `packages/pantry/${pkgName}/metadata.json`
+  const metadataKey = `binaries/${pkgName}/metadata.json`
   let metadata: PackageMetadata
 
   try {

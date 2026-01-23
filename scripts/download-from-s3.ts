@@ -211,7 +211,7 @@ async function downloadPackage(options: DownloadOptions): Promise<boolean> {
 
   try {
     // Fetch package metadata
-    const metadataKey = `packages/pantry/${pkgName}/metadata.json`
+    const metadataKey = `binaries/${pkgName}/metadata.json`
     console.log(`   Checking S3: s3://${bucket}/${metadataKey}`)
 
     let metadata: PackageMetadata
