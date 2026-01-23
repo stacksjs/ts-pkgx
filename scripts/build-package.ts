@@ -136,7 +136,7 @@ function parseYaml(content: string): Record<string, any> {
           stack.push({ indent, obj: currentObj[key] })
         }
       }
-    } else if (value.startsWith("'") && value.endsWith("'")) {
+    } else if (value.startsWith('\'') && value.endsWith('\'')) {
       currentObj[key] = value.slice(1, -1)
     } else if (value.startsWith('"') && value.endsWith('"')) {
       currentObj[key] = value.slice(1, -1)
