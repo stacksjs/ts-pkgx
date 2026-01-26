@@ -159,6 +159,9 @@ interface BuildOptions {
   platform: string
   buildDir: string
   prefix: string
+  depsDir?: string
+  bucket?: string
+  region?: string
 }
 
 interface PackageRecipe {
@@ -270,8 +273,93 @@ function domainToKey(domain: string): string {
   return domain.replace(/[.\-/]/g, '').toLowerCase()
 }
 
+// Parse dependency string to get domain
+function parseDep(dep: string): string {
+  let domain = dep
+  // Remove platform prefix
+  if (domain.includes(':')) {
+    domain = domain.split(':')[1]
+  }
+  // Remove version constraints
+  domain = domain.replace(/[\^~<>=@].*$/, '')
+  // Remove comments
+  domain = domain.replace(/#.*$/, '').trim()
+  return domain
+}
+
+// Download dependencies from S3
+async function downloadDependencies(
+  dependencies: string[],
+  depsDir: string,
+  platform: string,
+  bucket: string,
+  region: string
+): Promise<Record<string, string>> {
+  const { S3Client } = await import('ts-cloud/aws')
+  const s3 = new S3Client(region)
+  const depPaths: Record<string, string> = {}
+  const platformOs = platform.split('-')[0]
+
+  console.log(`\nDownloading ${dependencies.length} dependencies from S3...`)
+
+  for (const dep of dependencies) {
+    // Skip platform-specific deps for other platforms
+    if (dep.includes(':')) {
+      const [depPlatform] = dep.split(':')
+      if (depPlatform === 'linux' && platformOs === 'darwin') continue
+      if (depPlatform === 'darwin' && platformOs === 'linux') continue
+    }
+
+    const domain = parseDep(dep)
+    if (!domain || domain.match(/^(darwin|linux)\//)) continue
+
+    try {
+      // Get metadata to find latest version
+      const metadataKey = `binaries/${domain}/metadata.json`
+      let metadata: any
+
+      try {
+        const metadataContent = await s3.getObject(bucket, metadataKey)
+        metadata = JSON.parse(metadataContent)
+      } catch {
+        console.log(`   - ${domain}: not in S3, skipping`)
+        continue
+      }
+
+      const version = metadata.latestVersion
+      const platformInfo = metadata.versions?.[version]?.platforms?.[platform]
+
+      if (!platformInfo) {
+        console.log(`   - ${domain}@${version}: no binary for ${platform}`)
+        continue
+      }
+
+      // Download and extract
+      const depInstallDir = join(depsDir, domain, version)
+      mkdirSync(depInstallDir, { recursive: true })
+
+      console.log(`   - ${domain}@${version}`)
+
+      const tarballContent = await s3.getObject(bucket, platformInfo.tarball)
+      const tarballPath = join(depInstallDir, 'package.tar.gz')
+      writeFileSync(tarballPath, tarballContent)
+
+      execSync(`tar -xzf "${tarballPath}" -C "${depInstallDir}"`, { stdio: 'pipe' })
+      execSync(`rm "${tarballPath}"`)
+
+      depPaths[domain] = depInstallDir
+      depPaths[`deps.${domain}.prefix`] = depInstallDir
+
+    } catch (error: any) {
+      console.log(`   - ${domain}: failed (${error.message})`)
+    }
+  }
+
+  return depPaths
+}
+
 async function buildPackage(options: BuildOptions): Promise<void> {
-  const { package: pkgName, version, platform, buildDir, prefix } = options
+  const { package: pkgName, version, platform, buildDir, prefix, depsDir, bucket, region } = options
   const [os, arch] = platform.split('-')
   const osName = os === 'darwin' ? 'darwin' : 'linux'
 
@@ -309,6 +397,14 @@ async function buildPackage(options: BuildOptions): Promise<void> {
     pkg.buildDependencies.forEach((d: string) => console.log(`  - ${d}`))
   }
 
+  // Download dependencies from S3 if bucket is provided
+  let depPaths: Record<string, string> = {}
+  if (bucket && region && depsDir) {
+    const allDeps = [...(pkg.dependencies || []), ...(pkg.buildDependencies || [])]
+    depPaths = await downloadDependencies(allDeps, depsDir, platform, bucket, region)
+    console.log(`\nDownloaded ${Object.keys(depPaths).length / 2} dependencies`)
+  }
+
   // Find package.yml for build instructions
   const pantryPath = join(process.cwd(), 'src', 'pantry', pkgName, 'package.yml')
   if (!existsSync(pantryPath)) {
@@ -335,6 +431,7 @@ async function buildPackage(options: BuildOptions): Promise<void> {
     'prefix': prefix,
     'hw.concurrency': String(cpuCount),
     'pkgx.prefix': prefix,
+    ...depPaths, // Add dependency paths for template interpolation
   }
 
   // Download source
@@ -449,13 +546,17 @@ async function main() {
       platform: { type: 'string' },
       'build-dir': { type: 'string' },
       prefix: { type: 'string' },
+      'deps-dir': { type: 'string' },
+      bucket: { type: 'string', short: 'b' },
+      region: { type: 'string', short: 'r', default: 'us-east-1' },
     },
     strict: true,
   })
 
   if (!values.package || !values.version || !values.platform || !values['build-dir'] || !values.prefix) {
-    console.error('Usage: build-package.ts --package <domain> --version <version> --platform <platform> --build-dir <dir> --prefix <dir>')
+    console.error('Usage: build-package.ts --package <domain> --version <version> --platform <platform> --build-dir <dir> --prefix <dir> [--deps-dir <dir>] [--bucket <name>] [--region <region>]')
     console.error('Example: build-package.ts --package php.net --version 8.4.11 --platform darwin-arm64 --build-dir /tmp/build --prefix /tmp/install')
+    console.error('With S3: build-package.ts --package php.net --version 8.4.11 --platform darwin-arm64 --build-dir /tmp/build --prefix /tmp/install --deps-dir /tmp/deps --bucket my-bucket')
     process.exit(1)
   }
 
@@ -465,6 +566,9 @@ async function main() {
     platform: values.platform,
     buildDir: values['build-dir'],
     prefix: values.prefix,
+    depsDir: values['deps-dir'],
+    bucket: values.bucket,
+    region: values.region,
   })
 }
 

@@ -28,13 +28,33 @@ interface PackageInfo {
   buildDependencies?: readonly string[]
 }
 
-// Convert domain to pantry key (php.net -> phpnet, gnu.org/gmp -> gnuorggmp)
-function domainToKey(domain: string): string {
-  return domain
-    .replace(/[.\-/]/g, '')
+// Generate possible pantry keys for a domain
+function domainToKeys(domain: string): string[] {
+  const clean = domain
     .replace(/@.*$/, '') // Remove version constraints
     .replace(/[\^~<>=].*$/, '') // Remove version operators
-    .toLowerCase()
+
+  const keys: string[] = []
+
+  // Full domain without special chars (php.net -> phpnet)
+  keys.push(clean.replace(/[.\-/]/g, '').toLowerCase())
+
+  // Last part of path (github.com/kkos/oniguruma -> oniguruma)
+  const parts = clean.split('/')
+  if (parts.length > 1) {
+    keys.push(parts[parts.length - 1].replace(/[.\-]/g, '').toLowerCase())
+    // Parent path for github.com packages (github.com/kkos -> githubcomkkos)
+    if (parts[0].includes('github')) {
+      keys.push(parts.slice(0, 2).join('').replace(/[.\-/]/g, '').toLowerCase())
+    }
+  }
+
+  // Handle gnu.org/gcc/libstdcxx -> libstdcxx
+  if (clean.includes('gnu.org/gcc/')) {
+    keys.push(clean.split('/').pop()!.toLowerCase())
+  }
+
+  return [...new Set(keys)] // Remove duplicates
 }
 
 // Parse dependency string to get domain and version
@@ -65,20 +85,22 @@ function parseDep(dep: string): { domain: string; version?: string } {
 
 // Get package info from pantry
 function getPackage(domain: string): PackageInfo | null {
-  const key = domainToKey(domain)
-  const pkg = (pantry as Record<string, any>)[key]
+  const keys = domainToKeys(domain)
 
-  if (!pkg) {
-    return null
+  for (const key of keys) {
+    const pkg = (pantry as Record<string, any>)[key]
+    if (pkg) {
+      return {
+        name: pkg.name,
+        domain: pkg.domain,
+        versions: pkg.versions || [],
+        dependencies: pkg.dependencies || [],
+        buildDependencies: pkg.buildDependencies || [],
+      }
+    }
   }
 
-  return {
-    name: pkg.name,
-    domain: pkg.domain,
-    versions: pkg.versions || [],
-    dependencies: pkg.dependencies || [],
-    buildDependencies: pkg.buildDependencies || [],
-  }
+  return null
 }
 
 // Resolve all dependencies recursively
@@ -125,6 +147,16 @@ function resolveDependencies(
     }
 
     const { domain: depDomain } = parseDep(dep)
+
+    // Skip platform identifiers that aren't packages (e.g., "darwin/x86-64")
+    if (depDomain.match(/^(darwin|linux)\/(x86-64|aarch64|arm64)$/)) {
+      continue
+    }
+
+    // Skip comments embedded in dependency strings
+    if (depDomain.includes('#')) {
+      continue
+    }
     const depList = resolveDependencies(depDomain, resolved, visiting, platform)
     allDeps.push(...depList)
   }
@@ -252,6 +284,7 @@ async function bootstrap(options: BootstrapOptions): Promise<void> {
     try {
       const buildDir = `/tmp/bootstrap-build/${pkg.domain}`
       const installDir = `/tmp/bootstrap-install/${pkg.domain}/${version}`
+      const depsDir = `/tmp/bootstrap-deps`
       const artifactsDir = `/tmp/bootstrap-artifacts`
       const artifactDir = join(artifactsDir, `${pkg.domain}-${version}-${platform}`)
 
@@ -259,11 +292,12 @@ async function bootstrap(options: BootstrapOptions): Promise<void> {
       rmSync(buildDir, { recursive: true, force: true })
       rmSync(installDir, { recursive: true, force: true })
       mkdirSync(artifactDir, { recursive: true })
+      mkdirSync(depsDir, { recursive: true })
 
-      // Build
+      // Build (with S3 deps download)
       console.log(`Building...`)
       execSync(
-        `bun scripts/build-package.ts --package "${pkg.domain}" --version "${version}" --platform "${platform}" --build-dir "${buildDir}" --prefix "${installDir}"`,
+        `bun scripts/build-package.ts --package "${pkg.domain}" --version "${version}" --platform "${platform}" --build-dir "${buildDir}" --prefix "${installDir}" --deps-dir "${depsDir}" --bucket "${bucket}" --region "${region}"`,
         { stdio: 'inherit', cwd: process.cwd() }
       )
 
