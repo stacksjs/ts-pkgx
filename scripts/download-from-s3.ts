@@ -260,12 +260,20 @@ async function downloadPackage(options: DownloadOptions): Promise<boolean> {
     const pkgInstallDir = join(installDir, pkgName, targetVersion)
     mkdirSync(pkgInstallDir, { recursive: true })
 
-    // Download tarball
+    // Download tarball using AWS CLI (handles binary correctly)
     console.log(`   ⬇️  Downloading (${(platformInfo.size / 1024 / 1024).toFixed(2)} MB)...`)
 
-    const tarballContent = await s3.getObject(bucket, platformInfo.tarball)
     const tarballPath = join(pkgInstallDir, 'package.tar.gz')
-    writeFileSync(tarballPath, tarballContent)
+    const s3Uri = `s3://${bucket}/${platformInfo.tarball}`
+
+    try {
+      // Try AWS CLI first (most reliable for binary)
+      execSync(`aws s3 cp "${s3Uri}" "${tarballPath}" --region ${region}`, { stdio: 'pipe' })
+    } catch {
+      // Fallback: use curl with public URL (if bucket is public)
+      const publicUrl = `https://${bucket}.s3.${region}.amazonaws.com/${platformInfo.tarball}`
+      execSync(`curl -L -o "${tarballPath}" "${publicUrl}"`, { stdio: 'pipe' })
+    }
 
     // Verify SHA256
     console.log(`   🔐 Verifying checksum...`)
