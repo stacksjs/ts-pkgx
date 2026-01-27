@@ -203,9 +203,11 @@ const packages: Record<string, PackageConfig> = {
     getLatestVersion: async () => {
       // Get latest from PostgreSQL website
       const response = await fetch('https://www.postgresql.org/versions.json')
-      const data = await response.json() as { major: number; latestMinor: number }[]
-      const latest = data[0] // First one is latest major
-      return `${latest.major}.${latest.latestMinor}`
+      const data = await response.json() as { major: string; latestMinor: number; current?: boolean; supported?: boolean }[]
+      // Find the current version, or the latest supported one
+      const current = data.find(v => v.current) || data.filter(v => v.supported).pop()
+      if (!current) throw new Error('No current PostgreSQL version found')
+      return `${current.major}.${current.latestMinor}`
     },
     download: async (version, platform, destDir) => {
       const { os, arch } = detectPlatform()
