@@ -84,15 +84,11 @@ _pantry_activate() {
   # Some packages missing - download them
   echo -e "${_pantry_blue}📦 pantry${_pantry_reset} Syncing packages from ${config_file}..."
 
-  if command -v bun &> /dev/null; then
-    bun "$PANTRY_SCRIPT_DIR/download-from-s3.ts" \
-      -c "$config_file" \
-      -b "$PANTRY_BUCKET" \
-      -r "$PANTRY_REGION" \
-      --install-dir "$PANTRY_HOME"
-  else
-    echo -e "${_pantry_yellow}⚠️  bun not found, skipping package sync${_pantry_reset}"
-  fi
+  # Use bash download script (no dependencies required)
+  "$PANTRY_SCRIPT_DIR/download.sh" \
+    -c "$config_file" \
+    -b "$PANTRY_BUCKET" \
+    -r "$PANTRY_REGION"
 
   # Build PATH from installed packages
   _pantry_update_path "$config_file"
@@ -190,11 +186,10 @@ pantry() {
         [[ -f "deps.yaml" ]] && config_file="deps.yaml"
         [[ -f ".pantry.yaml" ]] && config_file=".pantry.yaml"
 
-        bun "$PANTRY_SCRIPT_DIR/download-from-s3.ts" \
+        "$PANTRY_SCRIPT_DIR/download.sh" \
           -c "$config_file" \
           -b "$PANTRY_BUCKET" \
-          -r "$PANTRY_REGION" \
-          --install-dir "$PANTRY_HOME"
+          -r "$PANTRY_REGION"
 
         _pantry_update_path "$config_file"
       else
