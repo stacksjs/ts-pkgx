@@ -50,19 +50,46 @@ _pantry_hook() {
   _pantry_activate "$config_file"
 }
 
+_pantry_check_installed() {
+  local config_file="$1"
+  local missing=0
+
+  while IFS=': ' read -r key value; do
+    [[ -z "$key" || "$key" =~ ^# || "$key" == "dependencies" ]] && continue
+    local pkg=$(echo "$key" | sed 's/^[[:space:]]*//')
+    [[ -z "$pkg" || "$pkg" == "dependencies" ]] && continue
+
+    local pkg_dir="$PANTRY_HOME/$pkg"
+    if [[ ! -d "$pkg_dir" ]] || [[ -z "$(ls -A "$pkg_dir" 2>/dev/null)" ]]; then
+      missing=1
+      break
+    fi
+  done < "$config_file"
+
+  return $missing
+}
+
 _pantry_activate() {
   local config_file="$1"
 
-  echo -e "${_pantry_blue}📦 pantry${_pantry_reset} Found ${config_file}"
+  # Check if all packages are already installed locally
+  if _pantry_check_installed "$config_file"; then
+    # All packages exist - just update PATH silently
+    _pantry_update_path "$config_file"
+    export PANTRY_ACTIVE="$PWD"
+    export PANTRY_CONFIG="$config_file"
+    return
+  fi
 
-  # Run download script (it skips already-installed packages)
+  # Some packages missing - download them
+  echo -e "${_pantry_blue}📦 pantry${_pantry_reset} Syncing packages from ${config_file}..."
+
   if command -v bun &> /dev/null; then
     bun "$PANTRY_SCRIPT_DIR/download-from-s3.ts" \
       -c "$config_file" \
       -b "$PANTRY_BUCKET" \
       -r "$PANTRY_REGION" \
-      --install-dir "$PANTRY_HOME" \
-      2>/dev/null
+      --install-dir "$PANTRY_HOME"
   else
     echo -e "${_pantry_yellow}⚠️  bun not found, skipping package sync${_pantry_reset}"
   fi
@@ -122,10 +149,9 @@ _pantry_update_path() {
     fi
   done < "$config_file"
 
-  # Update PATH
+  # Update PATH (silently)
   if [[ -n "$new_paths" ]]; then
     export PATH="${new_paths}$PANTRY_OLD_PATH"
-    echo -e "${_pantry_green}✓${_pantry_reset} PATH updated with pantry packages"
   fi
 }
 
@@ -217,5 +243,4 @@ pantry() {
   esac
 }
 
-echo -e "${_pantry_blue}📦 pantry${_pantry_reset} Shell integration loaded"
-echo "   Run 'pantry status' or 'pantry list' for info"
+# Silently loaded - use 'pantry status' to check
