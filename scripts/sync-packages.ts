@@ -264,6 +264,127 @@ const packages: Record<string, PackageConfig> = {
       }
     },
   },
+
+  'pnpm.io': {
+    domain: 'pnpm.io',
+    name: 'pnpm',
+    getLatestVersion: async () => {
+      const response = await fetch('https://api.github.com/repos/pnpm/pnpm/releases/latest')
+      const data = await response.json() as { tag_name: string }
+      return data.tag_name.replace(/^v/, '')
+    },
+    download: async (version, platform, destDir) => {
+      const { os, arch } = detectPlatform()
+      const pnpmArch = arch === 'arm64' ? 'arm64' : 'x64'
+      const pnpmPlatform = os === 'darwin' ? 'macos' : 'linux'
+
+      const url = `https://github.com/pnpm/pnpm/releases/download/v${version}/pnpm-${pnpmPlatform}-${pnpmArch}`
+
+      console.log(`   Downloading from ${url}`)
+      mkdirSync(join(destDir, 'bin'), { recursive: true })
+      execSync(`curl -L -o "${destDir}/bin/pnpm" "${url}"`, { stdio: 'inherit' })
+      chmodSync(join(destDir, 'bin', 'pnpm'), 0o755)
+    },
+  },
+
+  'yarnpkg.com': {
+    domain: 'yarnpkg.com',
+    name: 'yarn',
+    getLatestVersion: async () => {
+      const response = await fetch('https://api.github.com/repos/yarnpkg/berry/releases/latest')
+      const data = await response.json() as { tag_name: string }
+      return data.tag_name.replace(/^v?@yarnpkg\/cli\//, '')
+    },
+    download: async (version, platform, destDir) => {
+      // Yarn is distributed as a JS file, needs Node to run
+      const url = `https://repo.yarnpkg.com/${version}/packages/yarnpkg-cli/bin/yarn.js`
+
+      console.log(`   Downloading from ${url}`)
+      mkdirSync(join(destDir, 'bin'), { recursive: true })
+
+      // Download and create wrapper
+      execSync(`curl -L -o "${destDir}/bin/yarn.js" "${url}"`, { stdio: 'inherit' })
+
+      // Create shell wrapper
+      const wrapper = `#!/bin/sh
+exec node "$(dirname "$0")/yarn.js" "$@"
+`
+      require('fs').writeFileSync(join(destDir, 'bin', 'yarn'), wrapper)
+      chmodSync(join(destDir, 'bin', 'yarn'), 0o755)
+      chmodSync(join(destDir, 'bin', 'yarn.js'), 0o755)
+    },
+  },
+
+  'go.dev': {
+    domain: 'go.dev',
+    name: 'go',
+    getLatestVersion: async () => {
+      const response = await fetch('https://go.dev/dl/?mode=json')
+      const data = await response.json() as { version: string; stable: boolean }[]
+      const stable = data.find(v => v.stable)
+      return stable ? stable.version.replace(/^go/, '') : '1.23.0'
+    },
+    download: async (version, platform, destDir) => {
+      const { os, arch } = detectPlatform()
+      const goArch = arch === 'arm64' ? 'arm64' : 'amd64'
+
+      const url = `https://go.dev/dl/go${version}.${os}-${goArch}.tar.gz`
+
+      console.log(`   Downloading from ${url}`)
+      execSync(`curl -L -o "${destDir}/go.tar.gz" "${url}"`, { stdio: 'inherit' })
+      execSync(`cd "${destDir}" && tar -xf go.tar.gz --strip-components=1`, { stdio: 'pipe' })
+      execSync(`rm "${destDir}/go.tar.gz"`)
+    },
+  },
+
+  'deno.land': {
+    domain: 'deno.land',
+    name: 'deno',
+    getLatestVersion: async () => {
+      const response = await fetch('https://api.github.com/repos/denoland/deno/releases/latest')
+      const data = await response.json() as { tag_name: string }
+      return data.tag_name.replace(/^v/, '')
+    },
+    download: async (version, platform, destDir) => {
+      const { os, arch } = detectPlatform()
+      const denoArch = arch === 'arm64' ? 'aarch64' : 'x86_64'
+      const denoPlatform = os === 'darwin' ? 'apple-darwin' : 'unknown-linux-gnu'
+
+      const url = `https://github.com/denoland/deno/releases/download/v${version}/deno-${denoArch}-${denoPlatform}.zip`
+
+      console.log(`   Downloading from ${url}`)
+      mkdirSync(join(destDir, 'bin'), { recursive: true })
+      execSync(`curl -L -o "${destDir}/deno.zip" "${url}"`, { stdio: 'inherit' })
+      execSync(`cd "${destDir}/bin" && unzip -o ../deno.zip`, { stdio: 'pipe' })
+      execSync(`rm "${destDir}/deno.zip"`)
+      chmodSync(join(destDir, 'bin', 'deno'), 0o755)
+    },
+  },
+
+  'python.org': {
+    domain: 'python.org',
+    name: 'python',
+    getLatestVersion: async () => {
+      // Use a stable version - Python standalone builds
+      return '3.12.0'
+    },
+    download: async (version, platform, destDir) => {
+      const { os, arch } = detectPlatform()
+
+      // Use python-build-standalone releases
+      const pyArch = arch === 'arm64' ? 'aarch64' : 'x86_64'
+      const pyPlatform = os === 'darwin' ? 'apple-darwin' : 'unknown-linux-gnu'
+
+      // Python standalone build tag format
+      const tag = '20231002'
+      const url = `https://github.com/indygreg/python-build-standalone/releases/download/${tag}/cpython-${version}+${tag}-${pyArch}-${pyPlatform}-install_only.tar.gz`
+
+      console.log(`   Downloading from ${url}`)
+      execSync(`curl -L -o "${destDir}/python.tar.gz" "${url}"`, { stdio: 'inherit' })
+      execSync(`cd "${destDir}" && tar -xf python.tar.gz --strip-components=1`, { stdio: 'pipe' })
+      execSync(`rm "${destDir}/python.tar.gz"`)
+    },
+  },
 }
 
 // ============================================
@@ -365,9 +486,10 @@ Options:
   -h, --help              Show this help
 
 Available packages:
-  bun.sh, nodejs.org, meilisearch.com, redis.io, postgresql.org, mysql.com, getcomposer.org
+  bun.sh, nodejs.org, meilisearch.com, redis.io, postgresql.org, mysql.com,
+  getcomposer.org, pnpm.io, yarnpkg.com, go.dev, deno.land, python.org
 
-  Note: php.net should be built separately (needs portable deps)
+  Note: php.net should be built separately (use bundle-php.sh)
 
 Examples:
   # Sync all packages
