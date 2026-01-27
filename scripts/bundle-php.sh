@@ -48,7 +48,7 @@ echo -e "${BLUE}Analyzing dependencies...${NC}"
 PHP_BIN="$BIN_DIR/php"
 
 # Get all dylib dependencies from Homebrew
-HOMEBREW_LIBS=$(otool -L "$PHP_BIN" | grep '/opt/homebrew' | awk '{print $1}')
+HOMEBREW_LIBS=$(otool -L "$PHP_BIN" | grep '/opt/homebrew' | awk '{print $1}' | tr -d ':')
 
 echo "Found $(echo "$HOMEBREW_LIBS" | wc -l | tr -d ' ') Homebrew libraries"
 
@@ -68,7 +68,7 @@ copy_lib() {
   cp "$lib" "$dest"
 
   # Get dependencies of this lib
-  local sub_libs=$(otool -L "$lib" | grep '/opt/homebrew' | awk '{print $1}')
+  local sub_libs=$(otool -L "$lib" | grep '/opt/homebrew' | awk '{print $1}' | tr -d ':')
   for sub_lib in $sub_libs; do
     copy_lib "$sub_lib"
   done
@@ -83,7 +83,7 @@ done
 # Also check other binaries
 for bin in "$BIN_DIR"/*; do
   [[ -x "$bin" ]] || continue
-  BIN_LIBS=$(otool -L "$bin" 2>/dev/null | grep '/opt/homebrew' | awk '{print $1}' || true)
+  BIN_LIBS=$(otool -L "$bin" 2>/dev/null | grep '/opt/homebrew' | awk '{print $1}' | tr -d ':' || true)
   for lib in $BIN_LIBS; do
     copy_lib "$lib"
   done
@@ -99,7 +99,7 @@ fix_paths() {
   local is_lib="$2"
 
   # Get all Homebrew references
-  local refs=$(otool -L "$file" | grep '/opt/homebrew' | awk '{print $1}')
+  local refs=$(otool -L "$file" | grep '/opt/homebrew' | awk '{print $1}' | tr -d ':')
 
   for ref in $refs; do
     local lib_name=$(basename "$ref")
