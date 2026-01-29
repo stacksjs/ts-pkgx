@@ -124,69 +124,82 @@ async function downloadFromPkgx(domain: string, version: string, destDir: string
   const { pkgxPlatform } = detectPlatform()
   const [os, arch] = pkgxPlatform.split('/')
 
-  // Step 1: Check if package exists on pkgx via versions.txt
+  // Step 1: Try versions.txt to find correct version
   console.log(`   Checking pkgx CDN for ${domain}...`)
   const pkgxVersions = await getPkgxVersions(domain)
 
-  if (pkgxVersions.length === 0) {
-    console.log(`   Not found on pkgx CDN`)
-    return { success: false }
+  let pkgxVersion: string
+  if (pkgxVersions.length > 0) {
+    const matched = findBestVersion(version, pkgxVersions)
+    pkgxVersion = matched || version
+    if (pkgxVersion !== version) {
+      console.log(`   Version mapped: ${version} -> ${pkgxVersion}`)
+    }
+  } else {
+    // No versions.txt - many packages don't have it, try direct download
+    pkgxVersion = version
   }
 
-  // Step 2: Find the best version match
-  const pkgxVersion = findBestVersion(version, pkgxVersions)
-  if (!pkgxVersion) {
-    console.log(`   No matching version found (wanted ${version})`)
-    return { success: false }
-  }
+  // Step 2: Try multiple version formats
+  const versionCandidates = [
+    pkgxVersion,
+    `${pkgxVersion}.0`,          // 4.9 -> 4.9.0
+    `${pkgxVersion}.0.0`,        // 4 -> 4.0.0
+  ]
+  // Remove duplicates
+  const uniqueVersions = [...new Set(versionCandidates)]
 
-  if (pkgxVersion !== version) {
-    console.log(`   Version mapped: ${version} -> ${pkgxVersion}`)
-  }
+  mkdirSync(destDir, { recursive: true })
+  const tarball = join(destDir, 'package.tar.gz')
 
-  // Step 3: Download
-  const url = `https://dist.pkgx.dev/${domain}/${os}/${arch}/v${pkgxVersion}.tar.gz`
-  console.log(`   Downloading: ${url}`)
+  let downloadedVersion: string | null = null
 
-  try {
-    mkdirSync(destDir, { recursive: true })
-    const tarball = join(destDir, 'package.tar.gz')
+  for (const tryVersion of uniqueVersions) {
+    const urls = [
+      `https://dist.pkgx.dev/${domain}/${os}/${arch}/v${tryVersion}.tar.gz`,
+      `https://dist.pkgx.dev/${domain}/${os}/${arch}/v${tryVersion}.tar.xz`,
+    ]
 
-    try {
-      execSync(`curl -fsSL -o "${tarball}" "${url}"`, { stdio: 'pipe' })
-    } catch {
-      // Try .tar.xz format
-      const xzUrl = url.replace('.tar.gz', '.tar.xz')
+    for (const url of urls) {
       try {
-        execSync(`curl -fsSL -o "${tarball}" "${xzUrl}"`, { stdio: 'pipe' })
+        execSync(`curl -fsSL -o "${tarball}" "${url}"`, { stdio: 'pipe' })
+
+        // Verify we got a real file (not an XML error)
+        const fileSize = statSync(tarball).size
+        if (fileSize < 1000) {
+          const content = require('fs').readFileSync(tarball, 'utf-8')
+          if (content.includes('<?xml') || content.includes('NoSuchKey') || content.includes('Error')) {
+            rmSync(tarball, { force: true })
+            continue
+          }
+        }
+
+        downloadedVersion = tryVersion
+        console.log(`   Downloaded: v${tryVersion}`)
+        break
       } catch {
-        console.log(`   Download failed`)
-        return { success: false }
+        continue
       }
     }
+    if (downloadedVersion) break
+  }
 
-    // Verify we got a real file (not an XML error)
-    const fileSize = statSync(tarball).size
-    if (fileSize < 1000) {
-      const content = require('fs').readFileSync(tarball, 'utf-8')
-      if (content.includes('<?xml') || content.includes('NoSuchKey')) {
-        console.log(`   File not found on CDN (got XML error)`)
-        rmSync(tarball, { force: true })
-        return { success: false }
-      }
-    }
+  if (!downloadedVersion) {
+    console.log(`   Not available on pkgx CDN`)
+    return { success: false }
+  }
 
-    // Extract
+  // Step 3: Extract
+  try {
     execSync(`cd "${destDir}" && tar -xf package.tar.gz 2>/dev/null`, { stdio: 'pipe' })
     rmSync(tarball, { force: true })
 
-    // Check we got something
     const contents = readdirSync(destDir)
     if (contents.length === 0) {
       return { success: false }
     }
 
-    return { success: true, actualVersion: pkgxVersion }
+    return { success: true, actualVersion: downloadedVersion }
   } catch (e) {
     return { success: false }
   }
