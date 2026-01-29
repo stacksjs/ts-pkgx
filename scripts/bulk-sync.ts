@@ -83,68 +83,112 @@ async function checkExistsInS3(domain: string, version: string, platform: string
   }
 }
 
-async function downloadFromPkgx(domain: string, version: string, destDir: string): Promise<boolean> {
+// Get available versions from pkgx CDN
+async function getPkgxVersions(domain: string): Promise<string[]> {
+  try {
+    const response = await fetch(`https://dist.pkgx.dev/${domain}/versions.txt`)
+    if (!response.ok) return []
+    const text = await response.text()
+    return text.trim().split('\n').filter(v => v.length > 0)
+  } catch {
+    return []
+  }
+}
+
+// Find the best matching version from pkgx
+function findBestVersion(ourVersion: string, pkgxVersions: string[]): string | null {
+  if (pkgxVersions.length === 0) return null
+
+  // Exact match
+  if (pkgxVersions.includes(ourVersion)) return ourVersion
+
+  // Try adding .0 (e.g., 4.9 -> 4.9.0)
+  if (pkgxVersions.includes(`${ourVersion}.0`)) return `${ourVersion}.0`
+
+  // Try matching major.minor
+  const [major, minor] = ourVersion.split('.')
+  const matching = pkgxVersions.filter(v => {
+    const [vMajor, vMinor] = v.split('.')
+    return vMajor === major && (minor === undefined || vMinor === minor)
+  })
+
+  if (matching.length > 0) {
+    return matching[matching.length - 1] // Latest matching
+  }
+
+  // Just return the latest version on pkgx
+  return pkgxVersions[pkgxVersions.length - 1]
+}
+
+async function downloadFromPkgx(domain: string, version: string, destDir: string): Promise<{ success: boolean; actualVersion?: string }> {
   const { pkgxPlatform } = detectPlatform()
   const [os, arch] = pkgxPlatform.split('/')
 
-  // pkgx CDN URL format: {domain}/{os}/{arch}/v{version}.tar.gz
-  // Example: https://dist.pkgx.dev/abseil.io/darwin/aarch64/v20230125.2.0.tar.gz
-  const primaryUrl = `https://dist.pkgx.dev/${domain}/${os}/${arch}/v${version}.tar.gz`
+  // Step 1: Check if package exists on pkgx via versions.txt
+  console.log(`   Checking pkgx CDN for ${domain}...`)
+  const pkgxVersions = await getPkgxVersions(domain)
 
-  console.log(`   Trying pkgx CDN: ${primaryUrl}`)
+  if (pkgxVersions.length === 0) {
+    console.log(`   Not found on pkgx CDN`)
+    return { success: false }
+  }
+
+  // Step 2: Find the best version match
+  const pkgxVersion = findBestVersion(version, pkgxVersions)
+  if (!pkgxVersion) {
+    console.log(`   No matching version found (wanted ${version})`)
+    return { success: false }
+  }
+
+  if (pkgxVersion !== version) {
+    console.log(`   Version mapped: ${version} -> ${pkgxVersion}`)
+  }
+
+  // Step 3: Download
+  const url = `https://dist.pkgx.dev/${domain}/${os}/${arch}/v${pkgxVersion}.tar.gz`
+  console.log(`   Downloading: ${url}`)
 
   try {
     mkdirSync(destDir, { recursive: true })
     const tarball = join(destDir, 'package.tar.gz')
 
-    // Try the primary URL format
     try {
-      execSync(`curl -fsSL -o "${tarball}" "${primaryUrl}"`, { stdio: 'pipe' })
+      execSync(`curl -fsSL -o "${tarball}" "${url}"`, { stdio: 'pipe' })
     } catch {
-      // Try alternate URL formats
-      const altUrls = [
-        `https://dist.pkgx.dev/${domain}/${os}/${arch}/v${version}.tar.xz`,
-        `https://dist.pkgx.dev/${domain}/v${version}/${pkgxPlatform}.tar.gz`,
-        `https://dist.pkgx.dev/${domain}/v${version}.tar.gz`,
-      ]
-
-      let downloaded = false
-      for (const altUrl of altUrls) {
-        try {
-          console.log(`   Trying alternate: ${altUrl}`)
-          execSync(`curl -fsSL -o "${tarball}" "${altUrl}"`, { stdio: 'pipe' })
-          downloaded = true
-          break
-        } catch {
-          continue
-        }
-      }
-
-      if (!downloaded) {
-        return false
+      // Try .tar.xz format
+      const xzUrl = url.replace('.tar.gz', '.tar.xz')
+      try {
+        execSync(`curl -fsSL -o "${tarball}" "${xzUrl}"`, { stdio: 'pipe' })
+      } catch {
+        console.log(`   Download failed`)
+        return { success: false }
       }
     }
 
-    // Extract (tar auto-detects compression format)
-    execSync(`cd "${destDir}" && tar -xf package.tar.gz`, { stdio: 'pipe' })
-    execSync(`rm "${tarball}"`)
+    // Verify we got a real file (not an XML error)
+    const fileSize = statSync(tarball).size
+    if (fileSize < 1000) {
+      const content = require('fs').readFileSync(tarball, 'utf-8')
+      if (content.includes('<?xml') || content.includes('NoSuchKey')) {
+        console.log(`   File not found on CDN (got XML error)`)
+        rmSync(tarball, { force: true })
+        return { success: false }
+      }
+    }
 
-    // Check if we got anything useful
+    // Extract
+    execSync(`cd "${destDir}" && tar -xf package.tar.gz 2>/dev/null`, { stdio: 'pipe' })
+    rmSync(tarball, { force: true })
+
+    // Check we got something
     const contents = readdirSync(destDir)
     if (contents.length === 0) {
-      return false
+      return { success: false }
     }
 
-    // If there's a nested directory with version, flatten it
-    const versionDir = contents.find(c => c.startsWith('v') || c.match(/^\d/))
-    if (versionDir && statSync(join(destDir, versionDir)).isDirectory()) {
-      execSync(`mv "${join(destDir, versionDir)}"/* "${destDir}/" 2>/dev/null || true`, { stdio: 'pipe' })
-      rmSync(join(destDir, versionDir), { recursive: true, force: true })
-    }
-
-    return true
+    return { success: true, actualVersion: pkgxVersion }
   } catch (e) {
-    return false
+    return { success: false }
   }
 }
 
@@ -261,20 +305,22 @@ Examples:
     const installDir = `/tmp/bulk-sync-install/${pkg.domain}`
     rmSync(installDir, { recursive: true, force: true })
 
-    const downloaded = await downloadFromPkgx(pkg.domain, version, installDir)
+    const result = await downloadFromPkgx(pkg.domain, version, installDir)
 
-    if (!downloaded) {
-      console.log(`   ✗ Not available on pkgx CDN`)
+    if (!result.success) {
       failed.push(pkg.domain)
       results.failed++
       continue
     }
 
+    // Use the actual version from pkgx if different
+    const uploadVersion = result.actualVersion || version
+
     // Upload to S3
     try {
       console.log(`   Uploading to S3...`)
-      await uploadToS3(installDir, pkg.domain, version, platform, bucket, region)
-      console.log(`   ✓ Uploaded`)
+      await uploadToS3(installDir, pkg.domain, uploadVersion, platform, bucket, region)
+      console.log(`   ✓ Uploaded ${pkg.domain}@${uploadVersion}`)
       results.success++
     } catch (e: any) {
       console.log(`   ✗ Upload failed: ${e.message}`)
