@@ -20,6 +20,7 @@ interface PackageInfo {
   name: string
   versions: readonly string[]
   programs?: readonly string[]
+  githubUrl?: string
 }
 
 function detectPlatform(): { platform: string; pkgxPlatform: string } {
@@ -60,6 +61,7 @@ async function getPackageList(startIndex: number, count: number): Promise<Packag
           name: pkg.name || pkg.domain.split('.')[0],
           versions: pkg.versions,
           programs: pkg.programs,
+          githubUrl: pkg.githubUrl,
         })
       }
     } catch (e) {
@@ -205,6 +207,151 @@ async function downloadFromPkgx(domain: string, version: string, destDir: string
   }
 }
 
+// Fallback: Download from GitHub Releases
+async function downloadFromGitHub(domain: string, version: string, githubUrl: string, programs: readonly string[] | undefined, destDir: string): Promise<{ success: boolean; actualVersion?: string }> {
+  const { platform } = detectPlatform()
+  const os = process.platform === 'darwin' ? 'darwin' : 'linux'
+  const arch = process.arch === 'arm64' ? 'aarch64' : 'x86_64'
+  const archAlt = process.arch === 'arm64' ? 'arm64' : 'x86_64'
+  const archAmd = process.arch === 'arm64' ? 'arm64' : 'amd64'
+
+  // Extract owner/repo from GitHub URL
+  const match = githubUrl.match(/github\.com\/([^/]+)\/([^/]+)/)
+  if (!match) return { success: false }
+
+  const [, owner, repo] = match
+  const cleanRepo = repo.replace(/\.git$/, '')
+
+  console.log(`   Trying GitHub releases: ${owner}/${cleanRepo}`)
+
+  try {
+    // Get release info from GitHub API
+    const apiUrl = `https://api.github.com/repos/${owner}/${cleanRepo}/releases/tags/v${version}`
+    let response = await fetch(apiUrl)
+
+    // Try without v prefix
+    if (!response.ok) {
+      const altUrl = `https://api.github.com/repos/${owner}/${cleanRepo}/releases/tags/${version}`
+      response = await fetch(altUrl)
+    }
+
+    // Try latest release
+    if (!response.ok) {
+      const latestUrl = `https://api.github.com/repos/${owner}/${cleanRepo}/releases/latest`
+      response = await fetch(latestUrl)
+    }
+
+    if (!response.ok) {
+      console.log(`   No GitHub releases found`)
+      return { success: false }
+    }
+
+    const release = await response.json() as { tag_name: string; assets: { name: string; browser_download_url: string }[] }
+    const releaseVersion = release.tag_name.replace(/^v/, '')
+
+    // Find the right asset for our platform
+    const osPatterns = os === 'darwin' ? ['darwin', 'macos', 'mac', 'apple', 'osx'] : ['linux']
+    const archPatterns = [arch, archAlt, archAmd, 'universal']
+
+    // Score assets by how well they match
+    const scoredAssets = release.assets
+      .filter(a => {
+        const name = a.name.toLowerCase()
+        // Must be a downloadable archive or binary
+        return name.endsWith('.tar.gz') || name.endsWith('.tgz') ||
+               name.endsWith('.zip') || name.endsWith('.tar.xz') ||
+               (!name.includes('.') && !name.endsWith('.sha256') && !name.endsWith('.sig'))  ||
+               // Single binary without extension (check for platform in name)
+               (osPatterns.some(p => name.includes(p)) && !name.endsWith('.sha256') && !name.endsWith('.sig') && !name.endsWith('.sbom'))
+      })
+      .map(a => {
+        const name = a.name.toLowerCase()
+        let score = 0
+        if (osPatterns.some(p => name.includes(p))) score += 10
+        if (archPatterns.some(p => name.includes(p))) score += 10
+        if (name.endsWith('.tar.gz') || name.endsWith('.tgz')) score += 3
+        if (name.endsWith('.zip')) score += 2
+        // Penalize source archives
+        if (name.includes('source') || name.includes('src')) score -= 20
+        if (name.includes('musl')) score -= 5
+        return { asset: a, score }
+      })
+      .filter(a => a.score >= 15) // Must match both OS and arch
+      .sort((a, b) => b.score - a.score)
+
+    if (scoredAssets.length === 0) {
+      console.log(`   No matching assets for ${os}/${arch}`)
+      return { success: false }
+    }
+
+    const bestAsset = scoredAssets[0].asset
+    console.log(`   Found: ${bestAsset.name}`)
+
+    mkdirSync(destDir, { recursive: true })
+    mkdirSync(join(destDir, 'bin'), { recursive: true })
+
+    const downloadPath = join(destDir, bestAsset.name)
+    execSync(`curl -fsSL -o "${downloadPath}" "${bestAsset.browser_download_url}"`, { stdio: 'pipe' })
+
+    const name = bestAsset.name.toLowerCase()
+
+    if (name.endsWith('.tar.gz') || name.endsWith('.tgz') || name.endsWith('.tar.xz')) {
+      // Extract archive
+      execSync(`cd "${destDir}" && tar -xf "${bestAsset.name}"`, { stdio: 'pipe' })
+      execSync(`rm "${downloadPath}"`)
+
+      // Find binaries and move to bin/
+      const programNames = programs || [cleanRepo.toLowerCase()]
+      for (const prog of programNames) {
+        // Search for the binary in extracted contents
+        try {
+          const found = execSync(`find "${destDir}" -name "${prog}" -type f -perm +111 2>/dev/null | head -1`, { encoding: 'utf-8' }).trim()
+          if (found && found !== join(destDir, 'bin', prog)) {
+            execSync(`cp "${found}" "${destDir}/bin/${prog}"`)
+            require('fs').chmodSync(join(destDir, 'bin', prog), 0o755)
+          }
+        } catch {}
+      }
+    } else if (name.endsWith('.zip')) {
+      execSync(`cd "${destDir}" && unzip -o "${bestAsset.name}"`, { stdio: 'pipe' })
+      execSync(`rm "${downloadPath}"`)
+
+      const programNames = programs || [cleanRepo.toLowerCase()]
+      for (const prog of programNames) {
+        try {
+          const found = execSync(`find "${destDir}" -name "${prog}" -type f -perm +111 2>/dev/null | head -1`, { encoding: 'utf-8' }).trim()
+          if (found && found !== join(destDir, 'bin', prog)) {
+            execSync(`cp "${found}" "${destDir}/bin/${prog}"`)
+            require('fs').chmodSync(join(destDir, 'bin', prog), 0o755)
+          }
+        } catch {}
+      }
+    } else {
+      // Single binary file
+      const progName = programs?.[0] || cleanRepo.toLowerCase()
+      execSync(`mv "${downloadPath}" "${destDir}/bin/${progName}"`)
+      require('fs').chmodSync(join(destDir, 'bin', progName), 0o755)
+    }
+
+    // Verify we got at least one executable
+    try {
+      const bins = readdirSync(join(destDir, 'bin'))
+      if (bins.length === 0) {
+        console.log(`   No binaries found after extraction`)
+        return { success: false }
+      }
+    } catch {
+      return { success: false }
+    }
+
+    console.log(`   Downloaded from GitHub v${releaseVersion}`)
+    return { success: true, actualVersion: releaseVersion }
+  } catch (e) {
+    console.log(`   GitHub fallback failed`)
+    return { success: false }
+  }
+}
+
 async function uploadToS3(destDir: string, domain: string, version: string, platform: string, bucket: string, region: string): Promise<void> {
   const artifactsDir = '/tmp/bulk-sync-artifacts'
   const artifactDir = join(artifactsDir, `${domain}-${version}-${platform}`)
@@ -314,11 +461,17 @@ Examples:
       continue
     }
 
-    // Download from pkgx
+    // Download from pkgx (primary) -> GitHub releases (fallback)
     const installDir = `/tmp/bulk-sync-install/${pkg.domain}`
     rmSync(installDir, { recursive: true, force: true })
 
-    const result = await downloadFromPkgx(pkg.domain, version, installDir)
+    let result = await downloadFromPkgx(pkg.domain, version, installDir)
+
+    // Fallback: try GitHub releases
+    if (!result.success && pkg.githubUrl) {
+      rmSync(installDir, { recursive: true, force: true })
+      result = await downloadFromGitHub(pkg.domain, version, pkg.githubUrl, pkg.programs, installDir)
+    }
 
     if (!result.success) {
       failed.push(pkg.domain)
